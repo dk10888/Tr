@@ -4,26 +4,30 @@ extract_items.py
 Reads all COCO annotations across train/valid/test.
 For every bounding box with category = "Item":
   1. Crops that region from the image
-  2. Runs PP-OCRv6 on the crop to get the text
-  3. Deduplicates (case-insensitive)
+  2. Runs PP-OCRv6 on the crop to get ALL detected text lines
+  3. Stores EACH line as a separate record (not joined into one string)
+  4. Deduplicates per-line (case-insensitive)
 
-Output: data/all_items.txt — one item text per line, deduplicated
-        data/all_items_with_source.jsonl — full detail with image/split info
+Output:
+  data/all_items.txt              – one OCR line per row, deduplicated
+  data/all_items_with_source.jsonl – full detail per OCR line (image/split/bbox/line_index)
+  data/extraction_checkpoint.jsonl – incremental checkpoint (auto-resume on restart)
 """
 
 import json
 import os
+import sys
 import cv2
 from rapidocr_onnxruntime import RapidOCR
 
 # ── Config ─────────────────────────────────────────────────────────────
-RECEIPTS_DIR = "Receipts"
-OUTPUT_DIR   = "data"
-SPLITS       = ["train", "valid", "test"]
+RECEIPTS_DIR  = "Receipts"
+OUTPUT_DIR    = "data"
+SPLITS        = ["train", "valid", "test"]
 FOOD_CATEGORY = "Item"
-BOX_PADDING  = 4
-MIN_CROP_W   = 20
-MIN_CROP_H   = 10
+BOX_PADDING   = 4
+MIN_CROP_W    = 20
+MIN_CROP_H    = 10
 
 # ── Load OCR ────────────────────────────────────────────────────────────
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -32,38 +36,62 @@ det_path   = os.path.join(models_dir, "v6_medium_det.onnx")
 rec_path   = os.path.join(models_dir, "v6_medium_rec.onnx")
 rec_keys   = os.path.join(models_dir, "rec_keys.txt")
 
-import sys
 print("Loading PP-OCRv6 medium...", flush=True)
 if os.path.exists(det_path) and os.path.exists(rec_path):
     ocr = RapidOCR(det_model_path=det_path, rec_model_path=rec_path, rec_keys_path=rec_keys)
     print("  Using PP-OCRv6 medium", flush=True)
 else:
     ocr = RapidOCR()
-    print("  Warning: v6 medium not found, using bundled v4", flush=True)
+    print("  Warning: v6 medium not found, using bundled default", flush=True)
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 
-def ocr_crop(img, x, y, w, h):
+def ocr_crop_lines(img, x, y, w, h):
+    """
+    Crops the bounding box from the image and runs OCR.
+    Returns a LIST of (text, confidence, line_index) tuples — one per detected line.
+    Lines are sorted top-to-bottom by their vertical center position.
+    Returns an empty list if the crop is too small or OCR finds nothing.
+    """
     H, W = img.shape[:2]
     x1 = max(0, int(x) - BOX_PADDING)
     y1 = max(0, int(y) - BOX_PADDING)
     x2 = min(W, int(x + w) + BOX_PADDING)
     y2 = min(H, int(y + h) + BOX_PADDING)
+
     if (x2 - x1) < MIN_CROP_W or (y2 - y1) < MIN_CROP_H:
-        return None
+        return []
+
     crop = img[y1:y2, x1:x2]
     result, _ = ocr(crop)
     if not result:
-        return None
-    return " ".join(r[1] for r in result).strip()
+        return []
+
+    # result: list of (box, text, confidence)
+    # Sort by vertical center of bounding box (top-to-bottom reading order)
+    def y_center(r):
+        box = r[0]  # [[x1,y1],[x2,y2],[x3,y3],[x4,y4]]
+        ys = [pt[1] for pt in box]
+        return (min(ys) + max(ys)) / 2
+
+    sorted_result = sorted(result, key=y_center)
+
+    lines = []
+    for line_idx, r in enumerate(sorted_result):
+        text = r[1].strip()
+        conf = round(float(r[2]), 4) if r[2] is not None else None
+        if text:
+            lines.append((text, conf, line_idx))
+
+    return lines
 
 
-# ── Checkpoint / Resume Support ─────────────────────────────────────────
+# ── Checkpoint / Resume Support ──────────────────────────────────────────
 ckpt_path = os.path.join(OUTPUT_DIR, "extraction_checkpoint.jsonl")
-all_records = []
-seen_texts = set()
-processed_ann_ids = set()
+all_records        = []
+seen_texts         = set()   # for deduplication (lowercased lines)
+processed_ann_ids  = set()   # already-done annotation IDs
 
 if os.path.exists(ckpt_path):
     print(f"Found checkpoint at {ckpt_path}, loading previous progress...", flush=True)
@@ -74,16 +102,19 @@ if os.path.exists(ckpt_path):
                 all_records.append(rec)
                 seen_texts.add(rec["text"].lower().strip())
                 processed_ann_ids.add(rec.get("ann_id"))
-    print(f"  Loaded {len(all_records)} records ({len(seen_texts)} unique) from checkpoint.", flush=True)
+    print(f"  Loaded {len(all_records)} line-records from checkpoint "
+          f"({len(seen_texts)} unique texts).", flush=True)
 
-total_boxes = len(all_records)
-no_text     = 0
+total_boxes  = 0   # annotation boxes attempted
+no_text      = 0   # boxes with zero OCR output
+total_lines  = len(all_records)  # individual line records (includes resumed)
 
 ckpt_file = open(ckpt_path, "a", encoding="utf-8")
 
+# ── Main Loop ────────────────────────────────────────────────────────────
 for split in SPLITS:
-    split_dir  = os.path.join(RECEIPTS_DIR, split)
-    coco_path  = os.path.join(split_dir, "_annotations.coco.json")
+    split_dir = os.path.join(RECEIPTS_DIR, split)
+    coco_path = os.path.join(split_dir, "_annotations.coco.json")
 
     with open(coco_path) as f:
         coco = json.load(f)
@@ -101,7 +132,7 @@ for split in SPLITS:
     for i, ann in enumerate(item_anns):
         ann_key = f"{split}_{ann.get('id', i)}"
         if ann_key in processed_ann_ids:
-            continue
+            continue  # already processed in a previous run
 
         total_boxes += 1
         img_info = img_map[ann["image_id"]]
@@ -117,38 +148,46 @@ for split in SPLITS:
             continue
 
         x, y, w, h = ann["bbox"]
-        text = ocr_crop(img, x, y, w, h)
 
-        if not text:
+        # Get each OCR line separately (NOT joined)
+        lines = ocr_crop_lines(img, x, y, w, h)
+
+        if not lines:
             no_text += 1
             continue
 
-        key = text.lower().strip()
-        is_duplicate = key in seen_texts
-        seen_texts.add(key)
+        for text, conf, line_idx in lines:
+            key        = text.lower().strip()
+            is_dup     = key in seen_texts
+            seen_texts.add(key)
+            total_lines += 1
 
-        record = {
-            "ann_id":    ann_key,
-            "text":      text,
-            "split":     split,
-            "image":     img_info["file_name"],
-            "bbox":      [x, y, w, h],
-            "duplicate": is_duplicate,
-            "label":     ""    # to be filled by you / Gemini
-        }
-        all_records.append(record)
-        ckpt_file.write(json.dumps(record, ensure_ascii=False) + "\n")
+            record = {
+                "ann_id":     ann_key,          # unique annotation ID
+                "line_index": line_idx,          # position within the box (0 = top)
+                "text":       text,              # the OCR text for this single line
+                "confidence": conf,
+                "split":      split,
+                "image":      img_info["file_name"],
+                "bbox":       [x, y, w, h],      # the annotation bounding box
+                "duplicate":  is_dup,
+                "label":      ""                 # to be filled by Gemini / manually
+            }
+            all_records.append(record)
+            ckpt_file.write(json.dumps(record, ensure_ascii=False) + "\n")
+
         ckpt_file.flush()
 
         if (i + 1) % 50 == 0:
-            print(f"  processed {i+1}/{len(item_anns)} | "
-                  f"unique so far: {len(seen_texts)} | no_text: {no_text}", flush=True)
+            print(f"  processed {i+1}/{len(item_anns)} boxes | "
+                  f"total lines so far: {total_lines} | "
+                  f"unique: {len(seen_texts)} | no_text: {no_text}", flush=True)
 
 ckpt_file.close()
 
-# ── Write outputs ────────────────────────────────────────────────────────
-# 1. Plain text — unique items only, one per line (for pasting into Gemini)
-txt_path = os.path.join(OUTPUT_DIR, "all_items.txt")
+# ── Write outputs ─────────────────────────────────────────────────────────
+# 1. Plain text — unique lines only, one per row (paste into Gemini to label)
+txt_path     = os.path.join(OUTPUT_DIR, "all_items.txt")
 unique_texts = []
 seen_for_txt = set()
 for rec in all_records:
@@ -161,20 +200,20 @@ with open(txt_path, "w", encoding="utf-8") as f:
     for t in unique_texts:
         f.write(t + "\n")
 
-# 2. Full JSONL — all records including duplicates, with empty label field
+# 2. Full JSONL — every line-record, with metadata and empty label field
 jsonl_path = os.path.join(OUTPUT_DIR, "all_items_with_source.jsonl")
 with open(jsonl_path, "w", encoding="utf-8") as f:
     for rec in all_records:
         f.write(json.dumps(rec, ensure_ascii=False) + "\n")
 
-# ── Summary ──────────────────────────────────────────────────────────────
+# ── Summary ───────────────────────────────────────────────────────────────
 print(f"\n{'='*55}")
-print(f"Total Item boxes processed : {total_boxes}")
+print(f"Annotation boxes attempted : {total_boxes}")
 print(f"Boxes with no OCR text     : {no_text}")
-print(f"Total records written      : {len(all_records)}")
-print(f"Unique item texts          : {len(unique_texts)}")
+print(f"Total LINE records written : {len(all_records)}")
+print(f"Unique item line texts     : {len(unique_texts)}")
 print(f"\nOutput files:")
 print(f"  {txt_path}")
-print(f"    → Paste this into Gemini/ChatGPT to label food/not_food")
+print(f"    → Each row is ONE OCR line. Paste into Gemini to label food/not_food.")
 print(f"  {jsonl_path}")
-print(f"    → Full records (for building training data after labeling)")
+print(f"    → Full records with ann_id, line_index, bbox, confidence.")

@@ -25,10 +25,12 @@ print("✅ Drive mounted →", DRIVE_DIR)
 # ============================================================
 # CELL 2 — Install packages
 # ============================================================
-!pip install -q transformers datasets scikit-learn accelerate
+!pip install -q -U transformers datasets scikit-learn accelerate
 
 import torch
+import transformers
 print("✅ PyTorch:", torch.__version__)
+print("✅ Transformers:", transformers.__version__)
 print("✅ CUDA available:", torch.cuda.is_available())
 if torch.cuda.is_available():
     print("   GPU:", torch.cuda.get_device_name(0))
@@ -213,14 +215,20 @@ model = AutoModelForSequenceClassification.from_pretrained(
 )
 model = model.to(device)
 
+# Compute warmup steps manually (works on ALL transformers versions)
+TRAIN_STEPS_PER_EPOCH = len(train_ds) // 64
+TOTAL_STEPS  = TRAIN_STEPS_PER_EPOCH * 8
+WARMUP_STEPS = int(TOTAL_STEPS * 0.10)   # 10% warmup
+print(f"Total steps: {TOTAL_STEPS} | Warmup steps: {WARMUP_STEPS}")
+
 training_args = TrainingArguments(
     output_dir=OUTPUT_DIR,
 
     # ── Training schedule ──────────────────────────────────
-    num_train_epochs=8,           # 8 epochs — enough for tiny model on this size
-    learning_rate=3e-5,           # slightly lower than default; better convergence with noise
-    lr_scheduler_type="cosine",   # cosine decay — better than linear for this task
-    warmup_ratio=0.1,             # 10% warmup steps
+    num_train_epochs=8,               # 8 epochs — enough for tiny model on this size
+    learning_rate=3e-5,               # slightly lower than default; better with noisy OCR text
+    lr_scheduler_type="cosine",       # cosine decay — better than linear for this task
+    warmup_steps=WARMUP_STEPS,        # replaces warmup_ratio — works on all versions
 
     # ── Batch sizes ────────────────────────────────────────
     per_device_train_batch_size=64,   # T4 can handle 64 for tiny model
@@ -231,7 +239,7 @@ training_args = TrainingArguments(
     max_grad_norm=1.0,                # gradient clipping
 
     # ── Evaluation & saving ────────────────────────────────
-    eval_strategy="epoch",
+    evaluation_strategy="epoch",      # older API name — works on all versions
     save_strategy="epoch",
     load_best_model_at_end=True,
     metric_for_best_model="f1_macro",

@@ -6,7 +6,7 @@ Classes  : food (16136) | not_food (5894)
 Model    : google/bert_uncased_L-2_H-128_A-2  (BERT-tiny, ~17MB)
 Runtime  : Colab T4 GPU (~15-20 min total)
 
-Run cells top to bottom. After disconnect: re-run Cell 1→4, then resume from Cell 5.
+Run cells top to bottom. After disconnect: re-run Cell 1-4, then resume from Cell 5.
 """
 
 # ============================================================
@@ -24,7 +24,9 @@ print("✅ Drive mounted →", DRIVE_DIR)
 # ============================================================
 # CELL 2 — Install packages
 # ============================================================
-!pip install -q -U transformers datasets scikit-learn accelerate packaging
+import subprocess
+subprocess.run(["pip", "install", "-q", "-U", "transformers", "datasets",
+                "scikit-learn", "accelerate", "packaging"], check=True)
 
 import torch
 import transformers
@@ -47,8 +49,7 @@ for fname in uploaded:
     shutil.copy(fname, dest)
     print(f"✅ Saved to Drive: {dest}")
 
-# If already in Drive, skip this cell and just set:
-# CSV_PATH = "/content/drive/MyDrive/receipt_bert/final_dataset_augmented_v2.csv"
+# If already in Drive, skip this cell — CSV_PATH is set in Cell 4.
 
 
 # ============================================================
@@ -64,7 +65,9 @@ df = df[df['text'].str.len() >= 2].reset_index(drop=True)
 
 print(f"Total rows  : {len(df)}")
 print(f"Label dist  : {Counter(df['label'])}")
-print(f"Text length : min={df['text'].str.len().min()}  max={df['text'].str.len().max()}  median={df['text'].str.len().median():.0f}")
+print(f"Text length : min={df['text'].str.len().min()}  "
+      f"max={df['text'].str.len().max()}  "
+      f"median={df['text'].str.len().median():.0f}")
 
 
 # ============================================================
@@ -77,8 +80,10 @@ id2label = {v: k for k, v in label2id.items()}
 
 df['label_id'] = df['label'].map(label2id)
 
-train_df, temp_df = train_test_split(df, test_size=0.20, stratify=df['label_id'], random_state=42)
-val_df,   test_df = train_test_split(temp_df, test_size=0.50, stratify=temp_df['label_id'], random_state=42)
+train_df, temp_df = train_test_split(
+    df, test_size=0.20, stratify=df['label_id'], random_state=42)
+val_df, test_df = train_test_split(
+    temp_df, test_size=0.50, stratify=temp_df['label_id'], random_state=42)
 
 print(f"Train : {len(train_df)} | Val : {len(val_df)} | Test : {len(test_df)}")
 print(f"Train label dist: {Counter(train_df['label'])}")
@@ -98,7 +103,10 @@ def tokenize(batch):
     return tokenizer(batch["text"], truncation=True, padding="max_length", max_length=MAX_LEN)
 
 def make_dataset(df_):
-    ds = Dataset.from_dict({"text": df_["text"].tolist(), "label": df_["label_id"].astype(int).tolist()})
+    ds = Dataset.from_dict({
+        "text":  df_["text"].tolist(),
+        "label": df_["label_id"].astype(int).tolist(),
+    })
     return ds.map(tokenize, batched=True, remove_columns=["text"])
 
 train_ds = make_dataset(train_df)
@@ -119,8 +127,8 @@ import torch
 label_counts = Counter(train_df['label_id'])
 total        = sum(label_counts.values())
 weights = torch.tensor([
-    total / (2 * label_counts[0]),   # not_food
-    total / (2 * label_counts[1]),   # food
+    total / (2 * label_counts[0]),   # not_food (minority → higher weight)
+    total / (2 * label_counts[1]),   # food (majority → lower weight)
 ], dtype=torch.float)
 
 device  = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -163,7 +171,7 @@ def compute_metrics(eval_pred):
 
 
 # ============================================================
-# CELL 10 — Load model + build TrainingArguments (version-safe)
+# CELL 10 — Load model + TrainingArguments (version-safe)
 # ============================================================
 from transformers import AutoModelForSequenceClassification, TrainingArguments
 from packaging.version import Version
@@ -176,13 +184,12 @@ model = AutoModelForSequenceClassification.from_pretrained(
 )
 model = model.to(device)
 
-# ── Version-safe eval strategy key ─────────────────────────
-# transformers >= 4.46 renamed evaluation_strategy → eval_strategy
+# Auto-detect correct eval strategy key (renamed in transformers 4.46)
 _new_api  = Version(transformers.__version__) >= Version("4.46.0")
 _eval_key = "eval_strategy" if _new_api else "evaluation_strategy"
 print(f"Transformers {transformers.__version__} → using '{_eval_key}'")
 
-# ── Warmup steps (replaces warmup_ratio, works everywhere) ─
+# Compute warmup steps (works on all transformers versions)
 STEPS_PER_EPOCH = len(train_ds) // 64
 TOTAL_STEPS     = STEPS_PER_EPOCH * 8
 WARMUP_STEPS    = int(TOTAL_STEPS * 0.10)
@@ -190,29 +197,23 @@ print(f"Total steps: {TOTAL_STEPS} | Warmup steps: {WARMUP_STEPS}")
 
 training_args = TrainingArguments(
     output_dir=OUTPUT_DIR,
-
     num_train_epochs=8,
     learning_rate=3e-5,
     lr_scheduler_type="cosine",
     warmup_steps=WARMUP_STEPS,
-
     per_device_train_batch_size=64,
     per_device_eval_batch_size=128,
-
     weight_decay=0.01,
     max_grad_norm=1.0,
-
-    **{_eval_key: "epoch"},           # works on ALL transformers versions
+    **{_eval_key: "epoch"},
     save_strategy="epoch",
     load_best_model_at_end=True,
     metric_for_best_model="f1_macro",
     greater_is_better=True,
     save_total_limit=2,
-
     logging_dir=os.path.join(OUTPUT_DIR, "logs"),
     logging_steps=50,
     report_to="none",
-
     fp16=torch.cuda.is_available(),
     dataloader_num_workers=2,
 )
@@ -298,9 +299,9 @@ total_size = sum(
 )
 print(f"\n📦 Model size: {total_size / 1024 / 1024:.1f} MB")
 
-from google.colab import files
-files.download(os.path.join(SAVE_DIR, "model.safetensors"))
-files.download(os.path.join(SAVE_DIR, "config.json"))
-files.download(os.path.join(SAVE_DIR, "tokenizer.json"))
-files.download(os.path.join(SAVE_DIR, "tokenizer_config.json"))
+from google.colab import files as colab_files
+colab_files.download(os.path.join(SAVE_DIR, "model.safetensors"))
+colab_files.download(os.path.join(SAVE_DIR, "config.json"))
+colab_files.download(os.path.join(SAVE_DIR, "tokenizer.json"))
+colab_files.download(os.path.join(SAVE_DIR, "tokenizer_config.json"))
 print("✅ Downloads started!")

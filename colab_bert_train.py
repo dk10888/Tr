@@ -211,7 +211,6 @@ training_args = TrainingArguments(
     metric_for_best_model="f1_macro",
     greater_is_better=True,
     save_total_limit=2,
-    logging_dir=os.path.join(OUTPUT_DIR, "logs"),
     logging_steps=50,
     report_to="none",
     fp16=torch.cuda.is_available(),

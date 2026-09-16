@@ -58,7 +58,11 @@ private val FoodColor   = Color(0xFF2ECC71)
 private val DiscardColor= Color(0xFF6E7681)
 
 @Composable
-fun MainScreen(viewModel: MainScreenViewModel = viewModel()) {
+fun MainScreen(
+    onItemClick: ((String) -> Unit)? = null,
+    modifier: Modifier = Modifier,
+    viewModel: MainScreenViewModel = viewModel()
+) {
     val context = LocalContext.current
     val uiState by viewModel.uiState.collectAsState()
     val bitmap  by viewModel.selectedBitmap.collectAsState()
@@ -81,7 +85,7 @@ fun MainScreen(viewModel: MainScreenViewModel = viewModel()) {
         else Toast.makeText(context, "Camera permission required", Toast.LENGTH_SHORT).show()
     }
 
-    Surface(color = DarkBg, modifier = Modifier.fillMaxSize()) {
+    Surface(color = DarkBg, modifier = modifier.fillMaxSize()) {
         if (showCamera) {
             CameraScreen(
                 onPhotoTaken = { bmp ->

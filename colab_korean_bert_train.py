@@ -292,6 +292,8 @@ best_val_f1 = 0.0
 for epoch in range(EPOCHS):
     model.train()
     total_train_loss = 0.0
+    train_correct = 0
+    train_total = 0
     t0 = time.time()
 
     for step, batch in enumerate(train_dl):
@@ -315,21 +317,26 @@ for epoch in range(EPOCHS):
         scheduler.step()
 
         total_train_loss += loss.item()
+        preds = torch.argmax(outputs.logits, dim=-1)
+        train_correct += (preds == labels).sum().item()
+        train_total += labels.size(0)
 
         if (step + 1) % 200 == 0 or (step + 1) == len(train_dl):
+            current_train_acc = (train_correct / train_total) * 100
             print(
                 f"   Epoch {epoch+1:02d}/{EPOCHS:02d} | Step {step+1:04d}/{len(train_dl):04d} | "
-                f"Train Loss: {total_train_loss / (step+1):.4f}",
+                f"Train Loss: {total_train_loss / (step+1):.4f} | Train Acc: {current_train_acc:.2f}%",
                 flush=True,
             )
 
     train_loss = total_train_loss / len(train_dl)
+    train_acc = (train_correct / train_total) * 100
     val_metrics, _, _ = evaluate_pytorch(model, val_dl)
     elapsed = time.time() - t0
 
     print(
         f"✅ Epoch {epoch+1:02d}/{EPOCHS:02d} | "
-        f"Train Loss: {train_loss:.4f} | "
+        f"Train Loss: {train_loss:.4f} | Train Acc: {train_acc:.2f}% | "
         f"Val Loss: {val_metrics['val_loss']:.4f} | "
         f"Val Acc: {val_metrics['acc'] * 100:.2f}% | "
         f"Val F1: {val_metrics['f1_macro'] * 100:.2f}% "

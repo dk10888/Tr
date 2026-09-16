@@ -296,7 +296,9 @@ print(f"\n🏆 Best Validation Accuracy achieved: {best_val_acc * 100:.2f}%")
 best_model = AutoModelForSequenceClassification.from_pretrained(OUTPUT_DIR).to(DEVICE)
 test_acc, test_preds, test_labels = evaluate_pytorch(best_model, test_dl)
 
-print(f"\n📊 Test Set Accuracy: {test_acc * 100:.2f}%\n")
+print()
+print(f"📊 Test Set Accuracy: {test_acc * 100:.2f}%")
+print()
 print("Detailed Classification Report on Test Set:")
 print(classification_report(test_labels, test_preds, target_names=["not_food", "food"]))
 
@@ -498,13 +500,13 @@ def predict_korean_receipt_items(sample_texts, onnx_model_path=ONNX_QUANT):
     preds = np.argmax(probs, axis=-1)
 
     print("-" * 65)
-    print(f"{'Text Line':30s} | {'Prediction':10s} | {'Confidence'}")
+    print(f"{'Text Line':30} | {'Prediction':10} | Confidence")
     print("-" * 65)
     for text, pred, prob in zip(sample_texts, preds, probs):
         label_str = id_map[pred]
         confidence = prob[pred] * 100
         icon = "🍜 FOOD    " if pred == 1 else "🧾 NOT_FOOD"
-        print(f"{text:30s} | {icon:10s} | {confidence:6.2f}%")
+        print(f"{text:30} | {icon:10} | {confidence:6.2f}%")
     print("-" * 65)
 
 test_samples = [

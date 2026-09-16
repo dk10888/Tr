@@ -1,42 +1,33 @@
-# Python virtual environments
-venv/
-.venv/
-env/
-ENV/
+# Ignore obsolete root-level files and directories
+/BERT_Receipt_Classifier_Benchmark_Report.docx
+/bert_tiny_v7_food_final
+/colab_bert_tiny_v5_train.py
+/colab_bert_train.py
+/export_bert_to_onnx_android.py
+/export_bert_to_onnx_android_safe.py
+/korean_food_android_assets
+/receipt_parser
+/requirements.txt
+/server.py
+/venv
+/web
+/.ses
 
-# Python cache
+# Ignore obsolete models inside models/
+/models/bert_mini_food_final
+/models/bert_tiny_v5_food_final
+/models/onnx
+
+# Python & OS files
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-
-# OS files
 .DS_Store
-Thumbs.db
-
-# Logs & temp files
-*.log
-data/*.log
-.streamlit/
 
 # Android build outputs
 android_app/.gradle/
 android_app/build/
 android_app/app/build/
+android_app/.idea/
 android_app/local.properties
 *.apk
 *.aab
-
-# ONNX model files (too large for git — export locally or download from Colab)
-android_app/app/src/main/assets/*.onnx
-# Keep vocab.txt and README in git
-!android_app/app/src/main/assets/README.md
-!android_app/app/src/main/assets/*.txt
-
-# Korean model training outputs
-korean_food_model_output/
-*.zip
-
-# ML model binaries (already in models/ subdirs — tracked separately)
-*.bin
-*.safetensors

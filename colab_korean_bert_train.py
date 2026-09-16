@@ -23,15 +23,15 @@ HOW TO USE IN GOOGLE COLAB:
 # CELL 1 — Install dependencies
 # ─────────────────────────────────────────────────────────────────────
 # %%
-# !pip install -q transformers datasets torch onnx onnxruntime onnxruntime-tools scikit-learn evaluate accelerate pandas
+# !pip install -q transformers datasets torch onnx onnxruntime onnxruntime-tools onnxscript scikit-learn evaluate accelerate pandas
 
 import sys, subprocess, os
 def auto_install():
     try:
-        import onnx, onnxruntime, transformers, pandas
+        import onnx, onnxruntime, transformers, pandas, onnxscript
     except ImportError:
-        print("⏬ Installing required packages...")
-        pkgs = ["transformers", "datasets", "torch", "onnx", "onnxruntime", "onnxruntime-tools", "scikit-learn", "evaluate", "accelerate", "pandas"]
+        print("⏬ Installing required packages (including onnxscript for PyTorch ONNX exporter)...")
+        pkgs = ["transformers", "datasets", "torch", "onnx", "onnxruntime", "onnxruntime-tools", "onnxscript", "scikit-learn", "evaluate", "accelerate", "pandas"]
         subprocess.check_call([sys.executable, "-m", "pip", "install", "-q"] + pkgs)
         print("✅ Installation complete.")
 
@@ -369,6 +369,15 @@ print(f"   [[TN={cm[0][0]:5d}, FP={cm[0][1]:5d}]\n    [FN={cm[1][0]:5d}, TP={cm[
 # ─────────────────────────────────────────────────────────────────────
 # %%
 print("\n⚙️  Exporting PyTorch model to ONNX FP32 format...")
+
+# Ensure onnxscript is installed for PyTorch ONNX exporter
+try:
+    import onnxscript
+except ImportError:
+    print("⏬ Installing onnxscript required by PyTorch ONNX exporter...")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "onnxscript"])
+    import onnxscript
+
 best_model.eval().cpu()
 
 dummy_input_ids = torch.ones(1, MAX_LEN, dtype=torch.long)

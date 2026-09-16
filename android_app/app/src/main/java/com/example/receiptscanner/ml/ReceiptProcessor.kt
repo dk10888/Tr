@@ -18,10 +18,10 @@ class ReceiptProcessor(context: Context) : AutoCloseable {
 
     private val ocr = MlKitOcrHelper()
 
-    // English BERT-tiny v7 (76k samples, 94.18% accuracy, INT8 quantized ~5MB)
+    // English BERT-tiny v7 (76k samples, 94.18% accuracy, FP32 ~17MB)
     private val englishClassifier = OnnxBertClassifier(
         context         = context,
-        modelFileName   = "english_food_bert_quant.onnx",
+        modelFileName   = "english_food_bert.onnx",
         vocabFileName   = "english_vocab.txt",
         clsTokenId      = 101,   // standard BERT [CLS]
         sepTokenId      = 102,

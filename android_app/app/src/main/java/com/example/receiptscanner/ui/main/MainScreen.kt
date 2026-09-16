@@ -59,7 +59,7 @@ private val DiscardColor= Color(0xFF6E7681)
 
 @Composable
 fun MainScreen(
-    onItemClick: ((String) -> Unit)? = null,
+    onItemClick: ((Any) -> Unit)? = null,
     modifier: Modifier = Modifier,
     viewModel: MainScreenViewModel = viewModel()
 ) {
@@ -463,7 +463,7 @@ private fun CameraScreen(
                 cameraProviderFuture.addListener({
                     val cameraProvider = cameraProviderFuture.get()
                     val preview = Preview.Builder().build().also {
-                        it.surfaceProvider = previewView.surfaceProvider
+                        it.setSurfaceProvider(previewView.surfaceProvider)
                     }
                     val capture = ImageCapture.Builder()
                         .setCaptureMode(ImageCapture.CAPTURE_MODE_MINIMIZE_LATENCY)

@@ -1,4 +1,4 @@
-text,label,source
+﻿text,label,source
 CJ백설올리브유,food,korean_clean
 CJ햇반,food,korean_clean
 가리비,food,korean_clean
@@ -31607,7 +31607,6 @@ GS더푸레시,not_food,korean_ocr_aug
 444686000025,not_food,korean_ocr_aug
 4446 30600025,not_food,korean_ocr_aug
 4446306000 25,not_food,korean_ocr_aug
-수량 ,not_food,korean_ocr_aug
 수 1,not_food,korean_ocr_aug
 량 1,not_food,korean_ocr_aug
 파랸정육점,not_food,korean_ocr_aug
@@ -37796,3 +37795,2218 @@ LG자,not_food,korean_ocr_aug
 623-81-65088,not_food,korean_ocr_aug
 528-31-55633,not_food,korean_ocr_aug
 승인번호10183025,not_food,korean_ocr_aug
+종량제봉투 20L,not_food,augmented_korean_nonfood
+종량제봉투 20L 1병,not_food,augmented_korean_nonfood
+"종량제봉투 20L  15,000원",not_food,augmented_korean_nonfood
+"종량제봉투 20L 1병  15,000원",not_food,augmented_korean_nonfood
+종량제봉투 20L [포장],not_food,augmented_korean_nonfood
+"종량제봉투 20L [포장]  15,000원",not_food,augmented_korean_nonfood
+종량제봉투 10L,not_food,augmented_korean_nonfood
+종량제봉투 10L 1box,not_food,augmented_korean_nonfood
+"종량제봉투 10L  ₩12,000",not_food,augmented_korean_nonfood
+"종량제봉투 10L 1box  ₩12,000",not_food,augmented_korean_nonfood
+종량제봉투 10L (L),not_food,augmented_korean_nonfood
+"종량제봉투 10L (L)  ₩12,000",not_food,augmented_korean_nonfood
+종량제봉투 5L,not_food,augmented_korean_nonfood
+종량제봉투 5L 1병,not_food,augmented_korean_nonfood
+"종량제봉투 5L  12,000",not_food,augmented_korean_nonfood
+"종량제봉투 5L 1병  12,000",not_food,augmented_korean_nonfood
+종량제봉투 5L 추가,not_food,augmented_korean_nonfood
+"종량제봉투 5L 추가  12,000",not_food,augmented_korean_nonfood
+종량제 20L,not_food,augmented_korean_nonfood
+종량제 20L *2,not_food,augmented_korean_nonfood
+"종량제 20L  12,000",not_food,augmented_korean_nonfood
+"종량제 20L *2  12,000",not_food,augmented_korean_nonfood
+종량제 20L [포장],not_food,augmented_korean_nonfood
+"종량제 20L [포장]  12,000",not_food,augmented_korean_nonfood
+종량제 10L,not_food,augmented_korean_nonfood
+종량제 10L 2,not_food,augmented_korean_nonfood
+"종량제 10L  15,000원",not_food,augmented_korean_nonfood
+"종량제 10L 2  15,000원",not_food,augmented_korean_nonfood
+종량제 10L 곱빼기,not_food,augmented_korean_nonfood
+"종량제 10L 곱빼기  15,000원",not_food,augmented_korean_nonfood
+종량제 5L,not_food,augmented_korean_nonfood
+종량제 5L 1개,not_food,augmented_korean_nonfood
+"종량제 5L  ₩12,000",not_food,augmented_korean_nonfood
+"종량제 5L 1개  ₩12,000",not_food,augmented_korean_nonfood
+종량제 5L [포장],not_food,augmented_korean_nonfood
+"종량제 5L [포장]  ₩12,000",not_food,augmented_korean_nonfood
+쓰레기봉투 20L,not_food,augmented_korean_nonfood
+쓰레기봉투 20L 3개,not_food,augmented_korean_nonfood
+"쓰레기봉투 20L  3,500원",not_food,augmented_korean_nonfood
+"쓰레기봉투 20L 3개  3,500원",not_food,augmented_korean_nonfood
+쓰레기봉투 20L 추가,not_food,augmented_korean_nonfood
+"쓰레기봉투 20L 추가  3,500원",not_food,augmented_korean_nonfood
+쓰레기봉투 10L,not_food,augmented_korean_nonfood
+쓰레기봉투 10L *2,not_food,augmented_korean_nonfood
+"쓰레기봉투 10L  12,000",not_food,augmented_korean_nonfood
+"쓰레기봉투 10L *2  12,000",not_food,augmented_korean_nonfood
+쓰레기봉투 10L [매장],not_food,augmented_korean_nonfood
+"쓰레기봉투 10L [매장]  12,000",not_food,augmented_korean_nonfood
+재활용봉투 50L,not_food,augmented_korean_nonfood
+재활용봉투 50L 2,not_food,augmented_korean_nonfood
+"재활용봉투 50L  (5,000원)",not_food,augmented_korean_nonfood
+"재활용봉투 50L 2  (5,000원)",not_food,augmented_korean_nonfood
+재활용봉투 50L (HOT),not_food,augmented_korean_nonfood
+"재활용봉투 50L (HOT)  (5,000원)",not_food,augmented_korean_nonfood
+비닐봉투 20원,not_food,augmented_korean_nonfood
+비닐봉투 20원 2,not_food,augmented_korean_nonfood
+"비닐봉투 20원  (5,000원)",not_food,augmented_korean_nonfood
+"비닐봉투 20원 2  (5,000원)",not_food,augmented_korean_nonfood
+비닐봉투 20원 (ICE),not_food,augmented_korean_nonfood
+"비닐봉투 20원 (ICE)  (5,000원)",not_food,augmented_korean_nonfood
+손잡이비닐봉투 50원,not_food,augmented_korean_nonfood
+손잡이비닐봉투 50원 1box,not_food,augmented_korean_nonfood
+"손잡이비닐봉투 50원  (5,000원)",not_food,augmented_korean_nonfood
+"손잡이비닐봉투 50원 1box  (5,000원)",not_food,augmented_korean_nonfood
+손잡이비닐봉투 50원 (L),not_food,augmented_korean_nonfood
+"손잡이비닐봉투 50원 (L)  (5,000원)",not_food,augmented_korean_nonfood
+쇼핑백 100원,not_food,augmented_korean_nonfood
+쇼핑백 100원 1ea,not_food,augmented_korean_nonfood
+"쇼핑백 100원  12,000",not_food,augmented_korean_nonfood
+"쇼핑백 100원 1ea  12,000",not_food,augmented_korean_nonfood
+쇼핑백 100원 추가,not_food,augmented_korean_nonfood
+"쇼핑백 100원 추가  12,000",not_food,augmented_korean_nonfood
+마트종이봉투 100원,not_food,augmented_korean_nonfood
+마트종이봉투 100원 1ea,not_food,augmented_korean_nonfood
+"마트종이봉투 100원  3,500원",not_food,augmented_korean_nonfood
+"마트종이봉투 100원 1ea  3,500원",not_food,augmented_korean_nonfood
+마트종이봉투 100원 곱빼기,not_food,augmented_korean_nonfood
+"마트종이봉투 100원 곱빼기  3,500원",not_food,augmented_korean_nonfood
+롤비닐 100매,not_food,augmented_korean_nonfood
+롤비닐 100매 3개,not_food,augmented_korean_nonfood
+"롤비닐 100매  ₩12,000",not_food,augmented_korean_nonfood
+"롤비닐 100매 3개  ₩12,000",not_food,augmented_korean_nonfood
+롤비닐 100매 [포장],not_food,augmented_korean_nonfood
+"롤비닐 100매 [포장]  ₩12,000",not_food,augmented_korean_nonfood
+위생비닐 50매,not_food,augmented_korean_nonfood
+위생비닐 50매 1병,not_food,augmented_korean_nonfood
+"위생비닐 50매  12,000",not_food,augmented_korean_nonfood
+"위생비닐 50매 1병  12,000",not_food,augmented_korean_nonfood
+위생비닐 50매 [포장],not_food,augmented_korean_nonfood
+"위생비닐 50매 [포장]  12,000",not_food,augmented_korean_nonfood
+지퍼백 M,not_food,augmented_korean_nonfood
+지퍼백 M 1set,not_food,augmented_korean_nonfood
+"지퍼백 M  3,500원",not_food,augmented_korean_nonfood
+"지퍼백 M 1set  3,500원",not_food,augmented_korean_nonfood
+지퍼백 M (HOT),not_food,augmented_korean_nonfood
+"지퍼백 M (HOT)  3,500원",not_food,augmented_korean_nonfood
+크리넥스 미용티슈 3개입,not_food,augmented_korean_nonfood
+크리넥스 미용티슈 3개입 x2,not_food,augmented_korean_nonfood
+"크리넥스 미용티슈 3개입  3,500원",not_food,augmented_korean_nonfood
+"크리넥스 미용티슈 3개입 x2  3,500원",not_food,augmented_korean_nonfood
+크리넥스 미용티슈 3개입 (L),not_food,augmented_korean_nonfood
+"크리넥스 미용티슈 3개입 (L)  3,500원",not_food,augmented_korean_nonfood
+롤휴지 30m 30롤,not_food,augmented_korean_nonfood
+롤휴지 30m 30롤 2인분,not_food,augmented_korean_nonfood
+"롤휴지 30m 30롤  (5,000원)",not_food,augmented_korean_nonfood
+"롤휴지 30m 30롤 2인분  (5,000원)",not_food,augmented_korean_nonfood
+롤휴지 30m 30롤 (HOT),not_food,augmented_korean_nonfood
+"롤휴지 30m 30롤 (HOT)  (5,000원)",not_food,augmented_korean_nonfood
+두루마리휴지 12롤,not_food,augmented_korean_nonfood
+두루마리휴지 12롤 1box,not_food,augmented_korean_nonfood
+"두루마리휴지 12롤  (5,000원)",not_food,augmented_korean_nonfood
+"두루마리휴지 12롤 1box  (5,000원)",not_food,augmented_korean_nonfood
+두루마리휴지 12롤 (ICE),not_food,augmented_korean_nonfood
+"두루마리휴지 12롤 (ICE)  (5,000원)",not_food,augmented_korean_nonfood
+키친타올 4롤,not_food,augmented_korean_nonfood
+키친타올 4롤 x2,not_food,augmented_korean_nonfood
+"키친타올 4롤  12,000",not_food,augmented_korean_nonfood
+"키친타올 4롤 x2  12,000",not_food,augmented_korean_nonfood
+키친타올 4롤 [매장],not_food,augmented_korean_nonfood
+"키친타올 4롤 [매장]  12,000",not_food,augmented_korean_nonfood
+물티슈 100매,not_food,augmented_korean_nonfood
+물티슈 100매 1병,not_food,augmented_korean_nonfood
+"물티슈 100매  (5,000원)",not_food,augmented_korean_nonfood
+"물티슈 100매 1병  (5,000원)",not_food,augmented_korean_nonfood
+물티슈 100매 (ICE),not_food,augmented_korean_nonfood
+"물티슈 100매 (ICE)  (5,000원)",not_food,augmented_korean_nonfood
+아기물티슈 80매,not_food,augmented_korean_nonfood
+아기물티슈 80매 1set,not_food,augmented_korean_nonfood
+"아기물티슈 80매  3,500원",not_food,augmented_korean_nonfood
+"아기물티슈 80매 1set  3,500원",not_food,augmented_korean_nonfood
+아기물티슈 80매 추가,not_food,augmented_korean_nonfood
+"아기물티슈 80매 추가  3,500원",not_food,augmented_korean_nonfood
+독도물티슈 100매,not_food,augmented_korean_nonfood
+독도물티슈 100매 2,not_food,augmented_korean_nonfood
+"독도물티슈 100매  ₩4,500",not_food,augmented_korean_nonfood
+"독도물티슈 100매 2  ₩4,500",not_food,augmented_korean_nonfood
+독도물티슈 100매 [포장],not_food,augmented_korean_nonfood
+"독도물티슈 100매 [포장]  ₩4,500",not_food,augmented_korean_nonfood
+손소독물티슈 20매,not_food,augmented_korean_nonfood
+손소독물티슈 20매 1ea,not_food,augmented_korean_nonfood
+"손소독물티슈 20매  3,500원",not_food,augmented_korean_nonfood
+"손소독물티슈 20매 1ea  3,500원",not_food,augmented_korean_nonfood
+손소독물티슈 20매 [포장],not_food,augmented_korean_nonfood
+"손소독물티슈 20매 [포장]  3,500원",not_food,augmented_korean_nonfood
+엘라스틴 샴푸 600ml,not_food,augmented_korean_nonfood
+엘라스틴 샴푸 600ml x2,not_food,augmented_korean_nonfood
+"엘라스틴 샴푸 600ml  (5,000원)",not_food,augmented_korean_nonfood
+"엘라스틴 샴푸 600ml x2  (5,000원)",not_food,augmented_korean_nonfood
+엘라스틴 샴푸 600ml [매장],not_food,augmented_korean_nonfood
+"엘라스틴 샴푸 600ml [매장]  (5,000원)",not_food,augmented_korean_nonfood
+케라시스 린스 600ml,not_food,augmented_korean_nonfood
+케라시스 린스 600ml 1병,not_food,augmented_korean_nonfood
+"케라시스 린스 600ml  15,000원",not_food,augmented_korean_nonfood
+"케라시스 린스 600ml 1병  15,000원",not_food,augmented_korean_nonfood
+케라시스 린스 600ml 곱빼기,not_food,augmented_korean_nonfood
+"케라시스 린스 600ml 곱빼기  15,000원",not_food,augmented_korean_nonfood
+도브 바디워시 500ml,not_food,augmented_korean_nonfood
+도브 바디워시 500ml ×1,not_food,augmented_korean_nonfood
+"도브 바디워시 500ml  (5,000원)",not_food,augmented_korean_nonfood
+"도브 바디워시 500ml ×1  (5,000원)",not_food,augmented_korean_nonfood
+도브 바디워시 500ml (L),not_food,augmented_korean_nonfood
+"도브 바디워시 500ml (L)  (5,000원)",not_food,augmented_korean_nonfood
+아이깨끗해 비누 250ml,not_food,augmented_korean_nonfood
+아이깨끗해 비누 250ml 2,not_food,augmented_korean_nonfood
+"아이깨끗해 비누 250ml  3,500원",not_food,augmented_korean_nonfood
+"아이깨끗해 비누 250ml 2  3,500원",not_food,augmented_korean_nonfood
+아이깨끗해 비누 250ml 추가,not_food,augmented_korean_nonfood
+"아이깨끗해 비누 250ml 추가  3,500원",not_food,augmented_korean_nonfood
+센카 폼클렌징 120g,not_food,augmented_korean_nonfood
+센카 폼클렌징 120g 2,not_food,augmented_korean_nonfood
+"센카 폼클렌징 120g  ₩4,500",not_food,augmented_korean_nonfood
+"센카 폼클렌징 120g 2  ₩4,500",not_food,augmented_korean_nonfood
+센카 폼클렌징 120g 곱빼기,not_food,augmented_korean_nonfood
+"센카 폼클렌징 120g 곱빼기  ₩4,500",not_food,augmented_korean_nonfood
+2080 치약 120g,not_food,augmented_korean_nonfood
+2080 치약 120g 1병,not_food,augmented_korean_nonfood
+"2080 치약 120g  (5,000원)",not_food,augmented_korean_nonfood
+"2080 치약 120g 1병  (5,000원)",not_food,augmented_korean_nonfood
+2080 치약 120g (L),not_food,augmented_korean_nonfood
+"2080 치약 120g (L)  (5,000원)",not_food,augmented_korean_nonfood
+오라클 칫솔 4입,not_food,augmented_korean_nonfood
+오라클 칫솔 4입 x2,not_food,augmented_korean_nonfood
+"오라클 칫솔 4입  (5,000원)",not_food,augmented_korean_nonfood
+"오라클 칫솔 4입 x2  (5,000원)",not_food,augmented_korean_nonfood
+오라클 칫솔 4입 추가,not_food,augmented_korean_nonfood
+"오라클 칫솔 4입 추가  (5,000원)",not_food,augmented_korean_nonfood
+리스테린 가글 750ml,not_food,augmented_korean_nonfood
+리스테린 가글 750ml 1set,not_food,augmented_korean_nonfood
+"리스테린 가글 750ml  15,000원",not_food,augmented_korean_nonfood
+"리스테린 가글 750ml 1set  15,000원",not_food,augmented_korean_nonfood
+리스테린 가글 750ml [매장],not_food,augmented_korean_nonfood
+"리스테린 가글 750ml [매장]  15,000원",not_food,augmented_korean_nonfood
+질레트 면도기,not_food,augmented_korean_nonfood
+질레트 면도기 1box,not_food,augmented_korean_nonfood
+"질레트 면도기  3,500원",not_food,augmented_korean_nonfood
+"질레트 면도기 1box  3,500원",not_food,augmented_korean_nonfood
+질레트 면도기 (HOT),not_food,augmented_korean_nonfood
+"질레트 면도기 (HOT)  3,500원",not_food,augmented_korean_nonfood
+면도날 4입,not_food,augmented_korean_nonfood
+면도날 4입 ×1,not_food,augmented_korean_nonfood
+"면도날 4입  15,000원",not_food,augmented_korean_nonfood
+"면도날 4입 ×1  15,000원",not_food,augmented_korean_nonfood
+면도날 4입 추가,not_food,augmented_korean_nonfood
+"면도날 4입 추가  15,000원",not_food,augmented_korean_nonfood
+좋은느낌 생리대 중형,not_food,augmented_korean_nonfood
+좋은느낌 생리대 중형 x2,not_food,augmented_korean_nonfood
+"좋은느낌 생리대 중형  12,000",not_food,augmented_korean_nonfood
+"좋은느낌 생리대 중형 x2  12,000",not_food,augmented_korean_nonfood
+좋은느낌 생리대 중형 [포장],not_food,augmented_korean_nonfood
+"좋은느낌 생리대 중형 [포장]  12,000",not_food,augmented_korean_nonfood
+화이트 생리대 대형,not_food,augmented_korean_nonfood
+화이트 생리대 대형 1개,not_food,augmented_korean_nonfood
+"화이트 생리대 대형  ₩12,000",not_food,augmented_korean_nonfood
+"화이트 생리대 대형 1개  ₩12,000",not_food,augmented_korean_nonfood
+화이트 생리대 대형 (L),not_food,augmented_korean_nonfood
+"화이트 생리대 대형 (L)  ₩12,000",not_food,augmented_korean_nonfood
+핫팩 10입,not_food,augmented_korean_nonfood
+핫팩 10입 1병,not_food,augmented_korean_nonfood
+"핫팩 10입  ₩12,000",not_food,augmented_korean_nonfood
+"핫팩 10입 1병  ₩12,000",not_food,augmented_korean_nonfood
+핫팩 10입 추가,not_food,augmented_korean_nonfood
+"핫팩 10입 추가  ₩12,000",not_food,augmented_korean_nonfood
+붙이는 핫팩,not_food,augmented_korean_nonfood
+붙이는 핫팩 ×1,not_food,augmented_korean_nonfood
+"붙이는 핫팩  ₩12,000",not_food,augmented_korean_nonfood
+"붙이는 핫팩 ×1  ₩12,000",not_food,augmented_korean_nonfood
+붙이는 핫팩 곱빼기,not_food,augmented_korean_nonfood
+"붙이는 핫팩 곱빼기  ₩12,000",not_food,augmented_korean_nonfood
+손난로,not_food,augmented_korean_nonfood
+손난로 x2,not_food,augmented_korean_nonfood
+"손난로  ₩12,000",not_food,augmented_korean_nonfood
+"손난로 x2  ₩12,000",not_food,augmented_korean_nonfood
+손난로 (HOT),not_food,augmented_korean_nonfood
+"손난로 (HOT)  ₩12,000",not_food,augmented_korean_nonfood
+니베아 립밤 4.8g,not_food,augmented_korean_nonfood
+니베아 립밤 4.8g 2인분,not_food,augmented_korean_nonfood
+"니베아 립밤 4.8g  12,000",not_food,augmented_korean_nonfood
+"니베아 립밤 4.8g 2인분  12,000",not_food,augmented_korean_nonfood
+니베아 립밤 4.8g [매장],not_food,augmented_korean_nonfood
+"니베아 립밤 4.8g [매장]  12,000",not_food,augmented_korean_nonfood
+닥터지 선크림 50ml,not_food,augmented_korean_nonfood
+닥터지 선크림 50ml 1병,not_food,augmented_korean_nonfood
+"닥터지 선크림 50ml  3,500원",not_food,augmented_korean_nonfood
+"닥터지 선크림 50ml 1병  3,500원",not_food,augmented_korean_nonfood
+닥터지 선크림 50ml (HOT),not_food,augmented_korean_nonfood
+"닥터지 선크림 50ml (HOT)  3,500원",not_food,augmented_korean_nonfood
+메디힐 마스크팩 10매,not_food,augmented_korean_nonfood
+메디힐 마스크팩 10매 2인분,not_food,augmented_korean_nonfood
+"메디힐 마스크팩 10매  ₩12,000",not_food,augmented_korean_nonfood
+"메디힐 마스크팩 10매 2인분  ₩12,000",not_food,augmented_korean_nonfood
+메디힐 마스크팩 10매 (HOT),not_food,augmented_korean_nonfood
+"메디힐 마스크팩 10매 (HOT)  ₩12,000",not_food,augmented_korean_nonfood
+피지오겔 수분크림 75ml,not_food,augmented_korean_nonfood
+피지오겔 수분크림 75ml 1set,not_food,augmented_korean_nonfood
+"피지오겔 수분크림 75ml  15,000원",not_food,augmented_korean_nonfood
+"피지오겔 수분크림 75ml 1set  15,000원",not_food,augmented_korean_nonfood
+피지오겔 수분크림 75ml [매장],not_food,augmented_korean_nonfood
+"피지오겔 수분크림 75ml [매장]  15,000원",not_food,augmented_korean_nonfood
+화장솜 100매,not_food,augmented_korean_nonfood
+화장솜 100매 *2,not_food,augmented_korean_nonfood
+"화장솜 100매  12,000",not_food,augmented_korean_nonfood
+"화장솜 100매 *2  12,000",not_food,augmented_korean_nonfood
+화장솜 100매 [포장],not_food,augmented_korean_nonfood
+"화장솜 100매 [포장]  12,000",not_food,augmented_korean_nonfood
+면봉 200입,not_food,augmented_korean_nonfood
+면봉 200입 1병,not_food,augmented_korean_nonfood
+"면봉 200입  3,500원",not_food,augmented_korean_nonfood
+"면봉 200입 1병  3,500원",not_food,augmented_korean_nonfood
+면봉 200입 (ICE),not_food,augmented_korean_nonfood
+"면봉 200입 (ICE)  3,500원",not_food,augmented_korean_nonfood
+카밀 핸드크림 100ml,not_food,augmented_korean_nonfood
+카밀 핸드크림 100ml 1개,not_food,augmented_korean_nonfood
+"카밀 핸드크림 100ml  12,000",not_food,augmented_korean_nonfood
+"카밀 핸드크림 100ml 1개  12,000",not_food,augmented_korean_nonfood
+카밀 핸드크림 100ml (ICE),not_food,augmented_korean_nonfood
+"카밀 핸드크림 100ml (ICE)  12,000",not_food,augmented_korean_nonfood
+롬앤 틴트,not_food,augmented_korean_nonfood
+롬앤 틴트 1병,not_food,augmented_korean_nonfood
+"롬앤 틴트  (5,000원)",not_food,augmented_korean_nonfood
+"롬앤 틴트 1병  (5,000원)",not_food,augmented_korean_nonfood
+롬앤 틴트 [포장],not_food,augmented_korean_nonfood
+"롬앤 틴트 [포장]  (5,000원)",not_food,augmented_korean_nonfood
+헤라 쿠션 21호,not_food,augmented_korean_nonfood
+헤라 쿠션 21호 1잔,not_food,augmented_korean_nonfood
+"헤라 쿠션 21호  12,000",not_food,augmented_korean_nonfood
+"헤라 쿠션 21호 1잔  12,000",not_food,augmented_korean_nonfood
+헤라 쿠션 21호 (ICE),not_food,augmented_korean_nonfood
+"헤라 쿠션 21호 (ICE)  12,000",not_food,augmented_korean_nonfood
+에네루프 건전지 AA 4입,not_food,augmented_korean_nonfood
+에네루프 건전지 AA 4입 2,not_food,augmented_korean_nonfood
+"에네루프 건전지 AA 4입  12,000",not_food,augmented_korean_nonfood
+"에네루프 건전지 AA 4입 2  12,000",not_food,augmented_korean_nonfood
+에네루프 건전지 AA 4입 추가,not_food,augmented_korean_nonfood
+"에네루프 건전지 AA 4입 추가  12,000",not_food,augmented_korean_nonfood
+에네루프 건전지 AAA 4입,not_food,augmented_korean_nonfood
+에네루프 건전지 AAA 4입 2,not_food,augmented_korean_nonfood
+"에네루프 건전지 AAA 4입  ₩4,500",not_food,augmented_korean_nonfood
+"에네루프 건전지 AAA 4입 2  ₩4,500",not_food,augmented_korean_nonfood
+에네루프 건전지 AAA 4입 [포장],not_food,augmented_korean_nonfood
+"에네루프 건전지 AAA 4입 [포장]  ₩4,500",not_food,augmented_korean_nonfood
+듀라셀 건전지 AA 2입,not_food,augmented_korean_nonfood
+듀라셀 건전지 AA 2입 1ea,not_food,augmented_korean_nonfood
+"듀라셀 건전지 AA 2입  ₩4,500",not_food,augmented_korean_nonfood
+"듀라셀 건전지 AA 2입 1ea  ₩4,500",not_food,augmented_korean_nonfood
+듀라셀 건전지 AA 2입 (HOT),not_food,augmented_korean_nonfood
+"듀라셀 건전지 AA 2입 (HOT)  ₩4,500",not_food,augmented_korean_nonfood
+C타입 고속충전기 25W,not_food,augmented_korean_nonfood
+C타입 고속충전기 25W 1잔,not_food,augmented_korean_nonfood
+"C타입 고속충전기 25W  12,000",not_food,augmented_korean_nonfood
+"C타입 고속충전기 25W 1잔  12,000",not_food,augmented_korean_nonfood
+C타입 고속충전기 25W (HOT),not_food,augmented_korean_nonfood
+"C타입 고속충전기 25W (HOT)  12,000",not_food,augmented_korean_nonfood
+아이폰 8핀 케이블 1m,not_food,augmented_korean_nonfood
+아이폰 8핀 케이블 1m *2,not_food,augmented_korean_nonfood
+"아이폰 8핀 케이블 1m  12,000",not_food,augmented_korean_nonfood
+"아이폰 8핀 케이블 1m *2  12,000",not_food,augmented_korean_nonfood
+아이폰 8핀 케이블 1m 추가,not_food,augmented_korean_nonfood
+"아이폰 8핀 케이블 1m 추가  12,000",not_food,augmented_korean_nonfood
+유선 이어폰 3.5mm,not_food,augmented_korean_nonfood
+유선 이어폰 3.5mm x2,not_food,augmented_korean_nonfood
+"유선 이어폰 3.5mm  (5,000원)",not_food,augmented_korean_nonfood
+"유선 이어폰 3.5mm x2  (5,000원)",not_food,augmented_korean_nonfood
+유선 이어폰 3.5mm 추가,not_food,augmented_korean_nonfood
+"유선 이어폰 3.5mm 추가  (5,000원)",not_food,augmented_korean_nonfood
+보조배터리 10000mAh,not_food,augmented_korean_nonfood
+보조배터리 10000mAh 1ea,not_food,augmented_korean_nonfood
+"보조배터리 10000mAh  (5,000원)",not_food,augmented_korean_nonfood
+"보조배터리 10000mAh 1ea  (5,000원)",not_food,augmented_korean_nonfood
+보조배터리 10000mAh (L),not_food,augmented_korean_nonfood
+"보조배터리 10000mAh (L)  (5,000원)",not_food,augmented_korean_nonfood
+트리오 주방세제 750ml,not_food,augmented_korean_nonfood
+트리오 주방세제 750ml 1box,not_food,augmented_korean_nonfood
+"트리오 주방세제 750ml  15,000원",not_food,augmented_korean_nonfood
+"트리오 주방세제 750ml 1box  15,000원",not_food,augmented_korean_nonfood
+트리오 주방세제 750ml (ICE),not_food,augmented_korean_nonfood
+"트리오 주방세제 750ml (ICE)  15,000원",not_food,augmented_korean_nonfood
+피죤 섬유유연제 2L,not_food,augmented_korean_nonfood
+피죤 섬유유연제 2L 2,not_food,augmented_korean_nonfood
+"피죤 섬유유연제 2L  ₩4,500",not_food,augmented_korean_nonfood
+"피죤 섬유유연제 2L 2  ₩4,500",not_food,augmented_korean_nonfood
+피죤 섬유유연제 2L [매장],not_food,augmented_korean_nonfood
+"피죤 섬유유연제 2L [매장]  ₩4,500",not_food,augmented_korean_nonfood
+퐁퐁 1L,not_food,augmented_korean_nonfood
+퐁퐁 1L 2인분,not_food,augmented_korean_nonfood
+"퐁퐁 1L  3,500원",not_food,augmented_korean_nonfood
+"퐁퐁 1L 2인분  3,500원",not_food,augmented_korean_nonfood
+퐁퐁 1L (HOT),not_food,augmented_korean_nonfood
+"퐁퐁 1L (HOT)  3,500원",not_food,augmented_korean_nonfood
+옥시크린 1kg,not_food,augmented_korean_nonfood
+옥시크린 1kg *2,not_food,augmented_korean_nonfood
+"옥시크린 1kg  12,000",not_food,augmented_korean_nonfood
+"옥시크린 1kg *2  12,000",not_food,augmented_korean_nonfood
+옥시크린 1kg (L),not_food,augmented_korean_nonfood
+"옥시크린 1kg (L)  12,000",not_food,augmented_korean_nonfood
+유한락스 2L,not_food,augmented_korean_nonfood
+유한락스 2L x2,not_food,augmented_korean_nonfood
+"유한락스 2L  (5,000원)",not_food,augmented_korean_nonfood
+"유한락스 2L x2  (5,000원)",not_food,augmented_korean_nonfood
+유한락스 2L [매장],not_food,augmented_korean_nonfood
+"유한락스 2L [매장]  (5,000원)",not_food,augmented_korean_nonfood
+수세미 3입,not_food,augmented_korean_nonfood
+수세미 3입 1잔,not_food,augmented_korean_nonfood
+"수세미 3입  ₩12,000",not_food,augmented_korean_nonfood
+"수세미 3입 1잔  ₩12,000",not_food,augmented_korean_nonfood
+수세미 3입 곱빼기,not_food,augmented_korean_nonfood
+"수세미 3입 곱빼기  ₩12,000",not_food,augmented_korean_nonfood
+고무장갑 M size,not_food,augmented_korean_nonfood
+고무장갑 M size 1ea,not_food,augmented_korean_nonfood
+"고무장갑 M size  (5,000원)",not_food,augmented_korean_nonfood
+"고무장갑 M size 1ea  (5,000원)",not_food,augmented_korean_nonfood
+고무장갑 M size [포장],not_food,augmented_korean_nonfood
+"고무장갑 M size [포장]  (5,000원)",not_food,augmented_korean_nonfood
+위생장갑 100매,not_food,augmented_korean_nonfood
+위생장갑 100매 *2,not_food,augmented_korean_nonfood
+"위생장갑 100매  15,000원",not_food,augmented_korean_nonfood
+"위생장갑 100매 *2  15,000원",not_food,augmented_korean_nonfood
+위생장갑 100매 추가,not_food,augmented_korean_nonfood
+"위생장갑 100매 추가  15,000원",not_food,augmented_korean_nonfood
+크린랩 30m,not_food,augmented_korean_nonfood
+크린랩 30m 1병,not_food,augmented_korean_nonfood
+"크린랩 30m  12,000",not_food,augmented_korean_nonfood
+"크린랩 30m 1병  12,000",not_food,augmented_korean_nonfood
+크린랩 30m [매장],not_food,augmented_korean_nonfood
+"크린랩 30m [매장]  12,000",not_food,augmented_korean_nonfood
+크린호일 25m,not_food,augmented_korean_nonfood
+크린호일 25m x2,not_food,augmented_korean_nonfood
+"크린호일 25m  (5,000원)",not_food,augmented_korean_nonfood
+"크린호일 25m x2  (5,000원)",not_food,augmented_korean_nonfood
+크린호일 25m (HOT),not_food,augmented_korean_nonfood
+"크린호일 25m (HOT)  (5,000원)",not_food,augmented_korean_nonfood
+장우산 65cm,not_food,augmented_korean_nonfood
+장우산 65cm 1ea,not_food,augmented_korean_nonfood
+"장우산 65cm  3,500원",not_food,augmented_korean_nonfood
+"장우산 65cm 1ea  3,500원",not_food,augmented_korean_nonfood
+장우산 65cm [포장],not_food,augmented_korean_nonfood
+"장우산 65cm [포장]  3,500원",not_food,augmented_korean_nonfood
+접이식우산 3단,not_food,augmented_korean_nonfood
+접이식우산 3단 3개,not_food,augmented_korean_nonfood
+"접이식우산 3단  ₩12,000",not_food,augmented_korean_nonfood
+"접이식우산 3단 3개  ₩12,000",not_food,augmented_korean_nonfood
+접이식우산 3단 (HOT),not_food,augmented_korean_nonfood
+"접이식우산 3단 (HOT)  ₩12,000",not_food,augmented_korean_nonfood
+비닐우산,not_food,augmented_korean_nonfood
+비닐우산 2인분,not_food,augmented_korean_nonfood
+"비닐우산  15,000원",not_food,augmented_korean_nonfood
+"비닐우산 2인분  15,000원",not_food,augmented_korean_nonfood
+비닐우산 [매장],not_food,augmented_korean_nonfood
+"비닐우산 [매장]  15,000원",not_food,augmented_korean_nonfood
+우비 1회용,not_food,augmented_korean_nonfood
+우비 1회용 2,not_food,augmented_korean_nonfood
+"우비 1회용  ₩12,000",not_food,augmented_korean_nonfood
+"우비 1회용 2  ₩12,000",not_food,augmented_korean_nonfood
+우비 1회용 (ICE),not_food,augmented_korean_nonfood
+"우비 1회용 (ICE)  ₩12,000",not_food,augmented_korean_nonfood
+에쎄 체인지 4mg,not_food,augmented_korean_nonfood
+에쎄 체인지 4mg 1ea,not_food,augmented_korean_nonfood
+"에쎄 체인지 4mg  ₩12,000",not_food,augmented_korean_nonfood
+"에쎄 체인지 4mg 1ea  ₩12,000",not_food,augmented_korean_nonfood
+에쎄 체인지 4mg [포장],not_food,augmented_korean_nonfood
+"에쎄 체인지 4mg [포장]  ₩12,000",not_food,augmented_korean_nonfood
+에쎄 수 1mg,not_food,augmented_korean_nonfood
+에쎄 수 1mg x2,not_food,augmented_korean_nonfood
+"에쎄 수 1mg  12,000",not_food,augmented_korean_nonfood
+"에쎄 수 1mg x2  12,000",not_food,augmented_korean_nonfood
+에쎄 수 1mg [포장],not_food,augmented_korean_nonfood
+"에쎄 수 1mg [포장]  12,000",not_food,augmented_korean_nonfood
+보헴시가 6mg,not_food,augmented_korean_nonfood
+보헴시가 6mg 1ea,not_food,augmented_korean_nonfood
+"보헴시가 6mg  12,000",not_food,augmented_korean_nonfood
+"보헴시가 6mg 1ea  12,000",not_food,augmented_korean_nonfood
+보헴시가 6mg [포장],not_food,augmented_korean_nonfood
+"보헴시가 6mg [포장]  12,000",not_food,augmented_korean_nonfood
+던힐 라이트 6mg,not_food,augmented_korean_nonfood
+던힐 라이트 6mg 3개,not_food,augmented_korean_nonfood
+"던힐 라이트 6mg  12,000",not_food,augmented_korean_nonfood
+"던힐 라이트 6mg 3개  12,000",not_food,augmented_korean_nonfood
+던힐 라이트 6mg [매장],not_food,augmented_korean_nonfood
+"던힐 라이트 6mg [매장]  12,000",not_food,augmented_korean_nonfood
+메비우스 sky blue,not_food,augmented_korean_nonfood
+메비우스 sky blue 1잔,not_food,augmented_korean_nonfood
+"메비우스 sky blue  ₩4,500",not_food,augmented_korean_nonfood
+"메비우스 sky blue 1잔  ₩4,500",not_food,augmented_korean_nonfood
+메비우스 sky blue (L),not_food,augmented_korean_nonfood
+"메비우스 sky blue (L)  ₩4,500",not_food,augmented_korean_nonfood
+말보로 레드,not_food,augmented_korean_nonfood
+말보로 레드 x2,not_food,augmented_korean_nonfood
+"말보로 레드  15,000원",not_food,augmented_korean_nonfood
+"말보로 레드 x2  15,000원",not_food,augmented_korean_nonfood
+말보로 레드 [매장],not_food,augmented_korean_nonfood
+"말보로 레드 [매장]  15,000원",not_food,augmented_korean_nonfood
+아이코스 히츠 테리아,not_food,augmented_korean_nonfood
+아이코스 히츠 테리아 ×1,not_food,augmented_korean_nonfood
+"아이코스 히츠 테리아  15,000원",not_food,augmented_korean_nonfood
+"아이코스 히츠 테리아 ×1  15,000원",not_food,augmented_korean_nonfood
+아이코스 히츠 테리아 [매장],not_food,augmented_korean_nonfood
+"아이코스 히츠 테리아 [매장]  15,000원",not_food,augmented_korean_nonfood
+릴 핏 체인지,not_food,augmented_korean_nonfood
+릴 핏 체인지 1병,not_food,augmented_korean_nonfood
+"릴 핏 체인지  ₩12,000",not_food,augmented_korean_nonfood
+"릴 핏 체인지 1병  ₩12,000",not_food,augmented_korean_nonfood
+릴 핏 체인지 [매장],not_food,augmented_korean_nonfood
+"릴 핏 체인지 [매장]  ₩12,000",not_food,augmented_korean_nonfood
+전자담배 카트리지,not_food,augmented_korean_nonfood
+전자담배 카트리지 1병,not_food,augmented_korean_nonfood
+"전자담배 카트리지  15,000원",not_food,augmented_korean_nonfood
+"전자담배 카트리지 1병  15,000원",not_food,augmented_korean_nonfood
+전자담배 카트리지 (L),not_food,augmented_korean_nonfood
+"전자담배 카트리지 (L)  15,000원",not_food,augmented_korean_nonfood
+KF94 마스크 5매,not_food,augmented_korean_nonfood
+KF94 마스크 5매 ×1,not_food,augmented_korean_nonfood
+"KF94 마스크 5매  (5,000원)",not_food,augmented_korean_nonfood
+"KF94 마스크 5매 ×1  (5,000원)",not_food,augmented_korean_nonfood
+KF94 마스크 5매 [포장],not_food,augmented_korean_nonfood
+"KF94 마스크 5매 [포장]  (5,000원)",not_food,augmented_korean_nonfood
+대형마스크 10입,not_food,augmented_korean_nonfood
+대형마스크 10입 1ea,not_food,augmented_korean_nonfood
+"대형마스크 10입  3,500원",not_food,augmented_korean_nonfood
+"대형마스크 10입 1ea  3,500원",not_food,augmented_korean_nonfood
+대형마스크 10입 [포장],not_food,augmented_korean_nonfood
+"대형마스크 10입 [포장]  3,500원",not_food,augmented_korean_nonfood
+대데밴드 20매,not_food,augmented_korean_nonfood
+대데밴드 20매 1box,not_food,augmented_korean_nonfood
+"대데밴드 20매  (5,000원)",not_food,augmented_korean_nonfood
+"대데밴드 20매 1box  (5,000원)",not_food,augmented_korean_nonfood
+대데밴드 20매 곱빼기,not_food,augmented_korean_nonfood
+"대데밴드 20매 곱빼기  (5,000원)",not_food,augmented_korean_nonfood
+후시딘 연고 10g,not_food,augmented_korean_nonfood
+후시딘 연고 10g x2,not_food,augmented_korean_nonfood
+"후시딘 연고 10g  15,000원",not_food,augmented_korean_nonfood
+"후시딘 연고 10g x2  15,000원",not_food,augmented_korean_nonfood
+후시딘 연고 10g [매장],not_food,augmented_korean_nonfood
+"후시딘 연고 10g [매장]  15,000원",not_food,augmented_korean_nonfood
+마데카솔 10g,not_food,augmented_korean_nonfood
+마데카솔 10g x2,not_food,augmented_korean_nonfood
+"마데카솔 10g  ₩12,000",not_food,augmented_korean_nonfood
+"마데카솔 10g x2  ₩12,000",not_food,augmented_korean_nonfood
+마데카솔 10g 곱빼기,not_food,augmented_korean_nonfood
+"마데카솔 10g 곱빼기  ₩12,000",not_food,augmented_korean_nonfood
+신신파스 A 5매,not_food,augmented_korean_nonfood
+신신파스 A 5매 2인분,not_food,augmented_korean_nonfood
+"신신파스 A 5매  (5,000원)",not_food,augmented_korean_nonfood
+"신신파스 A 5매 2인분  (5,000원)",not_food,augmented_korean_nonfood
+신신파스 A 5매 추가,not_food,augmented_korean_nonfood
+"신신파스 A 5매 추가  (5,000원)",not_food,augmented_korean_nonfood
+빨간약 소독약 50ml,not_food,augmented_korean_nonfood
+빨간약 소독약 50ml 1ea,not_food,augmented_korean_nonfood
+"빨간약 소독약 50ml  (5,000원)",not_food,augmented_korean_nonfood
+"빨간약 소독약 50ml 1ea  (5,000원)",not_food,augmented_korean_nonfood
+빨간약 소독약 50ml 추가,not_food,augmented_korean_nonfood
+"빨간약 소독약 50ml 추가  (5,000원)",not_food,augmented_korean_nonfood
+프렌즈 드롭 인공눈물 12ml,not_food,augmented_korean_nonfood
+프렌즈 드롭 인공눈물 12ml 1잔,not_food,augmented_korean_nonfood
+"프렌즈 드롭 인공눈물 12ml  15,000원",not_food,augmented_korean_nonfood
+"프렌즈 드롭 인공눈물 12ml 1잔  15,000원",not_food,augmented_korean_nonfood
+프렌즈 드롭 인공눈물 12ml 곱빼기,not_food,augmented_korean_nonfood
+"프렌즈 드롭 인공눈물 12ml 곱빼기  15,000원",not_food,augmented_korean_nonfood
+모나미 153 볼펜 0.7mm,not_food,augmented_korean_nonfood
+모나미 153 볼펜 0.7mm *2,not_food,augmented_korean_nonfood
+"모나미 153 볼펜 0.7mm  12,000",not_food,augmented_korean_nonfood
+"모나미 153 볼펜 0.7mm *2  12,000",not_food,augmented_korean_nonfood
+모나미 153 볼펜 0.7mm [포장],not_food,augmented_korean_nonfood
+"모나미 153 볼펜 0.7mm [포장]  12,000",not_food,augmented_korean_nonfood
+형광펜 5색세트,not_food,augmented_korean_nonfood
+형광펜 5색세트 1병,not_food,augmented_korean_nonfood
+"형광펜 5색세트  ₩4,500",not_food,augmented_korean_nonfood
+"형광펜 5색세트 1병  ₩4,500",not_food,augmented_korean_nonfood
+형광펜 5색세트 (ICE),not_food,augmented_korean_nonfood
+"형광펜 5색세트 (ICE)  ₩4,500",not_food,augmented_korean_nonfood
+A4 용지 500매,not_food,augmented_korean_nonfood
+A4 용지 500매 ×1,not_food,augmented_korean_nonfood
+"A4 용지 500매  (5,000원)",not_food,augmented_korean_nonfood
+"A4 용지 500매 ×1  (5,000원)",not_food,augmented_korean_nonfood
+A4 용지 500매 (L),not_food,augmented_korean_nonfood
+"A4 용지 500매 (L)  (5,000원)",not_food,augmented_korean_nonfood
+3M 포스트잇 100매,not_food,augmented_korean_nonfood
+3M 포스트잇 100매 1box,not_food,augmented_korean_nonfood
+"3M 포스트잇 100매  (5,000원)",not_food,augmented_korean_nonfood
+"3M 포스트잇 100매 1box  (5,000원)",not_food,augmented_korean_nonfood
+3M 포스트잇 100매 [매장],not_food,augmented_korean_nonfood
+"3M 포스트잇 100매 [매장]  (5,000원)",not_food,augmented_korean_nonfood
+스카치 투명테이프,not_food,augmented_korean_nonfood
+스카치 투명테이프 2,not_food,augmented_korean_nonfood
+"스카치 투명테이프  12,000",not_food,augmented_korean_nonfood
+"스카치 투명테이프 2  12,000",not_food,augmented_korean_nonfood
+스카치 투명테이프 추가,not_food,augmented_korean_nonfood
+"스카치 투명테이프 추가  12,000",not_food,augmented_korean_nonfood
+딱풀 20g,not_food,augmented_korean_nonfood
+딱풀 20g 2인분,not_food,augmented_korean_nonfood
+"딱풀 20g  12,000",not_food,augmented_korean_nonfood
+"딱풀 20g 2인분  12,000",not_food,augmented_korean_nonfood
+딱풀 20g 추가,not_food,augmented_korean_nonfood
+"딱풀 20g 추가  12,000",not_food,augmented_korean_nonfood
+가위 18cm,not_food,augmented_korean_nonfood
+가위 18cm 1개,not_food,augmented_korean_nonfood
+"가위 18cm  (5,000원)",not_food,augmented_korean_nonfood
+"가위 18cm 1개  (5,000원)",not_food,augmented_korean_nonfood
+가위 18cm (HOT),not_food,augmented_korean_nonfood
+"가위 18cm (HOT)  (5,000원)",not_food,augmented_korean_nonfood
+NT 커터칼,not_food,augmented_korean_nonfood
+NT 커터칼 3개,not_food,augmented_korean_nonfood
+"NT 커터칼  ₩12,000",not_food,augmented_korean_nonfood
+"NT 커터칼 3개  ₩12,000",not_food,augmented_korean_nonfood
+NT 커터칼 (L),not_food,augmented_korean_nonfood
+"NT 커터칼 (L)  ₩12,000",not_food,augmented_korean_nonfood
+수정테이프 5mm,not_food,augmented_korean_nonfood
+수정테이프 5mm 1잔,not_food,augmented_korean_nonfood
+"수정테이프 5mm  3,500원",not_food,augmented_korean_nonfood
+"수정테이프 5mm 1잔  3,500원",not_food,augmented_korean_nonfood
+수정테이프 5mm (L),not_food,augmented_korean_nonfood
+"수정테이프 5mm (L)  3,500원",not_food,augmented_korean_nonfood
+합계금액,not_food,augmented_korean_nonfood
+합계금액 3개,not_food,augmented_korean_nonfood
+"합계금액  15,000원",not_food,augmented_korean_nonfood
+"합계금액 3개  15,000원",not_food,augmented_korean_nonfood
+합계금액 추가,not_food,augmented_korean_nonfood
+"합계금액 추가  15,000원",not_food,augmented_korean_nonfood
+총합계금액,not_food,augmented_korean_nonfood
+총합계금액 ×1,not_food,augmented_korean_nonfood
+"총합계금액  ₩4,500",not_food,augmented_korean_nonfood
+"총합계금액 ×1  ₩4,500",not_food,augmented_korean_nonfood
+총합계금액 (ICE),not_food,augmented_korean_nonfood
+"총합계금액 (ICE)  ₩4,500",not_food,augmented_korean_nonfood
+결제금액 1ea,not_food,augmented_korean_nonfood
+"결제금액  (5,000원)",not_food,augmented_korean_nonfood
+"결제금액 1ea  (5,000원)",not_food,augmented_korean_nonfood
+결제금액 (HOT),not_food,augmented_korean_nonfood
+"결제금액 (HOT)  (5,000원)",not_food,augmented_korean_nonfood
+총결제금액,not_food,augmented_korean_nonfood
+총결제금액 2,not_food,augmented_korean_nonfood
+"총결제금액  ₩12,000",not_food,augmented_korean_nonfood
+"총결제금액 2  ₩12,000",not_food,augmented_korean_nonfood
+총결제금액 (ICE),not_food,augmented_korean_nonfood
+"총결제금액 (ICE)  ₩12,000",not_food,augmented_korean_nonfood
+과세물품가액 *2,not_food,augmented_korean_nonfood
+"과세물품가액  ₩12,000",not_food,augmented_korean_nonfood
+"과세물품가액 *2  ₩12,000",not_food,augmented_korean_nonfood
+과세물품가액 (ICE),not_food,augmented_korean_nonfood
+"과세물품가액 (ICE)  ₩12,000",not_food,augmented_korean_nonfood
+면세물품가액 1개,not_food,augmented_korean_nonfood
+"면세물품가액  ₩12,000",not_food,augmented_korean_nonfood
+"면세물품가액 1개  ₩12,000",not_food,augmented_korean_nonfood
+면세물품가액 (L),not_food,augmented_korean_nonfood
+"면세물품가액 (L)  ₩12,000",not_food,augmented_korean_nonfood
+공급가액 x2,not_food,augmented_korean_nonfood
+"공급가액  (5,000원)",not_food,augmented_korean_nonfood
+"공급가액 x2  (5,000원)",not_food,augmented_korean_nonfood
+공급가액 [매장],not_food,augmented_korean_nonfood
+"공급가액 [매장]  (5,000원)",not_food,augmented_korean_nonfood
+부가세(10%),not_food,augmented_korean_nonfood
+부가세(10%) *2,not_food,augmented_korean_nonfood
+"부가세(10%)  3,500원",not_food,augmented_korean_nonfood
+"부가세(10%) *2  3,500원",not_food,augmented_korean_nonfood
+부가세(10%) 곱빼기,not_food,augmented_korean_nonfood
+"부가세(10%) 곱빼기  3,500원",not_food,augmented_korean_nonfood
+부가세액,not_food,augmented_korean_nonfood
+부가세액 2,not_food,augmented_korean_nonfood
+"부가세액  12,000",not_food,augmented_korean_nonfood
+"부가세액 2  12,000",not_food,augmented_korean_nonfood
+부가세액 (L),not_food,augmented_korean_nonfood
+"부가세액 (L)  12,000",not_food,augmented_korean_nonfood
+과세합계,not_food,augmented_korean_nonfood
+과세합계 x2,not_food,augmented_korean_nonfood
+"과세합계  (5,000원)",not_food,augmented_korean_nonfood
+"과세합계 x2  (5,000원)",not_food,augmented_korean_nonfood
+과세합계 (ICE),not_food,augmented_korean_nonfood
+"과세합계 (ICE)  (5,000원)",not_food,augmented_korean_nonfood
+면세합계,not_food,augmented_korean_nonfood
+면세합계 2,not_food,augmented_korean_nonfood
+"면세합계  12,000",not_food,augmented_korean_nonfood
+"면세합계 2  12,000",not_food,augmented_korean_nonfood
+면세합계 (HOT),not_food,augmented_korean_nonfood
+"면세합계 (HOT)  12,000",not_food,augmented_korean_nonfood
+할인금액 3개,not_food,augmented_korean_nonfood
+"할인금액  (5,000원)",not_food,augmented_korean_nonfood
+"할인금액 3개  (5,000원)",not_food,augmented_korean_nonfood
+할인금액 곱빼기,not_food,augmented_korean_nonfood
+"할인금액 곱빼기  (5,000원)",not_food,augmented_korean_nonfood
+쿠폰할인금액,not_food,augmented_korean_nonfood
+쿠폰할인금액 3개,not_food,augmented_korean_nonfood
+"쿠폰할인금액  12,000",not_food,augmented_korean_nonfood
+"쿠폰할인금액 3개  12,000",not_food,augmented_korean_nonfood
+쿠폰할인금액 (ICE),not_food,augmented_korean_nonfood
+"쿠폰할인금액 (ICE)  12,000",not_food,augmented_korean_nonfood
+멤버십할인,not_food,augmented_korean_nonfood
+멤버십할인 3개,not_food,augmented_korean_nonfood
+"멤버십할인  3,500원",not_food,augmented_korean_nonfood
+"멤버십할인 3개  3,500원",not_food,augmented_korean_nonfood
+멤버십할인 (HOT),not_food,augmented_korean_nonfood
+"멤버십할인 (HOT)  3,500원",not_food,augmented_korean_nonfood
+행사할인,not_food,augmented_korean_nonfood
+행사할인 2인분,not_food,augmented_korean_nonfood
+"행사할인  ₩12,000",not_food,augmented_korean_nonfood
+"행사할인 2인분  ₩12,000",not_food,augmented_korean_nonfood
+행사할인 [포장],not_food,augmented_korean_nonfood
+"행사할인 [포장]  ₩12,000",not_food,augmented_korean_nonfood
+포인트적립액,not_food,augmented_korean_nonfood
+포인트적립액 ×1,not_food,augmented_korean_nonfood
+"포인트적립액  3,500원",not_food,augmented_korean_nonfood
+"포인트적립액 ×1  3,500원",not_food,augmented_korean_nonfood
+포인트적립액 (L),not_food,augmented_korean_nonfood
+"포인트적립액 (L)  3,500원",not_food,augmented_korean_nonfood
+사용포인트,not_food,augmented_korean_nonfood
+사용포인트 2인분,not_food,augmented_korean_nonfood
+"사용포인트  ₩12,000",not_food,augmented_korean_nonfood
+"사용포인트 2인분  ₩12,000",not_food,augmented_korean_nonfood
+사용포인트 추가,not_food,augmented_korean_nonfood
+"사용포인트 추가  ₩12,000",not_food,augmented_korean_nonfood
+잔여포인트,not_food,augmented_korean_nonfood
+잔여포인트 x2,not_food,augmented_korean_nonfood
+"잔여포인트  ₩4,500",not_food,augmented_korean_nonfood
+"잔여포인트 x2  ₩4,500",not_food,augmented_korean_nonfood
+잔여포인트 (ICE),not_food,augmented_korean_nonfood
+"잔여포인트 (ICE)  ₩4,500",not_food,augmented_korean_nonfood
+스탬프적립,not_food,augmented_korean_nonfood
+스탬프적립 ×1,not_food,augmented_korean_nonfood
+"스탬프적립  3,500원",not_food,augmented_korean_nonfood
+"스탬프적립 ×1  3,500원",not_food,augmented_korean_nonfood
+스탬프적립 (HOT),not_food,augmented_korean_nonfood
+"스탬프적립 (HOT)  3,500원",not_food,augmented_korean_nonfood
+신용카드 승인,not_food,augmented_korean_nonfood
+신용카드 승인 1ea,not_food,augmented_korean_nonfood
+"신용카드 승인  (5,000원)",not_food,augmented_korean_nonfood
+"신용카드 승인 1ea  (5,000원)",not_food,augmented_korean_nonfood
+신용카드 승인 곱빼기,not_food,augmented_korean_nonfood
+"신용카드 승인 곱빼기  (5,000원)",not_food,augmented_korean_nonfood
+체크카드 승인,not_food,augmented_korean_nonfood
+체크카드 승인 1box,not_food,augmented_korean_nonfood
+"체크카드 승인  15,000원",not_food,augmented_korean_nonfood
+"체크카드 승인 1box  15,000원",not_food,augmented_korean_nonfood
+체크카드 승인 (HOT),not_food,augmented_korean_nonfood
+"체크카드 승인 (HOT)  15,000원",not_food,augmented_korean_nonfood
+현금결제,not_food,augmented_korean_nonfood
+현금결제 1set,not_food,augmented_korean_nonfood
+"현금결제  (5,000원)",not_food,augmented_korean_nonfood
+"현금결제 1set  (5,000원)",not_food,augmented_korean_nonfood
+현금결제 추가,not_food,augmented_korean_nonfood
+"현금결제 추가  (5,000원)",not_food,augmented_korean_nonfood
+현금영수증(소득공제),not_food,augmented_korean_nonfood
+현금영수증(소득공제) x2,not_food,augmented_korean_nonfood
+"현금영수증(소득공제)  (5,000원)",not_food,augmented_korean_nonfood
+"현금영수증(소득공제) x2  (5,000원)",not_food,augmented_korean_nonfood
+현금영수증(소득공제) 추가,not_food,augmented_korean_nonfood
+"현금영수증(소득공제) 추가  (5,000원)",not_food,augmented_korean_nonfood
+현금영수증(지출증빙),not_food,augmented_korean_nonfood
+현금영수증(지출증빙) 1병,not_food,augmented_korean_nonfood
+"현금영수증(지출증빙)  15,000원",not_food,augmented_korean_nonfood
+"현금영수증(지출증빙) 1병  15,000원",not_food,augmented_korean_nonfood
+현금영수증(지출증빙) [매장],not_food,augmented_korean_nonfood
+"현금영수증(지출증빙) [매장]  15,000원",not_food,augmented_korean_nonfood
+승인번호: 38291048,not_food,augmented_korean_nonfood
+승인번호: 38291048 *2,not_food,augmented_korean_nonfood
+"승인번호: 38291048  (5,000원)",not_food,augmented_korean_nonfood
+"승인번호: 38291048 *2  (5,000원)",not_food,augmented_korean_nonfood
+승인번호: 38291048 추가,not_food,augmented_korean_nonfood
+"승인번호: 38291048 추가  (5,000원)",not_food,augmented_korean_nonfood
+카드번호: 5412-****-****-9821,not_food,augmented_korean_nonfood
+카드번호: 5412-****-****-9821 1잔,not_food,augmented_korean_nonfood
+"카드번호: 5412-****-****-9821  15,000원",not_food,augmented_korean_nonfood
+"카드번호: 5412-****-****-9821 1잔  15,000원",not_food,augmented_korean_nonfood
+카드번호: 5412-****-****-9821 곱빼기,not_food,augmented_korean_nonfood
+"카드번호: 5412-****-****-9821 곱빼기  15,000원",not_food,augmented_korean_nonfood
+할부개월수: 일시불,not_food,augmented_korean_nonfood
+할부개월수: 일시불 2,not_food,augmented_korean_nonfood
+"할부개월수: 일시불  12,000",not_food,augmented_korean_nonfood
+"할부개월수: 일시불 2  12,000",not_food,augmented_korean_nonfood
+할부개월수: 일시불 (HOT),not_food,augmented_korean_nonfood
+"할부개월수: 일시불 (HOT)  12,000",not_food,augmented_korean_nonfood
+매출전표,not_food,augmented_korean_nonfood
+매출전표 1set,not_food,augmented_korean_nonfood
+"매출전표  ₩4,500",not_food,augmented_korean_nonfood
+"매출전표 1set  ₩4,500",not_food,augmented_korean_nonfood
+매출전표 (L),not_food,augmented_korean_nonfood
+"매출전표 (L)  ₩4,500",not_food,augmented_korean_nonfood
+삼성페이 결제,not_food,augmented_korean_nonfood
+삼성페이 결제 1병,not_food,augmented_korean_nonfood
+"삼성페이 결제  ₩4,500",not_food,augmented_korean_nonfood
+"삼성페이 결제 1병  ₩4,500",not_food,augmented_korean_nonfood
+삼성페이 결제 곱빼기,not_food,augmented_korean_nonfood
+"삼성페이 결제 곱빼기  ₩4,500",not_food,augmented_korean_nonfood
+카카오페이 결제,not_food,augmented_korean_nonfood
+카카오페이 결제 *2,not_food,augmented_korean_nonfood
+"카카오페이 결제  15,000원",not_food,augmented_korean_nonfood
+"카카오페이 결제 *2  15,000원",not_food,augmented_korean_nonfood
+카카오페이 결제 (ICE),not_food,augmented_korean_nonfood
+"카카오페이 결제 (ICE)  15,000원",not_food,augmented_korean_nonfood
+네이버페이 결제,not_food,augmented_korean_nonfood
+네이버페이 결제 ×1,not_food,augmented_korean_nonfood
+"네이버페이 결제  3,500원",not_food,augmented_korean_nonfood
+"네이버페이 결제 ×1  3,500원",not_food,augmented_korean_nonfood
+네이버페이 결제 [매장],not_food,augmented_korean_nonfood
+"네이버페이 결제 [매장]  3,500원",not_food,augmented_korean_nonfood
+제로페이 결제,not_food,augmented_korean_nonfood
+제로페이 결제 ×1,not_food,augmented_korean_nonfood
+"제로페이 결제  ₩4,500",not_food,augmented_korean_nonfood
+"제로페이 결제 ×1  ₩4,500",not_food,augmented_korean_nonfood
+제로페이 결제 (HOT),not_food,augmented_korean_nonfood
+"제로페이 결제 (HOT)  ₩4,500",not_food,augmented_korean_nonfood
+페이코 결제,not_food,augmented_korean_nonfood
+페이코 결제 2,not_food,augmented_korean_nonfood
+"페이코 결제  ₩4,500",not_food,augmented_korean_nonfood
+"페이코 결제 2  ₩4,500",not_food,augmented_korean_nonfood
+페이코 결제 (L),not_food,augmented_korean_nonfood
+"페이코 결제 (L)  ₩4,500",not_food,augmented_korean_nonfood
+사업자등록번호: 105-86-12345,not_food,augmented_korean_nonfood
+사업자등록번호: 105-86-12345 1잔,not_food,augmented_korean_nonfood
+"사업자등록번호: 105-86-12345  3,500원",not_food,augmented_korean_nonfood
+"사업자등록번호: 105-86-12345 1잔  3,500원",not_food,augmented_korean_nonfood
+사업자등록번호: 105-86-12345 [포장],not_food,augmented_korean_nonfood
+"사업자등록번호: 105-86-12345 [포장]  3,500원",not_food,augmented_korean_nonfood
+대표자: 홍길동,not_food,augmented_korean_nonfood
+대표자: 홍길동 3개,not_food,augmented_korean_nonfood
+"대표자: 홍길동  ₩12,000",not_food,augmented_korean_nonfood
+"대표자: 홍길동 3개  ₩12,000",not_food,augmented_korean_nonfood
+대표자: 홍길동 추가,not_food,augmented_korean_nonfood
+"대표자: 홍길동 추가  ₩12,000",not_food,augmented_korean_nonfood
+매장명: CU 역삼점,not_food,augmented_korean_nonfood
+매장명: CU 역삼점 x2,not_food,augmented_korean_nonfood
+"매장명: CU 역삼점  ₩4,500",not_food,augmented_korean_nonfood
+"매장명: CU 역삼점 x2  ₩4,500",not_food,augmented_korean_nonfood
+매장명: CU 역삼점 (L),not_food,augmented_korean_nonfood
+"매장명: CU 역삼점 (L)  ₩4,500",not_food,augmented_korean_nonfood
+가맹점번호: 98765432,not_food,augmented_korean_nonfood
+가맹점번호: 98765432 2,not_food,augmented_korean_nonfood
+"가맹점번호: 98765432  (5,000원)",not_food,augmented_korean_nonfood
+"가맹점번호: 98765432 2  (5,000원)",not_food,augmented_korean_nonfood
+가맹점번호: 98765432 추가,not_food,augmented_korean_nonfood
+"가맹점번호: 98765432 추가  (5,000원)",not_food,augmented_korean_nonfood
+TEL: 02-123-4567,not_food,augmented_korean_nonfood
+TEL: 02-123-4567 1개,not_food,augmented_korean_nonfood
+"TEL: 02-123-4567  (5,000원)",not_food,augmented_korean_nonfood
+"TEL: 02-123-4567 1개  (5,000원)",not_food,augmented_korean_nonfood
+TEL: 02-123-4567 [매장],not_food,augmented_korean_nonfood
+"TEL: 02-123-4567 [매장]  (5,000원)",not_food,augmented_korean_nonfood
+FAX: 02-123-4568,not_food,augmented_korean_nonfood
+FAX: 02-123-4568 1box,not_food,augmented_korean_nonfood
+"FAX: 02-123-4568  15,000원",not_food,augmented_korean_nonfood
+"FAX: 02-123-4568 1box  15,000원",not_food,augmented_korean_nonfood
+FAX: 02-123-4568 추가,not_food,augmented_korean_nonfood
+"FAX: 02-123-4568 추가  15,000원",not_food,augmented_korean_nonfood
+주소: 서울시 강남구 테헤란로 123,not_food,augmented_korean_nonfood
+주소: 서울시 강남구 테헤란로 123 x2,not_food,augmented_korean_nonfood
+"주소: 서울시 강남구 테헤란로 123  12,000",not_food,augmented_korean_nonfood
+"주소: 서울시 강남구 테헤란로 123 x2  12,000",not_food,augmented_korean_nonfood
+주소: 서울시 강남구 테헤란로 123 (HOT),not_food,augmented_korean_nonfood
+"주소: 서울시 강남구 테헤란로 123 (HOT)  12,000",not_food,augmented_korean_nonfood
+영업시간: 00:00~24:00,not_food,augmented_korean_nonfood
+영업시간: 00:00~24:00 *2,not_food,augmented_korean_nonfood
+"영업시간: 00:00~24:00  15,000원",not_food,augmented_korean_nonfood
+"영업시간: 00:00~24:00 *2  15,000원",not_food,augmented_korean_nonfood
+영업시간: 00:00~24:00 (HOT),not_food,augmented_korean_nonfood
+"영업시간: 00:00~24:00 (HOT)  15,000원",not_food,augmented_korean_nonfood
+주차안내: 1시간 무료,not_food,augmented_korean_nonfood
+주차안내: 1시간 무료 1개,not_food,augmented_korean_nonfood
+"주차안내: 1시간 무료  ₩4,500",not_food,augmented_korean_nonfood
+"주차안내: 1시간 무료 1개  ₩4,500",not_food,augmented_korean_nonfood
+주차안내: 1시간 무료 추가,not_food,augmented_korean_nonfood
+"주차안내: 1시간 무료 추가  ₩4,500",not_food,augmented_korean_nonfood
+포스번호: POS-01,not_food,augmented_korean_nonfood
+포스번호: POS-01 *2,not_food,augmented_korean_nonfood
+"포스번호: POS-01  3,500원",not_food,augmented_korean_nonfood
+"포스번호: POS-01 *2  3,500원",not_food,augmented_korean_nonfood
+포스번호: POS-01 (HOT),not_food,augmented_korean_nonfood
+"포스번호: POS-01 (HOT)  3,500원",not_food,augmented_korean_nonfood
+영수증번호: 20240917-0012,not_food,augmented_korean_nonfood
+영수증번호: 20240917-0012 x2,not_food,augmented_korean_nonfood
+"영수증번호: 20240917-0012  ₩12,000",not_food,augmented_korean_nonfood
+"영수증번호: 20240917-0012 x2  ₩12,000",not_food,augmented_korean_nonfood
+영수증번호: 20240917-0012 곱빼기,not_food,augmented_korean_nonfood
+"영수증번호: 20240917-0012 곱빼기  ₩12,000",not_food,augmented_korean_nonfood
+[고객용 영수증],not_food,augmented_korean_nonfood
+[고객용 영수증] x2,not_food,augmented_korean_nonfood
+"[고객용 영수증]  3,500원",not_food,augmented_korean_nonfood
+"[고객용 영수증] x2  3,500원",not_food,augmented_korean_nonfood
+[고객용 영수증] [포장],not_food,augmented_korean_nonfood
+"[고객용 영수증] [포장]  3,500원",not_food,augmented_korean_nonfood
+[매출전표],not_food,augmented_korean_nonfood
+[매출전표] ×1,not_food,augmented_korean_nonfood
+"[매출전표]  ₩4,500",not_food,augmented_korean_nonfood
+"[매출전표] ×1  ₩4,500",not_food,augmented_korean_nonfood
+[매출전표] 추가,not_food,augmented_korean_nonfood
+"[매출전표] 추가  ₩4,500",not_food,augmented_korean_nonfood
+재발행 영수증,not_food,augmented_korean_nonfood
+재발행 영수증 1개,not_food,augmented_korean_nonfood
+"재발행 영수증  ₩12,000",not_food,augmented_korean_nonfood
+"재발행 영수증 1개  ₩12,000",not_food,augmented_korean_nonfood
+재발행 영수증 [포장],not_food,augmented_korean_nonfood
+"재발행 영수증 [포장]  ₩12,000",not_food,augmented_korean_nonfood
+주문번호: 142,not_food,augmented_korean_nonfood
+주문번호: 142 1ea,not_food,augmented_korean_nonfood
+"주문번호: 142  ₩12,000",not_food,augmented_korean_nonfood
+"주문번호: 142 1ea  ₩12,000",not_food,augmented_korean_nonfood
+주문번호: 142 [포장],not_food,augmented_korean_nonfood
+"주문번호: 142 [포장]  ₩12,000",not_food,augmented_korean_nonfood
+테이블번호: 12,not_food,augmented_korean_nonfood
+테이블번호: 12 2,not_food,augmented_korean_nonfood
+"테이블번호: 12  (5,000원)",not_food,augmented_korean_nonfood
+"테이블번호: 12 2  (5,000원)",not_food,augmented_korean_nonfood
+테이블번호: 12 [매장],not_food,augmented_korean_nonfood
+"테이블번호: 12 [매장]  (5,000원)",not_food,augmented_korean_nonfood
+대기번호: 45,not_food,augmented_korean_nonfood
+대기번호: 45 3개,not_food,augmented_korean_nonfood
+"대기번호: 45  12,000",not_food,augmented_korean_nonfood
+"대기번호: 45 3개  12,000",not_food,augmented_korean_nonfood
+대기번호: 45 (HOT),not_food,augmented_korean_nonfood
+"대기번호: 45 (HOT)  12,000",not_food,augmented_korean_nonfood
+2024-09-17 12:34:56,not_food,augmented_korean_nonfood
+2024-09-17 12:34:56 1ea,not_food,augmented_korean_nonfood
+"2024-09-17 12:34:56  ₩12,000",not_food,augmented_korean_nonfood
+"2024-09-17 12:34:56 1ea  ₩12,000",not_food,augmented_korean_nonfood
+2024-09-17 12:34:56 추가,not_food,augmented_korean_nonfood
+"2024-09-17 12:34:56 추가  ₩12,000",not_food,augmented_korean_nonfood
+2024/09/17 18:20:10,not_food,augmented_korean_nonfood
+2024/09/17 18:20:10 1개,not_food,augmented_korean_nonfood
+"2024/09/17 18:20:10  3,500원",not_food,augmented_korean_nonfood
+"2024/09/17 18:20:10 1개  3,500원",not_food,augmented_korean_nonfood
+2024/09/17 18:20:10 추가,not_food,augmented_korean_nonfood
+"2024/09/17 18:20:10 추가  3,500원",not_food,augmented_korean_nonfood
+2024.10.05 08:15,not_food,augmented_korean_nonfood
+2024.10.05 08:15 1병,not_food,augmented_korean_nonfood
+"2024.10.05 08:15  (5,000원)",not_food,augmented_korean_nonfood
+"2024.10.05 08:15 1병  (5,000원)",not_food,augmented_korean_nonfood
+2024.10.05 08:15 (ICE),not_food,augmented_korean_nonfood
+"2024.10.05 08:15 (ICE)  (5,000원)",not_food,augmented_korean_nonfood
+발행일자: 2024-09-17,not_food,augmented_korean_nonfood
+발행일자: 2024-09-17 1ea,not_food,augmented_korean_nonfood
+"발행일자: 2024-09-17  3,500원",not_food,augmented_korean_nonfood
+"발행일자: 2024-09-17 1ea  3,500원",not_food,augmented_korean_nonfood
+발행일자: 2024-09-17 곱빼기,not_food,augmented_korean_nonfood
+"발행일자: 2024-09-17 곱빼기  3,500원",not_food,augmented_korean_nonfood
+105-86-54321,not_food,augmented_korean_nonfood
+105-86-54321 3개,not_food,augmented_korean_nonfood
+"105-86-54321  3,500원",not_food,augmented_korean_nonfood
+"105-86-54321 3개  3,500원",not_food,augmented_korean_nonfood
+105-86-54321 추가,not_food,augmented_korean_nonfood
+"105-86-54321 추가  3,500원",not_food,augmented_korean_nonfood
+02-555-1234,not_food,augmented_korean_nonfood
+02-555-1234 ×1,not_food,augmented_korean_nonfood
+"02-555-1234  15,000원",not_food,augmented_korean_nonfood
+"02-555-1234 ×1  15,000원",not_food,augmented_korean_nonfood
+02-555-1234 [매장],not_food,augmented_korean_nonfood
+"02-555-1234 [매장]  15,000원",not_food,augmented_korean_nonfood
+3001-9284-1029,not_food,augmented_korean_nonfood
+3001-9284-1029 3개,not_food,augmented_korean_nonfood
+"3001-9284-1029  ₩12,000",not_food,augmented_korean_nonfood
+"3001-9284-1029 3개  ₩12,000",not_food,augmented_korean_nonfood
+3001-9284-1029 곱빼기,not_food,augmented_korean_nonfood
+"3001-9284-1029 곱빼기  ₩12,000",not_food,augmented_korean_nonfood
+"₩15,000",not_food,augmented_korean_nonfood
+"₩15,000 ×1",not_food,augmented_korean_nonfood
+"₩15,000  3,500원",not_food,augmented_korean_nonfood
+"₩15,000 ×1  3,500원",not_food,augmented_korean_nonfood
+"₩15,000 (ICE)",not_food,augmented_korean_nonfood
+"₩15,000 (ICE)  3,500원",not_food,augmented_korean_nonfood
+",000",not_food,augmented_korean_nonfood
+",000 1set",not_food,augmented_korean_nonfood
+",000  12,000",not_food,augmented_korean_nonfood
+",000 1set  12,000",not_food,augmented_korean_nonfood
+",000 추가",not_food,augmented_korean_nonfood
+",000 추가  12,000",not_food,augmented_korean_nonfood
+"15,000원",not_food,augmented_korean_nonfood
+"15,000원 1box",not_food,augmented_korean_nonfood
+"15,000원  ₩4,500",not_food,augmented_korean_nonfood
+"15,000원 1box  ₩4,500",not_food,augmented_korean_nonfood
+"15,000원 곱빼기",not_food,augmented_korean_nonfood
+"15,000원 곱빼기  ₩4,500",not_food,augmented_korean_nonfood
+"KRW 45,000",not_food,augmented_korean_nonfood
+"KRW 45,000 1병",not_food,augmented_korean_nonfood
+"KRW 45,000  (5,000원)",not_food,augmented_korean_nonfood
+"KRW 45,000 1병  (5,000원)",not_food,augmented_korean_nonfood
+"KRW 45,000 [포장]",not_food,augmented_korean_nonfood
+"KRW 45,000 [포장]  (5,000원)",not_food,augmented_korean_nonfood
+0원,not_food,augmented_korean_nonfood
+0원 1개,not_food,augmented_korean_nonfood
+"0원  ₩12,000",not_food,augmented_korean_nonfood
+"0원 1개  ₩12,000",not_food,augmented_korean_nonfood
+0원 (L),not_food,augmented_korean_nonfood
+"0원 (L)  ₩12,000",not_food,augmented_korean_nonfood
+**** **** 4321,not_food,augmented_korean_nonfood
+**** **** 4321 2,not_food,augmented_korean_nonfood
+"**** **** 4321  15,000원",not_food,augmented_korean_nonfood
+"**** **** 4321 2  15,000원",not_food,augmented_korean_nonfood
+**** **** 4321 [포장],not_food,augmented_korean_nonfood
+"**** **** 4321 [포장]  15,000원",not_food,augmented_korean_nonfood
+교환 및 환불은 7일 이내 영수증 지참 시 가능합니다.,not_food,augmented_korean_nonfood
+교환 및 환불은 7일 이내 영수증 지참 시 가능합니다. 1box,not_food,augmented_korean_nonfood
+"교환 및 환불은 7일 이내 영수증 지참 시 가능합니다.  ₩12,000",not_food,augmented_korean_nonfood
+"교환 및 환불은 7일 이내 영수증 지참 시 가능합니다. 1box  ₩12,000",not_food,augmented_korean_nonfood
+교환 및 환불은 7일 이내 영수증 지참 시 가능합니다. 추가,not_food,augmented_korean_nonfood
+"교환 및 환불은 7일 이내 영수증 지참 시 가능합니다. 추가  ₩12,000",not_food,augmented_korean_nonfood
+감사합니다. 또 방문해주세요.,not_food,augmented_korean_nonfood
+감사합니다. 또 방문해주세요. 1개,not_food,augmented_korean_nonfood
+"감사합니다. 또 방문해주세요.  15,000원",not_food,augmented_korean_nonfood
+"감사합니다. 또 방문해주세요. 1개  15,000원",not_food,augmented_korean_nonfood
+감사합니다. 또 방문해주세요. [포장],not_food,augmented_korean_nonfood
+"감사합니다. 또 방문해주세요. [포장]  15,000원",not_food,augmented_korean_nonfood
+TOTAL,not_food,augmented_korean_nonfood
+TOTAL 1ea,not_food,augmented_korean_nonfood
+"TOTAL  ₩12,000",not_food,augmented_korean_nonfood
+"TOTAL 1ea  ₩12,000",not_food,augmented_korean_nonfood
+TOTAL [매장],not_food,augmented_korean_nonfood
+"TOTAL [매장]  ₩12,000",not_food,augmented_korean_nonfood
+SUBTOTAL,not_food,augmented_korean_nonfood
+SUBTOTAL 1병,not_food,augmented_korean_nonfood
+"SUBTOTAL  (5,000원)",not_food,augmented_korean_nonfood
+"SUBTOTAL 1병  (5,000원)",not_food,augmented_korean_nonfood
+SUBTOTAL [포장],not_food,augmented_korean_nonfood
+"SUBTOTAL [포장]  (5,000원)",not_food,augmented_korean_nonfood
+TAX (10%),not_food,augmented_korean_nonfood
+TAX (10%) x2,not_food,augmented_korean_nonfood
+"TAX (10%)  3,500원",not_food,augmented_korean_nonfood
+"TAX (10%) x2  3,500원",not_food,augmented_korean_nonfood
+TAX (10%) [매장],not_food,augmented_korean_nonfood
+"TAX (10%) [매장]  3,500원",not_food,augmented_korean_nonfood
+VAT INCLUDED,not_food,augmented_korean_nonfood
+VAT INCLUDED 1개,not_food,augmented_korean_nonfood
+"VAT INCLUDED  12,000",not_food,augmented_korean_nonfood
+"VAT INCLUDED 1개  12,000",not_food,augmented_korean_nonfood
+VAT INCLUDED [포장],not_food,augmented_korean_nonfood
+"VAT INCLUDED [포장]  12,000",not_food,augmented_korean_nonfood
+NET AMOUNT,not_food,augmented_korean_nonfood
+NET AMOUNT 1개,not_food,augmented_korean_nonfood
+"NET AMOUNT  (5,000원)",not_food,augmented_korean_nonfood
+"NET AMOUNT 1개  (5,000원)",not_food,augmented_korean_nonfood
+NET AMOUNT 추가,not_food,augmented_korean_nonfood
+"NET AMOUNT 추가  (5,000원)",not_food,augmented_korean_nonfood
+AMOUNT DUE,not_food,augmented_korean_nonfood
+AMOUNT DUE 2,not_food,augmented_korean_nonfood
+"AMOUNT DUE  3,500원",not_food,augmented_korean_nonfood
+"AMOUNT DUE 2  3,500원",not_food,augmented_korean_nonfood
+AMOUNT DUE (ICE),not_food,augmented_korean_nonfood
+"AMOUNT DUE (ICE)  3,500원",not_food,augmented_korean_nonfood
+BALANCE DUE,not_food,augmented_korean_nonfood
+BALANCE DUE 1ea,not_food,augmented_korean_nonfood
+"BALANCE DUE  12,000",not_food,augmented_korean_nonfood
+"BALANCE DUE 1ea  12,000",not_food,augmented_korean_nonfood
+BALANCE DUE [포장],not_food,augmented_korean_nonfood
+"BALANCE DUE [포장]  12,000",not_food,augmented_korean_nonfood
+CREDIT CARD,not_food,augmented_korean_nonfood
+CREDIT CARD 1개,not_food,augmented_korean_nonfood
+"CREDIT CARD  (5,000원)",not_food,augmented_korean_nonfood
+"CREDIT CARD 1개  (5,000원)",not_food,augmented_korean_nonfood
+CREDIT CARD (L),not_food,augmented_korean_nonfood
+"CREDIT CARD (L)  (5,000원)",not_food,augmented_korean_nonfood
+CASH,not_food,augmented_korean_nonfood
+CASH 3개,not_food,augmented_korean_nonfood
+"CASH  (5,000원)",not_food,augmented_korean_nonfood
+"CASH 3개  (5,000원)",not_food,augmented_korean_nonfood
+CASH [포장],not_food,augmented_korean_nonfood
+"CASH [포장]  (5,000원)",not_food,augmented_korean_nonfood
+CHANGE,not_food,augmented_korean_nonfood
+CHANGE 2,not_food,augmented_korean_nonfood
+"CHANGE  12,000",not_food,augmented_korean_nonfood
+"CHANGE 2  12,000",not_food,augmented_korean_nonfood
+CHANGE (HOT),not_food,augmented_korean_nonfood
+"CHANGE (HOT)  12,000",not_food,augmented_korean_nonfood
+CASH CHANGE,not_food,augmented_korean_nonfood
+CASH CHANGE 1ea,not_food,augmented_korean_nonfood
+"CASH CHANGE  15,000원",not_food,augmented_korean_nonfood
+"CASH CHANGE 1ea  15,000원",not_food,augmented_korean_nonfood
+CASH CHANGE (HOT),not_food,augmented_korean_nonfood
+"CASH CHANGE (HOT)  15,000원",not_food,augmented_korean_nonfood
+CARD NO,not_food,augmented_korean_nonfood
+CARD NO 1set,not_food,augmented_korean_nonfood
+"CARD NO  15,000원",not_food,augmented_korean_nonfood
+"CARD NO 1set  15,000원",not_food,augmented_korean_nonfood
+CARD NO [매장],not_food,augmented_korean_nonfood
+"CARD NO [매장]  15,000원",not_food,augmented_korean_nonfood
+AUTH NO: 129481,not_food,augmented_korean_nonfood
+AUTH NO: 129481 *2,not_food,augmented_korean_nonfood
+"AUTH NO: 129481  ₩12,000",not_food,augmented_korean_nonfood
+"AUTH NO: 129481 *2  ₩12,000",not_food,augmented_korean_nonfood
+AUTH NO: 129481 곱빼기,not_food,augmented_korean_nonfood
+"AUTH NO: 129481 곱빼기  ₩12,000",not_food,augmented_korean_nonfood
+APPROVAL NO,not_food,augmented_korean_nonfood
+APPROVAL NO 1잔,not_food,augmented_korean_nonfood
+"APPROVAL NO  12,000",not_food,augmented_korean_nonfood
+"APPROVAL NO 1잔  12,000",not_food,augmented_korean_nonfood
+APPROVAL NO 곱빼기,not_food,augmented_korean_nonfood
+"APPROVAL NO 곱빼기  12,000",not_food,augmented_korean_nonfood
+STORE NAME,not_food,augmented_korean_nonfood
+STORE NAME *2,not_food,augmented_korean_nonfood
+"STORE NAME  15,000원",not_food,augmented_korean_nonfood
+"STORE NAME *2  15,000원",not_food,augmented_korean_nonfood
+STORE NAME (HOT),not_food,augmented_korean_nonfood
+"STORE NAME (HOT)  15,000원",not_food,augmented_korean_nonfood
+STORE NO,not_food,augmented_korean_nonfood
+STORE NO 1잔,not_food,augmented_korean_nonfood
+"STORE NO  (5,000원)",not_food,augmented_korean_nonfood
+"STORE NO 1잔  (5,000원)",not_food,augmented_korean_nonfood
+STORE NO (ICE),not_food,augmented_korean_nonfood
+"STORE NO (ICE)  (5,000원)",not_food,augmented_korean_nonfood
+TEL NO,not_food,augmented_korean_nonfood
+TEL NO *2,not_food,augmented_korean_nonfood
+"TEL NO  3,500원",not_food,augmented_korean_nonfood
+"TEL NO *2  3,500원",not_food,augmented_korean_nonfood
+TEL NO (HOT),not_food,augmented_korean_nonfood
+"TEL NO (HOT)  3,500원",not_food,augmented_korean_nonfood
+ADDRESS,not_food,augmented_korean_nonfood
+ADDRESS 3개,not_food,augmented_korean_nonfood
+"ADDRESS  12,000",not_food,augmented_korean_nonfood
+"ADDRESS 3개  12,000",not_food,augmented_korean_nonfood
+ADDRESS 곱빼기,not_food,augmented_korean_nonfood
+"ADDRESS 곱빼기  12,000",not_food,augmented_korean_nonfood
+DATE & TIME,not_food,augmented_korean_nonfood
+DATE & TIME 1set,not_food,augmented_korean_nonfood
+"DATE & TIME  12,000",not_food,augmented_korean_nonfood
+"DATE & TIME 1set  12,000",not_food,augmented_korean_nonfood
+DATE & TIME 추가,not_food,augmented_korean_nonfood
+"DATE & TIME 추가  12,000",not_food,augmented_korean_nonfood
+ORDER NO,not_food,augmented_korean_nonfood
+ORDER NO 1set,not_food,augmented_korean_nonfood
+"ORDER NO  3,500원",not_food,augmented_korean_nonfood
+"ORDER NO 1set  3,500원",not_food,augmented_korean_nonfood
+ORDER NO (HOT),not_food,augmented_korean_nonfood
+"ORDER NO (HOT)  3,500원",not_food,augmented_korean_nonfood
+TABLE NO,not_food,augmented_korean_nonfood
+TABLE NO *2,not_food,augmented_korean_nonfood
+"TABLE NO  ₩12,000",not_food,augmented_korean_nonfood
+"TABLE NO *2  ₩12,000",not_food,augmented_korean_nonfood
+TABLE NO [포장],not_food,augmented_korean_nonfood
+"TABLE NO [포장]  ₩12,000",not_food,augmented_korean_nonfood
+CASHIER NO,not_food,augmented_korean_nonfood
+CASHIER NO 1box,not_food,augmented_korean_nonfood
+"CASHIER NO  ₩4,500",not_food,augmented_korean_nonfood
+"CASHIER NO 1box  ₩4,500",not_food,augmented_korean_nonfood
+CASHIER NO (L),not_food,augmented_korean_nonfood
+"CASHIER NO (L)  ₩4,500",not_food,augmented_korean_nonfood
+THANK YOU FOR YOUR VISIT,not_food,augmented_korean_nonfood
+THANK YOU FOR YOUR VISIT ×1,not_food,augmented_korean_nonfood
+"THANK YOU FOR YOUR VISIT  12,000",not_food,augmented_korean_nonfood
+"THANK YOU FOR YOUR VISIT ×1  12,000",not_food,augmented_korean_nonfood
+THANK YOU FOR YOUR VISIT 추가,not_food,augmented_korean_nonfood
+"THANK YOU FOR YOUR VISIT 추가  12,000",not_food,augmented_korean_nonfood
+원할머니 보쌈도시락,food,augmented_korean_food
+원할머니 보쌈도시락 1병,food,augmented_korean_food
+"원할머니 보쌈도시락  12,000",food,augmented_korean_food
+"원할머니 보쌈도시락 1병  12,000",food,augmented_korean_food
+원할머니 보쌈도시락 [포장],food,augmented_korean_food
+"원할머니 보쌈도시락 [포장]  12,000",food,augmented_korean_food
+마늘보쌈 대자,food,augmented_korean_food
+마늘보쌈 대자 2,food,augmented_korean_food
+"마늘보쌈 대자  ₩4,500",food,augmented_korean_food
+"마늘보쌈 대자 2  ₩4,500",food,augmented_korean_food
+마늘보쌈 대자 추가,food,augmented_korean_food
+"마늘보쌈 대자 추가  ₩4,500",food,augmented_korean_food
+굴보쌈 중자,food,augmented_korean_food
+굴보쌈 중자 1set,food,augmented_korean_food
+"굴보쌈 중자  ₩12,000",food,augmented_korean_food
+"굴보쌈 중자 1set  ₩12,000",food,augmented_korean_food
+굴보쌈 중자 [포장],food,augmented_korean_food
+"굴보쌈 중자 [포장]  ₩12,000",food,augmented_korean_food
+불족발 반반세트,food,augmented_korean_food
+불족발 반반세트 1병,food,augmented_korean_food
+"불족발 반반세트  ₩12,000",food,augmented_korean_food
+"불족발 반반세트 1병  ₩12,000",food,augmented_korean_food
+불족발 반반세트 (L),food,augmented_korean_food
+"불족발 반반세트 (L)  ₩12,000",food,augmented_korean_food
+족발 쟁반국수 세트,food,augmented_korean_food
+족발 쟁반국수 세트 1병,food,augmented_korean_food
+"족발 쟁반국수 세트  ₩12,000",food,augmented_korean_food
+"족발 쟁반국수 세트 1병  ₩12,000",food,augmented_korean_food
+족발 쟁반국수 세트 (HOT),food,augmented_korean_food
+"족발 쟁반국수 세트 (HOT)  ₩12,000",food,augmented_korean_food
+양념족발 대,food,augmented_korean_food
+양념족발 대 1개,food,augmented_korean_food
+"양념족발 대  12,000",food,augmented_korean_food
+"양념족발 대 1개  12,000",food,augmented_korean_food
+양념족발 대 (ICE),food,augmented_korean_food
+"양념족발 대 (ICE)  12,000",food,augmented_korean_food
+야채곱창 2인분,food,augmented_korean_food
+야채곱창 2인분 2,food,augmented_korean_food
+"야채곱창 2인분  12,000",food,augmented_korean_food
+"야채곱창 2인분 2  12,000",food,augmented_korean_food
+야채곱창 2인분 (HOT),food,augmented_korean_food
+"야채곱창 2인분 (HOT)  12,000",food,augmented_korean_food
+순대곱창 볶음,food,augmented_korean_food
+순대곱창 볶음 ×1,food,augmented_korean_food
+"순대곱창 볶음  (5,000원)",food,augmented_korean_food
+"순대곱창 볶음 ×1  (5,000원)",food,augmented_korean_food
+순대곱창 볶음 [포장],food,augmented_korean_food
+"순대곱창 볶음 [포장]  (5,000원)",food,augmented_korean_food
+소곱창 구이 200g,food,augmented_korean_food
+소곱창 구이 200g 1잔,food,augmented_korean_food
+"소곱창 구이 200g  3,500원",food,augmented_korean_food
+"소곱창 구이 200g 1잔  3,500원",food,augmented_korean_food
+소곱창 구이 200g 곱빼기,food,augmented_korean_food
+"소곱창 구이 200g 곱빼기  3,500원",food,augmented_korean_food
+소막창 구이,food,augmented_korean_food
+소막창 구이 2,food,augmented_korean_food
+"소막창 구이  3,500원",food,augmented_korean_food
+"소막창 구이 2  3,500원",food,augmented_korean_food
+소막창 구이 (ICE),food,augmented_korean_food
+"소막창 구이 (ICE)  3,500원",food,augmented_korean_food
+양대창 구이,food,augmented_korean_food
+양대창 구이 2,food,augmented_korean_food
+"양대창 구이  (5,000원)",food,augmented_korean_food
+"양대창 구이 2  (5,000원)",food,augmented_korean_food
+양대창 구이 [매장],food,augmented_korean_food
+"양대창 구이 [매장]  (5,000원)",food,augmented_korean_food
+무뼈닭발 볶음,food,augmented_korean_food
+무뼈닭발 볶음 2인분,food,augmented_korean_food
+"무뼈닭발 볶음  ₩4,500",food,augmented_korean_food
+"무뼈닭발 볶음 2인분  ₩4,500",food,augmented_korean_food
+무뼈닭발 볶음 (L),food,augmented_korean_food
+"무뼈닭발 볶음 (L)  ₩4,500",food,augmented_korean_food
+국물닭발 세트,food,augmented_korean_food
+국물닭발 세트 ×1,food,augmented_korean_food
+"국물닭발 세트  ₩12,000",food,augmented_korean_food
+"국물닭발 세트 ×1  ₩12,000",food,augmented_korean_food
+국물닭발 세트 추가,food,augmented_korean_food
+"국물닭발 세트 추가  ₩12,000",food,augmented_korean_food
+오돌뼈 주먹밥세트,food,augmented_korean_food
+오돌뼈 주먹밥세트 1ea,food,augmented_korean_food
+"오돌뼈 주먹밥세트  ₩4,500",food,augmented_korean_food
+"오돌뼈 주먹밥세트 1ea  ₩4,500",food,augmented_korean_food
+오돌뼈 주먹밥세트 (HOT),food,augmented_korean_food
+"오돌뼈 주먹밥세트 (HOT)  ₩4,500",food,augmented_korean_food
+돼지껍데기 2인분,food,augmented_korean_food
+돼지껍데기 2인분 1병,food,augmented_korean_food
+"돼지껍데기 2인분  (5,000원)",food,augmented_korean_food
+"돼지껍데기 2인분 1병  (5,000원)",food,augmented_korean_food
+돼지껍데기 2인분 [매장],food,augmented_korean_food
+"돼지껍데기 2인분 [매장]  (5,000원)",food,augmented_korean_food
+안동찜닭 한마리,food,augmented_korean_food
+안동찜닭 한마리 1ea,food,augmented_korean_food
+"안동찜닭 한마리  3,500원",food,augmented_korean_food
+"안동찜닭 한마리 1ea  3,500원",food,augmented_korean_food
+안동찜닭 한마리 (L),food,augmented_korean_food
+"안동찜닭 한마리 (L)  3,500원",food,augmented_korean_food
+로제찜닭 순살,food,augmented_korean_food
+로제찜닭 순살 1set,food,augmented_korean_food
+"로제찜닭 순살  (5,000원)",food,augmented_korean_food
+"로제찜닭 순살 1set  (5,000원)",food,augmented_korean_food
+로제찜닭 순살 [매장],food,augmented_korean_food
+"로제찜닭 순살 [매장]  (5,000원)",food,augmented_korean_food
+치즈찜닭 중자,food,augmented_korean_food
+치즈찜닭 중자 *2,food,augmented_korean_food
+"치즈찜닭 중자  ₩12,000",food,augmented_korean_food
+"치즈찜닭 중자 *2  ₩12,000",food,augmented_korean_food
+치즈찜닭 중자 [포장],food,augmented_korean_food
+"치즈찜닭 중자 [포장]  ₩12,000",food,augmented_korean_food
+유가네 닭갈비 2인분,food,augmented_korean_food
+유가네 닭갈비 2인분 x2,food,augmented_korean_food
+"유가네 닭갈비 2인분  15,000원",food,augmented_korean_food
+"유가네 닭갈비 2인분 x2  15,000원",food,augmented_korean_food
+유가네 닭갈비 2인분 추가,food,augmented_korean_food
+"유가네 닭갈비 2인분 추가  15,000원",food,augmented_korean_food
+숯불닭갈비 3인분,food,augmented_korean_food
+숯불닭갈비 3인분 1개,food,augmented_korean_food
+"숯불닭갈비 3인분  (5,000원)",food,augmented_korean_food
+"숯불닭갈비 3인분 1개  (5,000원)",food,augmented_korean_food
+숯불닭갈비 3인분 추가,food,augmented_korean_food
+"숯불닭갈비 3인분 추가  (5,000원)",food,augmented_korean_food
+아구찜 중자,food,augmented_korean_food
+아구찜 중자 1set,food,augmented_korean_food
+"아구찜 중자  15,000원",food,augmented_korean_food
+"아구찜 중자 1set  15,000원",food,augmented_korean_food
+아구찜 중자 [포장],food,augmented_korean_food
+"아구찜 중자 [포장]  15,000원",food,augmented_korean_food
+해물찜 대자,food,augmented_korean_food
+해물찜 대자 2인분,food,augmented_korean_food
+"해물찜 대자  ₩4,500",food,augmented_korean_food
+"해물찜 대자 2인분  ₩4,500",food,augmented_korean_food
+해물찜 대자 [포장],food,augmented_korean_food
+"해물찜 대자 [포장]  ₩4,500",food,augmented_korean_food
+꽃게탕 2인,food,augmented_korean_food
+꽃게탕 2인 1set,food,augmented_korean_food
+"꽃게탕 2인  ₩12,000",food,augmented_korean_food
+"꽃게탕 2인 1set  ₩12,000",food,augmented_korean_food
+꽃게탕 2인 [매장],food,augmented_korean_food
+"꽃게탕 2인 [매장]  ₩12,000",food,augmented_korean_food
+해물탕 소자,food,augmented_korean_food
+해물탕 소자 1set,food,augmented_korean_food
+"해물탕 소자  3,500원",food,augmented_korean_food
+"해물탕 소자 1set  3,500원",food,augmented_korean_food
+해물탕 소자 (HOT),food,augmented_korean_food
+"해물탕 소자 (HOT)  3,500원",food,augmented_korean_food
+알탕 정식,food,augmented_korean_food
+알탕 정식 *2,food,augmented_korean_food
+"알탕 정식  3,500원",food,augmented_korean_food
+"알탕 정식 *2  3,500원",food,augmented_korean_food
+알탕 정식 [매장],food,augmented_korean_food
+"알탕 정식 [매장]  3,500원",food,augmented_korean_food
+조개구이 무한리필,food,augmented_korean_food
+조개구이 무한리필 1ea,food,augmented_korean_food
+"조개구이 무한리필  (5,000원)",food,augmented_korean_food
+"조개구이 무한리필 1ea  (5,000원)",food,augmented_korean_food
+조개구이 무한리필 (HOT),food,augmented_korean_food
+"조개구이 무한리필 (HOT)  (5,000원)",food,augmented_korean_food
+산낙지 회,food,augmented_korean_food
+산낙지 회 1ea,food,augmented_korean_food
+"산낙지 회  3,500원",food,augmented_korean_food
+"산낙지 회 1ea  3,500원",food,augmented_korean_food
+산낙지 회 곱빼기,food,augmented_korean_food
+"산낙지 회 곱빼기  3,500원",food,augmented_korean_food
+연포탕,food,augmented_korean_food
+연포탕 1병,food,augmented_korean_food
+"연포탕  (5,000원)",food,augmented_korean_food
+"연포탕 1병  (5,000원)",food,augmented_korean_food
+연포탕 추가,food,augmented_korean_food
+"연포탕 추가  (5,000원)",food,augmented_korean_food
+속초 물회,food,augmented_korean_food
+속초 물회 ×1,food,augmented_korean_food
+"속초 물회  15,000원",food,augmented_korean_food
+"속초 물회 ×1  15,000원",food,augmented_korean_food
+속초 물회 [매장],food,augmented_korean_food
+"속초 물회 [매장]  15,000원",food,augmented_korean_food
+돼지국밥 보통,food,augmented_korean_food
+돼지국밥 보통 2인분,food,augmented_korean_food
+"돼지국밥 보통  12,000",food,augmented_korean_food
+"돼지국밥 보통 2인분  12,000",food,augmented_korean_food
+돼지국밥 보통 곱빼기,food,augmented_korean_food
+"돼지국밥 보통 곱빼기  12,000",food,augmented_korean_food
+순대국밥 특,food,augmented_korean_food
+순대국밥 특 2,food,augmented_korean_food
+"순대국밥 특  ₩4,500",food,augmented_korean_food
+"순대국밥 특 2  ₩4,500",food,augmented_korean_food
+순대국밥 특 (L),food,augmented_korean_food
+"순대국밥 특 (L)  ₩4,500",food,augmented_korean_food
+뼈해장국,food,augmented_korean_food
+뼈해장국 3개,food,augmented_korean_food
+"뼈해장국  15,000원",food,augmented_korean_food
+"뼈해장국 3개  15,000원",food,augmented_korean_food
+뼈해장국 (HOT),food,augmented_korean_food
+"뼈해장국 (HOT)  15,000원",food,augmented_korean_food
+감자탕 소자,food,augmented_korean_food
+감자탕 소자 1ea,food,augmented_korean_food
+"감자탕 소자  3,500원",food,augmented_korean_food
+"감자탕 소자 1ea  3,500원",food,augmented_korean_food
+감자탕 소자 곱빼기,food,augmented_korean_food
+"감자탕 소자 곱빼기  3,500원",food,augmented_korean_food
+콩나물국밥 ×1,food,augmented_korean_food
+"콩나물국밥  12,000",food,augmented_korean_food
+"콩나물국밥 ×1  12,000",food,augmented_korean_food
+콩나물국밥 곱빼기,food,augmented_korean_food
+"콩나물국밥 곱빼기  12,000",food,augmented_korean_food
+소머리국밥,food,augmented_korean_food
+소머리국밥 x2,food,augmented_korean_food
+"소머리국밥  3,500원",food,augmented_korean_food
+"소머리국밥 x2  3,500원",food,augmented_korean_food
+소머리국밥 (L),food,augmented_korean_food
+"소머리국밥 (L)  3,500원",food,augmented_korean_food
+수육국밥,food,augmented_korean_food
+수육국밥 *2,food,augmented_korean_food
+"수육국밥  ₩12,000",food,augmented_korean_food
+"수육국밥 *2  ₩12,000",food,augmented_korean_food
+수육국밥 [매장],food,augmented_korean_food
+"수육국밥 [매장]  ₩12,000",food,augmented_korean_food
+우거지해장국,food,augmented_korean_food
+우거지해장국 1ea,food,augmented_korean_food
+"우거지해장국  ₩12,000",food,augmented_korean_food
+"우거지해장국 1ea  ₩12,000",food,augmented_korean_food
+우거지해장국 (L),food,augmented_korean_food
+"우거지해장국 (L)  ₩12,000",food,augmented_korean_food
+선지해장국,food,augmented_korean_food
+선지해장국 1box,food,augmented_korean_food
+"선지해장국  ₩4,500",food,augmented_korean_food
+"선지해장국 1box  ₩4,500",food,augmented_korean_food
+선지해장국 (HOT),food,augmented_korean_food
+"선지해장국 (HOT)  ₩4,500",food,augmented_korean_food
+내장탕,food,augmented_korean_food
+내장탕 *2,food,augmented_korean_food
+"내장탕  3,500원",food,augmented_korean_food
+"내장탕 *2  3,500원",food,augmented_korean_food
+내장탕 곱빼기,food,augmented_korean_food
+"내장탕 곱빼기  3,500원",food,augmented_korean_food
+갈비탕 정식,food,augmented_korean_food
+갈비탕 정식 ×1,food,augmented_korean_food
+"갈비탕 정식  15,000원",food,augmented_korean_food
+"갈비탕 정식 ×1  15,000원",food,augmented_korean_food
+갈비탕 정식 [포장],food,augmented_korean_food
+"갈비탕 정식 [포장]  15,000원",food,augmented_korean_food
+설렁탕 보통,food,augmented_korean_food
+설렁탕 보통 1개,food,augmented_korean_food
+"설렁탕 보통  15,000원",food,augmented_korean_food
+"설렁탕 보통 1개  15,000원",food,augmented_korean_food
+설렁탕 보통 추가,food,augmented_korean_food
+"설렁탕 보통 추가  15,000원",food,augmented_korean_food
+삼계탕 한그릇,food,augmented_korean_food
+삼계탕 한그릇 2인분,food,augmented_korean_food
+"삼계탕 한그릇  (5,000원)",food,augmented_korean_food
+"삼계탕 한그릇 2인분  (5,000원)",food,augmented_korean_food
+삼계탕 한그릇 곱빼기,food,augmented_korean_food
+"삼계탕 한그릇 곱빼기  (5,000원)",food,augmented_korean_food
+추어탕 x2,food,augmented_korean_food
+"추어탕  (5,000원)",food,augmented_korean_food
+"추어탕 x2  (5,000원)",food,augmented_korean_food
+추어탕 (ICE),food,augmented_korean_food
+"추어탕 (ICE)  (5,000원)",food,augmented_korean_food
+바지락칼국수,food,augmented_korean_food
+바지락칼국수 1개,food,augmented_korean_food
+"바지락칼국수  12,000",food,augmented_korean_food
+"바지락칼국수 1개  12,000",food,augmented_korean_food
+바지락칼국수 추가,food,augmented_korean_food
+"바지락칼국수 추가  12,000",food,augmented_korean_food
+들깨칼국수,food,augmented_korean_food
+들깨칼국수 1box,food,augmented_korean_food
+"들깨칼국수  12,000",food,augmented_korean_food
+"들깨칼국수 1box  12,000",food,augmented_korean_food
+들깨칼국수 곱빼기,food,augmented_korean_food
+"들깨칼국수 곱빼기  12,000",food,augmented_korean_food
+손수제비,food,augmented_korean_food
+손수제비 ×1,food,augmented_korean_food
+"손수제비  12,000",food,augmented_korean_food
+"손수제비 ×1  12,000",food,augmented_korean_food
+손수제비 (L),food,augmented_korean_food
+"손수제비 (L)  12,000",food,augmented_korean_food
+잔치국수 *2,food,augmented_korean_food
+"잔치국수  (5,000원)",food,augmented_korean_food
+"잔치국수 *2  (5,000원)",food,augmented_korean_food
+잔치국수 (HOT),food,augmented_korean_food
+"잔치국수 (HOT)  (5,000원)",food,augmented_korean_food
+비빔국수,food,augmented_korean_food
+비빔국수 1box,food,augmented_korean_food
+"비빔국수  ₩4,500",food,augmented_korean_food
+"비빔국수 1box  ₩4,500",food,augmented_korean_food
+비빔국수 (L),food,augmented_korean_food
+"비빔국수 (L)  ₩4,500",food,augmented_korean_food
+검은콩국수,food,augmented_korean_food
+검은콩국수 1ea,food,augmented_korean_food
+"검은콩국수  15,000원",food,augmented_korean_food
+"검은콩국수 1ea  15,000원",food,augmented_korean_food
+검은콩국수 (ICE),food,augmented_korean_food
+"검은콩국수 (ICE)  15,000원",food,augmented_korean_food
+메밀막국수,food,augmented_korean_food
+메밀막국수 2인분,food,augmented_korean_food
+"메밀막국수  12,000",food,augmented_korean_food
+"메밀막국수 2인분  12,000",food,augmented_korean_food
+메밀막국수 [매장],food,augmented_korean_food
+"메밀막국수 [매장]  12,000",food,augmented_korean_food
+열무비빔국수 ×1,food,augmented_korean_food
+"열무비빔국수  15,000원",food,augmented_korean_food
+"열무비빔국수 ×1  15,000원",food,augmented_korean_food
+열무비빔국수 [포장],food,augmented_korean_food
+"열무비빔국수 [포장]  15,000원",food,augmented_korean_food
+메밀소바 정식,food,augmented_korean_food
+메밀소바 정식 3개,food,augmented_korean_food
+"메밀소바 정식  3,500원",food,augmented_korean_food
+"메밀소바 정식 3개  3,500원",food,augmented_korean_food
+메밀소바 정식 [포장],food,augmented_korean_food
+"메밀소바 정식 [포장]  3,500원",food,augmented_korean_food
+돈코츠라멘,food,augmented_korean_food
+돈코츠라멘 2,food,augmented_korean_food
+"돈코츠라멘  15,000원",food,augmented_korean_food
+"돈코츠라멘 2  15,000원",food,augmented_korean_food
+돈코츠라멘 추가,food,augmented_korean_food
+"돈코츠라멘 추가  15,000원",food,augmented_korean_food
+미소라멘,food,augmented_korean_food
+미소라멘 ×1,food,augmented_korean_food
+"미소라멘  (5,000원)",food,augmented_korean_food
+"미소라멘 ×1  (5,000원)",food,augmented_korean_food
+미소라멘 [포장],food,augmented_korean_food
+"미소라멘 [포장]  (5,000원)",food,augmented_korean_food
+차슈라멘,food,augmented_korean_food
+차슈라멘 1병,food,augmented_korean_food
+"차슈라멘  15,000원",food,augmented_korean_food
+"차슈라멘 1병  15,000원",food,augmented_korean_food
+차슈라멘 (HOT),food,augmented_korean_food
+"차슈라멘 (HOT)  15,000원",food,augmented_korean_food
+신라면 컵,food,augmented_korean_food
+신라면 컵 2,food,augmented_korean_food
+"신라면 컵  12,000",food,augmented_korean_food
+"신라면 컵 2  12,000",food,augmented_korean_food
+신라면 컵 [포장],food,augmented_korean_food
+"신라면 컵 [포장]  12,000",food,augmented_korean_food
+안성탕면 5입,food,augmented_korean_food
+안성탕면 5입 1box,food,augmented_korean_food
+"안성탕면 5입  12,000",food,augmented_korean_food
+"안성탕면 5입 1box  12,000",food,augmented_korean_food
+안성탕면 5입 (ICE),food,augmented_korean_food
+"안성탕면 5입 (ICE)  12,000",food,augmented_korean_food
+너구리 얼큰한맛,food,augmented_korean_food
+너구리 얼큰한맛 2,food,augmented_korean_food
+"너구리 얼큰한맛  3,500원",food,augmented_korean_food
+"너구리 얼큰한맛 2  3,500원",food,augmented_korean_food
+너구리 얼큰한맛 추가,food,augmented_korean_food
+"너구리 얼큰한맛 추가  3,500원",food,augmented_korean_food
+짜파게티 범벅,food,augmented_korean_food
+짜파게티 범벅 ×1,food,augmented_korean_food
+"짜파게티 범벅  12,000",food,augmented_korean_food
+"짜파게티 범벅 ×1  12,000",food,augmented_korean_food
+짜파게티 범벅 추가,food,augmented_korean_food
+"짜파게티 범벅 추가  12,000",food,augmented_korean_food
+불닭볶음면 큰컵,food,augmented_korean_food
+불닭볶음면 큰컵 1box,food,augmented_korean_food
+"불닭볶음면 큰컵  3,500원",food,augmented_korean_food
+"불닭볶음면 큰컵 1box  3,500원",food,augmented_korean_food
+불닭볶음면 큰컵 [포장],food,augmented_korean_food
+"불닭볶음면 큰컵 [포장]  3,500원",food,augmented_korean_food
+로제불닭볶음면,food,augmented_korean_food
+로제불닭볶음면 1ea,food,augmented_korean_food
+"로제불닭볶음면  ₩12,000",food,augmented_korean_food
+"로제불닭볶음면 1ea  ₩12,000",food,augmented_korean_food
+로제불닭볶음면 (ICE),food,augmented_korean_food
+"로제불닭볶음면 (ICE)  ₩12,000",food,augmented_korean_food
+엽기떡볶이 착한맛,food,augmented_korean_food
+엽기떡볶이 착한맛 2,food,augmented_korean_food
+"엽기떡볶이 착한맛  3,500원",food,augmented_korean_food
+"엽기떡볶이 착한맛 2  3,500원",food,augmented_korean_food
+엽기떡볶이 착한맛 (L),food,augmented_korean_food
+"엽기떡볶이 착한맛 (L)  3,500원",food,augmented_korean_food
+로제떡볶이 2인분,food,augmented_korean_food
+로제떡볶이 2인분 1box,food,augmented_korean_food
+"로제떡볶이 2인분  12,000",food,augmented_korean_food
+"로제떡볶이 2인분 1box  12,000",food,augmented_korean_food
+로제떡볶이 2인분 곱빼기,food,augmented_korean_food
+"로제떡볶이 2인분 곱빼기  12,000",food,augmented_korean_food
+분모자 떡볶이,food,augmented_korean_food
+분모자 떡볶이 1병,food,augmented_korean_food
+"분모자 떡볶이  ₩4,500",food,augmented_korean_food
+"분모자 떡볶이 1병  ₩4,500",food,augmented_korean_food
+분모자 떡볶이 (HOT),food,augmented_korean_food
+"분모자 떡볶이 (HOT)  ₩4,500",food,augmented_korean_food
+찰순대 1인분,food,augmented_korean_food
+찰순대 1인분 1set,food,augmented_korean_food
+"찰순대 1인분  3,500원",food,augmented_korean_food
+"찰순대 1인분 1set  3,500원",food,augmented_korean_food
+찰순대 1인분 (HOT),food,augmented_korean_food
+"찰순대 1인분 (HOT)  3,500원",food,augmented_korean_food
+모둠튀김 5종,food,augmented_korean_food
+모둠튀김 5종 1잔,food,augmented_korean_food
+"모둠튀김 5종  12,000",food,augmented_korean_food
+"모둠튀김 5종 1잔  12,000",food,augmented_korean_food
+모둠튀김 5종 (HOT),food,augmented_korean_food
+"모둠튀김 5종 (HOT)  12,000",food,augmented_korean_food
+김말이 3개,food,augmented_korean_food
+김말이 3개 2인분,food,augmented_korean_food
+"김말이 3개  (5,000원)",food,augmented_korean_food
+"김말이 3개 2인분  (5,000원)",food,augmented_korean_food
+김말이 3개 (HOT),food,augmented_korean_food
+"김말이 3개 (HOT)  (5,000원)",food,augmented_korean_food
+오징어튀김 2개,food,augmented_korean_food
+오징어튀김 2개 1set,food,augmented_korean_food
+"오징어튀김 2개  15,000원",food,augmented_korean_food
+"오징어튀김 2개 1set  15,000원",food,augmented_korean_food
+오징어튀김 2개 [포장],food,augmented_korean_food
+"오징어튀김 2개 [포장]  15,000원",food,augmented_korean_food
+어묵꼬치 3개,food,augmented_korean_food
+어묵꼬치 3개 ×1,food,augmented_korean_food
+"어묵꼬치 3개  15,000원",food,augmented_korean_food
+"어묵꼬치 3개 ×1  15,000원",food,augmented_korean_food
+어묵꼬치 3개 추가,food,augmented_korean_food
+"어묵꼬치 3개 추가  15,000원",food,augmented_korean_food
+명랑 핫도그,food,augmented_korean_food
+명랑 핫도그 1잔,food,augmented_korean_food
+"명랑 핫도그  ₩12,000",food,augmented_korean_food
+"명랑 핫도그 1잔  ₩12,000",food,augmented_korean_food
+명랑 핫도그 (HOT),food,augmented_korean_food
+"명랑 핫도그 (HOT)  ₩12,000",food,augmented_korean_food
+소떡소떡 x2,food,augmented_korean_food
+"소떡소떡  15,000원",food,augmented_korean_food
+"소떡소떡 x2  15,000원",food,augmented_korean_food
+소떡소떡 곱빼기,food,augmented_korean_food
+"소떡소떡 곱빼기  15,000원",food,augmented_korean_food
+순살 닭강정 대자,food,augmented_korean_food
+순살 닭강정 대자 1병,food,augmented_korean_food
+"순살 닭강정 대자  12,000",food,augmented_korean_food
+"순살 닭강정 대자 1병  12,000",food,augmented_korean_food
+순살 닭강정 대자 (HOT),food,augmented_korean_food
+"순살 닭강정 대자 (HOT)  12,000",food,augmented_korean_food
+붕어빵 3개,food,augmented_korean_food
+붕어빵 3개 ×1,food,augmented_korean_food
+"붕어빵 3개  ₩4,500",food,augmented_korean_food
+"붕어빵 3개 ×1  ₩4,500",food,augmented_korean_food
+붕어빵 3개 (HOT),food,augmented_korean_food
+"붕어빵 3개 (HOT)  ₩4,500",food,augmented_korean_food
+씨앗호떡,food,augmented_korean_food
+씨앗호떡 1개,food,augmented_korean_food
+"씨앗호떡  ₩12,000",food,augmented_korean_food
+"씨앗호떡 1개  ₩12,000",food,augmented_korean_food
+씨앗호떡 (ICE),food,augmented_korean_food
+"씨앗호떡 (ICE)  ₩12,000",food,augmented_korean_food
+김치찌개 정식,food,augmented_korean_food
+김치찌개 정식 x2,food,augmented_korean_food
+"김치찌개 정식  ₩12,000",food,augmented_korean_food
+"김치찌개 정식 x2  ₩12,000",food,augmented_korean_food
+김치찌개 정식 곱빼기,food,augmented_korean_food
+"김치찌개 정식 곱빼기  ₩12,000",food,augmented_korean_food
+된장찌개백반,food,augmented_korean_food
+된장찌개백반 1set,food,augmented_korean_food
+"된장찌개백반  15,000원",food,augmented_korean_food
+"된장찌개백반 1set  15,000원",food,augmented_korean_food
+된장찌개백반 (HOT),food,augmented_korean_food
+"된장찌개백반 (HOT)  15,000원",food,augmented_korean_food
+부대찌개 2인분,food,augmented_korean_food
+부대찌개 2인분 2인분,food,augmented_korean_food
+"부대찌개 2인분  15,000원",food,augmented_korean_food
+"부대찌개 2인분 2인분  15,000원",food,augmented_korean_food
+부대찌개 2인분 (ICE),food,augmented_korean_food
+"부대찌개 2인분 (ICE)  15,000원",food,augmented_korean_food
+순두부찌개 1병,food,augmented_korean_food
+"순두부찌개  ₩4,500",food,augmented_korean_food
+"순두부찌개 1병  ₩4,500",food,augmented_korean_food
+순두부찌개 (HOT),food,augmented_korean_food
+"순두부찌개 (HOT)  ₩4,500",food,augmented_korean_food
+청국장 정식,food,augmented_korean_food
+청국장 정식 1ea,food,augmented_korean_food
+"청국장 정식  3,500원",food,augmented_korean_food
+"청국장 정식 1ea  3,500원",food,augmented_korean_food
+청국장 정식 [매장],food,augmented_korean_food
+"청국장 정식 [매장]  3,500원",food,augmented_korean_food
+전주 비빔밥,food,augmented_korean_food
+전주 비빔밥 1box,food,augmented_korean_food
+"전주 비빔밥  3,500원",food,augmented_korean_food
+"전주 비빔밥 1box  3,500원",food,augmented_korean_food
+전주 비빔밥 곱빼기,food,augmented_korean_food
+"전주 비빔밥 곱빼기  3,500원",food,augmented_korean_food
+돌솥비빔밥 1ea,food,augmented_korean_food
+"돌솥비빔밥  3,500원",food,augmented_korean_food
+"돌솥비빔밥 1ea  3,500원",food,augmented_korean_food
+돌솥비빔밥 [매장],food,augmented_korean_food
+"돌솥비빔밥 [매장]  3,500원",food,augmented_korean_food
+제육볶음 정식,food,augmented_korean_food
+제육볶음 정식 1개,food,augmented_korean_food
+"제육볶음 정식  15,000원",food,augmented_korean_food
+"제육볶음 정식 1개  15,000원",food,augmented_korean_food
+제육볶음 정식 (HOT),food,augmented_korean_food
+"제육볶음 정식 (HOT)  15,000원",food,augmented_korean_food
+오삼불고기 2인,food,augmented_korean_food
+오삼불고기 2인 2,food,augmented_korean_food
+"오삼불고기 2인  ₩4,500",food,augmented_korean_food
+"오삼불고기 2인 2  ₩4,500",food,augmented_korean_food
+오삼불고기 2인 [포장],food,augmented_korean_food
+"오삼불고기 2인 [포장]  ₩4,500",food,augmented_korean_food
+언양 불고기,food,augmented_korean_food
+언양 불고기 x2,food,augmented_korean_food
+"언양 불고기  (5,000원)",food,augmented_korean_food
+"언양 불고기 x2  (5,000원)",food,augmented_korean_food
+언양 불고기 (L),food,augmented_korean_food
+"언양 불고기 (L)  (5,000원)",food,augmented_korean_food
+한돈 삼겹살 200g,food,augmented_korean_food
+한돈 삼겹살 200g x2,food,augmented_korean_food
+"한돈 삼겹살 200g  ₩4,500",food,augmented_korean_food
+"한돈 삼겹살 200g x2  ₩4,500",food,augmented_korean_food
+한돈 삼겹살 200g (L),food,augmented_korean_food
+"한돈 삼겹살 200g (L)  ₩4,500",food,augmented_korean_food
+돼지목살 200g,food,augmented_korean_food
+돼지목살 200g *2,food,augmented_korean_food
+"돼지목살 200g  3,500원",food,augmented_korean_food
+"돼지목살 200g *2  3,500원",food,augmented_korean_food
+돼지목살 200g (ICE),food,augmented_korean_food
+"돼지목살 200g (ICE)  3,500원",food,augmented_korean_food
+양념 돼지갈비,food,augmented_korean_food
+양념 돼지갈비 3개,food,augmented_korean_food
+"양념 돼지갈비  ₩12,000",food,augmented_korean_food
+"양념 돼지갈비 3개  ₩12,000",food,augmented_korean_food
+양념 돼지갈비 (ICE),food,augmented_korean_food
+"양념 돼지갈비 (ICE)  ₩12,000",food,augmented_korean_food
+소갈비살,food,augmented_korean_food
+소갈비살 1set,food,augmented_korean_food
+"소갈비살  ₩12,000",food,augmented_korean_food
+"소갈비살 1set  ₩12,000",food,augmented_korean_food
+소갈비살 (L),food,augmented_korean_food
+"소갈비살 (L)  ₩12,000",food,augmented_korean_food
+계란말이 추가,food,augmented_korean_food
+계란말이 추가 3개,food,augmented_korean_food
+"계란말이 추가  ₩4,500",food,augmented_korean_food
+"계란말이 추가 3개  ₩4,500",food,augmented_korean_food
+계란말이 추가 (L),food,augmented_korean_food
+"계란말이 추가 (L)  ₩4,500",food,augmented_korean_food
+계란찜 2,food,augmented_korean_food
+"계란찜  3,500원",food,augmented_korean_food
+"계란찜 2  3,500원",food,augmented_korean_food
+계란찜 곱빼기,food,augmented_korean_food
+"계란찜 곱빼기  3,500원",food,augmented_korean_food
+해물파전 2인분,food,augmented_korean_food
+"해물파전  15,000원",food,augmented_korean_food
+"해물파전 2인분  15,000원",food,augmented_korean_food
+해물파전 [포장],food,augmented_korean_food
+"해물파전 [포장]  15,000원",food,augmented_korean_food
+감자전 3개,food,augmented_korean_food
+"감자전  15,000원",food,augmented_korean_food
+"감자전 3개  15,000원",food,augmented_korean_food
+감자전 (L),food,augmented_korean_food
+"감자전 (L)  15,000원",food,augmented_korean_food
+혜자로운 집밥 제육도시락,food,augmented_korean_food
+혜자로운 집밥 제육도시락 2,food,augmented_korean_food
+"혜자로운 집밥 제육도시락  ₩12,000",food,augmented_korean_food
+"혜자로운 집밥 제육도시락 2  ₩12,000",food,augmented_korean_food
+혜자로운 집밥 제육도시락 곱빼기,food,augmented_korean_food
+"혜자로운 집밥 제육도시락 곱빼기  ₩12,000",food,augmented_korean_food
+백종원 매콤불고기도시락,food,augmented_korean_food
+백종원 매콤불고기도시락 2인분,food,augmented_korean_food
+"백종원 매콤불고기도시락  ₩4,500",food,augmented_korean_food
+"백종원 매콤불고기도시락 2인분  ₩4,500",food,augmented_korean_food
+백종원 매콤불고기도시락 (L),food,augmented_korean_food
+"백종원 매콤불고기도시락 (L)  ₩4,500",food,augmented_korean_food
+GS25 김혜자 도시락,food,augmented_korean_food
+GS25 김혜자 도시락 1병,food,augmented_korean_food
+"GS25 김혜자 도시락  3,500원",food,augmented_korean_food
+"GS25 김혜자 도시락 1병  3,500원",food,augmented_korean_food
+GS25 김혜자 도시락 [포장],food,augmented_korean_food
+"GS25 김혜자 도시락 [포장]  3,500원",food,augmented_korean_food
+CU 혜자도시락,food,augmented_korean_food
+CU 혜자도시락 1ea,food,augmented_korean_food
+"CU 혜자도시락  3,500원",food,augmented_korean_food
+"CU 혜자도시락 1ea  3,500원",food,augmented_korean_food
+CU 혜자도시락 [포장],food,augmented_korean_food
+"CU 혜자도시락 [포장]  3,500원",food,augmented_korean_food
+한솥 치킨마요 도시락,food,augmented_korean_food
+한솥 치킨마요 도시락 1set,food,augmented_korean_food
+"한솥 치킨마요 도시락  15,000원",food,augmented_korean_food
+"한솥 치킨마요 도시락 1set  15,000원",food,augmented_korean_food
+한솥 치킨마요 도시락 곱빼기,food,augmented_korean_food
+"한솥 치킨마요 도시락 곱빼기  15,000원",food,augmented_korean_food
+돈까스 도련님 도시락,food,augmented_korean_food
+돈까스 도련님 도시락 1개,food,augmented_korean_food
+"돈까스 도련님 도시락  15,000원",food,augmented_korean_food
+"돈까스 도련님 도시락 1개  15,000원",food,augmented_korean_food
+돈까스 도련님 도시락 곱빼기,food,augmented_korean_food
+"돈까스 도련님 도시락 곱빼기  15,000원",food,augmented_korean_food
+참치마요 삼각김밥,food,augmented_korean_food
+참치마요 삼각김밥 2,food,augmented_korean_food
+"참치마요 삼각김밥  (5,000원)",food,augmented_korean_food
+"참치마요 삼각김밥 2  (5,000원)",food,augmented_korean_food
+참치마요 삼각김밥 곱빼기,food,augmented_korean_food
+"참치마요 삼각김밥 곱빼기  (5,000원)",food,augmented_korean_food
+전주비빔 삼각김밥,food,augmented_korean_food
+전주비빔 삼각김밥 2인분,food,augmented_korean_food
+"전주비빔 삼각김밥  3,500원",food,augmented_korean_food
+"전주비빔 삼각김밥 2인분  3,500원",food,augmented_korean_food
+전주비빔 삼각김밥 [매장],food,augmented_korean_food
+"전주비빔 삼각김밥 [매장]  3,500원",food,augmented_korean_food
+스팸김치 삼각김밥,food,augmented_korean_food
+스팸김치 삼각김밥 x2,food,augmented_korean_food
+"스팸김치 삼각김밥  (5,000원)",food,augmented_korean_food
+"스팸김치 삼각김밥 x2  (5,000원)",food,augmented_korean_food
+스팸김치 삼각김밥 [포장],food,augmented_korean_food
+"스팸김치 삼각김밥 [포장]  (5,000원)",food,augmented_korean_food
+제육볶음 삼각김밥,food,augmented_korean_food
+제육볶음 삼각김밥 2인분,food,augmented_korean_food
+"제육볶음 삼각김밥  3,500원",food,augmented_korean_food
+"제육볶음 삼각김밥 2인분  3,500원",food,augmented_korean_food
+제육볶음 삼각김밥 [매장],food,augmented_korean_food
+"제육볶음 삼각김밥 [매장]  3,500원",food,augmented_korean_food
+훈제오리 삼각김밥,food,augmented_korean_food
+훈제오리 삼각김밥 ×1,food,augmented_korean_food
+"훈제오리 삼각김밥  15,000원",food,augmented_korean_food
+"훈제오리 삼각김밥 ×1  15,000원",food,augmented_korean_food
+훈제오리 삼각김밥 (L),food,augmented_korean_food
+"훈제오리 삼각김밥 (L)  15,000원",food,augmented_korean_food
+레쓰비 마일드 175ml,food,augmented_korean_food
+레쓰비 마일드 175ml 2인분,food,augmented_korean_food
+"레쓰비 마일드 175ml  (5,000원)",food,augmented_korean_food
+"레쓰비 마일드 175ml 2인분  (5,000원)",food,augmented_korean_food
+레쓰비 마일드 175ml [매장],food,augmented_korean_food
+"레쓰비 마일드 175ml [매장]  (5,000원)",food,augmented_korean_food
+TOP 아메리카노 275ml,food,augmented_korean_food
+TOP 아메리카노 275ml ×1,food,augmented_korean_food
+"TOP 아메리카노 275ml  ₩12,000",food,augmented_korean_food
+"TOP 아메리카노 275ml ×1  ₩12,000",food,augmented_korean_food
+TOP 아메리카노 275ml 추가,food,augmented_korean_food
+"TOP 아메리카노 275ml 추가  ₩12,000",food,augmented_korean_food
+칸타타 프리미엄 라떼,food,augmented_korean_food
+칸타타 프리미엄 라떼 1개,food,augmented_korean_food
+"칸타타 프리미엄 라떼  (5,000원)",food,augmented_korean_food
+"칸타타 프리미엄 라떼 1개  (5,000원)",food,augmented_korean_food
+칸타타 프리미엄 라떼 (ICE),food,augmented_korean_food
+"칸타타 프리미엄 라떼 (ICE)  (5,000원)",food,augmented_korean_food
+빙그레 바나나맛우유,food,augmented_korean_food
+빙그레 바나나맛우유 1병,food,augmented_korean_food
+"빙그레 바나나맛우유  15,000원",food,augmented_korean_food
+"빙그레 바나나맛우유 1병  15,000원",food,augmented_korean_food
+빙그레 바나나맛우유 [포장],food,augmented_korean_food
+"빙그레 바나나맛우유 [포장]  15,000원",food,augmented_korean_food
+서울우유 500ml,food,augmented_korean_food
+서울우유 500ml x2,food,augmented_korean_food
+"서울우유 500ml  12,000",food,augmented_korean_food
+"서울우유 500ml x2  12,000",food,augmented_korean_food
+서울우유 500ml (L),food,augmented_korean_food
+"서울우유 500ml (L)  12,000",food,augmented_korean_food
+매일유업 소화가잘되는우유,food,augmented_korean_food
+매일유업 소화가잘되는우유 1잔,food,augmented_korean_food
+"매일유업 소화가잘되는우유  ₩12,000",food,augmented_korean_food
+"매일유업 소화가잘되는우유 1잔  ₩12,000",food,augmented_korean_food
+매일유업 소화가잘되는우유 곱빼기,food,augmented_korean_food
+"매일유업 소화가잘되는우유 곱빼기  ₩12,000",food,augmented_korean_food
+바카스 D,food,augmented_korean_food
+바카스 D ×1,food,augmented_korean_food
+"바카스 D  ₩12,000",food,augmented_korean_food
+"바카스 D ×1  ₩12,000",food,augmented_korean_food
+바카스 D [포장],food,augmented_korean_food
+"바카스 D [포장]  ₩12,000",food,augmented_korean_food
+비타500 100ml,food,augmented_korean_food
+비타500 100ml 2인분,food,augmented_korean_food
+"비타500 100ml  3,500원",food,augmented_korean_food
+"비타500 100ml 2인분  3,500원",food,augmented_korean_food
+비타500 100ml (ICE),food,augmented_korean_food
+"비타500 100ml (ICE)  3,500원",food,augmented_korean_food
+몬스터에너지 울트라,food,augmented_korean_food
+몬스터에너지 울트라 1잔,food,augmented_korean_food
+"몬스터에너지 울트라  12,000",food,augmented_korean_food
+"몬스터에너지 울트라 1잔  12,000",food,augmented_korean_food
+몬스터에너지 울트라 (L),food,augmented_korean_food
+"몬스터에너지 울트라 (L)  12,000",food,augmented_korean_food
+핫식스 250ml,food,augmented_korean_food
+핫식스 250ml 1잔,food,augmented_korean_food
+"핫식스 250ml  ₩4,500",food,augmented_korean_food
+"핫식스 250ml 1잔  ₩4,500",food,augmented_korean_food
+핫식스 250ml 곱빼기,food,augmented_korean_food
+"핫식스 250ml 곱빼기  ₩4,500",food,augmented_korean_food
+포카리스웨트 500ml,food,augmented_korean_food
+포카리스웨트 500ml x2,food,augmented_korean_food
+"포카리스웨트 500ml  ₩12,000",food,augmented_korean_food
+"포카리스웨트 500ml x2  ₩12,000",food,augmented_korean_food
+포카리스웨트 500ml (L),food,augmented_korean_food
+"포카리스웨트 500ml (L)  ₩12,000",food,augmented_korean_food
+코카콜라 500ml,food,augmented_korean_food
+코카콜라 500ml x2,food,augmented_korean_food
+"코카콜라 500ml  3,500원",food,augmented_korean_food
+"코카콜라 500ml x2  3,500원",food,augmented_korean_food
+코카콜라 500ml [포장],food,augmented_korean_food
+"코카콜라 500ml [포장]  3,500원",food,augmented_korean_food
+칠성사이다 1.5L,food,augmented_korean_food
+칠성사이다 1.5L 1set,food,augmented_korean_food
+"칠성사이다 1.5L  12,000",food,augmented_korean_food
+"칠성사이다 1.5L 1set  12,000",food,augmented_korean_food
+칠성사이다 1.5L 곱빼기,food,augmented_korean_food
+"칠성사이다 1.5L 곱빼기  12,000",food,augmented_korean_food
+삼다수 2L,food,augmented_korean_food
+삼다수 2L 1box,food,augmented_korean_food
+"삼다수 2L  15,000원",food,augmented_korean_food
+"삼다수 2L 1box  15,000원",food,augmented_korean_food
+삼다수 2L (HOT),food,augmented_korean_food
+"삼다수 2L (HOT)  15,000원",food,augmented_korean_food
+옥수수수염차 500ml,food,augmented_korean_food
+옥수수수염차 500ml 1box,food,augmented_korean_food
+"옥수수수염차 500ml  3,500원",food,augmented_korean_food
+"옥수수수염차 500ml 1box  3,500원",food,augmented_korean_food
+옥수수수염차 500ml (L),food,augmented_korean_food
+"옥수수수염차 500ml (L)  3,500원",food,augmented_korean_food
+새우깡 90g,food,augmented_korean_food
+새우깡 90g *2,food,augmented_korean_food
+"새우깡 90g  3,500원",food,augmented_korean_food
+"새우깡 90g *2  3,500원",food,augmented_korean_food
+새우깡 90g (ICE),food,augmented_korean_food
+"새우깡 90g (ICE)  3,500원",food,augmented_korean_food
+포카칩 양파맛,food,augmented_korean_food
+포카칩 양파맛 1개,food,augmented_korean_food
+"포카칩 양파맛  ₩4,500",food,augmented_korean_food
+"포카칩 양파맛 1개  ₩4,500",food,augmented_korean_food
+포카칩 양파맛 추가,food,augmented_korean_food
+"포카칩 양파맛 추가  ₩4,500",food,augmented_korean_food
+허니버터칩 60g,food,augmented_korean_food
+허니버터칩 60g ×1,food,augmented_korean_food
+"허니버터칩 60g  3,500원",food,augmented_korean_food
+"허니버터칩 60g ×1  3,500원",food,augmented_korean_food
+허니버터칩 60g (ICE),food,augmented_korean_food
+"허니버터칩 60g (ICE)  3,500원",food,augmented_korean_food
+꼬북칩 초코츄러스,food,augmented_korean_food
+꼬북칩 초코츄러스 3개,food,augmented_korean_food
+"꼬북칩 초코츄러스  15,000원",food,augmented_korean_food
+"꼬북칩 초코츄러스 3개  15,000원",food,augmented_korean_food
+꼬북칩 초코츄러스 (L),food,augmented_korean_food
+"꼬북칩 초코츄러스 (L)  15,000원",food,augmented_korean_food
+꼬깔콘 고소한맛,food,augmented_korean_food
+꼬깔콘 고소한맛 1병,food,augmented_korean_food
+"꼬깔콘 고소한맛  15,000원",food,augmented_korean_food
+"꼬깔콘 고소한맛 1병  15,000원",food,augmented_korean_food
+꼬깔콘 고소한맛 곱빼기,food,augmented_korean_food
+"꼬깔콘 고소한맛 곱빼기  15,000원",food,augmented_korean_food
+칙촉 6입,food,augmented_korean_food
+칙촉 6입 1개,food,augmented_korean_food
+"칙촉 6입  3,500원",food,augmented_korean_food
+"칙촉 6입 1개  3,500원",food,augmented_korean_food
+칙촉 6입 (ICE),food,augmented_korean_food
+"칙촉 6입 (ICE)  3,500원",food,augmented_korean_food
+오리온 초코파이 12입,food,augmented_korean_food
+오리온 초코파이 12입 *2,food,augmented_korean_food
+"오리온 초코파이 12입  (5,000원)",food,augmented_korean_food
+"오리온 초코파이 12입 *2  (5,000원)",food,augmented_korean_food
+오리온 초코파이 12입 (HOT),food,augmented_korean_food
+"오리온 초코파이 12입 (HOT)  (5,000원)",food,augmented_korean_food
+오예스 360g,food,augmented_korean_food
+오예스 360g *2,food,augmented_korean_food
+"오예스 360g  ₩4,500",food,augmented_korean_food
+"오예스 360g *2  ₩4,500",food,augmented_korean_food
+오예스 360g (L),food,augmented_korean_food
+"오예스 360g (L)  ₩4,500",food,augmented_korean_food
+몽쉘 크림케이크,food,augmented_korean_food
+몽쉘 크림케이크 1box,food,augmented_korean_food
+"몽쉘 크림케이크  ₩4,500",food,augmented_korean_food
+"몽쉘 크림케이크 1box  ₩4,500",food,augmented_korean_food
+몽쉘 크림케이크 추가,food,augmented_korean_food
+"몽쉘 크림케이크 추가  ₩4,500",food,augmented_korean_food
+롯데 빼빼로 아몬드,food,augmented_korean_food
+롯데 빼빼로 아몬드 1box,food,augmented_korean_food
+"롯데 빼빼로 아몬드  12,000",food,augmented_korean_food
+"롯데 빼빼로 아몬드 1box  12,000",food,augmented_korean_food
+롯데 빼빼로 아몬드 곱빼기,food,augmented_korean_food
+"롯데 빼빼로 아몬드 곱빼기  12,000",food,augmented_korean_food
+하리보 젤리 100g,food,augmented_korean_food
+하리보 젤리 100g 2,food,augmented_korean_food
+"하리보 젤리 100g  3,500원",food,augmented_korean_food
+"하리보 젤리 100g 2  3,500원",food,augmented_korean_food
+하리보 젤리 100g (L),food,augmented_korean_food
+"하리보 젤리 100g (L)  3,500원",food,augmented_korean_food
+빙그레 메로나,food,augmented_korean_food
+빙그레 메로나 1병,food,augmented_korean_food
+"빙그레 메로나  12,000",food,augmented_korean_food
+"빙그레 메로나 1병  12,000",food,augmented_korean_food
+빙그레 메로나 추가,food,augmented_korean_food
+"빙그레 메로나 추가  12,000",food,augmented_korean_food
+투게더 아이스크림,food,augmented_korean_food
+투게더 아이스크림 1병,food,augmented_korean_food
+"투게더 아이스크림  ₩4,500",food,augmented_korean_food
+"투게더 아이스크림 1병  ₩4,500",food,augmented_korean_food
+투게더 아이스크림 [매장],food,augmented_korean_food
+"투게더 아이스크림 [매장]  ₩4,500",food,augmented_korean_food
+붕어싸만코,food,augmented_korean_food
+붕어싸만코 2인분,food,augmented_korean_food
+"붕어싸만코  3,500원",food,augmented_korean_food
+"붕어싸만코 2인분  3,500원",food,augmented_korean_food
+붕어싸만코 (HOT),food,augmented_korean_food
+"붕어싸만코 (HOT)  3,500원",food,augmented_korean_food
+월드콘 바닐라,food,augmented_korean_food
+월드콘 바닐라 *2,food,augmented_korean_food
+"월드콘 바닐라  15,000원",food,augmented_korean_food
+"월드콘 바닐라 *2  15,000원",food,augmented_korean_food
+월드콘 바닐라 [포장],food,augmented_korean_food
+"월드콘 바닐라 [포장]  15,000원",food,augmented_korean_food
+홍콩반점 짜장면,food,augmented_korean_food
+홍콩반점 짜장면 1병,food,augmented_korean_food
+"홍콩반점 짜장면  12,000",food,augmented_korean_food
+"홍콩반점 짜장면 1병  12,000",food,augmented_korean_food
+홍콩반점 짜장면 (HOT),food,augmented_korean_food
+"홍콩반점 짜장면 (HOT)  12,000",food,augmented_korean_food
+해물짬뽕,food,augmented_korean_food
+해물짬뽕 2인분,food,augmented_korean_food
+"해물짬뽕  12,000",food,augmented_korean_food
+"해물짬뽕 2인분  12,000",food,augmented_korean_food
+해물짬뽕 [매장],food,augmented_korean_food
+"해물짬뽕 [매장]  12,000",food,augmented_korean_food
+찹쌀탕수육 소자,food,augmented_korean_food
+찹쌀탕수육 소자 1set,food,augmented_korean_food
+"찹쌀탕수육 소자  ₩4,500",food,augmented_korean_food
+"찹쌀탕수육 소자 1set  ₩4,500",food,augmented_korean_food
+찹쌀탕수육 소자 (L),food,augmented_korean_food
+"찹쌀탕수육 소자 (L)  ₩4,500",food,augmented_korean_food
+깐풍기 1set,food,augmented_korean_food
+"깐풍기  ₩4,500",food,augmented_korean_food
+"깐풍기 1set  ₩4,500",food,augmented_korean_food
+깐풍기 (L),food,augmented_korean_food
+"깐풍기 (L)  ₩4,500",food,augmented_korean_food
+유린기 1병,food,augmented_korean_food
+"유린기  12,000",food,augmented_korean_food
+"유린기 1병  12,000",food,augmented_korean_food
+유린기 (ICE),food,augmented_korean_food
+"유린기 (ICE)  12,000",food,augmented_korean_food
+마라탕 100g,food,augmented_korean_food
+마라탕 100g 1개,food,augmented_korean_food
+"마라탕 100g  15,000원",food,augmented_korean_food
+"마라탕 100g 1개  15,000원",food,augmented_korean_food
+마라탕 100g [포장],food,augmented_korean_food
+"마라탕 100g [포장]  15,000원",food,augmented_korean_food
+마라샹궈 2인,food,augmented_korean_food
+마라샹궈 2인 2,food,augmented_korean_food
+"마라샹궈 2인  ₩12,000",food,augmented_korean_food
+"마라샹궈 2인 2  ₩12,000",food,augmented_korean_food
+마라샹궈 2인 곱빼기,food,augmented_korean_food
+"마라샹궈 2인 곱빼기  ₩12,000",food,augmented_korean_food
+꿔바로우 소자,food,augmented_korean_food
+꿔바로우 소자 *2,food,augmented_korean_food
+"꿔바로우 소자  15,000원",food,augmented_korean_food
+"꿔바로우 소자 *2  15,000원",food,augmented_korean_food
+꿔바로우 소자 곱빼기,food,augmented_korean_food
+"꿔바로우 소자 곱빼기  15,000원",food,augmented_korean_food
+양꼬치 10꼬치,food,augmented_korean_food
+양꼬치 10꼬치 1set,food,augmented_korean_food
+"양꼬치 10꼬치  12,000",food,augmented_korean_food
+"양꼬치 10꼬치 1set  12,000",food,augmented_korean_food
+양꼬치 10꼬치 (ICE),food,augmented_korean_food
+"양꼬치 10꼬치 (ICE)  12,000",food,augmented_korean_food
+소롱포 딤섬,food,augmented_korean_food
+소롱포 딤섬 1병,food,augmented_korean_food
+"소롱포 딤섬  (5,000원)",food,augmented_korean_food
+"소롱포 딤섬 1병  (5,000원)",food,augmented_korean_food
+소롱포 딤섬 [포장],food,augmented_korean_food
+"소롱포 딤섬 [포장]  (5,000원)",food,augmented_korean_food
+모듬초밥 12p,food,augmented_korean_food
+모듬초밥 12p 2인분,food,augmented_korean_food
+"모듬초밥 12p  ₩4,500",food,augmented_korean_food
+"모듬초밥 12p 2인분  ₩4,500",food,augmented_korean_food
+모듬초밥 12p (HOT),food,augmented_korean_food
+"모듬초밥 12p (HOT)  ₩4,500",food,augmented_korean_food
+연어초밥 10p,food,augmented_korean_food
+연어초밥 10p ×1,food,augmented_korean_food
+"연어초밥 10p  (5,000원)",food,augmented_korean_food
+"연어초밥 10p ×1  (5,000원)",food,augmented_korean_food
+연어초밥 10p 추가,food,augmented_korean_food
+"연어초밥 10p 추가  (5,000원)",food,augmented_korean_food
+광어초밥 10p,food,augmented_korean_food
+광어초밥 10p 1개,food,augmented_korean_food
+"광어초밥 10p  12,000",food,augmented_korean_food
+"광어초밥 10p 1개  12,000",food,augmented_korean_food
+광어초밥 10p 추가,food,augmented_korean_food
+"광어초밥 10p 추가  12,000",food,augmented_korean_food
+회덮밥 정식,food,augmented_korean_food
+회덮밥 정식 1set,food,augmented_korean_food
+"회덮밥 정식  12,000",food,augmented_korean_food
+"회덮밥 정식 1set  12,000",food,augmented_korean_food
+회덮밥 정식 [포장],food,augmented_korean_food
+"회덮밥 정식 [포장]  12,000",food,augmented_korean_food
+사케동,food,augmented_korean_food
+사케동 ×1,food,augmented_korean_food
+"사케동  ₩12,000",food,augmented_korean_food
+"사케동 ×1  ₩12,000",food,augmented_korean_food
+사케동 [매장],food,augmented_korean_food
+"사케동 [매장]  ₩12,000",food,augmented_korean_food
+가츠동,food,augmented_korean_food
+가츠동 1ea,food,augmented_korean_food
+"가츠동  12,000",food,augmented_korean_food
+"가츠동 1ea  12,000",food,augmented_korean_food
+가츠동 (L),food,augmented_korean_food
+"가츠동 (L)  12,000",food,augmented_korean_food
+규동,food,augmented_korean_food
+규동 ×1,food,augmented_korean_food
+"규동  (5,000원)",food,augmented_korean_food
+"규동 ×1  (5,000원)",food,augmented_korean_food
+규동 [포장],food,augmented_korean_food
+"규동 [포장]  (5,000원)",food,augmented_korean_food
+수제 돈까스,food,augmented_korean_food
+수제 돈까스 1병,food,augmented_korean_food
+"수제 돈까스  3,500원",food,augmented_korean_food
+"수제 돈까스 1병  3,500원",food,augmented_korean_food
+수제 돈까스 [포장],food,augmented_korean_food
+"수제 돈까스 [포장]  3,500원",food,augmented_korean_food
+치즈돈까스 정식,food,augmented_korean_food
+치즈돈까스 정식 1ea,food,augmented_korean_food
+"치즈돈까스 정식  (5,000원)",food,augmented_korean_food
+"치즈돈까스 정식 1ea  (5,000원)",food,augmented_korean_food
+치즈돈까스 정식 (L),food,augmented_korean_food
+"치즈돈까스 정식 (L)  (5,000원)",food,augmented_korean_food
+안심카츠 4p,food,augmented_korean_food
+안심카츠 4p 3개,food,augmented_korean_food
+"안심카츠 4p  12,000",food,augmented_korean_food
+"안심카츠 4p 3개  12,000",food,augmented_korean_food
+안심카츠 4p 곱빼기,food,augmented_korean_food
+"안심카츠 4p 곱빼기  12,000",food,augmented_korean_food
+양지 쌀국수,food,augmented_korean_food
+양지 쌀국수 1box,food,augmented_korean_food
+"양지 쌀국수  15,000원",food,augmented_korean_food
+"양지 쌀국수 1box  15,000원",food,augmented_korean_food
+양지 쌀국수 추가,food,augmented_korean_food
+"양지 쌀국수 추가  15,000원",food,augmented_korean_food
+소고기 분짜,food,augmented_korean_food
+소고기 분짜 2인분,food,augmented_korean_food
+"소고기 분짜  (5,000원)",food,augmented_korean_food
+"소고기 분짜 2인분  (5,000원)",food,augmented_korean_food
+소고기 분짜 [포장],food,augmented_korean_food
+"소고기 분짜 [포장]  (5,000원)",food,augmented_korean_food
+팟타이 공묵,food,augmented_korean_food
+팟타이 공묵 1ea,food,augmented_korean_food
+"팟타이 공묵  ₩4,500",food,augmented_korean_food
+"팟타이 공묵 1ea  ₩4,500",food,augmented_korean_food
+팟타이 공묵 (HOT),food,augmented_korean_food
+"팟타이 공묵 (HOT)  ₩4,500",food,augmented_korean_food
+나시고랭 볶음밥,food,augmented_korean_food
+나시고랭 볶음밥 3개,food,augmented_korean_food
+"나시고랭 볶음밥  12,000",food,augmented_korean_food
+"나시고랭 볶음밥 3개  12,000",food,augmented_korean_food
+나시고랭 볶음밥 (HOT),food,augmented_korean_food
+"나시고랭 볶음밥 (HOT)  12,000",food,augmented_korean_food
+월남쌈 2인세트,food,augmented_korean_food
+월남쌈 2인세트 1개,food,augmented_korean_food
+"월남쌈 2인세트  ₩4,500",food,augmented_korean_food
+"월남쌈 2인세트 1개  ₩4,500",food,augmented_korean_food
+월남쌈 2인세트 추가,food,augmented_korean_food
+"월남쌈 2인세트 추가  ₩4,500",food,augmented_korean_food
+샤브샤브 런치,food,augmented_korean_food
+샤브샤브 런치 1병,food,augmented_korean_food
+"샤브샤브 런치  15,000원",food,augmented_korean_food
+"샤브샤브 런치 1병  15,000원",food,augmented_korean_food
+샤브샤브 런치 (L),food,augmented_korean_food
+"샤브샤브 런치 (L)  15,000원",food,augmented_korean_food
+싸이버거 세트,food,augmented_korean_food
+싸이버거 세트 3개,food,augmented_korean_food
+"싸이버거 세트  (5,000원)",food,augmented_korean_food
+"싸이버거 세트 3개  (5,000원)",food,augmented_korean_food
+싸이버거 세트 [매장],food,augmented_korean_food
+"싸이버거 세트 [매장]  (5,000원)",food,augmented_korean_food
+불고기버거 단품,food,augmented_korean_food
+불고기버거 단품 1set,food,augmented_korean_food
+"불고기버거 단품  3,500원",food,augmented_korean_food
+"불고기버거 단품 1set  3,500원",food,augmented_korean_food
+불고기버거 단품 [매장],food,augmented_korean_food
+"불고기버거 단품 [매장]  3,500원",food,augmented_korean_food
+빅맥 세트,food,augmented_korean_food
+빅맥 세트 2인분,food,augmented_korean_food
+"빅맥 세트  ₩12,000",food,augmented_korean_food
+"빅맥 세트 2인분  ₩12,000",food,augmented_korean_food
+빅맥 세트 [매장],food,augmented_korean_food
+"빅맥 세트 [매장]  ₩12,000",food,augmented_korean_food
+1955버거 세트,food,augmented_korean_food
+1955버거 세트 1set,food,augmented_korean_food
+"1955버거 세트  ₩4,500",food,augmented_korean_food
+"1955버거 세트 1set  ₩4,500",food,augmented_korean_food
+1955버거 세트 곱빼기,food,augmented_korean_food
+"1955버거 세트 곱빼기  ₩4,500",food,augmented_korean_food
+맥도날드 후렌치 후라이,food,augmented_korean_food
+맥도날드 후렌치 후라이 1set,food,augmented_korean_food
+"맥도날드 후렌치 후라이  ₩4,500",food,augmented_korean_food
+"맥도날드 후렌치 후라이 1set  ₩4,500",food,augmented_korean_food
+맥도날드 후렌치 후라이 추가,food,augmented_korean_food
+"맥도날드 후렌치 후라이 추가  ₩4,500",food,augmented_korean_food
+롯데리아 데리버거,food,augmented_korean_food
+롯데리아 데리버거 3개,food,augmented_korean_food
+"롯데리아 데리버거  ₩4,500",food,augmented_korean_food
+"롯데리아 데리버거 3개  ₩4,500",food,augmented_korean_food
+롯데리아 데리버거 (ICE),food,augmented_korean_food
+"롯데리아 데리버거 (ICE)  ₩4,500",food,augmented_korean_food
+버거킹 와퍼 세트,food,augmented_korean_food
+버거킹 와퍼 세트 3개,food,augmented_korean_food
+"버거킹 와퍼 세트  ₩12,000",food,augmented_korean_food
+"버거킹 와퍼 세트 3개  ₩12,000",food,augmented_korean_food
+버거킹 와퍼 세트 [포장],food,augmented_korean_food
+"버거킹 와퍼 세트 [포장]  ₩12,000",food,augmented_korean_food
+KFC 핫크리스피치킨 3조각,food,augmented_korean_food
+KFC 핫크리스피치킨 3조각 ×1,food,augmented_korean_food
+"KFC 핫크리스피치킨 3조각  15,000원",food,augmented_korean_food
+"KFC 핫크리스피치킨 3조각 ×1  15,000원",food,augmented_korean_food
+KFC 핫크리스피치킨 3조각 추가,food,augmented_korean_food
+"KFC 핫크리스피치킨 3조각 추가  15,000원",food,augmented_korean_food
+도미노 포테이토 피자 L,food,augmented_korean_food
+도미노 포테이토 피자 L 1개,food,augmented_korean_food
+"도미노 포테이토 피자 L  15,000원",food,augmented_korean_food
+"도미노 포테이토 피자 L 1개  15,000원",food,augmented_korean_food
+도미노 포테이토 피자 L 곱빼기,food,augmented_korean_food
+"도미노 포테이토 피자 L 곱빼기  15,000원",food,augmented_korean_food
+피자알볼로 단단피자,food,augmented_korean_food
+피자알볼로 단단피자 1개,food,augmented_korean_food
+"피자알볼로 단단피자  ₩4,500",food,augmented_korean_food
+"피자알볼로 단단피자 1개  ₩4,500",food,augmented_korean_food
+피자알볼로 단단피자 (ICE),food,augmented_korean_food
+"피자알볼로 단단피자 (ICE)  ₩4,500",food,augmented_korean_food
+알리오올리오 파스타,food,augmented_korean_food
+알리오올리오 파스타 1병,food,augmented_korean_food
+"알리오올리오 파스타  3,500원",food,augmented_korean_food
+"알리오올리오 파스타 1병  3,500원",food,augmented_korean_food
+알리오올리오 파스타 (HOT),food,augmented_korean_food
+"알리오올리오 파스타 (HOT)  3,500원",food,augmented_korean_food
+까르보나라 파스타,food,augmented_korean_food
+까르보나라 파스타 1개,food,augmented_korean_food
+"까르보나라 파스타  3,500원",food,augmented_korean_food
+"까르보나라 파스타 1개  3,500원",food,augmented_korean_food
+까르보나라 파스타 [포장],food,augmented_korean_food
+"까르보나라 파스타 [포장]  3,500원",food,augmented_korean_food
+안심 스테이크 200g,food,augmented_korean_food
+안심 스테이크 200g 1set,food,augmented_korean_food
+"안심 스테이크 200g  (5,000원)",food,augmented_korean_food
+"안심 스테이크 200g 1set  (5,000원)",food,augmented_korean_food
+안심 스테이크 200g 추가,food,augmented_korean_food
+"안심 스테이크 200g 추가  (5,000원)",food,augmented_korean_food
+스타벅스 아이스 아메리카노 T,food,augmented_korean_food
+스타벅스 아이스 아메리카노 T *2,food,augmented_korean_food
+"스타벅스 아이스 아메리카노 T  ₩4,500",food,augmented_korean_food
+"스타벅스 아이스 아메리카노 T *2  ₩4,500",food,augmented_korean_food
+스타벅스 아이스 아메리카노 T 곱빼기,food,augmented_korean_food
+"스타벅스 아이스 아메리카노 T 곱빼기  ₩4,500",food,augmented_korean_food
+카페라떼 ICE,food,augmented_korean_food
+카페라떼 ICE 2인분,food,augmented_korean_food
+"카페라떼 ICE  12,000",food,augmented_korean_food
+"카페라떼 ICE 2인분  12,000",food,augmented_korean_food
+카페라떼 ICE [포장],food,augmented_korean_food
+"카페라떼 ICE [포장]  12,000",food,augmented_korean_food
+바닐라빈 라떼,food,augmented_korean_food
+바닐라빈 라떼 2,food,augmented_korean_food
+"바닐라빈 라떼  ₩4,500",food,augmented_korean_food
+"바닐라빈 라떼 2  ₩4,500",food,augmented_korean_food
+바닐라빈 라떼 곱빼기,food,augmented_korean_food
+"바닐라빈 라떼 곱빼기  ₩4,500",food,augmented_korean_food
+카푸치노 HOT,food,augmented_korean_food
+카푸치노 HOT 1ea,food,augmented_korean_food
+"카푸치노 HOT  ₩12,000",food,augmented_korean_food
+"카푸치노 HOT 1ea  ₩12,000",food,augmented_korean_food
+카푸치노 HOT (ICE),food,augmented_korean_food
+"카푸치노 HOT (ICE)  ₩12,000",food,augmented_korean_food
+아인슈페너,food,augmented_korean_food
+아인슈페너 1잔,food,augmented_korean_food
+"아인슈페너  3,500원",food,augmented_korean_food
+"아인슈페너 1잔  3,500원",food,augmented_korean_food
+아인슈페너 추가,food,augmented_korean_food
+"아인슈페너 추가  3,500원",food,augmented_korean_food
+공차 타피오카 버블티 L,food,augmented_korean_food
+공차 타피오카 버블티 L 1set,food,augmented_korean_food
+"공차 타피오카 버블티 L  ₩4,500",food,augmented_korean_food
+"공차 타피오카 버블티 L 1set  ₩4,500",food,augmented_korean_food
+공차 타피오카 버블티 L (ICE),food,augmented_korean_food
+"공차 타피오카 버블티 L (ICE)  ₩4,500",food,augmented_korean_food
+자몽 허니 블랙 티,food,augmented_korean_food
+자몽 허니 블랙 티 2인분,food,augmented_korean_food
+"자몽 허니 블랙 티  15,000원",food,augmented_korean_food
+"자몽 허니 블랙 티 2인분  15,000원",food,augmented_korean_food
+자몽 허니 블랙 티 (L),food,augmented_korean_food
+"자몽 허니 블랙 티 (L)  15,000원",food,augmented_korean_food
+딸기 라떼,food,augmented_korean_food
+딸기 라떼 1잔,food,augmented_korean_food
+"딸기 라떼  (5,000원)",food,augmented_korean_food
+"딸기 라떼 1잔  (5,000원)",food,augmented_korean_food
+딸기 라떼 곱빼기,food,augmented_korean_food
+"딸기 라떼 곱빼기  (5,000원)",food,augmented_korean_food
+소금빵 2개,food,augmented_korean_food
+소금빵 2개 2인분,food,augmented_korean_food
+"소금빵 2개  ₩12,000",food,augmented_korean_food
+"소금빵 2개 2인분  ₩12,000",food,augmented_korean_food
+소금빵 2개 (ICE),food,augmented_korean_food
+"소금빵 2개 (ICE)  ₩12,000",food,augmented_korean_food
+대파크림치즈 베이글,food,augmented_korean_food
+대파크림치즈 베이글 3개,food,augmented_korean_food
+"대파크림치즈 베이글  ₩12,000",food,augmented_korean_food
+"대파크림치즈 베이글 3개  ₩12,000",food,augmented_korean_food
+대파크림치즈 베이글 (L),food,augmented_korean_food
+"대파크림치즈 베이글 (L)  ₩12,000",food,augmented_korean_food
+크로플 바닐라아이스크림,food,augmented_korean_food
+크로플 바닐라아이스크림 2,food,augmented_korean_food
+"크로플 바닐라아이스크림  ₩12,000",food,augmented_korean_food
+"크로플 바닐라아이스크림 2  ₩12,000",food,augmented_korean_food
+크로플 바닐라아이스크림 추가,food,augmented_korean_food
+"크로플 바닐라아이스크림 추가  ₩12,000",food,augmented_korean_food
+수제 마카롱 5입,food,augmented_korean_food
+수제 마카롱 5입 3개,food,augmented_korean_food
+"수제 마카롱 5입  15,000원",food,augmented_korean_food
+"수제 마카롱 5입 3개  15,000원",food,augmented_korean_food
+수제 마카롱 5입 (HOT),food,augmented_korean_food
+"수제 마카롱 5입 (HOT)  15,000원",food,augmented_korean_food
+소보로빵,food,augmented_korean_food
+소보로빵 x2,food,augmented_korean_food
+"소보로빵  3,500원",food,augmented_korean_food
+"소보로빵 x2  3,500원",food,augmented_korean_food
+소보로빵 추가,food,augmented_korean_food
+"소보로빵 추가  3,500원",food,augmented_korean_food
+단팥빵,food,augmented_korean_food
+단팥빵 ×1,food,augmented_korean_food
+"단팥빵  12,000",food,augmented_korean_food
+"단팥빵 ×1  12,000",food,augmented_korean_food
+단팥빵 (L),food,augmented_korean_food
+"단팥빵 (L)  12,000",food,augmented_korean_food
+우유식빵 1봉,food,augmented_korean_food
+우유식빵 1봉 2인분,food,augmented_korean_food
+"우유식빵 1봉  ₩4,500",food,augmented_korean_food
+"우유식빵 1봉 2인분  ₩4,500",food,augmented_korean_food
+우유식빵 1봉 (L),food,augmented_korean_food
+"우유식빵 1봉 (L)  ₩4,500",food,augmented_korean_food
+딸기 생크림 케이크 1호,food,augmented_korean_food
+딸기 생크림 케이크 1호 1ea,food,augmented_korean_food
+"딸기 생크림 케이크 1호  12,000",food,augmented_korean_food
+"딸기 생크림 케이크 1호 1ea  12,000",food,augmented_korean_food
+딸기 생크림 케이크 1호 (ICE),food,augmented_korean_food
+"딸기 생크림 케이크 1호 (ICE)  12,000",food,augmented_korean_food
+티라미수 1조각,food,augmented_korean_food
+티라미수 1조각 3개,food,augmented_korean_food
+"티라미수 1조각  (5,000원)",food,augmented_korean_food
+"티라미수 1조각 3개  (5,000원)",food,augmented_korean_food
+티라미수 1조각 추가,food,augmented_korean_food
+"티라미수 1조각 추가  (5,000원)",food,augmented_korean_food

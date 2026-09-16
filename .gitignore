@@ -18,3 +18,25 @@ Thumbs.db
 *.log
 data/*.log
 .streamlit/
+
+# Android build outputs
+android_app/.gradle/
+android_app/build/
+android_app/app/build/
+android_app/local.properties
+*.apk
+*.aab
+
+# ONNX model files (too large for git — export locally or download from Colab)
+android_app/app/src/main/assets/*.onnx
+# Keep vocab.txt and README in git
+!android_app/app/src/main/assets/README.md
+!android_app/app/src/main/assets/*.txt
+
+# Korean model training outputs
+korean_food_model_output/
+*.zip
+
+# ML model binaries (already in models/ subdirs — tracked separately)
+*.bin
+*.safetensors

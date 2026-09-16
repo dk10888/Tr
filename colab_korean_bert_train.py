@@ -404,8 +404,13 @@ torch.onnx.export(
         "logits": {0: "batch"},
     },
     opset_version=14,
-    do_constant_folding=True,
+    do_constant_folding=False,
 )
+
+# Sanitize stored value_info shapes to prevent shape inference conflicts during quantization
+onnx_model = onnx.load(ONNX_PATH)
+onnx_model.graph.ClearField("value_info")
+onnx.save(onnx_model, ONNX_PATH)
 
 size_fp32 = os.path.getsize(ONNX_PATH) / (1024 * 1024)
 print(f"✅ ONNX FP32 Model exported successfully! Size: {size_fp32:.2f} MB")
@@ -418,12 +423,29 @@ print("✅ ONNX model validity check passed.")
 # ─────────────────────────────────────────────────────────────────────
 # %%
 print("\n⚡ Quantizing ONNX model using Dynamic INT8 Quantization...")
-quantize_dynamic(
-    model_input=ONNX_PATH,
-    model_output=ONNX_QUANT,
-    weight_type=QuantType.QInt8,
-    extra_options={"MatMulConstBOnly": True, "EnableSubgraph": True},
-)
+
+try:
+    quantize_dynamic(
+        model_input=ONNX_PATH,
+        model_output=ONNX_QUANT,
+        weight_type=QuantType.QInt8,
+        extra_options={"MatMulConstBOnly": True, "EnableSubgraph": False},
+    )
+except Exception as e:
+    print(f"⚠️ Initial shape inference notice: {e}")
+    print("🔄 Sanitizing graph metadata and retrying quantization...")
+    m = onnx.load(ONNX_PATH)
+    m.graph.ClearField("value_info")
+    onnx.save(m, ONNX_PATH)
+    
+    # Run quantization without strict shape inferrer
+    from onnxruntime.quantization import quantize_dynamic
+    quantize_dynamic(
+        model_input=ONNX_PATH,
+        model_output=ONNX_QUANT,
+        weight_type=QuantType.QInt8,
+        extra_options={"MatMulConstBOnly": True, "EnableSubgraph": False},
+    )
 
 size_quant = os.path.getsize(ONNX_QUANT) / (1024 * 1024)
 compression_ratio = size_fp32 / size_quant

@@ -1,18 +1,23 @@
 """
 ╔══════════════════════════════════════════════════════════════════════╗
-║  Korean Receipt Food Classifier — Colab Training Script              ║
+║  Korean Receipt Food Classifier — Colab Training & Quantization      ║
 ║  Model : monologg/koelectra-small-v3-discriminator (~14M params)     ║
-║  Output: Korean BERT ONNX + quantized for Android ONNX Runtime       ║
+║  Dataset: korean_receipt_dataset_full.csv (37,797 rows)              ║
+║  Output: Korean ELECTRA/BERT ONNX + INT8 Quantized for Android       ║
 ╚══════════════════════════════════════════════════════════════════════╝
 
-HOW TO USE IN COLAB:
-  1. Runtime → Change runtime type → GPU (T4)
-  2. Run all cells top-to-bottom
-  3. Final cell downloads:
-       - korean_food_classifier.onnx        (~55 MB FP32)
-       - korean_food_classifier_quant.onnx  (~14 MB INT8 dynamic)
-       - korean_vocab.txt                   (vocab for Android tokenizer)
-       - korean_special_tokens.json         (special token IDs)
+HOW TO USE IN GOOGLE COLAB:
+  1. Open Google Colab (https://colab.research.google.com)
+  2. Runtime → Change runtime type → T4 GPU
+  3. Upload `korean_receipt_dataset_full.csv` to Google Drive at:
+     MyDrive/receipt_bert/korean_receipt_dataset_full.csv
+  4. Copy & Paste this script into Colab cells or run cell-by-cell
+  5. Outputs generated & saved to Drive / ZIP:
+       - korean_food_classifier_quant.onnx  (~14 MB INT8 quantized model)
+       - korean_food_classifier.onnx        (~55 MB FP32 baseline)
+       - korean_vocab.txt                   (vocab file for Android tokenizer)
+       - korean_special_tokens.json         (tokenizer metadata & label map)
+       - korean_food_android_assets.zip     (bundled zip ready for Android)
 """
 
 # ─────────────────────────────────────────────────────────────────────
@@ -21,205 +26,184 @@ HOW TO USE IN COLAB:
 # %%
 # !pip install -q transformers==4.40.0 datasets==2.19.0 torch==2.2.2 \
 #              onnx==1.16.0 onnxruntime==1.18.0 onnxruntime-tools \
-#              scikit-learn==1.4.2 evaluate==0.4.1 accelerate==0.29.3
+#              scikit-learn==1.4.2 evaluate==0.4.1 accelerate==0.29.3 pandas==2.2.2
 
 # ─────────────────────────────────────────────────────────────────────
-# CELL 2 — Mount Google Drive (to save model)
+# CELL 2 — Mount Google Drive & Environment Setup
 # ─────────────────────────────────────────────────────────────────────
 # %%
-# from google.colab import drive
-# drive.mount('/content/drive')
-# SAVE_DIR = "/content/drive/MyDrive/korean_food_model"
-
-# ─────────────────────────────────────────────────────────────────────
-# CELL 3 — Imports & Config
-# ─────────────────────────────────────────────────────────────────────
-# %%
-import os, json, random, time
+import os, sys, json, random, time, shutil
+import pandas as pd
 import numpy as np
 import torch
 from torch.utils.data import Dataset, DataLoader
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report, accuracy_score
 from transformers import (
     AutoTokenizer,
-    ElectraForSequenceClassification,
+    AutoModelForSequenceClassification,
     get_linear_schedule_with_warmup,
 )
-from sklearn.metrics import classification_report, accuracy_score
 import onnx
 import onnxruntime as ort
+from onnxruntime.quantization import quantize_dynamic, QuantType
 
-# ── Config ────────────────────────────────────────────────────────────
+# Check if running in Google Colab
+IN_COLAB = "google.colab" in sys.modules
+
+if IN_COLAB:
+    from google.colab import drive, files
+    drive.mount('/content/drive')
+    DRIVE_DIR = "/content/drive/MyDrive/receipt_bert"
+    os.makedirs(DRIVE_DIR, exist_ok=True)
+    CSV_PATH = os.path.join(DRIVE_DIR, "korean_receipt_dataset_full.csv")
+    print(f"✅ Drive mounted → {DRIVE_DIR}")
+else:
+    DRIVE_DIR = "."
+    CSV_PATH = "./korean_receipt_dataset_full.csv"
+
+# ─────────────────────────────────────────────────────────────────────
+# CELL 3 — Configuration & Random Seeds
+# ─────────────────────────────────────────────────────────────────────
+# %%
 MODEL_NAME    = "monologg/koelectra-small-v3-discriminator"
-MAX_LEN       = 64       # receipt lines are short
+MAX_LEN       = 64       # Receipt lines are short
 BATCH_SIZE    = 32
-EPOCHS        = 8
-LR            = 2e-5
+EPOCHS        = 5
+LR            = 3e-5
 SEED          = 42
 OUTPUT_DIR    = "./korean_food_model_output"
 ONNX_PATH     = "./korean_food_classifier.onnx"
 ONNX_QUANT    = "./korean_food_classifier_quant.onnx"
 DEVICE        = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-random.seed(SEED); np.random.seed(SEED); torch.manual_seed(SEED)
+def seed_everything(seed=42):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
+
+seed_everything(SEED)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
-print(f"✅ Device: {DEVICE}")
+print(f"✅ Using Device: {DEVICE}")
+if torch.cuda.is_available():
+    print(f"   GPU Name   : {torch.cuda.get_device_name(0)}")
 
 # ─────────────────────────────────────────────────────────────────────
-# CELL 4 — Synthetic Korean Receipt Dataset
-# ─────────────────────────────────────────────────────────────────────
-# %%
-# Label: 1 = food, 0 = not_food
-
-FOOD_KO = [
-    "김치찌개", "된장찌개", "부대찌개", "순두부찌개", "청국장",
-    "비빔밥", "돌솥비빔밥", "볶음밥", "김밥", "주먹밥",
-    "불고기", "삼겹살", "갈비", "갈비찜", "돼지갈비",
-    "냉면", "물냉면", "비빔냉면", "막국수", "잡채",
-    "삼계탕", "설렁탕", "곰탕", "육개장", "감자탕",
-    "떡볶이", "순대", "어묵", "튀김", "핫도그",
-    "라면", "짬뽕", "짜장면", "탕수육", "마파두부",
-    "치킨", "후라이드치킨", "양념치킨", "반반치킨", "닭갈비",
-    "피자", "파스타", "스파게티", "스테이크", "햄버거",
-    "초밥", "회", "연어", "광어회", "참치",
-    "된장국", "미역국", "콩나물국", "무국", "북어국",
-    "잡채", "호박전", "김치전", "파전", "해물파전",
-    "보쌈", "족발", "제육볶음", "오삼불고기", "낙지볶음",
-    "갈치구이", "고등어구이", "삼치구이", "조기구이",
-    "계란말이", "계란프라이", "스크램블에그",
-    "떡국", "만두", "물만두", "군만두", "찐만두",
-    "삼겹살 2인분", "소주 1병", "맥주 500cc",
-    "아메리카노", "카페라떼", "카푸치노", "아이스티",
-    "콜라", "사이다", "오렌지주스", "포도주스",
-    "딸기케이크", "초코케이크", "치즈케이크", "티라미수",
-    "아이스크림", "팥빙수", "딸기빙수", "망고빙수",
-    "순대국밥", "뼈다귀해장국", "콩나물해장국",
-    "쌀국수", "쌀떡", "찹쌀떡", "흑임자경단",
-    "갈비 1인분", "불고기 1인분", "삼겹살 3인분",
-    "라면 곱빼기", "짜장면 2그릇", "짬뽕 1그릇",
-    "Americano", "Latte", "Cappuccino", "Green Tea",
-    "Burger", "Sandwich", "Pizza", "Pasta", "Steak",
-    "Chicken", "Fish & Chips", "Salad", "Soup",
-    "Coca Cola", "Orange Juice", "Water",
-    "Tiramisu", "Cheesecake", "Chocolate Cake",
-    "김치찌개 1", "된장찌개 2", "비빔밥×2", "불고기*1",
-    "삼겹살 (200g)", "갈비 (300g)", "냉면 보통",
-    "치킨 1마리", "피자 L", "파스타 크림",
-    "아메리카노 T", "카페라떼 ICE", "케이크 1조각",
-]
-
-NOT_FOOD_KO = [
-    "합계", "소계", "총합계", "과세표준", "부가세", "합산금액",
-    "결제금액", "청구금액", "총결제", "영수합계",
-    "면세금액", "과세금액", "세액", "공급가액",
-    "카드결제", "현금결제", "신용카드", "체크카드", "포인트",
-    "할인", "쿠폰할인", "멤버십할인", "적립금사용",
-    "거스름돈", "잔액", "선불카드", "상품권",
-    "영수증번호", "주문번호", "테이블번호", "대기번호",
-    "매장명", "사업자번호", "대표자명", "주소",
-    "전화번호", "팩스번호", "이메일",
-    "영업시간", "휴무일", "주차안내",
-    "결제일시", "주문시간", "취소일시", "발행일",
-    "2024-01-15", "2024/03/22", "15:30:00",
-    "담당직원", "캐셔", "서버", "테이블", "좌석번호",
-    "인원수", "방문인원",
-    "배달료", "포장비", "서비스료", "봉사료",
-    "예약금", "보증금", "추가요금",
-    "반품", "환불", "취소", "재발행",
-    "적립포인트", "사용포인트", "잔여포인트",
-    "스탬프", "쿠폰번호", "이벤트코드",
-    "Total", "Subtotal", "Tax", "VAT", "Service Charge",
-    "Credit Card", "Cash", "Discount", "Coupon",
-    "Receipt No.", "Table No.", "Order No.",
-    "Date", "Time", "Staff", "Manager",
-    "Tel", "Fax", "Address",
-    "1004-0022", "REF: 29301", "**** **** 4521",
-    "승인번호 123456", "단말기번호 00001",
-    "가맹점번호 987654",
-]
-
-def augment_text(text):
-    variants = [text]
-    for qty in ["1", "2", "x2", "×1", "*2", "1개", "2개"]:
-        variants.append(f"{text} {qty}")
-    for price in ["12,000", "8,500", "25,000원", "₩15,000"]:
-        variants.append(f"{text}  {price}")
-    if any(c.isascii() and c.isalpha() for c in text):
-        variants.append(text.upper())
-        variants.append(text.title())
-    return variants[:4]
-
-def build_dataset():
-    data = []
-    for item in FOOD_KO:
-        for v in augment_text(item):
-            data.append({"text": v, "label": 1})
-    for item in NOT_FOOD_KO:
-        for v in augment_text(item):
-            data.append({"text": v, "label": 0})
-    random.shuffle(data)
-    print(f"✅ Dataset: {len(data)} samples "
-          f"({sum(d['label']==1 for d in data)} food, "
-          f"{sum(d['label']==0 for d in data)} non-food)")
-    return data
-
-all_data = build_dataset()
-
-# ─────────────────────────────────────────────────────────────────────
-# CELL 5 — Train/Val Split & Dataset Class
+# CELL 4 — Load & Inspect CSV Dataset
 # ─────────────────────────────────────────────────────────────────────
 # %%
-split      = int(0.85 * len(all_data))
-train_data = all_data[:split]
-val_data   = all_data[split:]
-print(f"Train: {len(train_data)} | Val: {len(val_data)}")
+if not os.path.exists(CSV_PATH):
+    # Try finding in current directory if Colab Drive path doesn't exist yet
+    if os.path.exists("./korean_receipt_dataset_full.csv"):
+        CSV_PATH = "./korean_receipt_dataset_full.csv"
+    else:
+        raise FileNotFoundError(
+            f"❌ Could not find {CSV_PATH}. Please upload korean_receipt_dataset_full.csv "
+            f"to {DRIVE_DIR} in Google Drive or working directory."
+        )
 
+print(f"📂 Loading dataset from: {CSV_PATH}")
+df = pd.read_csv(CSV_PATH)
+
+print(f"✅ Dataset shape: {df.shape}")
+print(f"   Columns      : {df.columns.tolist()}")
+
+# Clean data
+df = df.dropna(subset=["text", "label"])
+df["text"] = df["text"].astype(str).str.strip()
+df = df[df["text"].str.len() >= 1].reset_index(drop=True)
+
+# Map string labels to numeric IDs
+label_map = {"not_food": 0, "food": 1}
+id_map = {0: "not_food", 1: "food"}
+df["label_id"] = df["label"].map(label_map)
+
+print(f"✅ Cleaned dataset: {len(df)} rows")
+print("   Label distribution:")
+print(df["label"].value_counts().to_string())
+
+# ─────────────────────────────────────────────────────────────────────
+# CELL 5 — Stratified Train/Val/Test Split (80% / 10% / 10%)
+# ─────────────────────────────────────────────────────────────────────
+# %%
+train_df, temp_df = train_test_split(
+    df, test_size=0.20, stratify=df["label_id"], random_state=SEED
+)
+val_df, test_df = train_test_split(
+    temp_df, test_size=0.50, stratify=temp_df["label_id"], random_state=SEED
+)
+
+train_df = train_df.reset_index(drop=True)
+val_df = val_df.reset_index(drop=True)
+test_df = test_df.reset_index(drop=True)
+
+print(f"✅ Data Splits -> Train: {len(train_df)} | Val: {len(val_df)} | Test: {len(test_df)}")
+
+# ─────────────────────────────────────────────────────────────────────
+# CELL 6 — PyTorch Dataset & DataLoaders
+# ─────────────────────────────────────────────────────────────────────
+# %%
+print(f"⏬ Loading Tokenizer: {MODEL_NAME}")
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 
 class KoreanReceiptDataset(Dataset):
-    def __init__(self, samples, tokenizer, max_len):
-        self.samples = samples
+    def __init__(self, df, tokenizer, max_len=64):
+        self.texts = df["text"].tolist()
+        self.labels = df["label_id"].tolist()
         self.tokenizer = tokenizer
         self.max_len = max_len
 
-    def __len__(self): return len(self.samples)
+    def __len__(self):
+        return len(self.texts)
 
     def __getitem__(self, idx):
-        item = self.samples[idx]
+        text = self.texts[idx]
+        label = self.labels[idx]
         enc = self.tokenizer(
-            item["text"], max_length=self.max_len,
-            padding="max_length", truncation=True, return_tensors="pt",
+            text,
+            max_length=self.max_len,
+            padding="max_length",
+            truncation=True,
+            return_tensors="pt",
         )
         return {
-            "input_ids":      enc["input_ids"].squeeze(0),
+            "input_ids": enc["input_ids"].squeeze(0),
             "attention_mask": enc["attention_mask"].squeeze(0),
             "token_type_ids": enc.get(
                 "token_type_ids", torch.zeros(self.max_len, dtype=torch.long)
             ).squeeze(0),
-            "labels": torch.tensor(item["label"], dtype=torch.long),
+            "labels": torch.tensor(label, dtype=torch.long),
         }
 
-train_ds = KoreanReceiptDataset(train_data, tokenizer, MAX_LEN)
-val_ds   = KoreanReceiptDataset(val_data,   tokenizer, MAX_LEN)
+train_ds = KoreanReceiptDataset(train_df, tokenizer, MAX_LEN)
+val_ds   = KoreanReceiptDataset(val_df,   tokenizer, MAX_LEN)
+test_ds  = KoreanReceiptDataset(test_df,  tokenizer, MAX_LEN)
+
 train_dl = DataLoader(train_ds, batch_size=BATCH_SIZE, shuffle=True,  num_workers=2, pin_memory=True)
 val_dl   = DataLoader(val_ds,   batch_size=BATCH_SIZE, shuffle=False, num_workers=2, pin_memory=True)
-print("✅ DataLoaders ready")
+test_dl  = DataLoader(test_ds,  batch_size=BATCH_SIZE, shuffle=False, num_workers=2, pin_memory=True)
+
+print("✅ DataLoaders initialized successfully.")
 
 # ─────────────────────────────────────────────────────────────────────
-# CELL 6 — Load Model
+# CELL 7 — Load Model Architecture
 # ─────────────────────────────────────────────────────────────────────
 # %%
-model = ElectraForSequenceClassification.from_pretrained(
+print(f"⏬ Loading Pre-trained Model: {MODEL_NAME}")
+model = AutoModelForSequenceClassification.from_pretrained(
     MODEL_NAME,
     num_labels=2,
-    id2label={0: "not_food", 1: "food"},
-    label2id={"not_food": 0, "food": 1},
+    id2label=id_map,
+    label2id=label_map,
 )
 model = model.to(DEVICE)
 total_params = sum(p.numel() for p in model.parameters())
-print(f"✅ Loaded {MODEL_NAME} — {total_params/1e6:.1f}M parameters")
+print(f"✅ Loaded {MODEL_NAME} — {total_params / 1e6:.2f}M parameters")
 
 # ─────────────────────────────────────────────────────────────────────
-# CELL 7 — Training Loop
+# CELL 8 — Training & Validation Loop
 # ─────────────────────────────────────────────────────────────────────
 # %%
 optimizer = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=0.01)
@@ -230,202 +214,318 @@ scheduler = get_linear_schedule_with_warmup(
     num_training_steps=total_steps,
 )
 
-def evaluate(model, dataloader):
+def evaluate_pytorch(model, dataloader):
     model.eval()
     all_preds, all_labels = [], []
     with torch.no_grad():
         for batch in dataloader:
-            outputs = model(
-                input_ids      = batch["input_ids"].to(DEVICE),
-                attention_mask = batch["attention_mask"].to(DEVICE),
-                token_type_ids = batch["token_type_ids"].to(DEVICE),
-            )
-            preds = torch.argmax(outputs.logits, dim=-1)
-            all_preds.extend(preds.cpu().numpy())
-            all_labels.extend(batch["labels"].numpy())
-    return accuracy_score(all_labels, all_preds), all_preds, all_labels
+            input_ids = batch["input_ids"].to(DEVICE)
+            attention_mask = batch["attention_mask"].to(DEVICE)
+            token_type_ids = batch["token_type_ids"].to(DEVICE)
+            labels = batch["labels"]
 
+            outputs = model(
+                input_ids=input_ids,
+                attention_mask=attention_mask,
+                token_type_ids=token_type_ids,
+            )
+            preds = torch.argmax(outputs.logits, dim=-1).cpu().numpy()
+            all_preds.extend(preds)
+            all_labels.extend(labels.numpy())
+
+    acc = accuracy_score(all_labels, all_preds)
+    return acc, all_preds, all_labels
+
+print("\n🚀 Starting Model Fine-Tuning...")
 best_val_acc = 0.0
+
 for epoch in range(EPOCHS):
     model.train()
-    total_loss = 0
+    total_loss = 0.0
     t0 = time.time()
+
     for step, batch in enumerate(train_dl):
         optimizer.zero_grad()
+        input_ids = batch["input_ids"].to(DEVICE)
+        attention_mask = batch["attention_mask"].to(DEVICE)
+        token_type_ids = batch["token_type_ids"].to(DEVICE)
+        labels = batch["labels"].to(DEVICE)
+
         outputs = model(
-            input_ids      = batch["input_ids"].to(DEVICE),
-            attention_mask = batch["attention_mask"].to(DEVICE),
-            token_type_ids = batch["token_type_ids"].to(DEVICE),
-            labels         = batch["labels"].to(DEVICE),
+            input_ids=input_ids,
+            attention_mask=attention_mask,
+            token_type_ids=token_type_ids,
+            labels=labels,
         )
-        outputs.loss.backward()
+
+        loss = outputs.loss
+        loss.backward()
         torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
         optimizer.step()
         scheduler.step()
-        total_loss += outputs.loss.item()
-        if (step + 1) % 20 == 0:
-            print(f"  Epoch {epoch+1} | Step {step+1}/{len(train_dl)} | "
-                  f"Loss: {total_loss/(step+1):.4f}", flush=True)
 
-    val_acc, _, _ = evaluate(model, val_dl)
-    print(f"✅ Epoch {epoch+1}/{EPOCHS} | Loss: {total_loss/len(train_dl):.4f} | "
-          f"Val Acc: {val_acc*100:.2f}% | Time: {time.time()-t0:.1f}s")
+        total_loss += loss.item()
+
+        if (step + 1) % 200 == 0 or (step + 1) == len(train_dl):
+            print(
+                f"   Epoch {epoch+1}/{EPOCHS} | Step {step+1}/{len(train_dl)} | "
+                f"Loss: {total_loss / (step+1):.4f}",
+                flush=True,
+            )
+
+    val_acc, _, _ = evaluate_pytorch(model, val_dl)
+    elapsed = time.time() - t0
+    print(
+        f"✅ Epoch {epoch+1}/{EPOCHS} Finished | "
+        f"Train Loss: {total_loss / len(train_dl):.4f} | "
+        f"Val Acc: {val_acc * 100:.2f}% | Time: {elapsed:.1f}s"
+    )
+
     if val_acc > best_val_acc:
         best_val_acc = val_acc
         model.save_pretrained(OUTPUT_DIR)
         tokenizer.save_pretrained(OUTPUT_DIR)
-        print(f"  ⭐ Best model saved! ({val_acc*100:.2f}%)")
+        print(f"   ⭐ New best model saved! (Val Acc: {val_acc * 100:.2f}%)")
 
-print(f"\n🏆 Best val accuracy: {best_val_acc*100:.2f}%")
+print(f"\n🏆 Best Validation Accuracy achieved: {best_val_acc * 100:.2f}%")
 
 # ─────────────────────────────────────────────────────────────────────
-# CELL 8 — Classification Report
+# CELL 9 — Test Set Final Evaluation & Classification Report
 # ─────────────────────────────────────────────────────────────────────
 # %%
-best_model = ElectraForSequenceClassification.from_pretrained(OUTPUT_DIR).to(DEVICE)
-_, preds, labels = evaluate(best_model, val_dl)
-print(classification_report(labels, preds, target_names=["not_food", "food"]))
+best_model = AutoModelForSequenceClassification.from_pretrained(OUTPUT_DIR).to(DEVICE)
+test_acc, test_preds, test_labels = evaluate_pytorch(best_model, test_dl)
+
+print(f"\n📊 Test Set Accuracy: {test_acc * 100:.2f}%\n")
+print("Detailed Classification Report on Test Set:")
+print(classification_report(test_labels, test_preds, target_names=["not_food", "food"]))
 
 # ─────────────────────────────────────────────────────────────────────
-# CELL 9 — Export to ONNX (FP32)
+# CELL 10 — Export Model to ONNX (FP32)
 # ─────────────────────────────────────────────────────────────────────
 # %%
+print("\n⚙️  Exporting PyTorch model to ONNX FP32 format...")
 best_model.eval().cpu()
-dummy = torch.ones(1, MAX_LEN, dtype=torch.long)
+
+dummy_input_ids = torch.ones(1, MAX_LEN, dtype=torch.long)
+dummy_attn_mask = torch.ones(1, MAX_LEN, dtype=torch.long)
+dummy_token_type = torch.zeros(1, MAX_LEN, dtype=torch.long)
+
 torch.onnx.export(
     best_model,
-    (dummy, dummy, torch.zeros(1, MAX_LEN, dtype=torch.long)),
+    (dummy_input_ids, dummy_attn_mask, dummy_token_type),
     ONNX_PATH,
-    input_names  = ["input_ids", "attention_mask", "token_type_ids"],
-    output_names = ["logits"],
-    dynamic_axes = {
-        "input_ids":      {0: "batch", 1: "seq"},
+    input_names=["input_ids", "attention_mask", "token_type_ids"],
+    output_names=["logits"],
+    dynamic_axes={
+        "input_ids": {0: "batch", 1: "seq"},
         "attention_mask": {0: "batch", 1: "seq"},
         "token_type_ids": {0: "batch", 1: "seq"},
-        "logits":         {0: "batch"},
+        "logits": {0: "batch"},
     },
-    opset_version = 14,
-    do_constant_folding = True,
+    opset_version=14,
+    do_constant_folding=True,
 )
-size_fp32 = os.path.getsize(ONNX_PATH) / 1024 / 1024
-print(f"✅ ONNX FP32: {size_fp32:.1f} MB")
-onnx.checker.check_model(onnx.load(ONNX_PATH))
-print("✅ ONNX check passed")
+
+size_fp32 = os.path.getsize(ONNX_PATH) / (1024 * 1024)
+print(f"✅ ONNX FP32 Model exported successfully! Size: {size_fp32:.2f} MB")
+onnx_model = onnx.load(ONNX_PATH)
+onnx.checker.check_model(onnx_model)
+print("✅ ONNX model validity check passed.")
 
 # ─────────────────────────────────────────────────────────────────────
-# CELL 10 — Dynamic INT8 Quantization (~14 MB for Android GPU)
+# CELL 11 — Dynamic INT8 Quantization (~14 MB for Android Mobile ONNX)
 # ─────────────────────────────────────────────────────────────────────
 # %%
-from onnxruntime.quantization import quantize_dynamic, QuantType
-
-print("⚙️  Dynamic INT8 quantization...")
+print("\n⚡ Quantizing ONNX model using Dynamic INT8 Quantization...")
 quantize_dynamic(
-    model_input  = ONNX_PATH,
-    model_output = ONNX_QUANT,
-    weight_type  = QuantType.QInt8,
-    extra_options = {"MatMulConstBOnly": True, "EnableSubgraph": True},
+    model_input=ONNX_PATH,
+    model_output=ONNX_QUANT,
+    weight_type=QuantType.QInt8,
+    extra_options={"MatMulConstBOnly": True, "EnableSubgraph": True},
 )
-size_quant = os.path.getsize(ONNX_QUANT) / 1024 / 1024
-print(f"✅ ONNX INT8: {size_quant:.1f} MB  (was {size_fp32:.1f} MB, {size_fp32/size_quant:.1f}x smaller)")
+
+size_quant = os.path.getsize(ONNX_QUANT) / (1024 * 1024)
+compression_ratio = size_fp32 / size_quant
+print(f"✅ Quantized ONNX Model created: {ONNX_QUANT}")
+print(f"   FP32 Size : {size_fp32:.2f} MB")
+print(f"   INT8 Size : {size_quant:.2f} MB  ({compression_ratio:.1f}x reduction!)")
 
 # ─────────────────────────────────────────────────────────────────────
-# CELL 11 — Accuracy: FP32 vs Quantized
+# CELL 12 — Verify Accuracy: FP32 vs Quantized ONNX
 # ─────────────────────────────────────────────────────────────────────
 # %%
-def run_onnx(onnx_path, val_data):
-    session = ort.InferenceSession(onnx_path)
-    preds, labels = [], []
-    for item in val_data:
-        enc = tokenizer(item["text"], max_length=MAX_LEN, padding="max_length",
-                        truncation=True, return_tensors="np")
-        feeds = {
-            "input_ids":      enc["input_ids"].astype(np.int64),
+print("\n🧪 Running ONNX Runtime accuracy verification on Test set...")
+
+def evaluate_onnx(onnx_file_path, df_sub):
+    session = ort.InferenceSession(onnx_file_path, providers=["CPUExecutionProvider"])
+    texts = df_sub["text"].tolist()
+    labels = df_sub["label_id"].tolist()
+    preds = []
+
+    for text in texts:
+        enc = tokenizer(
+            text,
+            max_length=MAX_LEN,
+            padding="max_length",
+            truncation=True,
+            return_tensors="np",
+        )
+        inputs = {
+            "input_ids": enc["input_ids"].astype(np.int64),
             "attention_mask": enc["attention_mask"].astype(np.int64),
-            "token_type_ids": enc.get("token_type_ids",
-                              np.zeros((1, MAX_LEN), dtype=np.int64)),
+            "token_type_ids": enc.get(
+                "token_type_ids", np.zeros((1, MAX_LEN), dtype=np.int64)
+            ).astype(np.int64),
         }
-        logits = session.run(["logits"], feeds)[0]
-        preds.append(int(np.argmax(logits)))
-        labels.append(item["label"])
+        logits = session.run(["logits"], inputs)[0]
+        pred_id = int(np.argmax(logits, axis=-1)[0])
+        preds.append(pred_id)
+
     return accuracy_score(labels, preds)
 
-acc_fp32  = run_onnx(ONNX_PATH,  val_data)
-acc_quant = run_onnx(ONNX_QUANT, val_data)
-print(f"FP32  ({size_fp32:.1f} MB): {acc_fp32*100:.2f}%")
-print(f"INT8  ({size_quant:.1f} MB): {acc_quant*100:.2f}%")
-print(f"Drop: {(acc_fp32-acc_quant)*100:.2f}%")
+# Test on 1,000 random samples from test set for fast evaluation
+test_sample = test_df.sample(n=min(1000, len(test_df)), random_state=SEED)
+acc_fp32_onnx = evaluate_onnx(ONNX_PATH, test_sample)
+acc_quant_onnx = evaluate_onnx(ONNX_QUANT, test_sample)
+
+print(f"   ONNX FP32 Accuracy : {acc_fp32_onnx * 100:.2f}%")
+print(f"   ONNX INT8 Accuracy : {acc_quant_onnx * 100:.2f}%")
+print(f"   Accuracy Change    : {(acc_quant_onnx - acc_fp32_onnx) * 100:+.2f}%")
 
 # ─────────────────────────────────────────────────────────────────────
-# CELL 12 — Export vocab + special tokens for Android
+# CELL 13 — Export Vocabulary & Tokenizer Config for Android
 # ─────────────────────────────────────────────────────────────────────
 # %%
-import shutil
-shutil.copy(os.path.join(OUTPUT_DIR, "vocab.txt"), "./korean_vocab.txt")
+print("\n📦 Generating Android tokenizer assets (korean_vocab.txt & metadata)...")
+vocab_src = os.path.join(OUTPUT_DIR, "vocab.txt")
+vocab_dst = "./korean_vocab.txt"
 
-special_tokens = {
+if os.path.exists(vocab_src):
+    shutil.copy(vocab_src, vocab_dst)
+else:
+    # Save vocab directly from tokenizer
+    with open(vocab_dst, "w", encoding="utf-8") as f:
+        for token, _ in sorted(tokenizer.get_vocab().items(), key=lambda x: x[1]):
+            f.write(token + "\n")
+
+special_tokens_meta = {
     "cls_token_id": tokenizer.cls_token_id,
     "sep_token_id": tokenizer.sep_token_id,
     "pad_token_id": tokenizer.pad_token_id,
     "unk_token_id": tokenizer.unk_token_id,
+    "vocab_size":   tokenizer.vocab_size,
     "max_length":   MAX_LEN,
     "model_name":   MODEL_NAME,
     "labels":       {0: "not_food", 1: "food"},
 }
-with open("./korean_special_tokens.json", "w", encoding="utf-8") as f:
-    json.dump(special_tokens, f, ensure_ascii=False, indent=2)
 
-print("✅ korean_vocab.txt")
-print("✅ korean_special_tokens.json")
-print(json.dumps(special_tokens, indent=2, ensure_ascii=False))
+with open("./korean_special_tokens.json", "w", encoding="utf-8") as f:
+    json.dump(special_tokens_meta, f, ensure_ascii=False, indent=2)
+
+print("✅ Saved ./korean_vocab.txt")
+print("✅ Saved ./korean_special_tokens.json:")
+print(json.dumps(special_tokens_meta, indent=2, ensure_ascii=False))
 
 # ─────────────────────────────────────────────────────────────────────
-# CELL 13 — Zip & Download
+# CELL 14 — Bundle Assets into ZIP for Download & Drive Backup
 # ─────────────────────────────────────────────────────────────────────
 # %%
 import zipfile
-zip_path = "./korean_food_android_assets.zip"
-with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
-    for src, arc in [
-        (ONNX_QUANT,                   "korean_food_classifier_quant.onnx"),
-        (ONNX_PATH,                    "korean_food_classifier.onnx"),
-        ("./korean_vocab.txt",          "korean_vocab.txt"),
-        ("./korean_special_tokens.json","korean_special_tokens.json"),
-    ]:
-        if os.path.exists(src):
-            zf.write(src, arc)
-            print(f"  + {arc} ({os.path.getsize(src)/1024/1024:.1f} MB)")
 
-print(f"\n✅ ZIP: {zip_path} ({os.path.getsize(zip_path)/1024/1024:.1f} MB)")
-# Uncomment to download:
-# from google.colab import files; files.download(zip_path)
-# Or save to Drive:
-# shutil.copy(zip_path, "/content/drive/MyDrive/korean_food_model/")
+zip_filename = "korean_food_android_assets.zip"
+zip_filepath = os.path.join(".", zip_filename)
+
+asset_files = [
+    (ONNX_QUANT,                    "korean_food_classifier_quant.onnx"),
+    (ONNX_PATH,                     "korean_food_classifier.onnx"),
+    ("./korean_vocab.txt",          "korean_vocab.txt"),
+    ("./korean_special_tokens.json","korean_special_tokens.json"),
+]
+
+print(f"\n📦 Packaging Android artifacts into ZIP: {zip_filename}...")
+with zipfile.ZipFile(zip_filepath, "w", zipfile.ZIP_DEFLATED) as zf:
+    for src, arcname in asset_files:
+        if os.path.exists(src):
+            size_mb = os.path.getsize(src) / (1024 * 1024)
+            zf.write(src, arcname)
+            print(f"   + Added {arcname:35s} ({size_mb:.2f} MB)")
+
+zip_size_mb = os.path.getsize(zip_filepath) / (1024 * 1024)
+print(f"✅ Bundled ZIP file complete: {zip_filename} ({zip_size_mb:.2f} MB)")
+
+# Copy to Google Drive if in Colab
+if IN_COLAB:
+    drive_dest = os.path.join(DRIVE_DIR, zip_filename)
+    shutil.copy(zip_filepath, drive_dest)
+    print(f"✅ Saved ZIP to Google Drive -> {drive_dest}")
+    # Trigger auto-download browser popup
+    try:
+        files.download(zip_filepath)
+        print("✅ Colab download initiated!")
+    except Exception as e:
+        print(f"ℹ️ Download prompt skipped ({e}). File is available in Drive: {drive_dest}")
 
 # ─────────────────────────────────────────────────────────────────────
-# CELL 14 — Quick inference test
+# CELL 15 — Live Sample Predictions (Validation Test)
 # ─────────────────────────────────────────────────────────────────────
 # %%
-def predict(texts, onnx_path=ONNX_QUANT):
-    sess = ort.InferenceSession(onnx_path)
-    enc  = tokenizer(texts, max_length=MAX_LEN, padding="max_length",
-                     truncation=True, return_tensors="np")
-    feeds = {
-        "input_ids":      enc["input_ids"].astype(np.int64),
-        "attention_mask": enc["attention_mask"].astype(np.int64),
-        "token_type_ids": enc.get("token_type_ids",
-                          np.zeros((len(texts), MAX_LEN), dtype=np.int64)),
-    }
-    logits = sess.run(["logits"], feeds)[0]
-    probs  = np.exp(logits) / np.exp(logits).sum(-1, keepdims=True)
-    lbls   = {0: "not_food", 1: "food"}
-    for t, p, prob in zip(texts, np.argmax(probs, -1), probs):
-        icon = "🍜" if p == 1 else "🧾"
-        print(f"  {icon} {t:22s} → {lbls[p]:8s} ({prob[p]*100:.1f}%)")
+print("\n🔍 Running test predictions using Quantized ONNX Model:")
 
-predict([
-    "김치찌개", "된장찌개 2인분", "삼겹살 (200g)",
-    "합계", "카드결제", "부가세",
-    "아메리카노", "영수증번호", "총금액",
-])
-print("\n✅ Done! Place korean_food_classifier_quant.onnx + korean_vocab.txt")
-print("   in android_app/app/src/main/assets/")
+def predict_korean_receipt_items(sample_texts, onnx_model_path=ONNX_QUANT):
+    session = ort.InferenceSession(onnx_model_path, providers=["CPUExecutionProvider"])
+    
+    enc = tokenizer(
+        sample_texts,
+        max_length=MAX_LEN,
+        padding="max_length",
+        truncation=True,
+        return_tensors="np",
+    )
+    
+    inputs = {
+        "input_ids": enc["input_ids"].astype(np.int64),
+        "attention_mask": enc["attention_mask"].astype(np.int64),
+        "token_type_ids": enc.get(
+            "token_type_ids", np.zeros((len(sample_texts), MAX_LEN), dtype=np.int64)
+        ).astype(np.int64),
+    }
+
+    logits = session.run(["logits"], inputs)[0]
+    # Softmax probabilities
+    exp_logits = np.exp(logits - np.max(logits, axis=-1, keepdims=True))
+    probs = exp_logits / np.sum(exp_logits, axis=-1, keepdims=True)
+    preds = np.argmax(probs, axis=-1)
+
+    print("-" * 65)
+    print(f"{'Text Line':30s} | {'Prediction':10s} | {'Confidence'}")
+    print("-" * 65)
+    for text, pred, prob in zip(sample_texts, preds, probs):
+        label_str = id_map[pred]
+        confidence = prob[pred] * 100
+        icon = "🍜 FOOD    " if pred == 1 else "🧾 NOT_FOOD"
+        print(f"{text:30s} | {icon:10s} | {confidence:6.2f}%")
+    print("-" * 65)
+
+test_samples = [
+    "김치찌개 1개",
+    "삼겹살 2인분",
+    "아메리카노 (ICE)",
+    "합계금액",
+    "과세물품가액",
+    "신용카드 승인번호",
+    "대표자: 김철수",
+    "후라이드치킨 반반",
+    "부가세 10%",
+    "공급가액 15,000원",
+]
+
+predict_korean_receipt_items(test_samples)
+
+print("\n🎉 ALL STEPS COMPLETED!")
+print("Next Steps for Android Integration:")
+print("1. Download `korean_food_classifier_quant.onnx` and `korean_vocab.txt`")
+print("2. Place them into your Android project folder:")
+print("   `android_app/app/src/main/assets/korean_food_classifier_quant.onnx`")
+print("   `android_app/app/src/main/assets/korean_vocab.txt`")
+print("3. Build and launch your Android Receipt Scanner App!")

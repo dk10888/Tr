@@ -172,7 +172,7 @@ class ReceiptAppRequestHandler(SimpleHTTPRequestHandler):
             # 2. Model Inference
             comparison_list = []
             if model_choice == "compare":
-                tok_tiny, mod_tiny = get_bert_model("bert_tiny_v5_food_final")
+                tok_tiny, mod_tiny = get_bert_model("bert_tiny_v7_food_final")
                 tok_mini, mod_mini = get_bert_model("bert_mini_food_final")
 
                 preds_tiny = run_bert_inference(raw_texts, tok_tiny, mod_tiny)
@@ -191,7 +191,13 @@ class ReceiptAppRequestHandler(SimpleHTTPRequestHandler):
                         "agree": (pt["label"] == pm["label"])
                     })
             else:
-                folder_name = "bert_tiny_v5_food_final" if model_choice == "bert_tiny" else "bert_mini_food_final"
+                # v7 = default (76k samples, 94.18% accuracy)
+                if model_choice == "bert_tiny":
+                    folder_name = "bert_tiny_v7_food_final"
+                elif model_choice == "bert_mini":
+                    folder_name = "bert_mini_food_final"
+                else:
+                    folder_name = "bert_tiny_v7_food_final"  # default
                 tokenizer, bert_model = get_bert_model(folder_name)
                 classifications = run_bert_inference(raw_texts, tokenizer, bert_model)
 

@@ -24,7 +24,19 @@ HOW TO USE IN GOOGLE COLAB:
 # CELL 1 — Install dependencies
 # ─────────────────────────────────────────────────────────────────────
 # %%
-!pip install -q transformers datasets torch onnx onnxruntime onnxruntime-tools scikit-learn evaluate accelerate pandas
+# !pip install -q transformers datasets torch onnx onnxruntime onnxruntime-tools scikit-learn evaluate accelerate pandas
+
+import sys, subprocess, os
+def auto_install():
+    try:
+        import onnx, onnxruntime, transformers, pandas
+    except ImportError:
+        print("⏬ Installing required packages...")
+        pkgs = ["transformers", "datasets", "torch", "onnx", "onnxruntime", "onnxruntime-tools", "scikit-learn", "evaluate", "accelerate", "pandas"]
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "-q"] + pkgs)
+        print("✅ Installation complete.")
+
+auto_install()
 
 # ─────────────────────────────────────────────────────────────────────
 # CELL 2 — Mount Google Drive & Environment Setup
@@ -61,7 +73,20 @@ else:
     CSV_PATH = "./korean_receipt_dataset_full.csv"
 
 # ─────────────────────────────────────────────────────────────────────
-# CELL 3 — Configuration & Random Seeds
+# CELL 3 — Upload Dataset to Drive (Optional - run to upload CSV)
+# ─────────────────────────────────────────────────────────────────────
+# %%
+if IN_COLAB and not os.path.exists(CSV_PATH):
+    print("📤 Upload `korean_receipt_dataset_full.csv` from your computer:")
+    from google.colab import files
+    uploaded = files.upload()
+    for fname in uploaded:
+        dest = os.path.join(DRIVE_DIR, fname)
+        shutil.copy(fname, dest)
+        print(f"✅ Saved to Drive: {dest}")
+
+# ─────────────────────────────────────────────────────────────────────
+# CELL 4 — Configuration & Random Seeds
 # ─────────────────────────────────────────────────────────────────────
 # %%
 MODEL_NAME    = "monologg/koelectra-small-v3-discriminator"
@@ -89,17 +114,25 @@ if torch.cuda.is_available():
     print(f"   GPU Name   : {torch.cuda.get_device_name(0)}")
 
 # ─────────────────────────────────────────────────────────────────────
-# CELL 4 — Load & Inspect CSV Dataset
+# CELL 5 — Load & Inspect CSV Dataset
 # ─────────────────────────────────────────────────────────────────────
 # %%
 if not os.path.exists(CSV_PATH):
-    # Try finding in current directory if Colab Drive path doesn't exist yet
     if os.path.exists("./korean_receipt_dataset_full.csv"):
         CSV_PATH = "./korean_receipt_dataset_full.csv"
+    elif IN_COLAB:
+        print("📤 CSV file not found! Please upload `korean_receipt_dataset_full.csv` now:")
+        from google.colab import files
+        uploaded = files.upload()
+        for fname in uploaded:
+            dest = os.path.join(DRIVE_DIR, fname)
+            shutil.copy(fname, dest)
+            CSV_PATH = dest
+            print(f"✅ Saved and using: {CSV_PATH}")
     else:
         raise FileNotFoundError(
-            f"❌ Could not find {CSV_PATH}. Please upload korean_receipt_dataset_full.csv "
-            f"to {DRIVE_DIR} in Google Drive or working directory."
+            f"❌ Could not find {CSV_PATH}. Please place korean_receipt_dataset_full.csv "
+            f"in {DRIVE_DIR} or working directory."
         )
 
 print(f"📂 Loading dataset from: {CSV_PATH}")

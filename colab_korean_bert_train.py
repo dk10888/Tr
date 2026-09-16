@@ -24,9 +24,7 @@ HOW TO USE IN GOOGLE COLAB:
 # CELL 1 — Install dependencies
 # ─────────────────────────────────────────────────────────────────────
 # %%
-# !pip install -q transformers==4.40.0 datasets==2.19.0 torch==2.2.2 \
-#              onnx==1.16.0 onnxruntime==1.18.0 onnxruntime-tools \
-#              scikit-learn==1.4.2 evaluate==0.4.1 accelerate==0.29.3 pandas==2.2.2
+!pip install -q transformers datasets torch onnx onnxruntime onnxruntime-tools scikit-learn evaluate accelerate pandas
 
 # ─────────────────────────────────────────────────────────────────────
 # CELL 2 — Mount Google Drive & Environment Setup

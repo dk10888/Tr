@@ -1,0 +1,5782 @@
+{
+  "model": "Korean BERT ONNX (new_aug_v1 — 54k dataset)",
+  "postprocessed": true,
+  "total_receipts": 31,
+  "total_lines": 785,
+  "receipts": [
+    {
+      "receipt_id": 1,
+      "receipt_name": "04297b86ce515e099dc996d250892cd8.jpg",
+      "line_count": 29,
+      "food_count": 4,
+      "not_food_count": 25,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "Ipoudo Park; LG",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 17.6
+        },
+        {
+          "line_no": 2,
+          "text": "Central",
+          "label": "not_food",
+          "confidence": 0.9851,
+          "time_ms": 10.25
+        },
+        {
+          "line_no": 3,
+          "text": "TABLE :",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 11.04
+        },
+        {
+          "line_no": 4,
+          "text": "14 'POS0001",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 10.19
+        },
+        {
+          "line_no": 5,
+          "text": "OP:",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.31
+        },
+        {
+          "line_no": 6,
+          "text": "16:44",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 11.93
+        },
+        {
+          "line_no": 7,
+          "text": "Pax: 10 POS Title",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 9.46
+        },
+        {
+          "line_no": 8,
+          "text": "0,000",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.91
+        },
+        {
+          "line_no": 9,
+          "text": "Rcpti",
+          "label": "not_food",
+          "confidence": 0.985,
+          "time_ms": 7.58
+        },
+        {
+          "line_no": 10,
+          "text": "0000",
+          "label": "not_food",
+          "confidence": 0.9858,
+          "time_ms": 7.82
+        },
+        {
+          "line_no": 11,
+          "text": "Corn Letcn Teppan Tea 'Cold",
+          "label": "not_food",
+          "confidence": 0.9645,
+          "time_ms": 7.63
+        },
+        {
+          "line_no": 12,
+          "text": "OOO",
+          "label": "not_food",
+          "confidence": 0.9842,
+          "time_ms": 7.62
+        },
+        {
+          "line_no": 13,
+          "text": "Ocha Ucha Cold Hot 'Gyoza Pork",
+          "label": "food",
+          "confidence": 0.9588,
+          "time_ms": 7.64
+        },
+        {
+          "line_no": 14,
+          "text": "Pan F Saikoro Rice",
+          "label": "food",
+          "confidence": 0.9681,
+          "time_ms": 7.63
+        },
+        {
+          "line_no": 15,
+          "text": "Sake Salmom 'Motoaj 4 pCS",
+          "label": "food",
+          "confidence": 0.9689,
+          "time_ms": 8.94
+        },
+        {
+          "line_no": 16,
+          "text": "Ghi roltaru Tantan Porx Pork",
+          "label": "food",
+          "confidence": 0.9618,
+          "time_ms": 7.74
+        },
+        {
+          "line_no": 17,
+          "text": "Jelly 'Smoothi ,507,000",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 7.73
+        },
+        {
+          "line_no": 18,
+          "text": "SUBTOTAL '74",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 7.71
+        },
+        {
+          "line_no": 19,
+          "text": "16'",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 7.72
+        },
+        {
+          "line_no": 20,
+          "text": "Tax",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 7.73
+        },
+        {
+          "line_no": 21,
+          "text": "773 'aty :27",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 7.85
+        },
+        {
+          "line_no": 22,
+          "text": "739",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 9.27
+        },
+        {
+          "line_no": 23,
+          "text": "ToI AL item ;12 Total",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 7.69
+        },
+        {
+          "line_no": 24,
+          "text": "1,775",
+          "label": "not_food",
+          "confidence": 0.9868,
+          "time_ms": 7.64
+        },
+        {
+          "line_no": 25,
+          "text": "Total",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 7.62
+        },
+        {
+          "line_no": 26,
+          "text": "CASH",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 7.63
+        },
+        {
+          "line_no": 27,
+          "text": "Change",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 7.62
+        },
+        {
+          "line_no": 28,
+          "text": "VGJoaggf Bj7:41",
+          "label": "not_food",
+          "confidence": 0.9858,
+          "time_ms": 9.7
+        },
+        {
+          "line_no": 29,
+          "text": "31",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.84
+        }
+      ]
+    },
+    {
+      "receipt_id": 2,
+      "receipt_name": "25087fc4c1fee35fda20f103e804303d (1).jpg",
+      "line_count": 17,
+      "food_count": 0,
+      "not_food_count": 17,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "XoKB국민은행",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.96
+        },
+        {
+          "line_no": 2,
+          "text": "요청금액",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 7.79
+        },
+        {
+          "line_no": 3,
+          "text": "*200,0,000원",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 9.79
+        },
+        {
+          "line_no": 4,
+          "text": "저리결과 : 싱싱 저리",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 10.32
+        },
+        {
+          "line_no": 5,
+          "text": "거대후 신액 *184,418원",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 11.64
+        },
+        {
+          "line_no": 6,
+          "text": "수수묘: *0원",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 11.91
+        },
+        {
+          "line_no": 7,
+          "text": "거래일 시 2026.04.14 14:05",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 10.58
+        },
+        {
+          "line_no": 8,
+          "text": "계심번호 국민 6/801 01-70***3",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 12.37
+        },
+        {
+          "line_no": 9,
+          "text": "거래번호 2497 NKII IA 0166 IC;",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 7.89
+        },
+        {
+          "line_no": 10,
+          "text": "수신 계심 농리 3521064999353",
+          "label": "not_food",
+          "confidence": 0.9868,
+          "time_ms": 8.26
+        },
+        {
+          "line_no": 11,
+          "text": "점 포 명",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.19
+        },
+        {
+          "line_no": 12,
+          "text": "012",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 7.72
+        },
+        {
+          "line_no": 13,
+          "text": "성 명",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 7.96
+        },
+        {
+          "line_no": 14,
+          "text": "0A N",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 7.75
+        },
+        {
+          "line_no": 15,
+          "text": "고유번 호 : (042497NKIIO2 0)",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 7.67
+        },
+        {
+          "line_no": 16,
+          "text": "수 있습니다",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 7.7
+        },
+        {
+          "line_no": 17,
+          "text": "'형법 (제23 조",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 7.8
+        }
+      ]
+    },
+    {
+      "receipt_id": 3,
+      "receipt_name": "961d27de21af520ba7beca28a45a1c41.jpg",
+      "line_count": 30,
+      "food_count": 3,
+      "not_food_count": 27,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "[영 수증 ]",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 13.65
+        },
+        {
+          "line_no": 2,
+          "text": "[매장명] 둥집치권 /682-21-01053_",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 10.59
+        },
+        {
+          "line_no": 3,
+          "text": "[주 소",
+          "label": "food",
+          "confidence": 0.5871,
+          "time_ms": 10.71
+        },
+        {
+          "line_no": 4,
+          "text": "[대표자] 이복히 [TEL] 043-648-6522",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 9.1
+        },
+        {
+          "line_no": 5,
+          "text": "[매출일 2026-03-07 15: 56:38",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 10.27
+        },
+        {
+          "line_no": 6,
+          "text": "[영수증 20260307-02-0015",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 12.03
+        },
+        {
+          "line_no": 7,
+          "text": "상   품",
+          "label": "not_food",
+          "confidence": 0.9855,
+          "time_ms": 12.59
+        },
+        {
+          "line_no": 8,
+          "text": "단 가   수량",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 8.91
+        },
+        {
+          "line_no": 9,
+          "text": "'강정 ( 순한 )",
+          "label": "food",
+          "confidence": 0.9663,
+          "time_ms": 9.58
+        },
+        {
+          "line_no": 10,
+          "text": "22,000",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 7.67
+        },
+        {
+          "line_no": 11,
+          "text": "22,000",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 7.73
+        },
+        {
+          "line_no": 12,
+          "text": "2,000",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 7.78
+        },
+        {
+          "line_no": 13,
+          "text": "2,000",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.48
+        },
+        {
+          "line_no": 14,
+          "text": "합 계 금",
+          "label": "not_food",
+          "confidence": 0.9853,
+          "time_ms": 7.75
+        },
+        {
+          "line_no": 15,
+          "text": "24 ,C",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 7.73
+        },
+        {
+          "line_no": 16,
+          "text": "000",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 7.71
+        },
+        {
+          "line_no": 17,
+          "text": "부가세 과세물품가액",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 7.78
+        },
+        {
+          "line_no": 18,
+          "text": "21,819",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 7.65
+        },
+        {
+          "line_no": 19,
+          "text": "2,181",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 8.79
+        },
+        {
+          "line_no": 20,
+          "text": "24,000",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 7.72
+        },
+        {
+          "line_no": 21,
+          "text": "24,000",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.2
+        },
+        {
+          "line_no": 22,
+          "text": "신용 카드",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 7.72
+        },
+        {
+          "line_no": 23,
+          "text": "24,000",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 7.85
+        },
+        {
+          "line_no": 24,
+          "text": "카드매입사=",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 7.71
+        },
+        {
+          "line_no": 25,
+          "text": "'1",
+          "label": "food",
+          "confidence": 0.9666,
+          "time_ms": 7.63
+        },
+        {
+          "line_no": 26,
+          "text": "카 느 번 호 5387-33**",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 7.73
+        },
+        {
+          "line_no": 27,
+          "text": "승 인 금 246000( 일사붉}-617*",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 7.69
+        },
+        {
+          "line_no": 28,
+          "text": "승 승인 /가행점 인 일 시 2026-03-07 85390052 '600533882",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 7.73
+        },
+        {
+          "line_no": 29,
+          "text": "단말기 '번호 13733752 15:56 : 37",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 7.83
+        },
+        {
+          "line_no": 30,
+          "text": "NOTICE 무시명기래",
+          "label": "not_food",
+          "confidence": 0.9351,
+          "time_ms": 7.62
+        }
+      ]
+    },
+    {
+      "receipt_id": 4,
+      "receipt_name": "IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg",
+      "line_count": 22,
+      "food_count": 4,
+      "not_food_count": 18,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "궁림",
+          "label": "not_food",
+          "confidence": 0.9859,
+          "time_ms": 7.82
+        },
+        {
+          "line_no": 2,
+          "text": "소감비삼",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 7.63
+        },
+        {
+          "line_no": 3,
+          "text": "삼접삼",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 7.66
+        },
+        {
+          "line_no": 4,
+          "text": "39 , ODO",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.47
+        },
+        {
+          "line_no": 5,
+          "text": "김퇴미개",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.21
+        },
+        {
+          "line_no": 6,
+          "text": "32,",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 9.96
+        },
+        {
+          "line_no": 7,
+          "text": "000",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 9.74
+        },
+        {
+          "line_no": 8,
+          "text": "소주",
+          "label": "food",
+          "confidence": 0.9646,
+          "time_ms": 8.71
+        },
+        {
+          "line_no": 9,
+          "text": ",0000",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 11.98
+        },
+        {
+          "line_no": 10,
+          "text": "맥주",
+          "label": "food",
+          "confidence": 0.9653,
+          "time_ms": 8.58
+        },
+        {
+          "line_no": 11,
+          "text": ",0000",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 8.42
+        },
+        {
+          "line_no": 12,
+          "text": "음료수",
+          "label": "food",
+          "confidence": 0.9553,
+          "time_ms": 7.65
+        },
+        {
+          "line_no": 13,
+          "text": "4,000",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 7.68
+        },
+        {
+          "line_no": 14,
+          "text": ",000",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 7.68
+        },
+        {
+          "line_no": 15,
+          "text": "함계",
+          "label": "not_food",
+          "confidence": 0.9687,
+          "time_ms": 7.62
+        },
+        {
+          "line_no": 16,
+          "text": ",000",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.29
+        },
+        {
+          "line_no": 17,
+          "text": "주은번호",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 7.74
+        },
+        {
+          "line_no": 18,
+          "text": "91,C ,000",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 7.69
+        },
+        {
+          "line_no": 19,
+          "text": "2024 ~04-24",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.26
+        },
+        {
+          "line_no": 20,
+          "text": "'1830,45",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 7.63
+        },
+        {
+          "line_no": 21,
+          "text": "감사합나다",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 7.65
+        },
+        {
+          "line_no": 22,
+          "text": "TIPPING AT RESTAURANT",
+          "label": "food",
+          "confidence": 0.963,
+          "time_ms": 7.8
+        }
+      ]
+    },
+    {
+      "receipt_id": 5,
+      "receipt_name": "IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg",
+      "line_count": 20,
+      "food_count": 1,
+      "not_food_count": 19,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "299-01-00214 시문시 숨구 소공로 63",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 7.7
+        },
+        {
+          "line_no": 2,
+          "text": "대 { 전 회 현금 02-310-5038 공세)",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 7.92
+        },
+        {
+          "line_no": 3,
+          "text": "구매 ?010-07-0 13.49 거릿번호:0617 9153",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 7.54
+        },
+        {
+          "line_no": 4,
+          "text": "후통정식제트 실문명",
+          "label": "not_food",
+          "confidence": 0.9854,
+          "time_ms": 8.16
+        },
+        {
+          "line_no": 5,
+          "text": "79,000J 16,0,000",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 10.94
+        },
+        {
+          "line_no": 6,
+          "text": "물회 소바",
+          "label": "food",
+          "confidence": 0.9692,
+          "time_ms": 8.13
+        },
+        {
+          "line_no": 7,
+          "text": "35,000",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.84
+        },
+        {
+          "line_no": 8,
+          "text": "과 세 물 품 가액",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.11
+        },
+        {
+          "line_no": 9,
+          "text": "31,819",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 12.04
+        },
+        {
+          "line_no": 10,
+          "text": "3,181",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 8.25
+        },
+        {
+          "line_no": 11,
+          "text": "35 0000",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 7.71
+        },
+        {
+          "line_no": 12,
+          "text": "40 0DO",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 7.73
+        },
+        {
+          "line_no": 13,
+          "text": "거스품",
+          "label": "not_food",
+          "confidence": 0.9841,
+          "time_ms": 7.67
+        },
+        {
+          "line_no": 14,
+          "text": "5,0000",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 7.67
+        },
+        {
+          "line_no": 15,
+          "text": "현금영수증 승인번호 식별언호 [사동발금]",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 7.66
+        },
+        {
+          "line_no": 16,
+          "text": "010+***1234 170013773",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 7.66
+        },
+        {
+          "line_no": 17,
+          "text": "현금영수증 문의 8126-1-1 캐서N0 : 400**6 마꼬이",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 7.72
+        },
+        {
+          "line_no": 18,
+          "text": "결제본경 1807020617915300035000 7일내 영수증 '및 '결제가드",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 7.7
+        },
+        {
+          "line_no": 19,
+          "text": "지집히여 주시기 비립니다 .",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 7.97
+        },
+        {
+          "line_no": 20,
+          "text": "5778",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 7.79
+        }
+      ]
+    },
+    {
+      "receipt_id": 6,
+      "receipt_name": "IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg",
+      "line_count": 33,
+      "food_count": 5,
+      "not_food_count": 28,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "'Shop5 ,",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 8.25
+        },
+        {
+          "line_no": 2,
+          "text": "24 George ABN: 93 091 997 634 St North Strathfield NS싸",
+          "label": "not_food",
+          "confidence": 0.9868,
+          "time_ms": 8.11
+        },
+        {
+          "line_no": 3,
+          "text": "TEL 9764 1199 2137",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 11.29
+        },
+        {
+          "line_no": 4,
+          "text": "Description UnitPrice aty Amtiount",
+          "label": "food",
+          "confidence": 0.9551,
+          "time_ms": 8.54
+        },
+        {
+          "line_no": 5,
+          "text": "+1 새H",
+          "label": "not_food",
+          "confidence": 0.9852,
+          "time_ms": 9.53
+        },
+        {
+          "line_no": 6,
+          "text": "1,38",
+          "label": "not_food",
+          "confidence": 0.9868,
+          "time_ms": 10.65
+        },
+        {
+          "line_no": 7,
+          "text": "9 Shiitake '300g` 표고번 4,38",
+          "label": "food",
+          "confidence": 0.9659,
+          "time_ms": 8.75
+        },
+        {
+          "line_no": 8,
+          "text": "5.18",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.98
+        },
+        {
+          "line_no": 9,
+          "text": "38",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 7.62
+        },
+        {
+          "line_no": 10,
+          "text": "*+1 SH",
+          "label": "not_food",
+          "confidence": 0.8421,
+          "time_ms": 11.53
+        },
+        {
+          "line_no": 11,
+          "text": "'Ro",
+          "label": "food",
+          "confidence": 0.9673,
+          "time_ms": 8.36
+        },
+        {
+          "line_no": 12,
+          "text": "3.38",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 7.99
+        },
+        {
+          "line_no": 13,
+          "text": "38",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.89
+        },
+        {
+          "line_no": 14,
+          "text": "*+*9 07",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.84
+        },
+        {
+          "line_no": 15,
+          "text": "1.93 ,68",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.27
+        },
+        {
+          "line_no": 16,
+          "text": "68",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.96
+        },
+        {
+          "line_no": 17,
+          "text": "Auto 20e DC *9",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 9.44
+        },
+        {
+          "line_no": 18,
+          "text": "+7",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.94
+        },
+        {
+          "line_no": 19,
+          "text": "2.88 -0.39",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.08
+        },
+        {
+          "line_no": 20,
+          "text": "*9 Siiken Tofu *+9 JG 우엉 단무치 250 250g 3,98",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.94
+        },
+        {
+          "line_no": 21,
+          "text": "2.88",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.53
+        },
+        {
+          "line_no": 22,
+          "text": "3.98",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.92
+        },
+        {
+          "line_no": 23,
+          "text": "*+#9",
+          "label": "not_food",
+          "confidence": 0.9753,
+          "time_ms": 8.71
+        },
+        {
+          "line_no": 24,
+          "text": "2.14 1,44",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 9.03
+        },
+        {
+          "line_no": 25,
+          "text": "44",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 9.14
+        },
+        {
+          "line_no": 26,
+          "text": "*+8DS 조청살엿1 2kg Green Bean sVermic ~Ric 2,68 2,68",
+          "label": "food",
+          "confidence": 0.9689,
+          "time_ms": 8.48
+        },
+        {
+          "line_no": 27,
+          "text": "2.14",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.22
+        },
+        {
+          "line_no": 28,
+          "text": "Grocery",
+          "label": "not_food",
+          "confidence": 0.9857,
+          "time_ms": 9.15
+        },
+        {
+          "line_no": 29,
+          "text": "0,70 4,98 4,98",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 8.75
+        },
+        {
+          "line_no": 30,
+          "text": "SUM of Aimticunt",
+          "label": "food",
+          "confidence": 0.9624,
+          "time_ms": 10.22
+        },
+        {
+          "line_no": 31,
+          "text": "0,70",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 8.92
+        },
+        {
+          "line_no": 32,
+          "text": "SUM nf",
+          "label": "not_food",
+          "confidence": 0.983,
+          "time_ms": 7.83
+        },
+        {
+          "line_no": 33,
+          "text": "39.73",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.36
+        }
+      ]
+    },
+    {
+      "receipt_id": 7,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.54.jpeg",
+      "line_count": 25,
+      "food_count": 0,
+      "not_food_count": 25,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "-)드이 렇다",
+          "label": "not_food",
+          "confidence": 0.9801,
+          "time_ms": 12.81
+        },
+        {
+          "line_no": 2,
+          "text": "서울시 성북구하월고동_46-73 콤플러스",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.37
+        },
+        {
+          "line_no": 3,
+          "text": "TEL 02-915-1681 . 대표 확현숙",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 9.36
+        },
+        {
+          "line_no": 4,
+          "text": "[판 매]",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 10.74
+        },
+        {
+          "line_no": 5,
+          "text": "거래일:2018/05/25( 금) 17: 12:44",
+          "label": "not_food",
+          "confidence": 0.9858,
+          "time_ms": 10.54
+        },
+        {
+          "line_no": 6,
+          "text": "판매답당: 9005/정선이",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.21
+        },
+        {
+          "line_no": 7,
+          "text": "POS:02",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 7.85
+        },
+        {
+          "line_no": 8,
+          "text": "거래번호:00G5",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 7.97
+        },
+        {
+          "line_no": 9,
+          "text": "제 품 명",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 11.53
+        },
+        {
+          "line_no": 10,
+          "text": "단가 수량",
+          "label": "not_food",
+          "confidence": 0.9859,
+          "time_ms": 8.44
+        },
+        {
+          "line_no": 11,
+          "text": "금 액",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.45
+        },
+        {
+          "line_no": 12,
+          "text": "할인장난감",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.57
+        },
+        {
+          "line_no": 13,
+          "text": "1,500",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.71
+        },
+        {
+          "line_no": 14,
+          "text": "1,500",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.55
+        },
+        {
+          "line_no": 15,
+          "text": "총 합 계",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.66
+        },
+        {
+          "line_no": 16,
+          "text": "1,500 할 인",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 8.62
+        },
+        {
+          "line_no": 17,
+          "text": "과세금액",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.58
+        },
+        {
+          "line_no": 18,
+          "text": "1,364 부가세액",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 8.64
+        },
+        {
+          "line_no": 19,
+          "text": "136",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.72
+        },
+        {
+          "line_no": 20,
+          "text": "청 구 액",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.62
+        },
+        {
+          "line_no": 21,
+          "text": "1,500 밭 은 돈",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.54
+        },
+        {
+          "line_no": 22,
+          "text": "1,500",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.71
+        },
+        {
+          "line_no": 23,
+          "text": "외상",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 8.52
+        },
+        {
+          "line_no": 24,
+          "text": "500",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.64
+        },
+        {
+          "line_no": 25,
+          "text": "5의",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 8.41
+        }
+      ]
+    },
+    {
+      "receipt_id": 8,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg",
+      "line_count": 57,
+      "food_count": 7,
+      "not_food_count": 50,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "LOTTERIA",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 11.64
+        },
+        {
+          "line_no": 2,
+          "text": "[무 인 ]",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.2
+        },
+        {
+          "line_no": 3,
+          "text": "대규보호",
+          "label": "not_food",
+          "confidence": 0.9819,
+          "time_ms": 7.75
+        },
+        {
+          "line_no": 4,
+          "text": "[ 매장식사",
+          "label": "not_food",
+          "confidence": 0.9846,
+          "time_ms": 13.78
+        },
+        {
+          "line_no": 5,
+          "text": "628-50-00119 못데리이 양산 더계점",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 12.66
+        },
+        {
+          "line_no": 6,
+          "text": "경남양산시덕게로 78 대표 목승민",
+          "label": "food",
+          "confidence": 0.946,
+          "time_ms": 7.54
+        },
+        {
+          "line_no": 7,
+          "text": "TEL 055) 366-3210",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.33
+        },
+        {
+          "line_no": 8,
+          "text": "머래일: 2026/03/10 (와) 12;06: 17 PDS: 30",
+          "label": "not_food",
+          "confidence": 0.9859,
+          "time_ms": 11.15
+        },
+        {
+          "line_no": 9,
+          "text": "만매답당 : 0004 목승민",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 10.48
+        },
+        {
+          "line_no": 10,
+          "text": "거래번호: 0007",
+          "label": "not_food",
+          "confidence": 0.9858,
+          "time_ms": 9.26
+        },
+        {
+          "line_no": 11,
+          "text": "제물명",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 7.95
+        },
+        {
+          "line_no": 12,
+          "text": "단가 수량",
+          "label": "not_food",
+          "confidence": 0.9859,
+          "time_ms": 8.47
+        },
+        {
+          "line_no": 13,
+          "text": "금액",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 9.8
+        },
+        {
+          "line_no": 14,
+          "text": "베이컨물 *버터",
+          "label": "food",
+          "confidence": 0.9681,
+          "time_ms": 8.16
+        },
+        {
+          "line_no": 15,
+          "text": "양 넘감 자",
+          "label": "food",
+          "confidence": 0.9686,
+          "time_ms": 9.48
+        },
+        {
+          "line_no": 16,
+          "text": "6,600",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 7.94
+        },
+        {
+          "line_no": 17,
+          "text": "600",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 7.82
+        },
+        {
+          "line_no": 18,
+          "text": "~어니인",
+          "label": "food",
+          "confidence": 0.9686,
+          "time_ms": 9.53
+        },
+        {
+          "line_no": 19,
+          "text": "2 600",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.99
+        },
+        {
+          "line_no": 20,
+          "text": "2,600",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.98
+        },
+        {
+          "line_no": 21,
+          "text": "좀 밥 계",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 7.64
+        },
+        {
+          "line_no": 22,
+          "text": "과세금액",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 7.65
+        },
+        {
+          "line_no": 23,
+          "text": "9, 200 밀 인",
+          "label": "not_food",
+          "confidence": 0.9839,
+          "time_ms": 10.48
+        },
+        {
+          "line_no": 24,
+          "text": "면세금액",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 7.63
+        },
+        {
+          "line_no": 25,
+          "text": "8, 364 부가세액",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 8.26
+        },
+        {
+          "line_no": 26,
+          "text": "절 구 액",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 7.69
+        },
+        {
+          "line_no": 27,
+          "text": "836",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 7.61
+        },
+        {
+          "line_no": 28,
+          "text": "9,",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 7.66
+        },
+        {
+          "line_no": 29,
+          "text": "200",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 7.62
+        },
+        {
+          "line_no": 30,
+          "text": "FATZ마일",
+          "label": "not_food",
+          "confidence": 0.9797,
+          "time_ms": 7.58
+        },
+        {
+          "line_no": 31,
+          "text": "금되 적립승인번모:",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 9.28
+        },
+        {
+          "line_no": 32,
+          "text": "가용 적립다A[Z마일",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 7.6
+        },
+        {
+          "line_no": 33,
+          "text": "총 적립다A [7마일:",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 7.64
+        },
+        {
+          "line_no": 34,
+          "text": "AOISMRUO",
+          "label": "food",
+          "confidence": 0.9662,
+          "time_ms": 7.66
+        },
+        {
+          "line_no": 35,
+          "text": "적립EA[Z마일:",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 7.64
+        },
+        {
+          "line_no": 36,
+          "text": "276",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.7
+        },
+        {
+          "line_no": 37,
+          "text": "LPOINI",
+          "label": "not_food",
+          "confidence": 0.9852,
+          "time_ms": 7.65
+        },
+        {
+          "line_no": 38,
+          "text": "78",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 7.61
+        },
+        {
+          "line_no": 39,
+          "text": "적리POINT:",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 7.92
+        },
+        {
+          "line_no": 40,
+          "text": "354",
+          "label": "not_food",
+          "confidence": 0.9868,
+          "time_ms": 7.6
+        },
+        {
+          "line_no": 41,
+          "text": "잔여POINT:",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.54
+        },
+        {
+          "line_no": 42,
+          "text": "27 87104005******XX",
+          "label": "not_food",
+          "confidence": 0.9858,
+          "time_ms": 8.02
+        },
+        {
+          "line_no": 43,
+          "text": "습인번 호",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 7.66
+        },
+        {
+          "line_no": 44,
+          "text": "217",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 7.64
+        },
+        {
+          "line_no": 45,
+          "text": "'866542799 가능PUINI :",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 7.7
+        },
+        {
+          "line_no": 46,
+          "text": "KB 몰래티늄",
+          "label": "food",
+          "confidence": 0.9521,
+          "time_ms": 7.59
+        },
+        {
+          "line_no": 47,
+          "text": "217",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 6.53
+        },
+        {
+          "line_no": 48,
+          "text": "곁제 (눕기드",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.58
+        },
+        {
+          "line_no": 49,
+          "text": "말 금액= '9, 200 55495930****301*",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 7.63
+        },
+        {
+          "line_no": 50,
+          "text": "부개원:",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 7.79
+        },
+        {
+          "line_no": 51,
+          "text": "일시블 승인번 오;",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 7.65
+        },
+        {
+          "line_no": 52,
+          "text": "KICCIA",
+          "label": "not_food",
+          "confidence": 0.984,
+          "time_ms": 7.74
+        },
+        {
+          "line_no": 53,
+          "text": "가맣점번오 '30021496",
+          "label": "not_food",
+          "confidence": 0.9813,
+          "time_ms": 7.65
+        },
+        {
+          "line_no": 54,
+          "text": "실비닐",
+          "label": "food",
+          "confidence": 0.9616,
+          "time_ms": 10.47
+        },
+        {
+          "line_no": 55,
+          "text": "번390725*",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 7.65
+        },
+        {
+          "line_no": 56,
+          "text": ":0077925103",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 7.63
+        },
+        {
+          "line_no": 57,
+          "text": "7 5 3 ? \"",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 8.94
+        }
+      ]
+    },
+    {
+      "receipt_id": 9,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg",
+      "line_count": 32,
+      "food_count": 3,
+      "not_food_count": 29,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "LoTTERIA 4",
+          "label": "not_food",
+          "confidence": 0.9857,
+          "time_ms": 10.23
+        },
+        {
+          "line_no": 2,
+          "text": "대기렉호",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 13.93
+        },
+        {
+          "line_no": 3,
+          "text": "137",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 14.04
+        },
+        {
+          "line_no": 4,
+          "text": "722-31)-6438'",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.25
+        },
+        {
+          "line_no": 5,
+          "text": "거래일: 2025/11/03 (뭐)   15 14:49 '거래번로:0041 PDS: 3U",
+          "label": "not_food",
+          "confidence": 0.9858,
+          "time_ms": 8.5
+        },
+        {
+          "line_no": 6,
+          "text": "판매담당: 8189/ 김다솜",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 10.99
+        },
+        {
+          "line_no": 7,
+          "text": "제물명",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 8.86
+        },
+        {
+          "line_no": 8,
+          "text": "단가 수량 금액",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 7.78
+        },
+        {
+          "line_no": 9,
+          "text": "새우세트",
+          "label": "food",
+          "confidence": 0.9616,
+          "time_ms": 9.22
+        },
+        {
+          "line_no": 10,
+          "text": "7,300)",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.54
+        },
+        {
+          "line_no": 11,
+          "text": "7,300",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 7.68
+        },
+        {
+          "line_no": 12,
+          "text": "~제로콜라 (R)",
+          "label": "food",
+          "confidence": 0.9699,
+          "time_ms": 7.73
+        },
+        {
+          "line_no": 13,
+          "text": "도 테이",
+          "label": "food",
+          "confidence": 0.9682,
+          "time_ms": 8.1
+        },
+        {
+          "line_no": 14,
+          "text": "과세금액 총 말 계",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 7.68
+        },
+        {
+          "line_no": 15,
+          "text": "7,300",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 9.95
+        },
+        {
+          "line_no": 16,
+          "text": "637 부가세액 6C3",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.55
+        },
+        {
+          "line_no": 17,
+          "text": "면세금액",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 10.11
+        },
+        {
+          "line_no": 18,
+          "text": "점 구액",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.67
+        },
+        {
+          "line_no": 19,
+          "text": "7,300",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.64
+        },
+        {
+          "line_no": 20,
+          "text": "7,300",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.99
+        },
+        {
+          "line_no": 21,
+          "text": "밭 은 돈",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.53
+        },
+        {
+          "line_no": 22,
+          "text": "모바일상물권",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.58
+        },
+        {
+          "line_no": 23,
+          "text": "4151*****#**4789",
+          "label": "not_food",
+          "confidence": 0.9857,
+          "time_ms": 8.62
+        },
+        {
+          "line_no": 24,
+          "text": "결제금액:",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 8.59
+        },
+        {
+          "line_no": 25,
+          "text": "7,300",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.22
+        },
+        {
+          "line_no": 26,
+          "text": "승인번호: 257103151442777",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 9.82
+        },
+        {
+          "line_no": 27,
+          "text": "연금영수중 ( 소득공제)",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 9.51
+        },
+        {
+          "line_no": 28,
+          "text": "300",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.49
+        },
+        {
+          "line_no": 29,
+          "text": "신분확인번오",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.59
+        },
+        {
+          "line_no": 30,
+          "text": "0100001234 192122453",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 8.73
+        },
+        {
+          "line_no": 31,
+          "text": "승인번호",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.39
+        },
+        {
+          "line_no": 32,
+          "text": "전화 032-541-5005",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.54
+        }
+      ]
+    },
+    {
+      "receipt_id": 10,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg",
+      "line_count": 41,
+      "food_count": 3,
+      "not_food_count": 38,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "LOTTERIA",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 11.96
+        },
+        {
+          "line_no": 2,
+          "text": "[무 인 ]",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 10.2
+        },
+        {
+          "line_no": 3,
+          "text": "대기번호",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 9.28
+        },
+        {
+          "line_no": 4,
+          "text": "182",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 10.54
+        },
+        {
+          "line_no": 5,
+          "text": "주)   못데리이 의정부제일점",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.49
+        },
+        {
+          "line_no": 6,
+          "text": "대표 이성균",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 10.73
+        },
+        {
+          "line_no": 7,
+          "text": "경기 의정부시 시민로 !31번길 16 !증",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 11.52
+        },
+        {
+          "line_no": 8,
+          "text": "단체주문은' 역시 ' '못데리야 제일점",
+          "label": "food",
+          "confidence": 0.9308,
+          "time_ms": 8.27
+        },
+        {
+          "line_no": 9,
+          "text": "HOME\" SERVICE  '주문전화 31600-9999",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 14.08
+        },
+        {
+          "line_no": 10,
+          "text": "점포 직붕 3031)856-9191",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.02
+        },
+        {
+          "line_no": 11,
+          "text": "사업자등록번호 308-14-66524",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 8.41
+        },
+        {
+          "line_no": 12,
+          "text": "거래일: 2019/09/27(금) 16: 53: 09",
+          "label": "not_food",
+          "confidence": 0.9858,
+          "time_ms": 8.24
+        },
+        {
+          "line_no": 13,
+          "text": "PDS:30",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.68
+        },
+        {
+          "line_no": 14,
+          "text": "판매담당: 9008/이성관",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 9.46
+        },
+        {
+          "line_no": 15,
+          "text": "'거래번호: 0084",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.15
+        },
+        {
+          "line_no": 16,
+          "text": "제품명",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.37
+        },
+        {
+          "line_no": 17,
+          "text": "단가 수량",
+          "label": "not_food",
+          "confidence": 0.9859,
+          "time_ms": 8.6
+        },
+        {
+          "line_no": 18,
+          "text": "금액",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.13
+        },
+        {
+          "line_no": 19,
+          "text": "오징어B_세트",
+          "label": "not_food",
+          "confidence": 0.8389,
+          "time_ms": 8.35
+        },
+        {
+          "line_no": 20,
+          "text": "5, 400",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.48
+        },
+        {
+          "line_no": 21,
+          "text": "5, 400",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.61
+        },
+        {
+          "line_no": 22,
+          "text": "레문에이드",
+          "label": "food",
+          "confidence": 0.9623,
+          "time_ms": 8.47
+        },
+        {
+          "line_no": 23,
+          "text": "800",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.71
+        },
+        {
+          "line_no": 24,
+          "text": "B0U",
+          "label": "not_food",
+          "confidence": 0.9838,
+          "time_ms": 8.49
+        },
+        {
+          "line_no": 25,
+          "text": "포 테이 토",
+          "label": "food",
+          "confidence": 0.9667,
+          "time_ms": 8.52
+        },
+        {
+          "line_no": 26,
+          "text": "총 합 계",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.58
+        },
+        {
+          "line_no": 27,
+          "text": "6,200",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.52
+        },
+        {
+          "line_no": 28,
+          "text": "과세금액",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.58
+        },
+        {
+          "line_no": 29,
+          "text": "5,637 부가세액",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.52
+        },
+        {
+          "line_no": 30,
+          "text": "563",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.86
+        },
+        {
+          "line_no": 31,
+          "text": "청 구 액",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.47
+        },
+        {
+          "line_no": 32,
+          "text": "6,200 밭 은 돈",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 7.67
+        },
+        {
+          "line_no": 33,
+          "text": "6,200",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 16.61
+        },
+        {
+          "line_no": 34,
+          "text": "새농험카드 4854**********하다 Smar tRo/A",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 7.93
+        },
+        {
+          "line_no": 35,
+          "text": "결제금액: 6,200",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 7.88
+        },
+        {
+          "line_no": 36,
+          "text": "승인번호: 65250409",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 7.64
+        },
+        {
+          "line_no": 37,
+          "text": "할부개월 : 일시불",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 7.71
+        },
+        {
+          "line_no": 38,
+          "text": "가맣점번호: 146402155",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 19.25
+        },
+        {
+          "line_no": 39,
+          "text": "오직 맛' 오직 정량! 오직 정성 ! 청결한매장",
+          "label": "not_food",
+          "confidence": 0.9855,
+          "time_ms": 7.69
+        },
+        {
+          "line_no": 40,
+          "text": "재방문 하고싶은 매장이 되켓습니다",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 7.83
+        },
+        {
+          "line_no": 41,
+          "text": "방문해주서서 감사합니다'",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 7.75
+        }
+      ]
+    },
+    {
+      "receipt_id": 11,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.55.jpeg",
+      "line_count": 32,
+      "food_count": 8,
+      "not_food_count": 24,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "LoTTERIA",
+          "label": "not_food",
+          "confidence": 0.9857,
+          "time_ms": 10.77
+        },
+        {
+          "line_no": 2,
+          "text": "[주문서 ]",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.55
+        },
+        {
+          "line_no": 3,
+          "text": "대기번호",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 12.52
+        },
+        {
+          "line_no": 4,
+          "text": "고객넘이 주문만",
+          "label": "not_food",
+          "confidence": 0.9858,
+          "time_ms": 10.78
+        },
+        {
+          "line_no": 5,
+          "text": "143",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 11.31
+        },
+        {
+          "line_no": 6,
+          "text": "제둥이 제품흘",
+          "label": "food",
+          "confidence": 0.7095,
+          "time_ms": 8.59
+        },
+        {
+          "line_no": 7,
+          "text": "'완료되면 준비하고",
+          "label": "not_food",
+          "confidence": 0.984,
+          "time_ms": 9.64
+        },
+        {
+          "line_no": 8,
+          "text": "'대기런호가",
+          "label": "food",
+          "confidence": 0.9648,
+          "time_ms": 9.12
+        },
+        {
+          "line_no": 9,
+          "text": "\"주문표시기에",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.17
+        },
+        {
+          "line_no": 10,
+          "text": "또장",
+          "label": "food",
+          "confidence": 0.9654,
+          "time_ms": 9.18
+        },
+        {
+          "line_no": 11,
+          "text": "만매담당 : ( 거래일: 2024/08/03",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 9.37
+        },
+        {
+          "line_no": 12,
+          "text": "'0004/ 육승민 '(토) 20:38: 34",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 7.69
+        },
+        {
+          "line_no": 13,
+          "text": "수림",
+          "label": "food",
+          "confidence": 0.874,
+          "time_ms": 7.65
+        },
+        {
+          "line_no": 14,
+          "text": "제 품 명",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 7.71
+        },
+        {
+          "line_no": 15,
+          "text": "거래번드 오 POS:",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 7.72
+        },
+        {
+          "line_no": 16,
+          "text": "30",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.04
+        },
+        {
+          "line_no": 17,
+          "text": "'0045",
+          "label": "food",
+          "confidence": 0.966,
+          "time_ms": 8.07
+        },
+        {
+          "line_no": 18,
+          "text": "1 2 #전주비빌라이스 #양",
+          "label": "food",
+          "confidence": 0.966,
+          "time_ms": 7.8
+        },
+        {
+          "line_no": 19,
+          "text": "모장유무",
+          "label": "not_food",
+          "confidence": 0.9822,
+          "time_ms": 7.75
+        },
+        {
+          "line_no": 20,
+          "text": "1 #-어니언 병화 자",
+          "label": "not_food",
+          "confidence": 0.9685,
+          "time_ms": 7.78
+        },
+        {
+          "line_no": 21,
+          "text": "1 #모",
+          "label": "not_food",
+          "confidence": 0.9852,
+          "time_ms": 7.62
+        },
+        {
+          "line_no": 22,
+          "text": "테이",
+          "label": "not_food",
+          "confidence": 0.98,
+          "time_ms": 7.7
+        },
+        {
+          "line_no": 23,
+          "text": "2개",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 7.68
+        },
+        {
+          "line_no": 24,
+          "text": "#오렌지( 토",
+          "label": "food",
+          "confidence": 0.9691,
+          "time_ms": 7.82
+        },
+        {
+          "line_no": 25,
+          "text": "1개",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 7.7
+        },
+        {
+          "line_no": 26,
+          "text": "(PEI)",
+          "label": "not_food",
+          "confidence": 0.9856,
+          "time_ms": 7.69
+        },
+        {
+          "line_no": 27,
+          "text": "#레온에이드",
+          "label": "food",
+          "confidence": 0.9696,
+          "time_ms": 7.66
+        },
+        {
+          "line_no": 28,
+          "text": "[아이스] (R)",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 7.64
+        },
+        {
+          "line_no": 29,
+          "text": "1개",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 7.63
+        },
+        {
+          "line_no": 30,
+          "text": "I개",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 7.61
+        },
+        {
+          "line_no": 31,
+          "text": "1개",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 7.59
+        },
+        {
+          "line_no": 32,
+          "text": "'외장실비번?7",
+          "label": "not_food",
+          "confidence": 0.9858,
+          "time_ms": 8.98
+        }
+      ]
+    },
+    {
+      "receipt_id": 12,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.56 (1).jpeg",
+      "line_count": 5,
+      "food_count": 0,
+      "not_food_count": 5,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "8 용",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 9.78
+        },
+        {
+          "line_no": 2,
+          "text": "L 무",
+          "label": "not_food",
+          "confidence": 0.9852,
+          "time_ms": 11.38
+        },
+        {
+          "line_no": 3,
+          "text": "히 올",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 7.57
+        },
+        {
+          "line_no": 4,
+          "text": "물 품",
+          "label": "not_food",
+          "confidence": 0.9857,
+          "time_ms": 9.11
+        },
+        {
+          "line_no": 5,
+          "text": "필들",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 14.76
+        }
+      ]
+    },
+    {
+      "receipt_id": 13,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg",
+      "line_count": 21,
+      "food_count": 3,
+      "not_food_count": 18,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "LOTTERIA",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 8.01
+        },
+        {
+          "line_no": 2,
+          "text": "411-13-762B1",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.19
+        },
+        {
+          "line_no": 3,
+          "text": "3 061,454,0005 대 표 [판 매] 온 경",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 7.65
+        },
+        {
+          "line_no": 4,
+          "text": "만매답당:0031/김영미 거래번호:0025 FUSOI",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 11.09
+        },
+        {
+          "line_no": 5,
+          "text": "단가 수량",
+          "label": "not_food",
+          "confidence": 0.9859,
+          "time_ms": 10.98
+        },
+        {
+          "line_no": 6,
+          "text": "#베이컨모찌님 국새우버거",
+          "label": "food",
+          "confidence": 0.9697,
+          "time_ms": 7.63
+        },
+        {
+          "line_no": 7,
+          "text": "900",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.45
+        },
+        {
+          "line_no": 8,
+          "text": "800",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 9.75
+        },
+        {
+          "line_no": 9,
+          "text": "90D BOO",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 10.26
+        },
+        {
+          "line_no": 10,
+          "text": "#양",
+          "label": "food",
+          "confidence": 0.9695,
+          "time_ms": 8.92
+        },
+        {
+          "line_no": 11,
+          "text": "2,000",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.88
+        },
+        {
+          "line_no": 12,
+          "text": "300",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.76
+        },
+        {
+          "line_no": 13,
+          "text": "과세금액",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.7
+        },
+        {
+          "line_no": 14,
+          "text": "10,000 70U 잘 콜가세액",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.63
+        },
+        {
+          "line_no": 15,
+          "text": "703 ODD",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.92
+        },
+        {
+          "line_no": 16,
+          "text": "성 구액 CDU 받 은 돈 ILoOJ",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 8.35
+        },
+        {
+          "line_no": 17,
+          "text": "디처트럭인",
+          "label": "not_food",
+          "confidence": 0.9844,
+          "time_ms": 8.66
+        },
+        {
+          "line_no": 18,
+          "text": "700",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.82
+        },
+        {
+          "line_no": 19,
+          "text": "연금",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.92
+        },
+        {
+          "line_no": 20,
+          "text": "'UDO",
+          "label": "food",
+          "confidence": 0.9683,
+          "time_ms": 8.61
+        },
+        {
+          "line_no": 21,
+          "text": "02 5",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.78
+        }
+      ]
+    },
+    {
+      "receipt_id": 14,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.56 (3).jpeg",
+      "line_count": 13,
+      "food_count": 1,
+      "not_food_count": 12,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "대'기번호",
+          "label": "not_food",
+          "confidence": 0.9856,
+          "time_ms": 12.34
+        },
+        {
+          "line_no": 2,
+          "text": "{=질 리미 터민",
+          "label": "food",
+          "confidence": 0.6246,
+          "time_ms": 11.7
+        },
+        {
+          "line_no": 3,
+          "text": "뜻제도",
+          "label": "not_food",
+          "confidence": 0.9831,
+          "time_ms": 8.12
+        },
+        {
+          "line_no": 4,
+          "text": "E가 수량",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 7.7
+        },
+        {
+          "line_no": 5,
+          "text": "사무니거 시트",
+          "label": "not_food",
+          "confidence": 0.9859,
+          "time_ms": 7.77
+        },
+        {
+          "line_no": 6,
+          "text": "~세로습가 골리",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 10.61
+        },
+        {
+          "line_no": 7,
+          "text": "\",E37 느가세야",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.66
+        },
+        {
+          "line_no": 8,
+          "text": "PST)",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 10.5
+        },
+        {
+          "line_no": 9,
+          "text": "승진번로:=212224-1 가볍P INT ;",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 8.3
+        },
+        {
+          "line_no": 10,
+          "text": "기프디& 71357",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.03
+        },
+        {
+          "line_no": 11,
+          "text": "013++*5.734",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 8.0
+        },
+        {
+          "line_no": 12,
+          "text": "[=2300243",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.12
+        },
+        {
+          "line_no": 13,
+          "text": "~ ? 0 0 - 2",
+          "label": "not_food",
+          "confidence": 0.8098,
+          "time_ms": 7.86
+        }
+      ]
+    },
+    {
+      "receipt_id": 15,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.56.jpeg",
+      "line_count": 20,
+      "food_count": 5,
+      "not_food_count": 15,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "LOTTERIA 4",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 11.87
+        },
+        {
+          "line_no": 2,
+          "text": "서문 TELs 695-63-00010 02-2686-8077 구로구 오리로 114g 대표 길 미 해",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.83
+        },
+        {
+          "line_no": 3,
+          "text": "[판 매]",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 10.23
+        },
+        {
+          "line_no": 4,
+          "text": "거래임:2016/08/040 O",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 9.9
+        },
+        {
+          "line_no": 5,
+          "text": "판매답당: 9005/ 최정미",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 7.17
+        },
+        {
+          "line_no": 6,
+          "text": ":0054",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.54
+        },
+        {
+          "line_no": 7,
+          "text": "제품명 단가 수량",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 7.8
+        },
+        {
+          "line_no": 8,
+          "text": "#-포 #치o버거세트 테이",
+          "label": "food",
+          "confidence": 0.9682,
+          "time_ms": 12.91
+        },
+        {
+          "line_no": 9,
+          "text": "5,100",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.28
+        },
+        {
+          "line_no": 10,
+          "text": "860",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 10.16
+        },
+        {
+          "line_no": 11,
+          "text": "#~곰 라(R)",
+          "label": "food",
+          "confidence": 0.9695,
+          "time_ms": 7.75
+        },
+        {
+          "line_no": 12,
+          "text": "#새 우세 테이",
+          "label": "food",
+          "confidence": 0.9695,
+          "time_ms": 11.58
+        },
+        {
+          "line_no": 13,
+          "text": "5,400",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.12
+        },
+        {
+          "line_no": 14,
+          "text": "5,140",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 8.11
+        },
+        {
+          "line_no": 15,
+          "text": "#풀 라(R)",
+          "label": "food",
+          "confidence": 0.9698,
+          "time_ms": 8.11
+        },
+        {
+          "line_no": 16,
+          "text": "과세금액 총합 계 10,500 할",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 7.96
+        },
+        {
+          "line_no": 17,
+          "text": "500",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.07
+        },
+        {
+          "line_no": 18,
+          "text": "청 구 액",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.3
+        },
+        {
+          "line_no": 19,
+          "text": "10,000 밭 온 돈 g0g",
+          "label": "food",
+          "confidence": 0.9636,
+          "time_ms": 8.05
+        },
+        {
+          "line_no": 20,
+          "text": "10,000",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 8.51
+        }
+      ]
+    },
+    {
+      "receipt_id": 16,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg",
+      "line_count": 21,
+      "food_count": 1,
+      "not_food_count": 20,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "LOTTERIA L",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 9.83
+        },
+        {
+          "line_no": 2,
+          "text": "대기번호",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.66
+        },
+        {
+          "line_no": 3,
+          "text": "128",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.73
+        },
+        {
+          "line_no": 4,
+          "text": "매장식사",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 12.65
+        },
+        {
+          "line_no": 5,
+          "text": "743-10-U1119",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 10.88
+        },
+        {
+          "line_no": 6,
+          "text": "거래인: 2026/02/09(모) 17;59:012 민매님팀 : UDJD",
+          "label": "not_food",
+          "confidence": 0.9859,
+          "time_ms": 9.89
+        },
+        {
+          "line_no": 7,
+          "text": "거래번모: 0030 FUS: 301",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 11.83
+        },
+        {
+          "line_no": 8,
+          "text": "제물덤",
+          "label": "not_food",
+          "confidence": 0.9786,
+          "time_ms": 10.08
+        },
+        {
+          "line_no": 9,
+          "text": "단가 수량",
+          "label": "not_food",
+          "confidence": 0.9859,
+          "time_ms": 9.44
+        },
+        {
+          "line_no": 10,
+          "text": "13,501",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 9.03
+        },
+        {
+          "line_no": 11,
+          "text": "13, 5,000",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 9.03
+        },
+        {
+          "line_no": 12,
+          "text": "모) 외이어되4",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.65
+        },
+        {
+          "line_no": 13,
+          "text": "NEH지권너켓",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 9.85
+        },
+        {
+          "line_no": 14,
+          "text": "이이스디 (R) 데이",
+          "label": "not_food",
+          "confidence": 0.9852,
+          "time_ms": 8.58
+        },
+        {
+          "line_no": 15,
+          "text": "300",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 9.03
+        },
+        {
+          "line_no": 16,
+          "text": "3 0",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 11.04
+        },
+        {
+          "line_no": 17,
+          "text": "아이시스ECU",
+          "label": "food",
+          "confidence": 0.9527,
+          "time_ms": 8.11
+        },
+        {
+          "line_no": 18,
+          "text": "과세금액 솜 탑 게 13,BOO 12, 546 부기세액",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.27
+        },
+        {
+          "line_no": 19,
+          "text": "1,254",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.22
+        },
+        {
+          "line_no": 20,
+          "text": "면세금액",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 7.89
+        },
+        {
+          "line_no": 21,
+          "text": "밭 은 점 구 13,BOO 13,8CO",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.26
+        }
+      ]
+    },
+    {
+      "receipt_id": 17,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.57 (2).jpeg",
+      "line_count": 18,
+      "food_count": 1,
+      "not_food_count": 17,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "[주문 서 ]",
+          "label": "not_food",
+          "confidence": 0.9868,
+          "time_ms": 12.5
+        },
+        {
+          "line_no": 2,
+          "text": "대기번호",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 13.45
+        },
+        {
+          "line_no": 3,
+          "text": "208",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 14.1
+        },
+        {
+          "line_no": 4,
+          "text": "안내되나다,",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 13.27
+        },
+        {
+          "line_no": 5,
+          "text": "[ 포장",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 13.79
+        },
+        {
+          "line_no": 6,
+          "text": "!:2026/04/07(화) 18:57:14 POS:32",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 13.46
+        },
+        {
+          "line_no": 7,
+          "text": "{담당: 1004/ '조운",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 16.34
+        },
+        {
+          "line_no": 8,
+          "text": "거래번호: 0157",
+          "label": "not_food",
+          "confidence": 0.9858,
+          "time_ms": 15.82
+        },
+        {
+          "line_no": 9,
+          "text": "수량 제 품 명",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 20.48
+        },
+        {
+          "line_no": 10,
+          "text": "포장유무",
+          "label": "not_food",
+          "confidence": 0.9851,
+          "time_ms": 11.46
+        },
+        {
+          "line_no": 11,
+          "text": "#돈까스*디진다",
+          "label": "food",
+          "confidence": 0.9687,
+          "time_ms": 11.09
+        },
+        {
+          "line_no": 12,
+          "text": "3,500",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 12.03
+        },
+        {
+          "line_no": 13,
+          "text": "합 계",
+          "label": "not_food",
+          "confidence": 0.9851,
+          "time_ms": 10.71
+        },
+        {
+          "line_no": 14,
+          "text": "고객 불만 접수 net",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 12.42
+        },
+        {
+          "line_no": 15,
+          "text": "이메일",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 9.22
+        },
+        {
+          "line_no": 16,
+          "text": "문자 02-312-9760 _GiGA CIIC",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 9.73
+        },
+        {
+          "line_no": 17,
+          "text": "와이파이KT",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.71
+        },
+        {
+          "line_no": 18,
+          "text": "비밀번호: csfdaks0004",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 7.83
+        }
+      ]
+    },
+    {
+      "receipt_id": 18,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg",
+      "line_count": 24,
+      "food_count": 3,
+      "not_food_count": 21,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "[주문 서 ]",
+          "label": "not_food",
+          "confidence": 0.9868,
+          "time_ms": 12.8
+        },
+        {
+          "line_no": 2,
+          "text": "대기번호",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 7.94
+        },
+        {
+          "line_no": 3,
+          "text": "222",
+          "label": "not_food",
+          "confidence": 0.9858,
+          "time_ms": 10.21
+        },
+        {
+          "line_no": 4,
+          "text": "고쪽남이",
+          "label": "food",
+          "confidence": 0.9639,
+          "time_ms": 11.09
+        },
+        {
+          "line_no": 5,
+          "text": "주문한",
+          "label": "not_food",
+          "confidence": 0.9869,
+          "time_ms": 11.03
+        },
+        {
+          "line_no": 6,
+          "text": "제품을",
+          "label": "not_food",
+          "confidence": 0.9853,
+          "time_ms": 9.43
+        },
+        {
+          "line_no": 7,
+          "text": "재품이",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 12.28
+        },
+        {
+          "line_no": 8,
+          "text": "줍하고",
+          "label": "not_food",
+          "confidence": 0.9843,
+          "time_ms": 12.16
+        },
+        {
+          "line_no": 9,
+          "text": "대기번호가 있습L다;",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 11.28
+        },
+        {
+          "line_no": 10,
+          "text": "주문표-",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.15
+        },
+        {
+          "line_no": 11,
+          "text": "안내되나다,",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.28
+        },
+        {
+          "line_no": 12,
+          "text": "포장",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.14
+        },
+        {
+          "line_no": 13,
+          "text": "거래일",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.17
+        },
+        {
+          "line_no": 14,
+          "text": ":2026/06/18(들",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.38
+        },
+        {
+          "line_no": 15,
+          "text": "판매담당:0002/익 목)",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 8.46
+        },
+        {
+          "line_no": 16,
+          "text": "'김용국 16:40:04",
+          "label": "food",
+          "confidence": 0.948,
+          "time_ms": 8.6
+        },
+        {
+          "line_no": 17,
+          "text": "거래번호 POS:32",
+          "label": "not_food",
+          "confidence": 0.9858,
+          "time_ms": 9.29
+        },
+        {
+          "line_no": 18,
+          "text": "제 품 명",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 9.34
+        },
+        {
+          "line_no": 19,
+          "text": ":0075",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.02
+        },
+        {
+          "line_no": 20,
+          "text": "#돈까스*디진다",
+          "label": "food",
+          "confidence": 0.9687,
+          "time_ms": 9.12
+        },
+        {
+          "line_no": 21,
+          "text": "포장유무",
+          "label": "not_food",
+          "confidence": 0.9851,
+          "time_ms": 11.95
+        },
+        {
+          "line_no": 22,
+          "text": "합 계",
+          "label": "not_food",
+          "confidence": 0.9851,
+          "time_ms": 9.13
+        },
+        {
+          "line_no": 23,
+          "text": "1개",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.69
+        },
+        {
+          "line_no": 24,
+          "text": "3,500",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.93
+        }
+      ]
+    },
+    {
+      "receipt_id": 19,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.57.jpeg",
+      "line_count": 14,
+      "food_count": 2,
+      "not_food_count": 12,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "옆스즘",
+          "label": "not_food",
+          "confidence": 0.7635,
+          "time_ms": 9.49
+        },
+        {
+          "line_no": 2,
+          "text": "엄수숙-번모:24032140101-0007-01",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.88
+        },
+        {
+          "line_no": 3,
+          "text": "517-73-00753",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 12.54
+        },
+        {
+          "line_no": 4,
+          "text": "계산밀자' 2034-05-21 시간: 12:33:44",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 8.37
+        },
+        {
+          "line_no": 5,
+          "text": "물명",
+          "label": "not_food",
+          "confidence": 0.9848,
+          "time_ms": 14.76
+        },
+        {
+          "line_no": 6,
+          "text": "수컷 및민 금목",
+          "label": "not_food",
+          "confidence": 0.6313,
+          "time_ms": 12.27
+        },
+        {
+          "line_no": 7,
+          "text": "~자수 주가 우리멘( 긴장)",
+          "label": "food",
+          "confidence": 0.9696,
+          "time_ms": 11.54
+        },
+        {
+          "line_no": 8,
+          "text": "카스 아기고자",
+          "label": "food",
+          "confidence": 0.968,
+          "time_ms": 9.7
+        },
+        {
+          "line_no": 9,
+          "text": "숨매 제 매르",
+          "label": "not_food",
+          "confidence": 0.8608,
+          "time_ms": 8.56
+        },
+        {
+          "line_no": 10,
+          "text": "B 40",
+          "label": "not_food",
+          "confidence": 0.979,
+          "time_ms": 9.33
+        },
+        {
+          "line_no": 11,
+          "text": "453505t+,+++1+*+",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 9.22
+        },
+        {
+          "line_no": 12,
+          "text": "[습인 Rebrlanu 0233221",
+          "label": "not_food",
+          "confidence": 0.9693,
+          "time_ms": 9.3
+        },
+        {
+          "line_no": 13,
+          "text": "[곁 제 1a 400",
+          "label": "not_food",
+          "confidence": 0.9868,
+          "time_ms": 9.24
+        },
+        {
+          "line_no": 14,
+          "text": "주문번호:7",
+          "label": "not_food",
+          "confidence": 0.9859,
+          "time_ms": 11.66
+        }
+      ]
+    },
+    {
+      "receipt_id": 20,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.58 (1).jpeg",
+      "line_count": 17,
+      "food_count": 5,
+      "not_food_count": 12,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "133",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 7.72
+        },
+        {
+          "line_no": 2,
+          "text": "고객m이 주문한 세품올 준비하고 있습니다 .",
+          "label": "not_food",
+          "confidence": 0.9869,
+          "time_ms": 8.05
+        },
+        {
+          "line_no": 3,
+          "text": "[ 매장식사 ]",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.93
+        },
+        {
+          "line_no": 4,
+          "text": "거래일:2026/03/19(목) 21:13:37 FOS:30",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 8.81
+        },
+        {
+          "line_no": 5,
+          "text": "판매담당 : 1000/박동현 거래번호:00a4",
+          "label": "not_food",
+          "confidence": 0.9856,
+          "time_ms": 10.64
+        },
+        {
+          "line_no": 6,
+          "text": "수량 제 품 명",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 10.62
+        },
+        {
+          "line_no": 7,
+          "text": "포장유무",
+          "label": "not_food",
+          "confidence": 0.9851,
+          "time_ms": 8.82
+        },
+        {
+          "line_no": 8,
+          "text": "돈까스*디진다",
+          "label": "food",
+          "confidence": 0.9678,
+          "time_ms": 11.85
+        },
+        {
+          "line_no": 9,
+          "text": "내주지즈스틱",
+          "label": "not_food",
+          "confidence": 0.9687,
+          "time_ms": 12.47
+        },
+        {
+          "line_no": 10,
+          "text": "양 넘감",
+          "label": "food",
+          "confidence": 0.9633,
+          "time_ms": 9.09
+        },
+        {
+          "line_no": 11,
+          "text": "~칠리",
+          "label": "food",
+          "confidence": 0.9691,
+          "time_ms": 8.55
+        },
+        {
+          "line_no": 12,
+          "text": "제로콜라(L)",
+          "label": "food",
+          "confidence": 0.97,
+          "time_ms": 8.44
+        },
+        {
+          "line_no": 13,
+          "text": "[아이스]",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.85
+        },
+        {
+          "line_no": 14,
+          "text": "1개",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.6
+        },
+        {
+          "line_no": 15,
+          "text": "11,100",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 10.68
+        },
+        {
+          "line_no": 16,
+          "text": "기분출은 흥서비스 1600-gggg",
+          "label": "food",
+          "confidence": 0.9554,
+          "time_ms": 8.85
+        },
+        {
+          "line_no": 17,
+          "text": "기분출은 단제주문 055-314-8131 *이해주서시 감사라니다 *",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.13
+        }
+      ]
+    },
+    {
+      "receipt_id": 21,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg",
+      "line_count": 20,
+      "food_count": 5,
+      "not_food_count": 15,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "대기번호",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 10.76
+        },
+        {
+          "line_no": 2,
+          "text": "140",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.21
+        },
+        {
+          "line_no": 3,
+          "text": "매장식사 ]",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 12.02
+        },
+        {
+          "line_no": 4,
+          "text": "420-3-01945 '듯데리야 고색적",
+          "label": "food",
+          "confidence": 0.9675,
+          "time_ms": 9.38
+        },
+        {
+          "line_no": 5,
+          "text": "수원시 권신구 매륙고색로 691번길  18",
+          "label": "not_food",
+          "confidence": 0.9834,
+          "time_ms": 10.15
+        },
+        {
+          "line_no": 6,
+          "text": "1 031-295-9265 대표 박혀란",
+          "label": "food",
+          "confidence": 0.9675,
+          "time_ms": 9.59
+        },
+        {
+          "line_no": 7,
+          "text": "거래일 2026/04/12(일) 14318: 18 판매답당: 0001 /임성반",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 10.6
+        },
+        {
+          "line_no": 8,
+          "text": "POS:30",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 10.18
+        },
+        {
+          "line_no": 9,
+          "text": "거래번호 :0042",
+          "label": "not_food",
+          "confidence": 0.9857,
+          "time_ms": 8.88
+        },
+        {
+          "line_no": 10,
+          "text": "제품명",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.71
+        },
+        {
+          "line_no": 11,
+          "text": "단가 수량",
+          "label": "not_food",
+          "confidence": 0.9859,
+          "time_ms": 9.61
+        },
+        {
+          "line_no": 12,
+          "text": "금액",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 9.35
+        },
+        {
+          "line_no": 13,
+          "text": "SKP",
+          "label": "not_food",
+          "confidence": 0.9776,
+          "time_ms": 9.32
+        },
+        {
+          "line_no": 14,
+          "text": "14,900)",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.67
+        },
+        {
+          "line_no": 15,
+          "text": "14,900",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 10.95
+        },
+        {
+          "line_no": 16,
+          "text": "~플라식치스*터",
+          "label": "not_food",
+          "confidence": 0.9811,
+          "time_ms": 8.19
+        },
+        {
+          "line_no": 17,
+          "text": "~콜라(R)",
+          "label": "food",
+          "confidence": 0.9696,
+          "time_ms": 8.58
+        },
+        {
+          "line_no": 18,
+          "text": "~어니언 ~양 넘감   자",
+          "label": "food",
+          "confidence": 0.9696,
+          "time_ms": 8.37
+        },
+        {
+          "line_no": 19,
+          "text": "~컬리",
+          "label": "food",
+          "confidence": 0.9692,
+          "time_ms": 9.41
+        },
+        {
+          "line_no": 20,
+          "text": "중합 계 '기 ' 14,g0n",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.47
+        }
+      ]
+    },
+    {
+      "receipt_id": 22,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg",
+      "line_count": 43,
+      "food_count": 4,
+      "not_food_count": 39,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "LOTIERIA",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 13.75
+        },
+        {
+          "line_no": 2,
+          "text": "무 인",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.09
+        },
+        {
+          "line_no": 3,
+          "text": "대기번호",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.68
+        },
+        {
+          "line_no": 4,
+          "text": "141",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 10.13
+        },
+        {
+          "line_no": 5,
+          "text": "[ 매장 식사 ]",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 14.56
+        },
+        {
+          "line_no": 6,
+          "text": "못데지일에스(주) 성수 역심 대표",
+          "label": "not_food",
+          "confidence": 0.9835,
+          "time_ms": 9.43
+        },
+        {
+          "line_no": 7,
+          "text": "209-",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 9.81
+        },
+        {
+          "line_no": 8,
+          "text": "서물 성도구 성수52가 277-17 1층 로데리이",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 10.57
+        },
+        {
+          "line_no": 9,
+          "text": "5 02)467-",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 8.71
+        },
+        {
+          "line_no": 10,
+          "text": "거래일:2024/07/",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.57
+        },
+        {
+          "line_no": 11,
+          "text": "POS:",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 10.07
+        },
+        {
+          "line_no": 12,
+          "text": "판매담당",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 8.36
+        },
+        {
+          "line_no": 13,
+          "text": "거래번호:00",
+          "label": "not_food",
+          "confidence": 0.9857,
+          "time_ms": 8.65
+        },
+        {
+          "line_no": 14,
+          "text": "제품명",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.54
+        },
+        {
+          "line_no": 15,
+          "text": "단가 수량",
+          "label": "not_food",
+          "confidence": 0.9859,
+          "time_ms": 9.47
+        },
+        {
+          "line_no": 16,
+          "text": "금액",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 9.68
+        },
+        {
+          "line_no": 17,
+          "text": "사각새우더불세트",
+          "label": "food",
+          "confidence": 0.965,
+          "time_ms": 8.81
+        },
+        {
+          "line_no": 18,
+          "text": "7,800",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 10.22
+        },
+        {
+          "line_no": 19,
+          "text": "7,800",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 8.38
+        },
+        {
+          "line_no": 20,
+          "text": "~포데이도",
+          "label": "food",
+          "confidence": 0.5484,
+          "time_ms": 8.58
+        },
+        {
+          "line_no": 21,
+          "text": "400",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.89
+        },
+        {
+          "line_no": 22,
+          "text": "400",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.45
+        },
+        {
+          "line_no": 23,
+          "text": "~콜라(R)",
+          "label": "food",
+          "confidence": 0.9696,
+          "time_ms": 9.66
+        },
+        {
+          "line_no": 24,
+          "text": "베컨새우셋",
+          "label": "not_food",
+          "confidence": 0.8162,
+          "time_ms": 9.98
+        },
+        {
+          "line_no": 25,
+          "text": "7,900",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 9.42
+        },
+        {
+          "line_no": 26,
+          "text": "900",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 10.28
+        },
+        {
+          "line_no": 27,
+          "text": "-포테이토",
+          "label": "not_food",
+          "confidence": 0.974,
+          "time_ms": 8.69
+        },
+        {
+          "line_no": 28,
+          "text": "400",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 16.89
+        },
+        {
+          "line_no": 29,
+          "text": "400",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 10.24
+        },
+        {
+          "line_no": 30,
+          "text": "~사이다(R)",
+          "label": "food",
+          "confidence": 0.9699,
+          "time_ms": 8.51
+        },
+        {
+          "line_no": 31,
+          "text": "총합 계",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 8.48
+        },
+        {
+          "line_no": 32,
+          "text": "16,500 할",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 8.32
+        },
+        {
+          "line_no": 33,
+          "text": "과세금액",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.6
+        },
+        {
+          "line_no": 34,
+          "text": "15,0000 부기세액",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 9.33
+        },
+        {
+          "line_no": 35,
+          "text": "500",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 9.53
+        },
+        {
+          "line_no": 36,
+          "text": "면세금액",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.04
+        },
+        {
+          "line_no": 37,
+          "text": "16,500",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.78
+        },
+        {
+          "line_no": 38,
+          "text": "은 돈",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 8.84
+        },
+        {
+          "line_no": 39,
+          "text": "16,500",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.37
+        },
+        {
+          "line_no": 40,
+          "text": "4수",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.86
+        },
+        {
+          "line_no": 41,
+          "text": "설세d액: 16,500",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 10.4
+        },
+        {
+          "line_no": 42,
+          "text": "승인번호;7784",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 10.23
+        },
+        {
+          "line_no": 43,
+          "text": "일부개월: 일시물",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 10.77
+        }
+      ]
+    },
+    {
+      "receipt_id": 23,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.58.jpeg",
+      "line_count": 15,
+      "food_count": 5,
+      "not_food_count": 10,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "[주문 서 ]",
+          "label": "not_food",
+          "confidence": 0.9868,
+          "time_ms": 8.69
+        },
+        {
+          "line_no": 2,
+          "text": "대기번호",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.39
+        },
+        {
+          "line_no": 3,
+          "text": "160",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 12.3
+        },
+        {
+          "line_no": 4,
+          "text": "안료되편 대_호)",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.25
+        },
+        {
+          "line_no": 5,
+          "text": "안내되니다;",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 10.69
+        },
+        {
+          "line_no": 6,
+          "text": "[ 매장식사 ]",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 9.88
+        },
+        {
+          "line_no": 7,
+          "text": "기래일:2026/04/05(일)  16:37:53 판매당당: 0260/ 깊다현 거래번호:005 | POS:31",
+          "label": "not_food",
+          "confidence": 0.9856,
+          "time_ms": 8.97
+        },
+        {
+          "line_no": 8,
+          "text": "수량 제 품 명",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.59
+        },
+        {
+          "line_no": 9,
+          "text": "포상'금무",
+          "label": "food",
+          "confidence": 0.9664,
+          "time_ms": 14.07
+        },
+        {
+          "line_no": 10,
+          "text": "돈까스*디진다",
+          "label": "food",
+          "confidence": 0.9678,
+          "time_ms": 12.5
+        },
+        {
+          "line_no": 11,
+          "text": "돈까스 양념",
+          "label": "food",
+          "confidence": 0.9693,
+          "time_ms": 8.54
+        },
+        {
+          "line_no": 12,
+          "text": "사이다(R)",
+          "label": "food",
+          "confidence": 0.9686,
+          "time_ms": 8.37
+        },
+        {
+          "line_no": 13,
+          "text": "제로출라(R)",
+          "label": "food",
+          "confidence": 0.9697,
+          "time_ms": 8.64
+        },
+        {
+          "line_no": 14,
+          "text": "11,0,000",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 10.56
+        },
+        {
+          "line_no": 15,
+          "text": "6037029",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 9.48
+        }
+      ]
+    },
+    {
+      "receipt_id": 24,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg",
+      "line_count": 31,
+      "food_count": 5,
+      "not_food_count": 26,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "LOTTERIA 4",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 15.49
+        },
+        {
+          "line_no": 2,
+          "text": "106-81-23498 (주) 못데리야 수원역광장점 수원시 팔단 m영대로 924 대표 노입식",
+          "label": "not_food",
+          "confidence": 0.9813,
+          "time_ms": 11.52
+        },
+        {
+          "line_no": 3,
+          "text": "031-240-0835",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 15.04
+        },
+        {
+          "line_no": 4,
+          "text": "[만 매]",
+          "label": "not_food",
+          "confidence": 0.9869,
+          "time_ms": 15.46
+        },
+        {
+          "line_no": 5,
+          "text": "{라일:2016/04/08(- 다기별호 I0:C6 FUS 01",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 13.64
+        },
+        {
+          "line_no": 6,
+          "text": "만매답당:0101/이경의 거래번호:01 18",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 13.89
+        },
+        {
+          "line_no": 7,
+          "text": "제 품 명 단기 수량",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 11.59
+        },
+        {
+          "line_no": 8,
+          "text": "베이컨에그S ,200",
+          "label": "food",
+          "confidence": 0.6876,
+          "time_ms": 10.44
+        },
+        {
+          "line_no": 9,
+          "text": "4,200",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 10.43
+        },
+        {
+          "line_no": 10,
+          "text": "해쉬트라문",
+          "label": "food",
+          "confidence": 0.9554,
+          "time_ms": 8.55
+        },
+        {
+          "line_no": 11,
+          "text": "리(R)",
+          "label": "food",
+          "confidence": 0.9637,
+          "time_ms": 8.54
+        },
+        {
+          "line_no": 12,
+          "text": "총 합 계",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.71
+        },
+        {
+          "line_no": 13,
+          "text": "4,200",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.82
+        },
+        {
+          "line_no": 14,
+          "text": "과세금액",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.68
+        },
+        {
+          "line_no": 15,
+          "text": "3,019",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.53
+        },
+        {
+          "line_no": 16,
+          "text": "371",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.55
+        },
+        {
+          "line_no": 17,
+          "text": "청구 애 4,200 번 은 논",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 9.0
+        },
+        {
+          "line_no": 18,
+          "text": "200",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 11.11
+        },
+        {
+          "line_no": 19,
+          "text": "{영수증( 소득공제 }",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.84
+        },
+        {
+          "line_no": 20,
+          "text": "2000",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 10.72
+        },
+        {
+          "line_no": 21,
+          "text": "승인번호",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 9.87
+        },
+        {
+          "line_no": 22,
+          "text": "I31D3B504 OJDU1234",
+          "label": "not_food",
+          "confidence": 0.9841,
+          "time_ms": 9.81
+        },
+        {
+          "line_no": 23,
+          "text": "*이달의 세트구매시 행시 원피스피규이 20,UI0,000원",
+          "label": "food",
+          "confidence": 0.951,
+          "time_ms": 9.31
+        },
+        {
+          "line_no": 24,
+          "text": "세트구매시 이름피구어 25,U0U원",
+          "label": "not_food",
+          "confidence": 0.6761,
+          "time_ms": 12.09
+        },
+        {
+          "line_no": 25,
+          "text": "세트구마시 스피커령 보조배터리 U0원",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.47
+        },
+        {
+          "line_no": 26,
+          "text": "매장이용하시면서 불편시항 연리처",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.74
+        },
+        {
+          "line_no": 27,
+          "text": "점장 ( 오김종 010-4105-pBZ2",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.46
+        },
+        {
+          "line_no": 28,
+          "text": "심아시간대 (22시 07시) 정로로 연락주세요 !",
+          "label": "not_food",
+          "confidence": 0.9868,
+          "time_ms": 10.98
+        },
+        {
+          "line_no": 29,
+          "text": "접프연라처 031-240-0095",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 9.77
+        },
+        {
+          "line_no": 30,
+          "text": "#리이데이 7입 치린버거 1입 햇크리스피 1+|",
+          "label": "food",
+          "confidence": 0.9695,
+          "time_ms": 8.96
+        },
+        {
+          "line_no": 31,
+          "text": "'영수중번호 110761604030101183",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 11.42
+        }
+      ]
+    },
+    {
+      "receipt_id": 25,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg",
+      "line_count": 40,
+      "food_count": 3,
+      "not_food_count": 37,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "내U",
+          "label": "not_food",
+          "confidence": 0.9746,
+          "time_ms": 14.01
+        },
+        {
+          "line_no": 2,
+          "text": "LoTT ERIA",
+          "label": "not_food",
+          "confidence": 0.9831,
+          "time_ms": 10.07
+        },
+        {
+          "line_no": 3,
+          "text": "부산 진구 부전동 576번지 대표 입 식",
+          "label": "not_food",
+          "confidence": 0.9856,
+          "time_ms": 14.5
+        },
+        {
+          "line_no": 4,
+          "text": "TEL.819-3652 점장 김희정(010-2887-8916 )",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 12.92
+        },
+        {
+          "line_no": 5,
+          "text": "[판 대]",
+          "label": "not_food",
+          "confidence": 0.9869,
+          "time_ms": 12.46
+        },
+        {
+          "line_no": 6,
+          "text": "드시고 기분-은 하루되세요",
+          "label": "not_food",
+          "confidence": 0.9868,
+          "time_ms": 26.12
+        },
+        {
+          "line_no": 7,
+          "text": "대기번호 이1",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 29.33
+        },
+        {
+          "line_no": 8,
+          "text": "거래일:2016/01/03(일) 09:22:26 POS:02",
+          "label": "not_food",
+          "confidence": 0.9858,
+          "time_ms": 20.8
+        },
+        {
+          "line_no": 9,
+          "text": "판매답당 : 9001 / 김세미",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 13.13
+        },
+        {
+          "line_no": 10,
+          "text": "거래번호: 0018",
+          "label": "not_food",
+          "confidence": 0.9857,
+          "time_ms": 13.69
+        },
+        {
+          "line_no": 11,
+          "text": "제 품 명",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 16.06
+        },
+        {
+          "line_no": 12,
+          "text": "단가 수량",
+          "label": "not_food",
+          "confidence": 0.9859,
+          "time_ms": 22.29
+        },
+        {
+          "line_no": 13,
+          "text": "금 액",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 20.32
+        },
+        {
+          "line_no": 14,
+          "text": "베이컨에그S",
+          "label": "food",
+          "confidence": 0.9672,
+          "time_ms": 30.72
+        },
+        {
+          "line_no": 15,
+          "text": "4,200",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 10.98
+        },
+        {
+          "line_no": 16,
+          "text": "4,200",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.6
+        },
+        {
+          "line_no": 17,
+          "text": "~해쉬브라운",
+          "label": "food",
+          "confidence": 0.9688,
+          "time_ms": 14.53
+        },
+        {
+          "line_no": 18,
+          "text": "-아메리카()",
+          "label": "food",
+          "confidence": 0.9688,
+          "time_ms": 10.93
+        },
+        {
+          "line_no": 19,
+          "text": "총 합 계",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 12.54
+        },
+        {
+          "line_no": 20,
+          "text": "4,200 활 인",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 11.03
+        },
+        {
+          "line_no": 21,
+          "text": "과세금액",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 11.29
+        },
+        {
+          "line_no": 22,
+          "text": "3,819 부가세액",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 14.04
+        },
+        {
+          "line_no": 23,
+          "text": "38",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 10.03
+        },
+        {
+          "line_no": 24,
+          "text": "청 구 액",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 9.21
+        },
+        {
+          "line_no": 25,
+          "text": "4,200",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 10.16
+        },
+        {
+          "line_no": 26,
+          "text": "5,000",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 10.14
+        },
+        {
+          "line_no": 27,
+          "text": "800",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 8.96
+        },
+        {
+          "line_no": 28,
+          "text": "1사산입니다.",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 8.78
+        },
+        {
+          "line_no": 29,
+          "text": "현금",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.62
+        },
+        {
+          "line_no": 30,
+          "text": "200",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.63
+        },
+        {
+          "line_no": 31,
+          "text": "현금영수증 ( 소득공제)",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 8.52
+        },
+        {
+          "line_no": 32,
+          "text": "4,200",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 9.96
+        },
+        {
+          "line_no": 33,
+          "text": "신분확인번호",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 9.15
+        },
+        {
+          "line_no": 34,
+          "text": "0100001234",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 9.44
+        },
+        {
+          "line_no": 35,
+          "text": "승인번호",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 9.43
+        },
+        {
+          "line_no": 36,
+          "text": "182720290",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.11
+        },
+        {
+          "line_no": 37,
+          "text": "LOTTERIA HOMESERVICE 81600-9gg9",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 9.17
+        },
+        {
+          "line_no": 38,
+          "text": "단체주문은 매장으로 문의하세요",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.48
+        },
+        {
+          "line_no": 39,
+          "text": "이용시 불편사항은 점장C게 연라주세요",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.76
+        },
+        {
+          "line_no": 40,
+          "text": "영수증번호 110531601030200180",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 9.13
+        }
+      ]
+    },
+    {
+      "receipt_id": 26,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg",
+      "line_count": 35,
+      "food_count": 4,
+      "not_food_count": 31,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "풀 떼",
+          "label": "food",
+          "confidence": 0.9628,
+          "time_ms": 13.07
+        },
+        {
+          "line_no": 2,
+          "text": "아이스크림",
+          "label": "food",
+          "confidence": 0.967,
+          "time_ms": 12.8
+        },
+        {
+          "line_no": 3,
+          "text": "75 0",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 10.67
+        },
+        {
+          "line_no": 4,
+          "text": "활도6z5",
+          "label": "food",
+          "confidence": 0.9606,
+          "time_ms": 9.45
+        },
+        {
+          "line_no": 5,
+          "text": "2E0D",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.82
+        },
+        {
+          "line_no": 6,
+          "text": "1 2E0}",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 11.49
+        },
+        {
+          "line_no": 7,
+          "text": "야채",
+          "label": "food",
+          "confidence": 0.9565,
+          "time_ms": 10.2
+        },
+        {
+          "line_no": 8,
+          "text": "3,5 0",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 9.56
+        },
+        {
+          "line_no": 9,
+          "text": "14380",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 10.33
+        },
+        {
+          "line_no": 10,
+          "text": "2 24 760",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.05
+        },
+        {
+          "line_no": 11,
+          "text": "1.150",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.02
+        },
+        {
+          "line_no": 12,
+          "text": "1 1.19)",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.34
+        },
+        {
+          "line_no": 13,
+          "text": "고4 55D",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.91
+        },
+        {
+          "line_no": 14,
+          "text": "1 2 99",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.98
+        },
+        {
+          "line_no": 15,
+          "text": "부레 |찰t|1z05",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 8.93
+        },
+        {
+          "line_no": 16,
+          "text": "9EU",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.02
+        },
+        {
+          "line_no": 17,
+          "text": "14 9 0",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.37
+        },
+        {
+          "line_no": 18,
+          "text": "Eij",
+          "label": "not_food",
+          "confidence": 0.9845,
+          "time_ms": 8.88
+        },
+        {
+          "line_no": 19,
+          "text": "나드로 1B0g (트래",
+          "label": "not_food",
+          "confidence": 0.9868,
+          "time_ms": 8.73
+        },
+        {
+          "line_no": 20,
+          "text": "700",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 8.55
+        },
+        {
+          "line_no": 21,
+          "text": "700",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 9.09
+        },
+        {
+          "line_no": 22,
+          "text": "비타길밥단무? |35 13350",
+          "label": "not_food",
+          "confidence": 0.9632,
+          "time_ms": 8.86
+        },
+        {
+          "line_no": 23,
+          "text": "1 14350",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 11.06
+        },
+        {
+          "line_no": 24,
+          "text": "가지{전날; 갈원 n",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 17.02
+        },
+        {
+          "line_no": 25,
+          "text": "700",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 10.46
+        },
+        {
+          "line_no": 26,
+          "text": "70)",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 12.08
+        },
+        {
+          "line_no": 27,
+          "text": "논 무; 말다리",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 11.09
+        },
+        {
+          "line_no": 28,
+          "text": "24 960",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 9.68
+        },
+        {
+          "line_no": 29,
+          "text": "9,960",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 17.28
+        },
+        {
+          "line_no": 30,
+          "text": "274 720",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 20.95
+        },
+        {
+          "line_no": 31,
+          "text": "27,720",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 9.39
+        },
+        {
+          "line_no": 32,
+          "text": "274720",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 21.04
+        },
+        {
+          "line_no": 33,
+          "text": "04/04/26",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 18.3
+        },
+        {
+          "line_no": 34,
+          "text": "#OO153#",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 15.59
+        },
+        {
+          "line_no": 35,
+          "text": "감 사 합니다 가다",
+          "label": "not_food",
+          "confidence": 0.9832,
+          "time_ms": 15.94
+        }
+      ]
+    },
+    {
+      "receipt_id": 27,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.31.59.jpeg",
+      "line_count": 38,
+      "food_count": 4,
+      "not_food_count": 34,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "LOTTERIA",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 12.05
+        },
+        {
+          "line_no": 2,
+          "text": "무 인 ]",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 8.74
+        },
+        {
+          "line_no": 3,
+          "text": "707",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 10.43
+        },
+        {
+          "line_no": 4,
+          "text": "로데리야 매장 식사",
+          "label": "not_food",
+          "confidence": 0.9641,
+          "time_ms": 10.74
+        },
+        {
+          "line_no": 5,
+          "text": "인전 부명 구",
+          "label": "not_food",
+          "confidence": 0.7277,
+          "time_ms": 9.77
+        },
+        {
+          "line_no": 6,
+          "text": "8032) 501-1088 부명동 159-23",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 10.17
+        },
+        {
+          "line_no": 7,
+          "text": "거래일 :2024/07/31< (스1",
+          "label": "not_food",
+          "confidence": 0.9858,
+          "time_ms": 10.23
+        },
+        {
+          "line_no": 8,
+          "text": "만매답당",
+          "label": "not_food",
+          "confidence": 0.9842,
+          "time_ms": 9.45
+        },
+        {
+          "line_no": 9,
+          "text": "16: 50:02 POS: 30",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 14.3
+        },
+        {
+          "line_no": 10,
+          "text": "거래번호:0109",
+          "label": "not_food",
+          "confidence": 0.9859,
+          "time_ms": 12.01
+        },
+        {
+          "line_no": 11,
+          "text": "제품명",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 11.0
+        },
+        {
+          "line_no": 12,
+          "text": "단가 수량",
+          "label": "not_food",
+          "confidence": 0.9859,
+          "time_ms": 10.75
+        },
+        {
+          "line_no": 13,
+          "text": "금액",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.9
+        },
+        {
+          "line_no": 14,
+          "text": "테이 토",
+          "label": "food",
+          "confidence": 0.9679,
+          "time_ms": 9.07
+        },
+        {
+          "line_no": 15,
+          "text": "8,800",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.78
+        },
+        {
+          "line_no": 16,
+          "text": "8,800",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.32
+        },
+        {
+          "line_no": 17,
+          "text": "~제로콜라 (R)",
+          "label": "food",
+          "confidence": 0.9699,
+          "time_ms": 8.94
+        },
+        {
+          "line_no": 18,
+          "text": "총 탑 계",
+          "label": "not_food",
+          "confidence": 0.985,
+          "time_ms": 9.63
+        },
+        {
+          "line_no": 19,
+          "text": "8,800 말",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 9.34
+        },
+        {
+          "line_no": 20,
+          "text": "면세금액 과세금액",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 11.93
+        },
+        {
+          "line_no": 21,
+          "text": "8,000 부 '가세드 액",
+          "label": "food",
+          "confidence": 0.9646,
+          "time_ms": 9.22
+        },
+        {
+          "line_no": 22,
+          "text": "철 구 액",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 9.28
+        },
+        {
+          "line_no": 23,
+          "text": "8,800",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.51
+        },
+        {
+          "line_no": 24,
+          "text": "은 돈",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.19
+        },
+        {
+          "line_no": 25,
+          "text": "800",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 9.29
+        },
+        {
+          "line_no": 26,
+          "text": "EATZ마일",
+          "label": "not_food",
+          "confidence": 0.9695,
+          "time_ms": 6.98
+        },
+        {
+          "line_no": 27,
+          "text": "8,800",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.12
+        },
+        {
+          "line_no": 28,
+          "text": "적립승인번오:",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 9.22
+        },
+        {
+          "line_no": 29,
+          "text": "금회 적립EA [Z마일=",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 9.19
+        },
+        {
+          "line_no": 30,
+          "text": "104 1JK20",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.28
+        },
+        {
+          "line_no": 31,
+          "text": "춤 저립EATZ마일",
+          "label": "food",
+          "confidence": 0.939,
+          "time_ms": 9.77
+        },
+        {
+          "line_no": 32,
+          "text": "264",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 9.42
+        },
+        {
+          "line_no": 33,
+          "text": "1,324",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.42
+        },
+        {
+          "line_no": 34,
+          "text": "LPOINT",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 9.42
+        },
+        {
+          "line_no": 35,
+          "text": "588",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.9
+        },
+        {
+          "line_no": 36,
+          "text": "저립POINI :",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.05
+        },
+        {
+          "line_no": 37,
+          "text": "26 0710* ** **",
+          "label": "not_food",
+          "confidence": 0.9858,
+          "time_ms": 9.53
+        },
+        {
+          "line_no": 38,
+          "text": "잔여POINI =",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 10.23
+        }
+      ]
+    },
+    {
+      "receipt_id": 28,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.32.00 (1).jpeg",
+      "line_count": 14,
+      "food_count": 3,
+      "not_food_count": 11,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "L 못데리아",
+          "label": "food",
+          "confidence": 0.9532,
+          "time_ms": 9.34
+        },
+        {
+          "line_no": 2,
+          "text": "{신이",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 8.8
+        },
+        {
+          "line_no": 3,
+          "text": "오권",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 11.4
+        },
+        {
+          "line_no": 4,
+          "text": "Vo OOg",
+          "label": "food",
+          "confidence": 0.5475,
+          "time_ms": 8.93
+        },
+        {
+          "line_no": 5,
+          "text": "aoojou/ll 17.3",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.11
+        },
+        {
+          "line_no": 6,
+          "text": "우사라보",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 8.99
+        },
+        {
+          "line_no": 7,
+          "text": "단가 gy",
+          "label": "food",
+          "confidence": 0.7499,
+          "time_ms": 9.18
+        },
+        {
+          "line_no": 8,
+          "text": "1,500 Ls)",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 9.45
+        },
+        {
+          "line_no": 9,
+          "text": "진계포자",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 12.73
+        },
+        {
+          "line_no": 10,
+          "text": "T03",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 10.25
+        },
+        {
+          "line_no": 11,
+          "text": "7,000 집구역",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 11.41
+        },
+        {
+          "line_no": 12,
+          "text": "신요 가드",
+          "label": "not_food",
+          "confidence": 0.9852,
+          "time_ms": 9.2
+        },
+        {
+          "line_no": 13,
+          "text": "반음 돈 70)",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.44
+        },
+        {
+          "line_no": 14,
+          "text": "잡시화",
+          "label": "not_food",
+          "confidence": 0.9853,
+          "time_ms": 10.03
+        }
+      ]
+    },
+    {
+      "receipt_id": 29,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.32.00 (2).jpeg",
+      "line_count": 18,
+      "food_count": 3,
+      "not_food_count": 15,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "LoTit super 3)-01532 박래만",
+          "label": "not_food",
+          "confidence": 0.9674,
+          "time_ms": 10.7
+        },
+        {
+          "line_no": 2,
+          "text": "못데수퍼 ` 서들트별 용산구 한흉대로 T 02 713-502",
+          "label": "food",
+          "confidence": 0.8967,
+          "time_ms": 9.34
+        },
+        {
+          "line_no": 3,
+          "text": "계신원 [등록] '2024- 70-30 Z1;42 계산원 770 PU: 대j7-0185",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.77
+        },
+        {
+          "line_no": 4,
+          "text": "수람",
+          "label": "food",
+          "confidence": 0.8184,
+          "time_ms": 12.0
+        },
+        {
+          "line_no": 5,
+          "text": "삼물국드",
+          "label": "food",
+          "confidence": 0.9691,
+          "time_ms": 12.3
+        },
+        {
+          "line_no": 6,
+          "text": "동서 코코별 30U5 53U 3,,830",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 13.28
+        },
+        {
+          "line_no": 7,
+          "text": "'2901037002782",
+          "label": "not_food",
+          "confidence": 0.972,
+          "time_ms": 11.44
+        },
+        {
+          "line_no": 8,
+          "text": "930",
+          "label": "not_food",
+          "confidence": 0.9868,
+          "time_ms": 10.71
+        },
+        {
+          "line_no": 9,
+          "text": "9801 '342u54335",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 11.7
+        },
+        {
+          "line_no": 10,
+          "text": "10, 829",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 10.5
+        },
+        {
+          "line_no": 11,
+          "text": "합 게 과세:",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 11.57
+        },
+        {
+          "line_no": 12,
+          "text": "037",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 13.63
+        },
+        {
+          "line_no": 13,
+          "text": "983",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 10.79
+        },
+        {
+          "line_no": 14,
+          "text": "면세:",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 9.28
+        },
+        {
+          "line_no": 15,
+          "text": "'440553*215*(74371 끝제금액",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 9.3
+        },
+        {
+          "line_no": 16,
+          "text": "10,820",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 9.51
+        },
+        {
+          "line_no": 17,
+          "text": "[더일시롬 기준 5년간 유표",
+          "label": "not_food",
+          "confidence": 0.9844,
+          "time_ms": 9.8
+        },
+        {
+          "line_no": 18,
+          "text": "2087024103 00001 0705",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 9.54
+        }
+      ]
+    },
+    {
+      "receipt_id": 30,
+      "receipt_name": "WhatsApp Image 2026-09-23 at 01.32.00.jpeg",
+      "line_count": 29,
+      "food_count": 1,
+      "not_food_count": 28,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "UD",
+          "label": "not_food",
+          "confidence": 0.9853,
+          "time_ms": 9.03
+        },
+        {
+          "line_no": 2,
+          "text": "꽃 7일)",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 10.22
+        },
+        {
+          "line_no": 3,
+          "text": "[현 금 (소득공제)",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.15
+        },
+        {
+          "line_no": 4,
+          "text": "매]2023-0u-06 22:25 PUS:0104-3137",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 12.45
+        },
+        {
+          "line_no": 5,
+          "text": "삼 품 명",
+          "label": "not_food",
+          "confidence": 0.986,
+          "time_ms": 11.45
+        },
+        {
+          "line_no": 6,
+          "text": "단 가 수량",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 10.23
+        },
+        {
+          "line_no": 7,
+          "text": "950",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 13.36
+        },
+        {
+          "line_no": 8,
+          "text": "480",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.19
+        },
+        {
+          "line_no": 9,
+          "text": "G50",
+          "label": "food",
+          "confidence": 0.8942,
+          "time_ms": 10.86
+        },
+        {
+          "line_no": 10,
+          "text": "480",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.2
+        },
+        {
+          "line_no": 11,
+          "text": "틈백학",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.08
+        },
+        {
+          "line_no": 12,
+          "text": "280",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 10.16
+        },
+        {
+          "line_no": 13,
+          "text": "550 9B0",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 9.28
+        },
+        {
+          "line_no": 14,
+          "text": "880 5, 760",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 9.23
+        },
+        {
+          "line_no": 15,
+          "text": "(*)",
+          "label": "not_food",
+          "confidence": 0.9866,
+          "time_ms": 9.1
+        },
+        {
+          "line_no": 16,
+          "text": "361",
+          "label": "not_food",
+          "confidence": 0.9868,
+          "time_ms": 9.49
+        },
+        {
+          "line_no": 17,
+          "text": "곁제 대 상 금",
+          "label": "not_food",
+          "confidence": 0.9851,
+          "time_ms": 9.11
+        },
+        {
+          "line_no": 18,
+          "text": "3;",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 21.38
+        },
+        {
+          "line_no": 19,
+          "text": "430",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 13.45
+        },
+        {
+          "line_no": 20,
+          "text": "금:",
+          "label": "not_food",
+          "confidence": 0.9859,
+          "time_ms": 10.26
+        },
+        {
+          "line_no": 21,
+          "text": "50,0,000",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 12.27
+        },
+        {
+          "line_no": 22,
+          "text": "은 액",
+          "label": "not_food",
+          "confidence": 0.9847,
+          "time_ms": 12.13
+        },
+        {
+          "line_no": 23,
+          "text": "50 _",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 11.49
+        },
+        {
+          "line_no": 24,
+          "text": "횟수증",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 9.15
+        },
+        {
+          "line_no": 25,
+          "text": "010 **-1234",
+          "label": "not_food",
+          "confidence": 0.9861,
+          "time_ms": 9.42
+        },
+        {
+          "line_no": 26,
+          "text": "'5 126-1-1",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 9.01
+        },
+        {
+          "line_no": 27,
+          "text": "캐서:530002 지미",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 9.04
+        },
+        {
+          "line_no": 28,
+          "text": "gg50",
+          "label": "not_food",
+          "confidence": 0.9818,
+          "time_ms": 9.98
+        },
+        {
+          "line_no": 29,
+          "text": "'20230406/01043131/00031430/10",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 9.25
+        }
+      ]
+    },
+    {
+      "receipt_id": 31,
+      "receipt_name": "d3d010d6f6f93e9bfe1968e07616bc4f.jpg",
+      "line_count": 11,
+      "food_count": 1,
+      "not_food_count": 10,
+      "items": [
+        {
+          "line_no": 1,
+          "text": "[주문( 대기)번호]",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 15.29
+        },
+        {
+          "line_no": 2,
+          "text": "234",
+          "label": "not_food",
+          "confidence": 0.9863,
+          "time_ms": 11.89
+        },
+        {
+          "line_no": 3,
+          "text": "주문내역",
+          "label": "not_food",
+          "confidence": 0.9864,
+          "time_ms": 15.67
+        },
+        {
+          "line_no": 4,
+          "text": "상품명",
+          "label": "not_food",
+          "confidence": 0.9867,
+          "time_ms": 10.73
+        },
+        {
+          "line_no": 5,
+          "text": "수량",
+          "label": "not_food",
+          "confidence": 0.9862,
+          "time_ms": 10.63
+        },
+        {
+          "line_no": 6,
+          "text": "포장] (HOT) 아메리카노",
+          "label": "not_food",
+          "confidence": 0.9838,
+          "time_ms": 12.02
+        },
+        {
+          "line_no": 7,
+          "text": "포장] (ICE) 헤이 즐없아메리카노",
+          "label": "food",
+          "confidence": 0.7937,
+          "time_ms": 13.26
+        },
+        {
+          "line_no": 8,
+          "text": "나 취핑",
+          "label": "not_food",
+          "confidence": 0.9851,
+          "time_ms": 10.37
+        },
+        {
+          "line_no": 9,
+          "text": "총주문금액",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 10.66
+        },
+        {
+          "line_no": 10,
+          "text": "19,600 원",
+          "label": "not_food",
+          "confidence": 0.9865,
+          "time_ms": 11.48
+        },
+        {
+          "line_no": 11,
+          "text": "2024-04-16 11:33:29",
+          "label": "not_food",
+          "confidence": 0.9859,
+          "time_ms": 10.34
+        }
+      ]
+    }
+  ]
+}

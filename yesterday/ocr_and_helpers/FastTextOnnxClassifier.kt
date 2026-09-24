@@ -185,6 +185,12 @@ class FastTextOnnxClassifier(private val context: Context) {
             }
         }
 
+        // Append EOS (</s>) token ID — FastText C++ appends </s> to every input line
+        val eosId = wordIndex["</s>"]
+        if (eosId != null) {
+            tokens.add(eosId.toLong())
+        }
+
         return if (tokens.isEmpty()) longArrayOf(0L) else tokens.toLongArray()
     }
 

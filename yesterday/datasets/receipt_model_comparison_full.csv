@@ -1,0 +1,836 @@
+﻿receipt_id,receipt_name,line_no,text,ground_truth,is_unrecognizable_ocr,fasttext_v23_pred,fasttext_v23_conf,fasttext_v23_correct,fasttext_v25_pred,fasttext_v25_conf,fasttext_v25_correct,bert_pred,bert_conf,bert_correct
+1,04297b86ce515e099dc996d250892cd8.jpg,1,Ipoudo Park; LG,not_food,False,not_food,0.9988,True,not_food,0.9985,True,not_food,0.9748,True
+1,04297b86ce515e099dc996d250892cd8.jpg,2,Central,not_food,False,not_food,0.9917,True,not_food,0.9841,True,not_food,0.9732,True
+1,04297b86ce515e099dc996d250892cd8.jpg,3,TABLE :,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+1,04297b86ce515e099dc996d250892cd8.jpg,4,14 'POS0O1,not_food,False,not_food,0.9972,True,not_food,0.9978,True,not_food,0.9753,True
+1,04297b86ce515e099dc996d250892cd8.jpg,5,OP:,not_food,False,not_food,0.9962,True,not_food,1.0,True,not_food,0.9755,True
+1,04297b86ce515e099dc996d250892cd8.jpg,6,16:44,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+1,04297b86ce515e099dc996d250892cd8.jpg,7,Pax: 10 POS Title,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+1,04297b86ce515e099dc996d250892cd8.jpg,8,0OO,not_food,False,not_food,0.9733,True,not_food,0.9242,True,not_food,0.9733,True
+1,04297b86ce515e099dc996d250892cd8.jpg,9,Rcpti,not_food,False,not_food,0.9497,True,not_food,0.7827,True,food,0.9649,False
+1,04297b86ce515e099dc996d250892cd8.jpg,10,00O,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+1,04297b86ce515e099dc996d250892cd8.jpg,11,Corn Letcn Teppan Tea 'Cold,food,False,not_food,0.9948,False,not_food,0.9906,False,not_food,0.9675,False
+1,04297b86ce515e099dc996d250892cd8.jpg,12,OOO,food,False,food,0.9996,True,food,1.0,True,not_food,0.9581,False
+1,04297b86ce515e099dc996d250892cd8.jpg,13,Ocha Ucha Cold Hot 'Gyoza Pork,food,False,not_food,0.9797,False,not_food,0.9917,False,not_food,0.9654,False
+1,04297b86ce515e099dc996d250892cd8.jpg,14,Pan F Saikoro Rice,food,False,not_food,0.9912,False,not_food,0.9733,False,food,0.9652,True
+1,04297b86ce515e099dc996d250892cd8.jpg,15,Sake Salmom 'Motoaj 4 pCS,food,False,not_food,0.9604,False,not_food,0.9173,False,not_food,0.5148,False
+1,04297b86ce515e099dc996d250892cd8.jpg,16,Ghi roltaru Tantan Porx Pork,food,False,not_food,0.9777,False,not_food,0.9894,False,food,0.9719,True
+1,04297b86ce515e099dc996d250892cd8.jpg,17,"Jelly 'Smoothi ,507,000",food,False,not_food,1.0,False,not_food,1.0,False,not_food,0.9744,False
+1,04297b86ce515e099dc996d250892cd8.jpg,18,SUBTOTAL '74,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+1,04297b86ce515e099dc996d250892cd8.jpg,19,16',not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+1,04297b86ce515e099dc996d250892cd8.jpg,20,Tax,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+1,04297b86ce515e099dc996d250892cd8.jpg,21,773 'aty :27,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+1,04297b86ce515e099dc996d250892cd8.jpg,22,739,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+1,04297b86ce515e099dc996d250892cd8.jpg,23,ToI AL item ;12 Total,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+1,04297b86ce515e099dc996d250892cd8.jpg,24,"1,775",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+1,04297b86ce515e099dc996d250892cd8.jpg,25,Total,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9744,True
+1,04297b86ce515e099dc996d250892cd8.jpg,26,CASH,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9739,True
+1,04297b86ce515e099dc996d250892cd8.jpg,27,Change,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9744,True
+1,04297b86ce515e099dc996d250892cd8.jpg,28,VGJoaggf Bj7:41,not_food,False,not_food,0.9906,True,not_food,0.9991,True,not_food,0.9728,True
+1,04297b86ce515e099dc996d250892cd8.jpg,29,31,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+2,25087fc4c1fee35fda20f103e804303d (1).jpg,1,XoKB국민은행,not_food,False,not_food,0.9996,True,not_food,0.9962,True,not_food,0.974,True
+2,25087fc4c1fee35fda20f103e804303d (1).jpg,2,요청금액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+2,25087fc4c1fee35fda20f103e804303d (1).jpg,3,"*200,0OO원",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+2,25087fc4c1fee35fda20f103e804303d (1).jpg,4,저리결과 : 싱싱 저리,not_food,False,not_food,0.9971,True,not_food,0.9995,True,not_food,0.975,True
+2,25087fc4c1fee35fda20f103e804303d (1).jpg,5,"거대후 신액 *184,418원",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+2,25087fc4c1fee35fda20f103e804303d (1).jpg,6,수수묘: *0원,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+2,25087fc4c1fee35fda20f103e804303d (1).jpg,7,거래일 시 2026.04.14 14:05,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+2,25087fc4c1fee35fda20f103e804303d (1).jpg,8,계심번호 국민 6/801 01-70***3,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+2,25087fc4c1fee35fda20f103e804303d (1).jpg,9,거래번호 2497 NKII IA 0166 IC;,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+2,25087fc4c1fee35fda20f103e804303d (1).jpg,10,수신 계심 농리 3521064999353,not_food,False,not_food,0.9993,True,not_food,1.0,True,not_food,0.9748,True
+2,25087fc4c1fee35fda20f103e804303d (1).jpg,11,점 포 명,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9748,True
+2,25087fc4c1fee35fda20f103e804303d (1).jpg,12,012,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+2,25087fc4c1fee35fda20f103e804303d (1).jpg,13,성 명,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9728,True
+2,25087fc4c1fee35fda20f103e804303d (1).jpg,14,0A N,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+2,25087fc4c1fee35fda20f103e804303d (1).jpg,15,고유번 호 : (042497NKIIO2O),not_food,False,not_food,0.9922,True,not_food,0.9993,True,not_food,0.9755,True
+2,25087fc4c1fee35fda20f103e804303d (1).jpg,16,수 있습니다,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+2,25087fc4c1fee35fda20f103e804303d (1).jpg,17,'형법 (제23 조,not_food,False,not_food,0.9957,True,not_food,0.9784,True,not_food,0.9751,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,1,[영 수증 ],not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,2,[매장명] 둥집치권 /682-21-01053_,not_food,False,not_food,0.9994,True,not_food,1.0,True,not_food,0.9751,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,3,[주 소,not_food,False,not_food,0.7491,True,not_food,0.9969,True,not_food,0.9753,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,4,[대표자] 이복히 [TEL] 043-648-6522,not_food,False,not_food,0.9987,True,not_food,1.0,True,not_food,0.9755,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,5,[매출일 2026-03-07 15: 56:38,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,6,[영수증 20260307-02-0015,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,7,상   품,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9733,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,8,단 가   수량,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,9,'강정 ( 순한 ),food,False,not_food,0.7122,False,food,0.8222,True,not_food,0.9625,False
+3,961d27de21af520ba7beca28a45a1c41.jpg,10,"22,000",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,11,"22,000",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,12,"2,000",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,13,"2,000",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,14,합 계 금,not_food,False,not_food,0.9344,True,not_food,0.9933,True,not_food,0.9681,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,15,"24 ,C",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,16,000,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9721,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,17,부가세 과세물품가액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,18,"21,819",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,19,"2,181",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,20,"24,000",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,21,"24,000",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,22,신용 카드,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9742,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,23,"24,000",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,24,신,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9685,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,25,카드매입사=,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,26,'1,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,27,카 느 번 호 5387-33**,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,28,승 인 금 246000( 일사붉}-617*,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,29,승 승인 /가행점 인 일 시 2026-03-07 85390052 '600533882,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9748,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,30,단말기 '번호 13733752 15:56 : 37,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+3,961d27de21af520ba7beca28a45a1c41.jpg,31,NOTICE 무시명기래,not_food,False,not_food,0.9669,True,not_food,0.9855,True,not_food,0.9717,True
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,1,궁림,food,True,food,0.9099,True,food,0.7311,True,food,0.9505,True
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,2,소감비삼,food,False,food,0.9649,True,food,0.9969,True,not_food,0.9657,False
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,3,삼접삼,food,True,food,0.9777,True,food,0.9992,True,food,0.978,True
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,4,"39 , ODO",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9709,True
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,5,김퇴미개,not_food,True,not_food,0.9073,True,not_food,0.7372,True,food,0.9827,False
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,6,"32,",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,7,000,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9721,True
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,8,소주,food,False,food,1.0,True,food,1.0,True,food,0.9794,True
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,9,",00O",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9743,True
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,10,맥주,food,False,food,1.0,True,food,1.0,True,food,0.9798,True
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,11,",00O",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9743,True
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,12,음료수,food,False,food,0.9912,True,food,0.9984,True,food,0.966,True
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,13,"4,000",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,14,",000",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,15,함계,not_food,False,food,0.9497,False,not_food,0.9994,True,not_food,0.9728,True
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,16,",000",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,17,주은번호,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,18,"91,C ,000",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,19,2024 ~04-24,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,20,"'1830,45",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,21,감사합나다,not_food,False,not_food,0.6723,True,not_food,0.539,True,not_food,0.9712,True
+4,IMG_a457f11d-941c-4ac3-8355-50f63ecd0599.jpg,22,TIPPING AT RESTAURANT,not_food,False,not_food,1.0,True,not_food,0.9995,True,food,0.8264,False
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,1,299-01-00214 시문시 숨구 소공로 63,not_food,False,not_food,0.9996,True,not_food,1.0,True,not_food,0.9737,True
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,2,대 { 전 회 현금 02-310-5038 공세),not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,3,구매 ?010-07-0 13.49 거릿번호:0617 9153,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,4,후통정식제트 실문명,food,False,not_food,0.8312,False,not_food,0.7879,False,not_food,0.9716,False
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,5,"79,0OJ 16,0OO",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,6,물회 소바,food,False,food,1.0,True,food,1.0,True,food,0.983,True
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,7,"35,000",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,8,과 세 물 품 가액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,9,"31,819",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,10,"3,181",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,11,가,not_food,True,not_food,1.0,True,not_food,0.9987,True,not_food,0.8864,True
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,12,리,not_food,True,not_food,0.867,True,not_food,0.6002,True,food,0.9152,False
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,13,35 0o0,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,14,40 0DO,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9707,True
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,15,거스품,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9736,True
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,16,"5,00O",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,17,현금영수증 승인번호 식별언호 [사동발금],not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9746,True
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,18,010+***1234 170013773,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,19,현금영수증 문의 8126-1-1 캐서N0 : 400**6 마꼬이,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,20,결제본경 1807020617915300035000 7일내 영수증 '및 '결제가드,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,21,지집히여 주시기 비립니다 .,not_food,False,not_food,0.9959,True,not_food,0.9953,True,not_food,0.9734,True
+5,IMG_c6d1e6c5-971c-49de-a1c8-38afb2554efe.jpg,22,5778,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,1,"'Shop5 ,",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,2,24 George ABN: 93 091 997 634 St North Strathfield NS싸,not_food,False,not_food,0.9986,True,not_food,1.0,True,not_food,0.9754,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,3,TEL 9764 1199 2137,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,4,Description UnitPrice aty Amtiount,not_food,False,not_food,0.9434,True,not_food,0.9707,True,not_food,0.9698,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,5,+1 새H,food,False,not_food,0.9996,False,not_food,0.9948,False,not_food,0.975,False
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,6,"1,38",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,7,"9 Shiitake '300g` 표고번 4,38",food,False,not_food,0.9985,False,not_food,0.9975,False,not_food,0.9665,False
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,8,5.18,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,9,38,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,10,*+1 SH,food,True,not_food,1.0,False,not_food,1.0,False,not_food,0.9755,False
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,11,'Ro,not_food,True,not_food,0.9991,True,not_food,0.9933,True,not_food,0.973,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,12,3.38,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,13,38,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,14,*+*9 07,not_food,True,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,15,"1.93 ,68",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,16,68,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9757,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,17,Auto 20e DC *9,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,18,+7,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,19,2.88 -0.39,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,20,"*9 Siiken Tofu *+9 JG 우엉 단무치 250 250g 3,98",food,False,not_food,0.9975,False,not_food,0.9996,False,not_food,0.9616,False
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,21,2.88,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,22,3.98,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,23,*+#9,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,24,"2.14 1,44",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,25,44,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,26,"*+8DS 조청살엿1 2kg Green Bean sVermic ~Ric 2,68 2,68",food,False,not_food,0.977,False,not_food,0.998,False,food,0.9785,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,27,2.14,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,28,Grocery,not_food,False,not_food,0.8933,True,not_food,0.8963,True,not_food,0.9725,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,29,"0,70 4,98 4,98",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,30,SUM of Aimticunt,not_food,False,not_food,0.9417,True,not_food,0.954,True,not_food,0.9573,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,31,"0,70",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,32,SUM nf,not_food,False,not_food,0.8741,True,food,0.9173,False,not_food,0.9619,True
+6,IMG_e0e634d6-eae6-499b-8074-b4cf75776b18.jpg,33,39.73,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,1,-)드이 렇다,not_food,False,not_food,0.9851,True,not_food,0.9784,True,not_food,0.9708,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,2,서울시 성북구하월고동_46-73 콤플러스,not_food,False,not_food,0.9939,True,not_food,0.9949,True,not_food,0.9752,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,3,TEL 02-915-1681 . 대표 확현숙,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,4,[판 매],not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,5,거래일:2018/05/25( 금) 17: 12:44,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9743,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,6,판매답당: 9005/정선이,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,7,POS:02,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,8,거래번호:00G5,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,9,제 품 명,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,10,단가 수량,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9738,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,11,금 액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9698,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,12,할인장난감,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,13,"1,500",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,14,"1,500",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,15,총 합 계,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,16,"1,500 할 인",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,17,과세금액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,18,"1,364 부가세액",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,19,136,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,20,청 구 액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9736,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,21,"1,500 밭 은 돈",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9744,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,22,"1,500",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,23,외상,not_food,False,not_food,0.945,True,not_food,1.0,True,not_food,0.97,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,24,1,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,25,500,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+7,WhatsApp Image 2026-09-23 at 01.31.54.jpeg,26,5의,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9748,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,1,LOTTERIA,not_food,False,not_food,0.9996,True,not_food,1.0,True,not_food,0.971,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,2,[무 인 ],not_food,False,not_food,0.9994,True,not_food,1.0,True,not_food,0.9755,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,3,대규보호,not_food,False,not_food,0.998,True,not_food,1.0,True,not_food,0.9344,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,4,[ 매장식사,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,5,1,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,6,628-50-00119 못데리이 양산 더계점,not_food,False,not_food,0.9996,True,not_food,1.0,True,not_food,0.975,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,7,경남양산시덕게로 78 대표 목승민,not_food,False,not_food,0.9989,True,not_food,1.0,True,not_food,0.9232,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,8,TEL 055) 366-3210,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,9,머래일: 2026/03/10 (와) 12;06: 17 PDS: 30,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,10,만매답당 : 0004 목승민,not_food,False,not_food,0.9981,True,not_food,0.9996,True,not_food,0.9748,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,11,거래번호: 0007,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,12,제물명,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9727,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,13,단가 수량,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9738,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,14,금액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9698,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,15,베이컨물 *버터,food,False,food,1.0,True,food,1.0,True,food,0.9793,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,16,양 넘감 자,food,False,food,0.982,True,food,0.9604,True,food,0.9836,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,17,"6,600",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,18,6,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,19,600,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,20,~어니인,food,False,not_food,0.9868,False,not_food,0.9941,False,food,0.961,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,21,2 600,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,22,"2,600",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,23,좀 밥 계,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9714,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,24,과세금액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,25,"9, 200 밀 인",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9742,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,26,면세금액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,27,"8, 364 부가세액",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,28,절 구 액,not_food,False,not_food,1.0,True,not_food,0.9987,True,not_food,0.9746,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,29,836,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,30,도,not_food,True,not_food,0.9996,True,not_food,1.0,True,food,0.5099,False
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,31,"9,",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,32,200,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,33,FATZ마일,not_food,False,not_food,0.945,True,not_food,0.8808,True,not_food,0.9657,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,34,금되 적립승인번모:,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9748,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,35,가용 적립다A[Z마일,not_food,False,not_food,0.9894,True,not_food,0.9961,True,not_food,0.975,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,36,총 적립다A [7마일:,not_food,False,not_food,0.9985,True,not_food,1.0,True,not_food,0.9754,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,37,AOISMRUO,not_food,False,not_food,0.637,True,food,0.5622,False,food,0.9777,False
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,38,적립EA[Z마일:,not_food,False,not_food,0.9679,True,not_food,0.9868,True,not_food,0.9751,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,39,276,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,40,LPOINI,not_food,False,not_food,0.9526,True,food,0.8775,False,not_food,0.9738,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,41,78,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,42,적리POINT:,not_food,False,not_food,0.9242,True,not_food,0.9716,True,not_food,0.9751,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,43,354,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,44,잔여POINT:,not_food,False,not_food,0.9497,True,not_food,0.9859,True,not_food,0.975,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,45,27 87104005******XX,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,46,습인번 호,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9748,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,47,217,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,48,'866542799 가능PUINI :,not_food,False,not_food,0.9974,True,not_food,0.9992,True,not_food,0.9755,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,49,KB 몰래티늄,not_food,False,not_food,0.5699,True,not_food,0.7773,True,not_food,0.9304,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,50,217,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,51,곁제 (눕기드,not_food,False,not_food,0.9996,True,not_food,1.0,True,not_food,0.9724,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,52,"말 금액= '9, 200 55495930****301*",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,53,부개원:,not_food,False,not_food,0.979,True,not_food,0.9073,True,not_food,0.9735,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,54,일시블 승인번 오;,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,55,KICCIA,not_food,False,not_food,0.9669,True,not_food,0.8933,True,not_food,0.9642,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,56,가맣점번오 '30021496,not_food,False,not_food,0.9995,True,not_food,1.0,True,not_food,0.9753,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,57,실비닐,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9439,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,58,번390725*,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9758,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,59,:0077925103,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+8,WhatsApp Image 2026-09-23 at 01.31.55 (1).jpeg,60,"7 5 3 ? """,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9757,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,1,LoTTERIA 4,not_food,False,not_food,0.9945,True,not_food,0.9941,True,not_food,0.9714,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,2,대기렉호,not_food,False,not_food,0.9964,True,not_food,0.9997,True,not_food,0.975,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,3,137,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,4,722-31)-6438',not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,5,거래일: 2025/11/03 (뭐)   15 14:49 '거래번로:0041 PDS: 3U,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,6,판매담당: 8189/ 김다솜,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,7,제물명,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9727,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,8,단가 수량 금액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9741,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,9,새우세트,food,False,food,1.0,True,food,1.0,True,food,0.9838,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,10,"7,300)",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,11,"7,300",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,12,~제로콜라 (R),food,False,food,0.9903,True,food,0.9995,True,food,0.983,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,13,도 테이,food,False,not_food,0.9777,False,not_food,0.9434,False,not_food,0.5526,False
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,14,과세금액 총 말 계,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9746,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,15,"7,300",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,16,637 부가세액 6C3,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,17,면세금액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,18,점 구액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9748,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,19,"7,300",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,20,"7,300",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,21,밭 은 돈,not_food,False,not_food,0.9974,True,not_food,1.0,True,not_food,0.9651,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,22,모바일상물권,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9748,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,23,4151*****#**4789,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,24,결제금액:,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9746,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,25,"7,300",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,26,승인번호: 257103151442777,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,27,연금영수중 ( 소득공제),not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,28,300,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,29,신분확인번오,not_food,False,not_food,0.9978,True,not_food,0.9996,True,not_food,0.975,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,30,0100001234 192122453,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,31,승인번호,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9744,True
+9,WhatsApp Image 2026-09-23 at 01.31.55 (2).jpeg,32,전화 032-541-5005,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,1,LOTTERIA,not_food,False,not_food,0.9996,True,not_food,1.0,True,not_food,0.971,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,2,[무 인 ],not_food,False,not_food,0.9994,True,not_food,1.0,True,not_food,0.9755,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,3,대기번호,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,4,182,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,5,주)   못데리이 의정부제일점,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9743,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,6,대표 이성균,not_food,False,not_food,0.9983,True,not_food,1.0,True,not_food,0.9751,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,7,경기 의정부시 시민로 !31번길 16 !증,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,8,단체주문은' 역시 ' '못데리야 제일점,not_food,False,not_food,0.9946,True,not_food,0.9971,True,not_food,0.9724,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,9,"HOME"" SERVICE  '주문전화 31600-9999",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,10,점포 직붕 3031)856-9191,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,11,사업자등록번호 308-14-66524,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,12,거래일: 2019/09/27(금) 16: 53: 09,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9743,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,13,PDS:30,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,14,판매담당: 9008/이성관,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,15,'거래번호: 0084,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,16,제품명,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,17,단가 수량,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9738,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,18,금액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9698,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,19,오징어B_세트,food,False,food,1.0,True,food,1.0,True,food,0.9819,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,20,"5, 400",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,21,"5, 400",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,22,레문에이드,food,False,food,1.0,True,food,1.0,True,food,0.9811,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,23,800,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,24,B0U,not_food,False,not_food,0.9124,True,not_food,0.8222,True,food,0.9749,False
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,25,포 테이 토,food,False,not_food,0.945,False,not_food,0.9707,False,food,0.9704,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,26,총 합 계,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,27,"6,200",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,28,인,not_food,True,not_food,1.0,True,not_food,1.0,True,not_food,0.9649,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,29,과세금액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,30,"5,637 부가세액",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,31,563,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,32,청 구 액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9736,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,33,"6,200 밭 은 돈",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9748,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,34,"6,200",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,35,새농험카드 4854**********하다 Smar tRo/A,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,36,"결제금액: 6,200",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9748,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,37,승인번호: 65250409,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,38,할부개월 : 일시불,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9748,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,39,가맣점번호: 146402155,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9746,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,40,오직 맛' 오직 정량! 오직 정성 ! 청결한매장,not_food,False,not_food,0.9434,True,not_food,0.9698,True,not_food,0.9742,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,41,재방문 하고싶은 매장이 되켓습니다,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+10,WhatsApp Image 2026-09-23 at 01.31.55 (3).jpeg,42,방문해주서서 감사합니다',not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,1,LoTTERIA,not_food,False,not_food,0.9864,True,not_food,0.9945,True,not_food,0.9727,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,2,[주문서 ],not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,3,대기번호,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,4,고객넘이 주문만,not_food,False,not_food,0.9994,True,not_food,1.0,True,not_food,0.9746,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,5,143,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,6,제둥이 제품흘,not_food,False,not_food,0.7432,True,not_food,0.7827,True,not_food,0.9744,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,7,'완료되면 준비하고,not_food,False,not_food,0.9669,True,not_food,0.9512,True,not_food,0.9702,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,8,'대기런호가,not_food,False,food,0.7432,False,food,0.5,False,not_food,0.975,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,9,[,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,10,"""주문표시기에",not_food,False,not_food,0.9958,True,not_food,0.9897,True,not_food,0.9752,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,11,또장,not_food,False,not_food,0.9917,True,not_food,0.9826,True,not_food,0.8709,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,12,만매담당 : ( 거래일: 2024/08/03,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,13,1,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,14,'0004/ 육승민 '(토) 20:38: 34,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,15,수림,not_food,False,food,0.637,False,food,0.7122,False,not_food,0.9519,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,16,제 품 명,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,17,거래번드 오 POS:,not_food,False,not_food,0.9883,True,not_food,0.9995,True,not_food,0.975,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,18,30,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,19,'0045,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,20,1 2 #전주비빌라이스 #양,food,False,food,0.5467,True,not_food,0.5078,False,not_food,0.9666,False
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,21,모장유무,not_food,False,food,0.5,False,food,0.5312,False,not_food,0.5996,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,22,1 #-어니언 병화 자,food,False,food,0.6927,True,food,0.5467,True,not_food,0.9722,False
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,23,1 #모,not_food,True,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,24,테이,food,False,not_food,1.0,False,not_food,1.0,False,not_food,0.9318,False
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,25,2개,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9732,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,26,#오렌지( 토,food,False,food,0.9969,True,food,1.0,True,not_food,0.961,False
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,27,1개,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,28,(PEI),not_food,False,not_food,0.9992,True,not_food,0.9983,True,food,0.9544,False
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,29,#레온에이드,food,False,food,0.9994,True,food,1.0,True,not_food,0.9509,False
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,30,[아이스] (R),not_food,False,not_food,0.8397,True,not_food,0.7058,True,not_food,0.9753,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,31,1개,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,32,압,not_food,True,not_food,1.0,True,food,0.9996,False,not_food,0.9385,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,33,I개,not_food,False,not_food,1.0,True,not_food,0.9841,True,not_food,0.9741,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,34,1개,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+11,WhatsApp Image 2026-09-23 at 01.31.55.jpeg,35,'외장실비번?7,not_food,False,not_food,0.977,True,not_food,0.9756,True,not_food,0.9754,True
+12,WhatsApp Image 2026-09-23 at 01.31.56 (1).jpeg,1,8 용,not_food,True,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+12,WhatsApp Image 2026-09-23 at 01.31.56 (1).jpeg,2,L 무,not_food,True,not_food,1.0,True,not_food,0.9344,True,not_food,0.9686,True
+12,WhatsApp Image 2026-09-23 at 01.31.56 (1).jpeg,3,9,not_food,True,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+12,WhatsApp Image 2026-09-23 at 01.31.56 (1).jpeg,4,꽃,not_food,True,food,1.0,False,food,1.0,False,food,0.9785,False
+12,WhatsApp Image 2026-09-23 at 01.31.56 (1).jpeg,5,히 올,not_food,True,not_food,1.0,True,not_food,1.0,True,not_food,0.9349,True
+12,WhatsApp Image 2026-09-23 at 01.31.56 (1).jpeg,6,빠,not_food,True,food,1.0,False,food,1.0,False,food,0.9612,False
+12,WhatsApp Image 2026-09-23 at 01.31.56 (1).jpeg,7,물 품,not_food,True,not_food,1.0,True,not_food,1.0,True,not_food,0.9452,True
+12,WhatsApp Image 2026-09-23 at 01.31.56 (1).jpeg,8,#,not_food,True,not_food,1.0,True,not_food,1.0,True,not_food,0.9743,True
+12,WhatsApp Image 2026-09-23 at 01.31.56 (1).jpeg,9,움,not_food,True,food,0.9284,False,food,1.0,False,food,0.9489,False
+12,WhatsApp Image 2026-09-23 at 01.31.56 (1).jpeg,10,필들,not_food,True,not_food,0.5851,True,food,0.9919,False,food,0.9678,False
+12,WhatsApp Image 2026-09-23 at 01.31.56 (1).jpeg,11,#,not_food,True,not_food,1.0,True,not_food,1.0,True,not_food,0.9743,True
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,1,LOTTERIA,not_food,False,not_food,0.9996,True,not_food,1.0,True,not_food,0.971,True
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,2,411-13-762B1,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,3,"3 061,454,0005 대 표 [판 매] 온 경",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,4,만매답당:0031/김영미 거래번호:0025 FUSOI,not_food,False,not_food,0.9966,True,not_food,0.9984,True,not_food,0.9749,True
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,5,단가 수량,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9738,True
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,6,#베이컨모찌님 국새우버거,food,False,food,1.0,True,food,1.0,True,food,0.9841,True
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,7,900,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,8,800,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,9,90D BOO,not_food,False,not_food,0.9912,True,not_food,0.9872,True,not_food,0.9661,True
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,10,#양,food,False,not_food,1.0,False,not_food,1.0,False,not_food,0.9726,False
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,11,"2,000",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,12,300,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,13,과세금액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,14,"10,000 70U 잘 콜가세액",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,15,703 ODD,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,16,성 구액 CDU 받 은 돈 ILoOJ,not_food,False,not_food,0.9995,True,not_food,1.0,True,not_food,0.9744,True
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,17,디처트럭인,not_food,False,not_food,0.9864,True,not_food,0.9679,True,not_food,0.9519,True
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,18,700,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,19,연금,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9651,True
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,20,'UDO,not_food,False,not_food,0.9073,True,not_food,0.5622,True,not_food,0.974,True
+13,WhatsApp Image 2026-09-23 at 01.31.56 (2).jpeg,21,02 5,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+14,WhatsApp Image 2026-09-23 at 01.31.56 (3).jpeg,1,대'기번호,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+14,WhatsApp Image 2026-09-23 at 01.31.56 (3).jpeg,2,{=질 리미 터민,not_food,True,not_food,0.9945,True,not_food,1.0,True,not_food,0.8006,True
+14,WhatsApp Image 2026-09-23 at 01.31.56 (3).jpeg,3,뜻제도,not_food,True,not_food,0.9943,True,not_food,0.9957,True,not_food,0.9721,True
+14,WhatsApp Image 2026-09-23 at 01.31.56 (3).jpeg,4,E가 수량,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9746,True
+14,WhatsApp Image 2026-09-23 at 01.31.56 (3).jpeg,5,사무니거 시트,food,False,food,0.5622,True,not_food,0.686,False,not_food,0.9679,False
+14,WhatsApp Image 2026-09-23 at 01.31.56 (3).jpeg,6,~세로습가 골리,not_food,True,food,0.9284,False,food,0.7773,False,food,0.9652,False
+14,WhatsApp Image 2026-09-23 at 01.31.56 (3).jpeg,7,""",E37 느가세야",not_food,False,not_food,0.9989,True,not_food,0.9988,True,not_food,0.9735,True
+14,WhatsApp Image 2026-09-23 at 01.31.56 (3).jpeg,8,꿀,not_food,True,food,1.0,False,food,1.0,False,food,0.9809,False
+14,WhatsApp Image 2026-09-23 at 01.31.56 (3).jpeg,9,PST),not_food,True,not_food,1.0,True,not_food,1.0,True,not_food,0.9731,True
+14,WhatsApp Image 2026-09-23 at 01.31.56 (3).jpeg,10,승진번로:=212224-1 가볍P INT ;,not_food,False,not_food,0.9993,True,not_food,1.0,True,not_food,0.9754,True
+14,WhatsApp Image 2026-09-23 at 01.31.56 (3).jpeg,11,기프디& 71357,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+14,WhatsApp Image 2026-09-23 at 01.31.56 (3).jpeg,12,013++*5.734,not_food,False,not_food,0.9981,True,not_food,0.9994,True,not_food,0.9752,True
+14,WhatsApp Image 2026-09-23 at 01.31.56 (3).jpeg,13,[=2300243,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9757,True
+14,WhatsApp Image 2026-09-23 at 01.31.56 (3).jpeg,14,~ ? 0 0 - 2,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9695,True
+15,WhatsApp Image 2026-09-23 at 01.31.56.jpeg,1,LOTTERIA 4,not_food,False,not_food,1.0,True,not_food,0.9995,True,not_food,0.9721,True
+15,WhatsApp Image 2026-09-23 at 01.31.56.jpeg,2,서문 TELs 695-63-00010 02-2686-8077 구로구 오리로 114g 대표 길 미 해,not_food,False,not_food,0.9995,True,not_food,1.0,True,not_food,0.9751,True
+15,WhatsApp Image 2026-09-23 at 01.31.56.jpeg,3,[판 매],not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+15,WhatsApp Image 2026-09-23 at 01.31.56.jpeg,4,거래임:2016/08/040 O,not_food,False,not_food,0.9981,True,not_food,1.0,True,not_food,0.9752,True
+15,WhatsApp Image 2026-09-23 at 01.31.56.jpeg,5,판매답당: 9005/ 최정미,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+15,WhatsApp Image 2026-09-23 at 01.31.56.jpeg,6,:0054,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+15,WhatsApp Image 2026-09-23 at 01.31.56.jpeg,7,제품명 단가 수량,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+15,WhatsApp Image 2026-09-23 at 01.31.56.jpeg,8,#-포 #치o버거세트 테이,food,False,food,0.9381,True,food,0.9604,True,not_food,0.7228,False
+15,WhatsApp Image 2026-09-23 at 01.31.56.jpeg,9,"5,100",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+15,WhatsApp Image 2026-09-23 at 01.31.56.jpeg,10,860,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+15,WhatsApp Image 2026-09-23 at 01.31.56.jpeg,11,#~곰 라(R),food,False,not_food,0.5622,False,food,0.9961,True,food,0.9729,True
+15,WhatsApp Image 2026-09-23 at 01.31.56.jpeg,12,#새 우세 테이,food,False,not_food,0.9689,False,not_food,0.8312,False,not_food,0.9725,False
+15,WhatsApp Image 2026-09-23 at 01.31.56.jpeg,13,"5,400",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+15,WhatsApp Image 2026-09-23 at 01.31.56.jpeg,14,"5,140",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+15,WhatsApp Image 2026-09-23 at 01.31.56.jpeg,15,#풀 라(R),food,False,not_food,0.7186,False,food,0.9981,True,food,0.966,True
+15,WhatsApp Image 2026-09-23 at 01.31.56.jpeg,16,"과세금액 총합 계 10,500 할",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+15,WhatsApp Image 2026-09-23 at 01.31.56.jpeg,17,500,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+15,WhatsApp Image 2026-09-23 at 01.31.56.jpeg,18,청 구 액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9736,True
+15,WhatsApp Image 2026-09-23 at 01.31.56.jpeg,19,"10,000 밭 온 돈 g0g",not_food,False,not_food,1.0,True,not_food,1.0,True,food,0.9814,False
+15,WhatsApp Image 2026-09-23 at 01.31.56.jpeg,20,"10,000",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,1,LOTTERIA L,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9731,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,2,대기번호,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,3,128,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,4,매장식사,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9744,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,5,1,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,6,743-10-U1119,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,7,거래인: 2026/02/09(모) 17;59:012 민매님팀 : UDJD,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,8,거래번모: 0030 FUS: 301,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,9,제물덤,not_food,False,not_food,0.9957,True,not_food,0.9909,True,not_food,0.9552,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,10,단가 수량,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9738,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,11,"13,501",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,12,"13, 5UU",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,13,모) 외이어되4,food,False,not_food,0.8991,False,not_food,0.9946,False,food,0.9804,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,14,NEH지권너켓,food,False,not_food,0.9836,False,not_food,0.9649,False,not_food,0.9745,False
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,15,이이스디 (R) 데이,food,False,food,0.9929,True,food,1.0,True,food,0.7265,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,16,300,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,17,3O,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9748,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,18,아이시스ECU,food,False,food,0.9099,True,food,0.9019,True,food,0.9814,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,19,"과세금액 솜 탑 게 13,BOO 12, 546 부기세액",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,20,"1,254",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,21,면세금액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+16,WhatsApp Image 2026-09-23 at 01.31.57 (1).jpeg,22,"밭 은 점 구 13,BOO 13,8CO",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9742,True
+17,WhatsApp Image 2026-09-23 at 01.31.57 (2).jpeg,1,[주문 서 ],not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+17,WhatsApp Image 2026-09-23 at 01.31.57 (2).jpeg,2,대기번호,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+17,WhatsApp Image 2026-09-23 at 01.31.57 (2).jpeg,3,208,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+17,WhatsApp Image 2026-09-23 at 01.31.57 (2).jpeg,4,"안내되나다,",not_food,False,not_food,0.9937,True,not_food,0.9784,True,not_food,0.9646,True
+17,WhatsApp Image 2026-09-23 at 01.31.57 (2).jpeg,5,[ 포장,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+17,WhatsApp Image 2026-09-23 at 01.31.57 (2).jpeg,6,1,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+17,WhatsApp Image 2026-09-23 at 01.31.57 (2).jpeg,7,!:2026/04/07(화) 18:57:14 POS:32,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9748,True
+17,WhatsApp Image 2026-09-23 at 01.31.57 (2).jpeg,8,{담당: 1004/ '조운,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+17,WhatsApp Image 2026-09-23 at 01.31.57 (2).jpeg,9,거래번호: 0157,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+17,WhatsApp Image 2026-09-23 at 01.31.57 (2).jpeg,10,수량 제 품 명,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+17,WhatsApp Image 2026-09-23 at 01.31.57 (2).jpeg,11,포장유무,not_food,False,not_food,0.9988,True,not_food,1.0,True,not_food,0.9707,True
+17,WhatsApp Image 2026-09-23 at 01.31.57 (2).jpeg,12,#돈까스*디진다,food,False,food,0.7607,True,food,0.9173,True,not_food,0.97,False
+17,WhatsApp Image 2026-09-23 at 01.31.57 (2).jpeg,13,"3,500",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+17,WhatsApp Image 2026-09-23 at 01.31.57 (2).jpeg,14,합 계,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9662,True
+17,WhatsApp Image 2026-09-23 at 01.31.57 (2).jpeg,15,고객 불만 접수 net,not_food,False,not_food,0.9969,True,not_food,1.0,True,not_food,0.9748,True
+17,WhatsApp Image 2026-09-23 at 01.31.57 (2).jpeg,16,이메일,not_food,False,not_food,0.9996,True,not_food,1.0,True,not_food,0.9742,True
+17,WhatsApp Image 2026-09-23 at 01.31.57 (2).jpeg,17,문자 02-312-9760 _GiGA CIIC,not_food,False,not_food,0.9943,True,not_food,0.9974,True,not_food,0.9755,True
+17,WhatsApp Image 2026-09-23 at 01.31.57 (2).jpeg,18,와이파이KT,not_food,False,not_food,0.8355,True,not_food,0.7372,True,not_food,0.9741,True
+17,WhatsApp Image 2026-09-23 at 01.31.57 (2).jpeg,19,비밀번호: csfdaks0o4,not_food,False,not_food,0.7879,True,not_food,0.8439,True,not_food,0.9751,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,1,[주문 서 ],not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,2,대기번호,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,3,222,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,4,고쪽남이,not_food,False,food,0.9945,False,food,0.9943,False,food,0.9803,False
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,5,주문한,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,6,제품을,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9718,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,7,재품이,not_food,False,not_food,0.9512,True,not_food,0.7879,True,not_food,0.9697,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,8,줍하고,not_food,False,not_food,0.9592,True,not_food,0.7491,True,not_food,0.9683,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,9,대기번호가 있습L다;,not_food,False,not_food,0.9968,True,not_food,1.0,True,not_food,0.9751,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,10,주문표-,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,11,"안내되나다,",not_food,False,not_food,0.9937,True,not_food,0.9784,True,not_food,0.9646,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,12,[,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,13,포장,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9748,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,14,거래일,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9746,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,15,],not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,16,:2026/06/18(들,not_food,False,not_food,0.9992,True,not_food,0.9993,True,not_food,0.9757,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,17,판매담당:0002/익 목),not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,18,'김용국 16:40:04,not_food,False,not_food,0.9659,True,not_food,0.9922,True,not_food,0.9755,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,19,량,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.917,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,20,거래번호 POS:32,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9746,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,21,제 품 명,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,22,:0075,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,23,#돈까스*디진다,food,False,food,0.7607,True,food,0.9173,True,not_food,0.97,False
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,24,포장유무,not_food,False,not_food,0.9988,True,not_food,1.0,True,not_food,0.9707,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,25,합 계,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9662,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,26,1개,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+18,WhatsApp Image 2026-09-23 at 01.31.57 (3).jpeg,27,"3,500",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+19,WhatsApp Image 2026-09-23 at 01.31.57.jpeg,1,옆스즘,not_food,False,not_food,0.9263,True,food,0.8775,False,food,0.9633,False
+19,WhatsApp Image 2026-09-23 at 01.31.57.jpeg,2,엄수숙-번모:24032140101-0007-01,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+19,WhatsApp Image 2026-09-23 at 01.31.57.jpeg,3,517-73-00753,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+19,WhatsApp Image 2026-09-23 at 01.31.57.jpeg,4,계산밀자' 2034-05-21 시간: 12:33:44,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+19,WhatsApp Image 2026-09-23 at 01.31.57.jpeg,5,물명,not_food,False,not_food,0.9994,True,not_food,0.9996,True,not_food,0.9608,True
+19,WhatsApp Image 2026-09-23 at 01.31.57.jpeg,6,수컷 및민 금목,not_food,True,not_food,0.9995,True,not_food,0.9996,True,not_food,0.9664,True
+19,WhatsApp Image 2026-09-23 at 01.31.57.jpeg,7,~자수 주가 우리멘( 긴장),food,False,not_food,0.9986,False,not_food,0.9996,False,not_food,0.9721,False
+19,WhatsApp Image 2026-09-23 at 01.31.57.jpeg,8,카스 아기고자,food,False,food,1.0,True,food,0.9978,True,food,0.983,True
+19,WhatsApp Image 2026-09-23 at 01.31.57.jpeg,9,숨매 제 매르,not_food,False,not_food,0.8267,True,not_food,1.0,True,not_food,0.9509,True
+19,WhatsApp Image 2026-09-23 at 01.31.57.jpeg,10,B 40,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9746,True
+19,WhatsApp Image 2026-09-23 at 01.31.57.jpeg,11,"453505t+,+++1+*+",not_food,False,not_food,0.9972,True,not_food,0.9978,True,not_food,0.9758,True
+19,WhatsApp Image 2026-09-23 at 01.31.57.jpeg,12,[습인 Rebrlanu 0233221,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9727,True
+19,WhatsApp Image 2026-09-23 at 01.31.57.jpeg,13,[곁 제 1a 400,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+19,WhatsApp Image 2026-09-23 at 01.31.57.jpeg,14,주문번호:7,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+20,WhatsApp Image 2026-09-23 at 01.31.58 (1).jpeg,1,133,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9757,True
+20,WhatsApp Image 2026-09-23 at 01.31.58 (1).jpeg,2,고객m이 주문한 세품올 준비하고 있습니다 .,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+20,WhatsApp Image 2026-09-23 at 01.31.58 (1).jpeg,3,[ 매장식사 ],not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+20,WhatsApp Image 2026-09-23 at 01.31.58 (1).jpeg,4,거래일:2026/03/19(목) 21:13:37 FOS:30,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+20,WhatsApp Image 2026-09-23 at 01.31.58 (1).jpeg,5,판매담당 : 1000/박동현 거래번호:00a4,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+20,WhatsApp Image 2026-09-23 at 01.31.58 (1).jpeg,6,수량 제 품 명,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+20,WhatsApp Image 2026-09-23 at 01.31.58 (1).jpeg,7,포장유무,not_food,False,not_food,0.9988,True,not_food,1.0,True,not_food,0.9707,True
+20,WhatsApp Image 2026-09-23 at 01.31.58 (1).jpeg,8,돈까스*디진다,food,False,food,0.9924,True,food,0.9987,True,not_food,0.9654,False
+20,WhatsApp Image 2026-09-23 at 01.31.58 (1).jpeg,9,내주지즈스틱,food,False,food,0.9173,True,food,0.9855,True,food,0.978,True
+20,WhatsApp Image 2026-09-23 at 01.31.58 (1).jpeg,10,양 넘감,food,False,food,0.6077,True,not_food,0.539,False,food,0.983,True
+20,WhatsApp Image 2026-09-23 at 01.31.58 (1).jpeg,11,~칠리,food,False,not_food,0.5545,False,not_food,0.5078,False,food,0.9805,True
+20,WhatsApp Image 2026-09-23 at 01.31.58 (1).jpeg,12,제로콜라(L),food,False,food,0.6723,True,food,0.8222,True,food,0.9815,True
+20,WhatsApp Image 2026-09-23 at 01.31.58 (1).jpeg,13,[아이스],not_food,False,not_food,0.6225,True,not_food,0.9381,True,not_food,0.9753,True
+20,WhatsApp Image 2026-09-23 at 01.31.58 (1).jpeg,14,1개,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+20,WhatsApp Image 2026-09-23 at 01.31.58 (1).jpeg,15,계,not_food,False,not_food,0.9986,True,not_food,0.9937,True,not_food,0.9516,True
+20,WhatsApp Image 2026-09-23 at 01.31.58 (1).jpeg,16,"11,100",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+20,WhatsApp Image 2026-09-23 at 01.31.58 (1).jpeg,17,기분출은 흥서비스 1600-gggg,not_food,False,not_food,0.9872,True,not_food,0.9943,True,not_food,0.9733,True
+20,WhatsApp Image 2026-09-23 at 01.31.58 (1).jpeg,18,기분출은 단제주문 055-314-8131 *이해주서시 감사라니다 *,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,1,대기번호,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,2,140,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,3,매장식사 ],not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,4,420-3-01945 '듯데리야 고색적,not_food,False,not_food,0.9967,True,not_food,0.9975,True,not_food,0.9727,True
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,5,수원시 권신구 매륙고색로 691번길  18,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9734,True
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,6,1 031-295-9265 대표 박혀란,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9713,True
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,7,거래일 2026/04/12(일) 14318: 18 판매답당: 0001 /임성반,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,8,POS:30,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,9,거래번호 :0042,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,10,제품명,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,11,단가 수량,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9738,True
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,12,금액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9698,True
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,13,SKP,food,False,not_food,0.9924,False,not_food,0.9917,False,not_food,0.9739,False
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,14,"14,900)",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,15,"14,900",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,16,~플라식치스*터,food,False,not_food,0.5467,False,not_food,0.7827,False,not_food,0.9727,False
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,17,~콜라(R),food,False,food,0.9698,True,food,1.0,True,food,0.983,True
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,18,~어니언 ~양 넘감   자,food,False,food,0.9173,True,food,0.8991,True,food,0.9833,True
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,19,?,not_food,False,not_food,1.0,True,not_food,0.9996,True,not_food,0.8314,True
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,20,~컬리,food,False,not_food,0.9967,False,not_food,0.9972,False,food,0.971,True
+21,WhatsApp Image 2026-09-23 at 01.31.58 (2).jpeg,21,"중합 계 '기 ' 14,g0n",not_food,False,not_food,0.9381,True,not_food,0.9716,True,not_food,0.9752,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,1,LOTIERIA,not_food,False,not_food,0.9996,True,not_food,0.999,True,not_food,0.9733,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,2,무 인,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9686,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,3,대기번호,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,4,141,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,5,[ 매장 식사 ],not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,6,못데지일에스(주) 성수 역심 대표,not_food,False,not_food,0.9831,True,not_food,0.9887,True,not_food,0.9683,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,7,209-,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,8,서물 성도구 성수52가 277-17 1층 로데리이,not_food,False,not_food,0.9993,True,not_food,1.0,True,not_food,0.9751,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,9,5 02)467-,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,10,거래일:2024/07/,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,11,POS:,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,12,판매담당,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,13,거래번호:00,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9743,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,14,제품명,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,15,단가 수량,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9738,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,16,금액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9698,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,17,사각새우더불세트,food,False,food,0.9073,True,food,0.9698,True,food,0.7017,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,18,"7,800",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,19,"7,800",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,20,~포데이도,food,False,not_food,0.8872,False,not_food,0.9173,False,not_food,0.9705,False
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,21,400,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,22,400,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,23,~콜라(R),food,False,food,0.9698,True,food,1.0,True,food,0.983,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,24,베컨새우셋,food,False,food,0.9931,True,food,0.9933,True,food,0.9397,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,25,"7,900",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,26,900,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,27,-포테이토,food,False,not_food,0.9242,False,not_food,0.9724,False,not_food,0.9747,False
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,28,400,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,29,400,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,30,~사이다(R),food,False,food,0.8267,True,food,0.9963,True,food,0.9834,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,31,0,not_food,False,not_food,0.9733,True,not_food,0.9919,True,not_food,0.9741,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,32,총합 계,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9739,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,33,"16,500 할",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,34,0,not_food,False,not_food,0.9733,True,not_food,0.9919,True,not_food,0.9741,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,35,과세금액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,36,"15,00O 부기세액",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,37,1,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,38,500,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,39,면세금액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,40,0,not_food,False,not_food,0.9733,True,not_food,0.9919,True,not_food,0.9741,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,41,9,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,42,"16,500",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,43,철,not_food,True,food,1.0,False,food,0.9957,False,food,0.968,False
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,44,은 돈,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.961,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,45,"16,500",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,46,4수,not_food,True,not_food,1.0,True,not_food,1.0,True,not_food,0.9686,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,47,"설세d액: 16,500",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,48,승인번호;7784,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9748,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,49,일부개월: 일시물,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+22,WhatsApp Image 2026-09-23 at 01.31.58 (3).jpeg,50,7,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+23,WhatsApp Image 2026-09-23 at 01.31.58.jpeg,1,[주문 서 ],not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+23,WhatsApp Image 2026-09-23 at 01.31.58.jpeg,2,대기번호,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+23,WhatsApp Image 2026-09-23 at 01.31.58.jpeg,3,160,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+23,WhatsApp Image 2026-09-23 at 01.31.58.jpeg,4,안료되편 대_호),not_food,False,food,0.5851,False,food,0.6151,False,not_food,0.9683,True
+23,WhatsApp Image 2026-09-23 at 01.31.58.jpeg,5,안내되니다;,not_food,False,not_food,1.0,True,not_food,0.9996,True,not_food,0.9753,True
+23,WhatsApp Image 2026-09-23 at 01.31.58.jpeg,6,[ 매장식사 ],not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+23,WhatsApp Image 2026-09-23 at 01.31.58.jpeg,7,기래일:2026/04/05(일)  16:37:53 판매당당: 0260/ 깊다현 거래번호:005 | POS:31,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+23,WhatsApp Image 2026-09-23 at 01.31.58.jpeg,8,수량 제 품 명,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+23,WhatsApp Image 2026-09-23 at 01.31.58.jpeg,9,포상'금무,not_food,False,food,0.8081,False,food,0.9263,False,not_food,0.859,True
+23,WhatsApp Image 2026-09-23 at 01.31.58.jpeg,10,돈까스*디진다,food,False,food,0.9924,True,food,0.9987,True,not_food,0.9654,False
+23,WhatsApp Image 2026-09-23 at 01.31.58.jpeg,11,돈까스 양념,food,False,food,1.0,True,food,1.0,True,food,0.984,True
+23,WhatsApp Image 2026-09-23 at 01.31.58.jpeg,12,사이다(R),food,False,food,0.5545,True,food,0.9986,True,food,0.9834,True
+23,WhatsApp Image 2026-09-23 at 01.31.58.jpeg,13,제로출라(R),food,False,food,0.5927,True,food,1.0,True,food,0.9826,True
+23,WhatsApp Image 2026-09-23 at 01.31.58.jpeg,14,"11,0OO",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+23,WhatsApp Image 2026-09-23 at 01.31.58.jpeg,15,6037029,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,1,LOTTERIA 4,not_food,False,not_food,1.0,True,not_food,0.9995,True,not_food,0.9721,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,2,106-81-23498 (주) 못데리야 수원역광장점 수원시 팔단 m영대로 924 대표 노입식,not_food,False,not_food,0.999,True,not_food,1.0,True,not_food,0.9737,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,3,031-240-0835,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,4,[만 매],not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,5,{라일:2016/04/08(- 다기별호 I0:C6 FUS 01,not_food,False,not_food,0.9964,True,not_food,0.9992,True,not_food,0.9752,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,6,만매답당:0101/이경의 거래번호:01 18,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,7,제 품 명 단기 수량,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,8,"베이컨에그S ,200",food,False,not_food,0.8872,False,not_food,0.7931,False,food,0.9824,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,9,"4,200",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,10,해쉬트라문,food,False,food,0.9149,True,food,0.9943,True,food,0.9821,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,11,리(R),food,False,not_food,0.9741,False,food,0.9399,True,food,0.9727,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,12,총 합 계,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,13,"4,200",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,14,과세금액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,15,"3,019",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,16,371,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,17,"청구 애 4,200 번 은 논",not_food,False,not_food,0.9975,True,not_food,1.0,True,not_food,0.9714,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,18,200,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,19,{영수증( 소득공제 },not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,20,20O,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,21,승인번호,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9744,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,22,I31D3B504 OJDU1234,not_food,False,not_food,0.9553,True,not_food,0.9846,True,food,0.9658,False
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,23,"*이달의 세트구매시 행시 원피스피규이 20,UI0OU원",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9748,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,24,"세트구매시 이름피구어 25,U0U원",not_food,False,not_food,0.9986,True,not_food,1.0,True,food,0.9715,False
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,25,세트구마시 스피커령 보조배터리 U0원,not_food,False,not_food,0.9969,True,not_food,0.9969,True,not_food,0.9741,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,26,매장이용하시면서 불편시항 연리처,not_food,False,not_food,0.9986,True,not_food,1.0,True,not_food,0.9752,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,27,점장 ( 오김종 010-4105-pBZ2,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,28,심아시간대 (22시 07시) 정로로 연락주세요 !,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,29,접프연라처 031-240-0095,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,30,#리이데이 7입 치린버거 1입 햇크리스피 1+|,food,False,food,0.6723,True,food,0.8032,True,food,0.9826,True
+24,WhatsApp Image 2026-09-23 at 01.31.59 (1).jpeg,31,'영수중번호 110761604030101183,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,1,내U,not_food,False,not_food,0.7491,True,food,0.7058,False,not_food,0.9705,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,2,LoTT ERIA,not_food,False,not_food,0.9943,True,not_food,0.9909,True,not_food,0.966,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,3,부산 진구 부전동 576번지 대표 입 식,not_food,False,not_food,1.0,True,not_food,0.9996,True,not_food,0.9751,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,4,TEL.819-3652 점장 김희정(010-2887-8916 ),not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,5,[판 대],not_food,False,not_food,0.9903,True,not_food,1.0,True,not_food,0.9749,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,6,드시고 기분-은 하루되세요,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,7,대기번호 이1,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,8,거래일:2016/01/03(일) 09:22:26 POS:02,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9742,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,9,판매답당 : 9001 / 김세미,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,10,거래번호: 0018,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,11,제 품 명,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,12,단가 수량,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9738,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,13,금 액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9698,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,14,베이컨에그S,food,False,food,0.9969,True,food,0.9997,True,food,0.9837,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,15,"4,200",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,16,"4,200",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,17,~해쉬브라운,food,False,food,0.8222,True,food,0.9976,True,food,0.9816,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,18,1,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,19,-아메리카(),food,False,not_food,0.9716,False,not_food,0.9826,False,not_food,0.9731,False
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,20,총 합 계,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,21,"4,200 활 인",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,22,과세금액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,23,"3,819 부가세액",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,24,38,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,25,청 구 액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9736,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,26,"4,200",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,27,"5,000",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,28,800,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,29,1사산입니다.,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,30,현금,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,31,200,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,32,현금영수증 ( 소득공제),not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9748,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,33,"4,200",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,34,신분확인번호,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9743,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,35,0100001234,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,36,승인번호,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9744,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,37,182720290,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,38,LOTTERIA HOMESERVICE 81600-9gg9,not_food,False,not_food,0.9982,True,not_food,0.9994,True,not_food,0.9551,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,39,단체주문은 매장으로 문의하세요,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,40,이용시 불편사항은 점장C게 연라주세요,not_food,False,not_food,0.9996,True,not_food,1.0,True,not_food,0.9748,True
+25,WhatsApp Image 2026-09-23 at 01.31.59 (2).jpeg,41,영수증번호 110531601030200180,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,1,풀 떼,not_food,True,food,1.0,False,food,1.0,False,not_food,0.9631,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,2,매,not_food,True,food,0.9941,False,food,0.9993,False,food,0.9237,False
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,3,아이스크림,food,False,food,1.0,True,food,1.0,True,food,0.9823,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,4,3,not_food,False,not_food,1.0,True,not_food,0.9963,True,not_food,0.9748,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,5,75O,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,6,활도6z5,food,False,not_food,0.9995,False,not_food,1.0,False,food,0.9743,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,7,2E0D,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9731,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,8,1 2E0},not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,9,야채,food,False,food,1.0,True,food,1.0,True,food,0.9816,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,10,"3,5O",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,11,1,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,12,14380,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,13,2 24 760,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,14,1.150,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,15,1 1.19),not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,16,고4 55D,not_food,False,not_food,0.9173,True,not_food,0.9957,True,food,0.963,False
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,17,1 2 99,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,18,부레 |찰t|1z05,food,True,not_food,0.8032,False,not_food,0.8808,False,not_food,0.9734,False
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,19,9EU,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9713,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,20,14 9O,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,21,Eij,not_food,False,not_food,0.9993,True,not_food,0.9984,True,not_food,0.9731,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,22,나드로 1B0g (트래,food,True,not_food,0.6514,False,not_food,0.7432,False,food,0.9705,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,23,700,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,24,1,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,25,700,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,26,비타길밥단무? |35 13350,food,False,not_food,0.9836,False,not_food,0.9922,False,food,0.9585,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,27,1 14350,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,28,가지{전날; 갈원 n,food,False,food,0.9649,True,food,0.9627,True,not_food,0.9747,False
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,29,700,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,30,1,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,31,70),not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,32,논 무; 말다리,food,True,food,1.0,True,food,1.0,True,food,0.9843,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,33,24 960,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,34,1,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,35,"9,960",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,36,274 720,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,37,"27,720",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,38,글,not_food,False,not_food,0.9659,True,not_food,0.8032,True,not_food,0.9688,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,39,274720,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,40,04/04/26,not_food,False,not_food,0.9992,True,not_food,1.0,True,not_food,0.9753,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,41,#OO153#,not_food,False,not_food,0.9512,True,not_food,0.9381,True,not_food,0.9757,True
+26,WhatsApp Image 2026-09-23 at 01.31.59 (3).jpeg,42,감 사 합니다 가다,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9619,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,1,LOTTERIA,not_food,False,not_food,0.9996,True,not_food,1.0,True,not_food,0.971,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,2,무 인 ],not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9718,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,3,707,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,4,[,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,5,로데리야 매장 식사,not_food,False,not_food,0.9946,True,not_food,0.9989,True,not_food,0.9692,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,6,1,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,7,인전 부명 구,not_food,False,not_food,0.9903,True,not_food,0.9927,True,not_food,0.8226,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,8,8032) 501-1088 부명동 159-23,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,9,거래일 :2024/07/31< (스1,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9748,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,10,만매답당,not_food,False,not_food,0.8129,True,food,0.7491,False,food,0.9785,False
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,11,16: 50:02 POS: 30,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9744,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,12,거래번호:0109,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,13,제품명,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,14,단가 수량,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9738,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,15,금액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9698,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,16,테이 토,food,False,not_food,0.99,False,not_food,0.9887,False,food,0.9721,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,17,"8,800",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,18,"8,800",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,19,~제로콜라 (R),food,False,food,0.9903,True,food,0.9995,True,food,0.983,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,20,0,not_food,False,not_food,0.9733,True,not_food,0.9919,True,not_food,0.9741,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,21,0,not_food,False,not_food,0.9733,True,not_food,0.9919,True,not_food,0.9741,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,22,총 탑 계,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,23,"8,800 말",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9751,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,24,면세금액 과세금액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,25,"8,000 부 '가세드 액",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9728,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,26,철 구 액,not_food,False,not_food,0.9993,True,not_food,0.9997,True,not_food,0.9745,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,27,"8,800",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,28,은 돈,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.961,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,29,800,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,30,EATZ마일,not_food,False,not_food,0.7249,True,not_food,0.7432,True,not_food,0.9725,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,31,"8,800",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,32,적립승인번오:,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,33,금회 적립EA [Z마일=,not_food,False,not_food,0.9756,True,not_food,0.9945,True,not_food,0.975,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,34,104 1JK20,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9711,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,35,춤 저립EATZ마일,not_food,False,food,0.7607,False,food,0.8176,False,food,0.9778,False
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,36,264,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,37,"1,324",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,38,LPOINT,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,39,1,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,40,588,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,41,저립POINI :,not_food,False,not_food,0.8559,True,not_food,0.7549,True,not_food,0.9731,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,42,26 0710* ** **,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+27,WhatsApp Image 2026-09-23 at 01.31.59.jpeg,43,잔여POINI =,not_food,False,not_food,0.8032,True,not_food,0.7607,True,not_food,0.974,True
+28,WhatsApp Image 2026-09-23 at 01.32.00 (1).jpeg,1,L 못데리아,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9533,True
+28,WhatsApp Image 2026-09-23 at 01.32.00 (1).jpeg,2,{신이,not_food,True,food,0.7719,False,food,0.9173,False,not_food,0.975,True
+28,WhatsApp Image 2026-09-23 at 01.32.00 (1).jpeg,3,오권,not_food,True,not_food,0.9996,True,not_food,1.0,True,not_food,0.962,True
+28,WhatsApp Image 2026-09-23 at 01.32.00 (1).jpeg,4,Vo OOg,not_food,False,food,0.5699,False,not_food,0.9242,True,food,0.6487,False
+28,WhatsApp Image 2026-09-23 at 01.32.00 (1).jpeg,5,aoojou/ll 17.3,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+28,WhatsApp Image 2026-09-23 at 01.32.00 (1).jpeg,6,우사라보,not_food,True,food,0.7549,False,food,0.9669,False,food,0.9592,False
+28,WhatsApp Image 2026-09-23 at 01.32.00 (1).jpeg,7,단가 gy,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9533,True
+28,WhatsApp Image 2026-09-23 at 01.32.00 (1).jpeg,8,"1,500 Ls)",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+28,WhatsApp Image 2026-09-23 at 01.32.00 (1).jpeg,9,진계포자,not_food,True,food,0.852,False,food,0.9649,False,not_food,0.9724,True
+28,WhatsApp Image 2026-09-23 at 01.32.00 (1).jpeg,10,합,not_food,False,food,1.0,False,food,0.9993,False,food,0.9554,False
+28,WhatsApp Image 2026-09-23 at 01.32.00 (1).jpeg,11,T03,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+28,WhatsApp Image 2026-09-23 at 01.32.00 (1).jpeg,12,"7,000 집구역",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+28,WhatsApp Image 2026-09-23 at 01.32.00 (1).jpeg,13,신요 가드,not_food,False,not_food,0.99,True,not_food,0.9946,True,not_food,0.9705,True
+28,WhatsApp Image 2026-09-23 at 01.32.00 (1).jpeg,14,반음 돈 70),not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9725,True
+28,WhatsApp Image 2026-09-23 at 01.32.00 (1).jpeg,15,잡시화,not_food,False,not_food,0.9887,True,not_food,0.9659,True,not_food,0.972,True
+29,WhatsApp Image 2026-09-23 at 01.32.00 (2).jpeg,1,LoTit super 3)-01532 박래만,not_food,False,not_food,0.9976,True,not_food,0.9945,True,not_food,0.9749,True
+29,WhatsApp Image 2026-09-23 at 01.32.00 (2).jpeg,2,못데수퍼 ` 서들트별 용산구 한흉대로 T 02 713-502,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9735,True
+29,WhatsApp Image 2026-09-23 at 01.32.00 (2).jpeg,3,계신원 [등록] '2024- 70-30 Z1;42 계산원 770 PU: 대j7-0185,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+29,WhatsApp Image 2026-09-23 at 01.32.00 (2).jpeg,4,수람,not_food,False,not_food,0.9941,True,not_food,0.9417,True,food,0.7466,False
+29,WhatsApp Image 2026-09-23 at 01.32.00 (2).jpeg,5,삼물국드,not_food,False,food,0.9615,False,food,0.9949,False,food,0.8929,False
+29,WhatsApp Image 2026-09-23 at 01.32.00 (2).jpeg,6,"동서 코코별 30U5 53U 3,,830",food,False,not_food,0.999,False,not_food,0.9993,False,not_food,0.967,False
+29,WhatsApp Image 2026-09-23 at 01.32.00 (2).jpeg,7,'2901037002782,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+29,WhatsApp Image 2026-09-23 at 01.32.00 (2).jpeg,8,930,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9757,True
+29,WhatsApp Image 2026-09-23 at 01.32.00 (2).jpeg,9,9801 '342u54335,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+29,WhatsApp Image 2026-09-23 at 01.32.00 (2).jpeg,10,"10, 829",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+29,WhatsApp Image 2026-09-23 at 01.32.00 (2).jpeg,11,합 게 과세:,not_food,False,not_food,0.977,True,not_food,0.9284,True,not_food,0.9752,True
+29,WhatsApp Image 2026-09-23 at 01.32.00 (2).jpeg,12,037,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9757,True
+29,WhatsApp Image 2026-09-23 at 01.32.00 (2).jpeg,13,983,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9756,True
+29,WhatsApp Image 2026-09-23 at 01.32.00 (2).jpeg,14,면세:,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+29,WhatsApp Image 2026-09-23 at 01.32.00 (2).jpeg,15,'440553*215*(74371 끝제금액,not_food,False,not_food,0.9991,True,not_food,1.0,True,not_food,0.9755,True
+29,WhatsApp Image 2026-09-23 at 01.32.00 (2).jpeg,16,"10,820",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+29,WhatsApp Image 2026-09-23 at 01.32.00 (2).jpeg,17,[더일시롬 기준 5년간 유표,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True
+29,WhatsApp Image 2026-09-23 at 01.32.00 (2).jpeg,18,2087024103 00001 0705,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,1,UD,not_food,True,not_food,1.0,True,not_food,1.0,True,not_food,0.973,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,2,꽃 7일),not_food,False,food,0.6151,False,not_food,0.686,True,not_food,0.9688,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,3,진,not_food,True,not_food,1.0,True,not_food,1.0,True,not_food,0.6465,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,4,[현 금 (소득공제),not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,5,매]2023-0u-06 22:25 PUS:0104-3137,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9752,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,6,삼 품 명,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9707,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,7,단 가 수량,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,8,950,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,9,480,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,10,G50,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9634,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,11,480,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,12,틈백학,not_food,True,not_food,0.9707,True,not_food,0.999,True,food,0.9696,False
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,13,280,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,14,550 9B0,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,15,4,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9739,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,16,"880 5, 760",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9749,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,17,(*),not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9748,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,18,361,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,19,곁제 대 상 금,not_food,False,not_food,0.8963,True,not_food,0.9263,True,not_food,0.9599,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,20,3;,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,21,430,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,22,금:,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,23,"50,0OO",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,24,은 액,not_food,False,not_food,0.7122,True,not_food,0.848,True,not_food,0.9721,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,25,50 _,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,26,횟수증,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,27,010 **-1234,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,28,'5 126-1-1,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9755,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,29,캐서:530002 지미,not_food,False,not_food,0.9977,True,not_food,0.9988,True,not_food,0.9749,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,30,gg50,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9681,True
+30,WhatsApp Image 2026-09-23 at 01.32.00.jpeg,31,'20230406/01043131/00031430/10,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9753,True
+31,d3d010d6f6f93e9bfe1968e07616bc4f.jpg,1,[주문( 대기)번호],not_food,False,not_food,0.9996,True,not_food,1.0,True,not_food,0.9748,True
+31,d3d010d6f6f93e9bfe1968e07616bc4f.jpg,2,234,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9754,True
+31,d3d010d6f6f93e9bfe1968e07616bc4f.jpg,3,주문내역,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9747,True
+31,d3d010d6f6f93e9bfe1968e07616bc4f.jpg,4,상품명,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+31,d3d010d6f6f93e9bfe1968e07616bc4f.jpg,5,수량,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9739,True
+31,d3d010d6f6f93e9bfe1968e07616bc4f.jpg,6,포장] (HOT) 아메리카노,food,False,not_food,0.5,False,not_food,0.7931,False,not_food,0.9696,False
+31,d3d010d6f6f93e9bfe1968e07616bc4f.jpg,7,3,not_food,False,not_food,1.0,True,not_food,0.9963,True,not_food,0.9748,True
+31,d3d010d6f6f93e9bfe1968e07616bc4f.jpg,8,포장] (ICE) 헤이 즐없아메리카노,food,False,food,0.7827,True,not_food,0.7122,False,not_food,0.9727,False
+31,d3d010d6f6f93e9bfe1968e07616bc4f.jpg,9,;,not_food,False,not_food,1.0,True,not_food,0.9993,True,not_food,0.9754,True
+31,d3d010d6f6f93e9bfe1968e07616bc4f.jpg,10,나 취핑,food,False,not_food,1.0,False,not_food,1.0,False,not_food,0.9731,False
+31,d3d010d6f6f93e9bfe1968e07616bc4f.jpg,11,총주문금액,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+31,d3d010d6f6f93e9bfe1968e07616bc4f.jpg,12,"19,600 원",not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.975,True
+31,d3d010d6f6f93e9bfe1968e07616bc4f.jpg,13,2024-04-16 11:33:29,not_food,False,not_food,1.0,True,not_food,1.0,True,not_food,0.9745,True

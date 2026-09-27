@@ -1,0 +1,18 @@
+{
+  "model_name": "monologg/koelectra-small-v3-discriminator",
+  "max_len": 64,
+  "label2id": {
+    "not_food": 0,
+    "food": 1
+  },
+  "id2label": {
+    "0": "not_food",
+    "1": "food"
+  },
+  "dataset_rows": 74863,
+  "train_rows": 67376,
+  "val_rows": 7487,
+  "best_val_f1": 0.9682,
+  "val_acc": 0.9685,
+  "val_f1_macro": 0.9682
+}

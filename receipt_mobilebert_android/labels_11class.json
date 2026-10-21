@@ -1,0 +1,43 @@
+{
+  "labels": [
+    "household",
+    "beverages",
+    "meat",
+    "pantry",
+    "snacks",
+    "produce",
+    "dairy",
+    "bakery",
+    "alcohol",
+    "frozen",
+    "non_item"
+  ],
+  "label2id": {
+    "household": 0,
+    "beverages": 1,
+    "meat": 2,
+    "pantry": 3,
+    "snacks": 4,
+    "produce": 5,
+    "dairy": 6,
+    "bakery": 7,
+    "alcohol": 8,
+    "frozen": 9,
+    "non_item": 10
+  },
+  "id2label": {
+    "0": "household",
+    "1": "beverages",
+    "2": "meat",
+    "3": "pantry",
+    "4": "snacks",
+    "5": "produce",
+    "6": "dairy",
+    "7": "bakery",
+    "8": "alcohol",
+    "9": "frozen",
+    "10": "non_item"
+  },
+  "num_labels": 11,
+  "max_length": 48
+}

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receipt AI • Structurer & MobileBERT INT8 Classifier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-background"></div>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <div class="brand-logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/>
+          <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/>
+          <path d="M12 6v2m0 8v2"/>
+        </svg>
+      </div>
+      <div>
+        <div class="brand-title">Receipt AI Studio</div>
+        <div class="brand-subtitle">Spatial Regex Structurer + MobileBERT INT8 On-Device Classifier</div>
+      </div>
+    </div>
+
+    <div class="nav-badges">
+      <div class="chip chip-model">
+        <span class="status-dot"></span>
+        <span>MobileBERT INT8</span>
+        <span class="chip-metric">26.5 MB</span>
+      </div>
+      <div class="chip chip-classes">
+        <span>10 Categories</span>
+      </div>
+      <div class="chip chip-engine">
+        <span>ONNX Runtime (CPU)</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-container">
+    <!-- Input Mode Switcher -->
+    <div class="input-mode-switcher">
+      <button class="mode-tab active" data-mode="image">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span>Upload Receipt Photo (RapidOCR)</span>
+        <span class="mode-pill">New</span>
+      </button>
+      <button class="mode-tab" data-mode="text">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        <span>Paste Text / Presets</span>
+      </button>
+    </div>
+
+    <!-- Presets Bar (Shown in Text Mode) -->
+    <section class="preset-section" id="presetSection" style="display: none;">
+      <div class="preset-label">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m19 12-7-7-7 7m14 6-7-7-7 7"/></svg>
+        Quick Presets:
+      </div>
+      <div class="preset-buttons" id="presetButtons">
+        <button class="preset-btn active" data-preset="walmart">
+          <span class="preset-icon">🛒</span>
+          <span class="preset-name">Walmart Supercenter</span>
+        </button>
+        <button class="preset-btn" data-preset="target">
+          <span class="preset-icon">🎯</span>
+          <span class="preset-name">Target Store</span>
+        </button>
+        <button class="preset-btn" data-preset="costco">
+          <span class="preset-icon">🥩</span>
+          <span class="preset-name">Costco Wholesale</span>
+        </button>
+        <button class="preset-btn" data-preset="korean">
+          <span class="preset-icon">🏪</span>
+          <span class="preset-name">Korean H-Mart</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- App Body Grid -->
+    <div class="workbench-grid">
+      <!-- Left Panel: Input & Live Sandbox -->
+      <div class="panel left-panel">
+
+        <!-- ── Mode 1: Image Upload Mode ── -->
+        <div id="imageModeView" class="mode-view active">
+          <div class="panel-header">
+            <div class="panel-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              Receipt Photo OCR Scanner
+            </div>
+            <div class="editor-actions">
+              <button class="btn-ghost" id="btnClearImage">Clear</button>
+            </div>
+          </div>
+
+          <!-- Dropzone -->
+          <div class="upload-dropzone" id="uploadDropzone">
+            <input type="file" id="imageFileInput" accept="image/*" style="display: none;" />
+            <div class="dropzone-empty" id="dropzoneEmpty">
+              <div class="upload-icon-circle">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              </div>
+              <div class="dropzone-text-main">Drop receipt photo here, or <span>browse</span></div>
+              <div class="dropzone-text-sub">Supports PNG, JPG, JPEG, WEBP • Processed on-device</div>
+            </div>
+
+            <!-- Preview Card (Hidden initially) -->
+            <div class="dropzone-preview" id="dropzonePreview" style="display: none;">
+              <img id="imagePreviewImg" src="" alt="Receipt Preview" />
+              <div class="preview-info-overlay">
+                <span id="previewFilename" class="preview-filename">receipt.jpg</span>
+                <span id="previewFilesize" class="preview-filesize">124 KB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Sample Images -->
+          <div class="sample-images-bar">
+            <span class="sample-label">Or try sample photos:</span>
+            <div class="sample-thumbnails-row">
+              <button class="sample-thumb-btn" data-img="/samples/sample1.jpg" title="Central Park Store Receipt">
+                <img src="/samples/sample1.jpg" alt="Sample 1" />
+                <span>Central Park</span>
+              </button>
+              <button class="sample-thumb-btn" data-img="/samples/sample2.jpg" title="Korean Mart Receipt">
+                <img src="/samples/sample2.jpg" alt="Sample 2" />
+                <span>Korean Mart</span>
+              </button>
+              <button class="sample-thumb-btn" data-img="/samples/sample3.jpg" title="Lotteria Order Receipt">
+                <img src="/samples/sample3.jpg" alt="Sample 3" />
+                <span>Lotteria Order</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Scan Action Button -->
+          <button id="btnProcessImage" class="btn-primary" disabled>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            <span>Scan Image & Classify</span>
+            <span class="btn-badge">RapidOCR</span>
+          </button>
+        </div>
+
+        <!-- ── Mode 2: Text Input Mode ── -->
+        <div id="textModeView" class="mode-view" style="display: none;">
+          <div class="panel-header">
+            <div class="panel-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              Receipt Text Input
+            </div>
+            <div class="editor-actions">
+              <button class="btn-ghost" id="btnClear" title="Clear text">Clear</button>
+              <button class="btn-ghost" id="btnPaste" title="Paste from clipboard">Paste</button>
+            </div>
+          </div>
+
+          <div class="editor-wrapper">
+            <textarea id="receiptInput" spellcheck="false" placeholder="Paste your raw receipt lines or OCR output here..."></textarea>
+            <div class="editor-footer">
+              <span id="charLineCount">0 lines • 0 chars</span>
+              <span class="shortcut-hint">Press <strong>Cmd + Enter</strong> to run</span>
+            </div>
+          </div>
+
+          <button id="btnProcess" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            <span>Run Structurer & MobileBERT</span>
+            <span class="btn-badge">Instant</span>
+          </button>
+        </div>
+
+        <!-- Live Single Item Sandbox -->
+        <div class="sandbox-box">
+          <div class="sandbox-title">
+            <span class="radar-dot"></span>
+            <span>Live Single Line Tester (Regex + MobileBERT)</span>
+          </div>
+          <p class="sandbox-desc">Type any single line to test instant extraction & 10-class prediction:</p>
+          <div class="sandbox-input-wrapper">
+            <input type="text" id="sandboxInput" placeholder="e.g. 2 x HEINEKEN BEER 6PK 9.99" value="2 x HEINEKEN LAGER BEER 6PK 9.99" />
+          </div>
+          <div id="sandboxResult" class="sandbox-result">
+            <!-- Dynamic Sandbox Result -->
+          </div>
+        </div>
+
+        <!-- 10 Categories Reference -->
+        <div class="categories-card">
+          <div class="cat-card-header">
+            <span>Model Class Taxonomy (10 Classes)</span>
+          </div>
+          <div class="cat-pill-cloud" id="catPills">
+            <span class="cat-badge cat-household">household</span>
+            <span class="cat-badge cat-beverages">beverages</span>
+            <span class="cat-badge cat-meat">meat</span>
+            <span class="cat-badge cat-pantry">pantry</span>
+            <span class="cat-badge cat-snacks">snacks</span>
+            <span class="cat-badge cat-produce">produce</span>
+            <span class="cat-badge cat-dairy">dairy</span>
+            <span class="cat-badge cat-bakery">bakery</span>
+            <span class="cat-badge cat-alcohol">alcohol</span>
+            <span class="cat-badge cat-frozen">frozen</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Panel: Results & Analytics -->
+      <div class="panel right-panel">
+        <!-- Top Metrics Cards -->
+        <div class="metrics-row">
+          <div class="metric-card">
+            <div class="metric-label">Structured Items</div>
+            <div class="metric-val" id="metricItems">-</div>
+            <div class="metric-sub" id="metricFiltered">- filtered noise</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label">Receipt Total</div>
+            <div class="metric-val accent-green" id="metricSpend">-</div>
+            <div class="metric-sub">Sum of line totals</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label">Avg Confidence</div>
+            <div class="metric-val accent-purple" id="metricConf">-</div>
+            <div class="metric-sub">MobileBERT certainty</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label">Pipeline Latency</div>
+            <div class="metric-val accent-blue" id="metricLatency">-</div>
+            <div class="metric-sub" id="metricPipelineTime">Per item avg</div>
+          </div>
+        </div>
+
+        <!-- Category Spend Bars -->
+        <div class="breakdown-card" id="breakdownSection">
+          <div class="breakdown-header">
+            <span>Category Spend Distribution</span>
+            <span class="breakdown-summary" id="breakdownCount">10 items</span>
+          </div>
+          <div class="spend-bar-container" id="spendBarContainer"></div>
+          <div class="spend-tags-grid" id="spendTagsGrid"></div>
+        </div>
+
+        <!-- Results Tabs -->
+        <div class="tabs-bar">
+          <button class="tab-btn active" data-tab="itemsTab">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            Structured Items (<span id="tabItemCount">0</span>)
+          </button>
+          <button class="tab-btn" data-tab="noiseTab">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+            Filtered Noise & Headers (<span id="tabNoiseCount">0</span>)
+          </button>
+          <button class="tab-btn" data-tab="jsonTab">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            JSON Output
+          </button>
+        </div>
+
+        <!-- Tab 1: Items Table -->
+        <div class="tab-content active" id="itemsTab">
+          <div class="table-container">
+            <table class="items-table" id="itemsTable">
+              <thead>
+                <tr>
+                  <th style="width: 45px;">#</th>
+                  <th style="width: 60px;">Qty</th>
+                  <th>Extracted Item Name</th>
+                  <th>MobileBERT Query</th>
+                  <th style="width: 140px;">Category</th>
+                  <th style="width: 130px;">Confidence</th>
+                  <th style="width: 85px; text-align: right;">Unit $</th>
+                  <th style="width: 95px; text-align: right;">Total $</th>
+                </tr>
+              </thead>
+              <tbody id="itemsTbody">
+                <!-- Injected via JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 2: Filtered Noise Table -->
+        <div class="tab-content" id="noiseTab">
+          <div class="noise-intro">
+            These lines were identified as noise, header, metadata, tax, or payment info by <code>receipt_structurer.py</code> and safely excluded from item totals:
+          </div>
+          <div class="table-container">
+            <table class="noise-table">
+              <thead>
+                <tr>
+                  <th style="width: 50px;">Line</th>
+                  <th>Original Text</th>
+                  <th style="width: 250px;">Filter Classification</th>
+                </tr>
+              </thead>
+              <tbody id="noiseTbody">
+                <!-- Injected via JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 3: JSON Inspector -->
+        <div class="tab-content" id="jsonTab">
+          <div class="json-header">
+            <span>Structured Android-Ready JSON Payload</span>
+            <button class="btn-copy" id="btnCopyJson">Copy JSON</button>
+          </div>
+          <pre id="jsonOutput" class="json-code"><code>{}</code></pre>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

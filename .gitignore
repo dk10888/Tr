@@ -1,27 +1,14 @@
-# Ignore obsolete root-level files and directories
-/BERT_Receipt_Classifier_Benchmark_Report.docx
-/bert_tiny_v7_food_final
-/colab_bert_tiny_v5_train.py
-/colab_bert_train.py
-/export_bert_to_onnx_android.py
-/export_bert_to_onnx_android_safe.py
-/korean_food_android_assets
-/receipt_parser
-/requirements.txt
-/server.py
-/venv
-/web
-/.ses
-
-# Ignore obsolete models inside models/
-/models/bert_mini_food_final
-/models/bert_tiny_v5_food_final
-/models/onnx
-
 # Python & OS files
 __pycache__/
 *.py[cod]
 .DS_Store
+:memory:.ses
+*.tmp
+
+# Large model binaries (>90MB) & datasets
+*.bin
+*.csv
+*.tsv
 
 # Android build outputs
 android_app/.gradle/

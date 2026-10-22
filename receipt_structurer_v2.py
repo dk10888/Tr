@@ -137,8 +137,8 @@ RETAIL_CODE_TAGS_REGEX = re.compile(
 # 3. Supermarket alphanumeric inventory noise: e.g. "*+8SP300g", "#004900" (must contain at least 1 digit to avoid deleting brand names like #Lucozade)
 INVENTORY_TAG_REGEX = re.compile(r'(?:^|\s)[\*#+]{1,3}(?=[0-9A-Za-z]*\d)[0-9A-Z]{3,10}(?=\s|$)', re.IGNORECASE)
 
-# 4. Trailing Tax / Food-Stamp flags: single letter (D, K, F, T, N, X, Y, A, B, O), void hyphen (-), or space-separated 0
-TAX_FLAG_REGEX = re.compile(r'(?<=[\d\$원])\s*(?:[FTNXDHKYABO]|\-|\s+0)\s*$', re.IGNORECASE)
+# 4. Trailing Tax / Food-Stamp flags: single letter (D, K, F, T, N, X, Y, A, B, O, R), void hyphen (-), or space-separated 0
+TAX_FLAG_REGEX = re.compile(r'(?<=[\d\$원])\s*(?:[FTNXDHKYABOR]|\-|\s+0)\s*$', re.IGNORECASE)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -151,7 +151,7 @@ TAX_FLAG_REGEX = re.compile(r'(?<=[\d\$원])\s*(?:[FTNXDHKYABO]|\-|\s+0)\s*$', r
 #   2. Thousands-separated currency: 4,850 or 1,234.50
 #   3. Standard decimal prices: 2.88, 3.84, 10.48
 #   4. Korean/Indian currency suffixed: 5000원, 150rs
-#   5. Attached tax flags: 2.18D, 2.88N, 2.78X, 0.84X, 1.88 0
+#   5. Attached tax flags: 2.18D, 2.88N, 2.78X, 0.84X, 1.88 0, 3.98R
 PRICE_TOKEN_REGEX = re.compile(
     r'(?:'
         r'([₹$€£¥₩]|(?:usd|cad|eur|gbp|aud|nzd|inr|rs\.?))\s*(\d+[.,，]\d{2}|\d{1,3}(?:,\d{3})+(?:[.,，]\d{1,2})?|\d+)'
@@ -162,7 +162,7 @@ PRICE_TOKEN_REGEX = re.compile(
         r'|'
         r'(?<![A-Za-z0-9])(\d+)\s*(원|rs\.?)'
     r')'
-    r'(?:\s*([A-Za-z0-9]))?'
+    r'(?:\s*([FTNXDHKYABOR]|\s+0))?'
     r'(?:\s*[\-])?'
     r'\s*(원|rs\.?)?'
     r'(?![A-Za-z0-9])',
@@ -176,7 +176,7 @@ RATE_TOKEN_REGEX = re.compile(
 
 # Multipliers: "2 x", "x 2", "2*", "* 3", "3xOrganicBananas"
 QTY_PREFIX_MULTIPLIER_RE = re.compile(r'^\s*(\d+(?:\.\d+)?)\s*[xX×*](?:\s+|(?![\d\s]))', re.IGNORECASE)
-QTY_INFIX_MULTIPLIER_RE  = re.compile(r'(?:\s|^)[xX×*]\s*(\d+(?:\.\d+)?)(?=\s|$)', re.IGNORECASE)
+QTY_INFIX_MULTIPLIER_RE  = re.compile(r'(?:\s|^)[xX×*]\s*([1-9]\d?)(?!\.\d)(?=\s|$)', re.IGNORECASE)
 QTY_SUFFIX_MULTIPLIER_RE = re.compile(r'(?:\s|^)(\d+(?:\.\d+)?)\s*[xX×*](?=\s|$)', re.IGNORECASE)
 
 # Purchase Count Units (Korean + English): "2개", "2팩", "2캔", "3pcs", "2ea", "2 nos", "1 pkt"
@@ -379,6 +379,17 @@ def parse_receipt_line_advanced(line: str) -> Optional[Dict[str, Any]]:
             unit = "pcs"
             cleaned = cleaned[:m_qty_each.start()] + " " + cleaned[m_qty_each.end():]
 
+    # 3AA. Explicit multiplier with attached unit price: "3 x 1.25", "2 @ 9.99", "2*4.50"
+    if quantity is None:
+        m_qty_rate = re.search(r'(?:\s|^)(\d+(?:\.\d+)?)\s*[xX×*@]\s*([₹$€£¥₩]?\s*\d+(?:[.,]\d{2})?)(?=\s|$)', cleaned)
+        if m_qty_rate:
+            quantity = float(m_qty_rate.group(1))
+            unit = "pcs"
+            rate_val = parse_float_price(m_qty_rate.group(2))
+            if rate_val is not None:
+                unit_price = rate_val
+            cleaned = cleaned[:m_qty_rate.start()] + " " + cleaned[m_qty_rate.end():]
+
     # 3B. Prefix Multiplier: "2 x Coca Cola", "3xOrganicBananas"
     if quantity is None:
         m_pref = QTY_PREFIX_MULTIPLIER_RE.match(cleaned)
@@ -445,11 +456,13 @@ def parse_receipt_line_advanced(line: str) -> Optional[Dict[str, Any]]:
         if val is not None:
             price_spans.append({"val": val, "start": m.start(), "end": m.end(), "text": m.group(0)})
 
-    if not price_spans:
-        return None
-
     # Step 5: Assign Total Price and Unit Price
-    if len(price_spans) == 1:
+    if not price_spans:
+        if unit_price is not None and quantity is not None and quantity > 0:
+            total_price = round(unit_price * quantity, 2)
+        else:
+            return None
+    elif len(price_spans) == 1:
         total_price = price_spans[0]["val"]
         cleaned = cleaned[:price_spans[0]["start"]] + " " + cleaned[price_spans[0]["end"]:]
     elif len(price_spans) >= 2:
@@ -627,24 +640,96 @@ def clean_item_name_for_bert(item_name: str) -> str:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 2C. MULTI-LINE PRODUCT-MODIFIER FUSER (e.g. Woolworths, Target, Whole Foods)
+# 2C. MULTI-LINE PRODUCT-MODIFIER FUSER (Quantities & Prices Across Lines)
 # ─────────────────────────────────────────────────────────────────────────────
-SUBROW_MODIFIER_LINE_RE = re.compile(
-    r'^\s*(?:qty|count)?\s*\d+(?:\.\d+)?\s*[@at]\s*[\$€£₩₹]?\s*\d+(?:[.,]\d+)?\s*(?:each|ea|pcs|lb|kg)?\s*[\$€£₩₹]?\s*\d+[.,]\d{2}\s*$'
-    r'|'
-    r'^\s*qty\s*[:#\s]?\s*\d+(?:\.\d+)?\s*(?:each|ea|pcs|units?|nos)?\s*[\$€£₩₹]?\s*\d+[.,]\d{2}\s*$',
+# 1. Pure Price Line on Next Line: e.g. "14.99", "$5.99 F", "7.89", "9,900원", "3,000", "3.98 R"
+PURE_PRICE_LINE_RE = re.compile(
+    r'^\s*'
+    r'(?:'
+        r'([₹$€£¥₩]|(?:usd|cad|eur|gbp|aud|nzd|inr|rs\.?)\s*)?(\d+[.,，]\d{2}|\d{1,3}(?:,\d{3})+(?:[.,，]\d{1,2})?|\d{1,6})'
+        r'(?:\s*([원]|rs\.?))?'
+    r')'
+    r'(?:\s*[FTNXDHKYABO0R\-])?'
+    r'\s*$',
+    re.IGNORECASE
+)
+
+# 2. Qty / Rate / Weight / Multiplier Modifier on Next Line:
+# Examples:
+#   "2 @ 9.99 19.98", "2 @ $9.99", "2 x 2.49 4.98", "2 x 2.49", "3 x 1.25", "2 EA 15.99"
+#   "Qty 2 each @ 1.99 3.98", "Qty 2 @ 1.99", "Qty 2 3.98", "2 x", "3 *"
+#   "1.38 lb @ 0.59 /lb 0.81", "1.38 lb 0.81", "2.5 lb 4.98", "0.650 kg 2.60"
+#   "2개 @ 1,500 3,000", "2개 3,000", "2  1,100  2,200", "1  3,980"
+SUBROW_MODIFIER_RE = re.compile(
+    r'^\s*'
+    r'(?:'
+        # Explicit Qty prefix
+        r'(?:qty|count)\s*[:#\s]?\s*\d+(?:\.\d+)?(?:\s*(?:each|ea|pcs|units?|nos))?'
+        r'|'
+        # Multiplier x, @, at, *
+        r'\d+(?:\.\d+)?\s*(?:[xX×*]|@|\bat\b)'
+        r'|'
+        # Weighed produce unit
+        r'\d+(?:\.\d+)?\s*(?:lb|lbs|kg|kgs|g|gm|oz|gal)\b'
+        r'|'
+        # Count packaging unit
+        r'\d+(?:\.\d+)?\s*(?:ea|pcs|pkts?|units?|개|병|봉|캔|팩|박스|통|줄)\b'
+        r'|'
+        # Tabular space-separated numeric columns: "2  1,100  2,200" or "1  3,980"
+        r'\d{1,2}\s+(?:[₹$€£¥₩]?\s*\d+(?:,\d{3})*(?:\.\d{2})?)\s+(?:[₹$€£¥₩]?\s*\d+(?:,\d{3})*(?:\.\d{2})?)'
+        r'|'
+        r'\d{1,2}\s+(?:[₹$€£¥₩]?\s*\d+(?:,\d{3})*(?:\.\d{2})?)'
+    r')'
+    r'.*$',
+    re.IGNORECASE
+)
+
+# 3. Standalone Barcode / SKU on Next Line: e.g. "041192100430F", "880104301294"
+BARCODE_ONLY_LINE_RE = re.compile(
+    r'^\s*(?:(?:sku|upc|item|code|plu|dpt)\s*[:#\-\+]?\s*)?\d{7,14}[A-Za-z]?\s*$',
     re.IGNORECASE
 )
 
 
+def has_price_token(line: str) -> bool:
+    """Checks if a string already contains a valid price token."""
+    return bool(re.search(
+        r'([₹$€£¥₩]|\b(?:usd|cad|eur|gbp|aud|nzd|inr|rs)\b)\s*\d+|\d+[.,]\d{2}|\d+\s*원',
+        line,
+        re.IGNORECASE
+    ))
+
+
+def is_boundary_or_header_line(line: str) -> bool:
+    """Checks if a line is a divider, financial subtotal, tax, or receipt boundary."""
+    s = line.strip()
+    if not s or SEPARATOR_REGEX.match(s):
+        return True
+    if NOISE_REGEX.search(s):
+        return True
+    return False
+
+
+def is_multiline_item_candidate(line: str) -> bool:
+    """True if line looks like an unpriced item description that needs following line prices/quantities."""
+    s = line.strip()
+    if not s or len(s) < 2:
+        return False
+    if is_boundary_or_header_line(s):
+        return False
+    if has_price_token(s):
+        return False
+    if not re.search(r'[A-Za-z가-힣]', s):
+        return False
+    return True
+
+
 def pre_fuse_multiline_items(lines: List[str]) -> List[str]:
     """
-    Fuses multi-line receipt items where the product name is printed on line N
-    and the quantity/pricing modifier is printed on line N+1.
-    Example:
-      Line N:   '#Lucozade Energy Drink 380ml'  (no price)
-      Line N+1: 'Qty 2@$3.15 each 6.30'         (quantity + price)
-      -> Fused: '#Lucozade Energy Drink 380ml Qty 2@$3.15 each 6.30'
+    Fuses multi-line receipt items across 2 or 3 lines:
+      - Line N:   Product Name (no price)
+      - Line N+1: Pure Price, or Qty/Modifier/Weight, or Barcode
+      - Line N+2: Price (if line N+1 had Barcode or Qty only)
     """
     if not lines:
         return []
@@ -652,16 +737,45 @@ def pre_fuse_multiline_items(lines: List[str]) -> List[str]:
     fused = []
     i = 0
     n = len(lines)
+
     while i < n:
         curr = lines[i].strip()
-        if i + 1 < n:
-            nxt = lines[i + 1].strip()
-            # If next line is a sub-row modifier and current line is non-empty, non-noise text without a price
-            if SUBROW_MODIFIER_LINE_RE.search(nxt):
-                if curr and not is_noise_or_header_line(curr) and not PRICE_TOKEN_REGEX.search(curr):
-                    fused.append(f"{curr} {nxt}")
-                    i += 2
+        if not curr:
+            i += 1
+            continue
+
+        if is_multiline_item_candidate(curr):
+            merged = curr
+            j = i + 1
+            # Look ahead up to 2 lines
+            while j < n and j <= i + 2:
+                nxt = lines[j].strip()
+                if not nxt:
+                    j += 1
                     continue
+                if is_boundary_or_header_line(nxt):
+                    break
+                if BARCODE_ONLY_LINE_RE.match(nxt):
+                    merged += " " + nxt
+                    j += 1
+                    continue
+                if SUBROW_MODIFIER_RE.match(nxt):
+                    merged += " " + nxt
+                    j += 1
+                    if has_price_token(nxt):
+                        break
+                    continue
+                if PURE_PRICE_LINE_RE.match(nxt):
+                    merged += " " + nxt
+                    j += 1
+                    break
+                break
+
+            if j > i + 1:
+                fused.append(merged)
+                i = j
+                continue
+
         fused.append(curr)
         i += 1
 

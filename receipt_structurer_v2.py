@@ -55,7 +55,7 @@ NOISE_KEYWORDS = [
     r'\bdebit\s*tend\b', r'\bcash\s*tend\b', r'\beft\s*debit\b', r'\bpayment\s*declined\b',
     r'\b(?:visa|mastercard|amex|discover)\s+(?:credit|debit|ending|card|auth|balance|tend)\b',
     r'\b(?:upi|gpay|paytm)\s*(?:pay|payment|id|txn)\b',
-    r'\btender(?:ed)?\b',
+    r'\b(?:amt\s*)?tend(?:er(?:ed)?)?\b',
     r'\bba[li1]ance\b', r'\bbalance\s*to\s*pay\b',
     r'\breceived\s*(?:money|cash|amount)\b',
     r'\breturn\s*value\b',
@@ -72,7 +72,7 @@ NOISE_KEYWORDS = [
     r'\bpos\s*title\b', r'\bkasir\s*rcpt\b',
     r'\bt[o0]ta[l1i]\s*(?:due|purchase|amount|tax)?\b',
     r'\baccount\b', r'\bacct\b', r'\bappr\s*c[0o]de\b', r'\bnetw[0o]rk\b',
-    r'\bitems?\s*sold\b', r'\blayaway\b', r'\bcome\s*back\s*soon\b',
+    r'\bitems?\s*(?:sold|count)\b', r'\blayaway\b', r'\bcome\s*back\s*soon\b',
     r'\bsave\s*money\b', r'\blive\s*better\b', r'\bwe\s*sell\s*less\b',
     
     # Voids
@@ -129,16 +129,20 @@ CITY_STATE_ZIP_REGEX = re.compile(
 UPC_BARCODE_REGEX = re.compile(r'(?:^|\s)\b\d{6,14}[A-Za-z]?\b(?=\s|$)', re.IGNORECASE)
 
 # 2. Explicit SKU / PLU / Item / Dept / Barcode tags: e.g. "PLU 4011", "SKU# 98124", "DPT 92", "바코드 880104"
+# Requires digits (\d+) so words starting with 'st', 'op', 'te', 'tr' (e.g. STRING, STEAK, TEA) are NEVER corrupted
 RETAIL_CODE_TAGS_REGEX = re.compile(
-    r'\b(?:plu|sku|item|prod|upc|code|art|pos|dpt|dept|tc|ref|st|op|te|tr|바코드|품번|상품코드|코드)\s*[:#\-\+]?\s*[0-9A-Za-z\-]+\b',
+    r'\b(?:plu|sku|item|prod|upc|code|art|pos|dpt|dept|tc|ref|바코드|품번|상품코드|코드)\s*[:#\-\+]?\s*\d+[0-9A-Za-z\-]*\b|\b(?:st|op|te|tr)\s*[:#\-\+]\s*\d+\b',
     re.IGNORECASE
 )
 
 # 3. Supermarket alphanumeric inventory noise: e.g. "*+8SP300g", "#004900" (must contain at least 1 digit to avoid deleting brand names like #Lucozade)
 INVENTORY_TAG_REGEX = re.compile(r'(?:^|\s)[\*#+]{1,3}(?=[0-9A-Za-z]*\d)[0-9A-Z]{3,10}(?=\s|$)', re.IGNORECASE)
 
-# 4. Trailing Tax / Food-Stamp flags: single letter (D, K, F, T, N, X, Y, A, B, O, R), void hyphen (-), or space-separated 0
-TAX_FLAG_REGEX = re.compile(r'(?<=[\d\$원])\s*(?:[FTNXDHKYABOR]|\-|\s+0)\s*$', re.IGNORECASE)
+# 4. Trailing Tax / Food-Stamp flags: single letter (D, K, F, T, N, X, Y, A, B, O, R), multi-letter (TFA, TF, FA, FS, NT, TAX), void hyphen (-), or space-separated 0
+TAX_FLAG_REGEX = re.compile(r'(?<=[\d\$원])\s*(?:TFA|TF|FA|FS|NT|TAX|GST|HST|PST|VAT|[FTNXDHKYABOR]|\-|\s+0)\s*$', re.IGNORECASE)
+
+# 5. POS Tax & Weight Descriptors in Item Names: e.g. TFA, FA, NET, GROSS, TARE, WT
+POS_TAX_AND_WEIGHT_REGEX = re.compile(r'\b(?:TFA|TF|FA|FS|NT|TAX|GST|HST|PST|VAT|NET|GROSS|TARE|WT)\b', re.IGNORECASE)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -493,6 +497,7 @@ def parse_receipt_line_advanced(line: str) -> Optional[Dict[str, Any]]:
     name = UPC_BARCODE_REGEX.sub(" ", name)
     name = RETAIL_CODE_TAGS_REGEX.sub(" ", name)
     name = TAX_FLAG_REGEX.sub(" ", name)
+    name = POS_TAX_AND_WEIGHT_REGEX.sub(" ", name)
     # Require whitespace/boundary before multiplier x/X/@ so brands like LaCroix are never mutilated!
     name = re.sub(r'(?:\s|^)[@*×xX]\s*\d+(?:\.\d+)?(?=\s|$)', ' ', name)
     name = re.sub(r'[₹$€£¥₩]|\b(?:usd|cad|eur|gbp|aud|nzd|inr|rs)\b', ' ', name, flags=re.IGNORECASE)
@@ -615,6 +620,9 @@ def clean_item_name_for_bert(item_name: str) -> str:
     # 5. Remove long barcodes and product codes (5+ digits)
     s = re.sub(r'\b\d{5,}\b', ' ', s)
 
+    # 5B. Strip lingering POS tax flags and weight descriptors
+    s = POS_TAX_AND_WEIGHT_REGEX.sub(" ", s)
+
     # 6. Normalize packaging units with optional decimals (e.g. 15.25OZ -> 15.25 OZ, 2LB -> 2 LB)
     s = re.sub(r'\b(\d+(?:\.\d+)?)\s*(oz|lb|lbs|g|kg|ml|l|ct|pk|pack|gal|ea)\b', r'\1 \2', s, flags=re.IGNORECASE)
 
@@ -710,26 +718,49 @@ def is_boundary_or_header_line(line: str) -> bool:
     return False
 
 
-def is_multiline_item_candidate(line: str) -> bool:
-    """True if line looks like an unpriced item description that needs following line prices/quantities."""
+# Modifier vocabulary for detecting child POS sub-rows
+MODIFIER_ALLOWLIST_WORDS = {
+    'ea', 'each', 'pcs', 'pc', 'net', 'tare', 'gross', 'wt', 'weight',
+    'lb', 'lbs', 'kg', 'kgs', 'g', 'gm', 'oz', 'gal', 'at', 'qty', 'count',
+    'for', 'unit', 'units', 'item', 'items', 'nos', 'no', 'pk', 'pack',
+    'tfa', 'tf', 'fa', 'fs', 'tax', 'f', 't', 'n', 'x', 'd', 'k', 'y', 'a', 'b', 'r',
+    '단가', '개', '팩', '병', '봉', '캔', '박스', '통', '줄'
+}
+
+
+def is_child_subrow_modifier(line: str) -> bool:
+    """
+    Returns True if a line represents a child POS transaction modifier/sub-row
+    (quantity, packaging count, weighed unit tare/net, @ unit-rate, or barcode)
+    rather than an independent product line.
+    """
     s = line.strip()
     if not s or len(s) < 2:
         return False
     if is_boundary_or_header_line(s):
         return False
-    if has_price_token(s):
-        return False
-    if not re.search(r'[A-Za-z가-힣]', s):
-        return False
-    return True
+    if BARCODE_ONLY_LINE_RE.match(s):
+        return True
+
+    # Strip numbers, prices, currency, units, punctuation
+    cleaned = re.sub(r'[\$€£¥₩.,:;/*#@×xX\-\+()0-9]', ' ', s)
+    words = [w.lower() for w in cleaned.split() if len(w) > 0]
+    product_words = [w for w in words if w not in MODIFIER_ALLOWLIST_WORDS and len(w) > 1]
+
+    # Must contain numeric values or rate symbol '@', and contain NO independent product nouns
+    has_num_or_rate = bool(re.search(r'\d|@', s))
+    if has_num_or_rate and len(product_words) == 0:
+        return True
+    return False
 
 
 def pre_fuse_multiline_items(lines: List[str]) -> List[str]:
     """
+    Generalized POS Parent-Child Fusing Algorithm:
     Fuses multi-line receipt items across 2 or 3 lines:
-      - Line N:   Product Name (no price)
-      - Line N+1: Pure Price, or Qty/Modifier/Weight, or Barcode
-      - Line N+2: Price (if line N+1 had Barcode or Qty only)
+      - Parent Item Line: Product Name (can be priced or unpriced)
+      - Child Sub-Row Line: Modifiers (rates, weights, counts, barcodes)
+      - Child Price Line: Pure Price line (if parent line was unpriced)
     """
     if not lines:
         return []
@@ -744,40 +775,44 @@ def pre_fuse_multiline_items(lines: List[str]) -> List[str]:
             i += 1
             continue
 
-        if is_multiline_item_candidate(curr):
-            merged = curr
-            j = i + 1
-            # Look ahead up to 2 lines
-            while j < n and j <= i + 2:
-                nxt = lines[j].strip()
-                if not nxt:
-                    j += 1
-                    continue
-                if is_boundary_or_header_line(nxt):
-                    break
-                if BARCODE_ONLY_LINE_RE.match(nxt):
-                    merged += " " + nxt
-                    j += 1
-                    continue
-                if SUBROW_MODIFIER_RE.match(nxt):
-                    merged += " " + nxt
-                    j += 1
-                    if has_price_token(nxt):
-                        break
-                    continue
-                if PURE_PRICE_LINE_RE.match(nxt):
-                    merged += " " + nxt
-                    j += 1
-                    break
+        # If curr is a boundary/noise line, a standalone child subrow, or lacks letters/Hangul, keep as is
+        if is_boundary_or_header_line(curr) or is_child_subrow_modifier(curr) or not re.search(r'[A-Za-z가-힣]', curr):
+            fused.append(curr)
+            i += 1
+            continue
+
+        merged = curr
+        j = i + 1
+        has_price = has_price_token(curr)
+
+        # Look ahead up to 3 lines for child modifier rows, barcodes, or pure prices
+        while j < n and j <= i + 3:
+            nxt = lines[j].strip()
+            if not nxt:
+                j += 1
+                continue
+            if is_boundary_or_header_line(nxt):
                 break
 
-            if j > i + 1:
-                fused.append(merged)
-                i = j
+            # Case 1: nxt is a child sub-row modifier (e.g. "4EA @ 2.59/EA", "0.778kg NET @ $5.99/kg", barcode)
+            if is_child_subrow_modifier(nxt):
+                merged += " " + nxt
+                has_price = has_price or has_price_token(nxt)
+                j += 1
                 continue
 
-        fused.append(curr)
-        i += 1
+            # Case 2: Parent line had NO price, and nxt is a pure price line (e.g. "$14.99", "7.89", "9,900원")
+            if not has_price and PURE_PRICE_LINE_RE.match(nxt):
+                merged += " " + nxt
+                has_price = True
+                j += 1
+                break
+
+            # Not a child of this parent line
+            break
+
+        fused.append(merged)
+        i = j
 
     return [l for l in fused if l]
 

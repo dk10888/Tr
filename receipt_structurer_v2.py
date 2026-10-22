@@ -138,11 +138,43 @@ RETAIL_CODE_TAGS_REGEX = re.compile(
 # 3. Supermarket alphanumeric inventory noise: e.g. "*+8SP300g", "#004900" (must contain at least 1 digit to avoid deleting brand names like #Lucozade)
 INVENTORY_TAG_REGEX = re.compile(r'(?:^|\s)[\*#+]{1,3}(?=[0-9A-Za-z]*\d)[0-9A-Z]{3,10}(?=\s|$)', re.IGNORECASE)
 
-# 4. Trailing Tax / Food-Stamp flags: single letter (D, K, F, T, N, X, Y, A, B, O, R), multi-letter (TFA, TF, FA, FS, NT, TAX), void hyphen (-), or space-separated 0
-TAX_FLAG_REGEX = re.compile(r'(?<=[\d\$원])\s*(?:TFA|TF|FA|FS|NT|TAX|GST|HST|PST|VAT|[FTNXDHKYABOR]|\-|\s+0)\s*$', re.IGNORECASE)
+# 4. Trailing Tax / Food-Stamp flags: single letter (D, K, F, T, N, X, Y, A, B, O, R), multi-letter (TFA, TF, FA, FS, NT, TAX, GPMRJ, MRJ), void hyphen (-), or space-separated 0
+TAX_FLAG_REGEX = re.compile(r'(?<=[\d\$원])\s*(?:GPMRJ|PMRJ|GMRJ|MRJ|GPMR|PMR|GMR|(?:\d+)?PRQ|RQ|TFA|TF|FA|FS|NT|TAX|GST|HST|PST|VAT|[FTNXDHKYABOR]|\-|\s+0)\s*$', re.IGNORECASE)
 
-# 5. POS Tax & Weight Descriptors in Item Names: e.g. TFA, FA, NET, GROSS, TARE, WT
-POS_TAX_AND_WEIGHT_REGEX = re.compile(r'\b(?:TFA|TF|FA|FS|NT|TAX|GST|HST|PST|VAT|NET|GROSS|TARE|WT)\b', re.IGNORECASE)
+# 5. POS Tax & Weight Descriptors in Item Names: e.g. TFA, FA, NET, GROSS, TARE, WT, GPMRJ, MRJ
+POS_TAX_AND_WEIGHT_REGEX = re.compile(r'\b(?:GPMRJ|PMRJ|GMRJ|MRJ|GPMR|PMR|GMR|(?:\d+)?PRQ|RQ|TFA|TF|FA|FS|NT|TAX|GST|HST|PST|VAT|NET|GROSS|TARE|WT)\b', re.IGNORECASE)
+
+
+# 6. Retail Department Section Headers: e.g. "21-GROCERY", "22-DAIRY", "27-PRODUCE", "31-MEATS"
+DEPT_HEADER_REGEX = re.compile(
+    r'^\s*\d{1,3}\s*[\-]\s*(?:grocery|dairy|frozen|produce|meats?|deli|bakery|seafood|home(?:\s*health)?|beauty(?:\s*products)?|apparel|general\s*merch(?:andise)?|pharmacy)\b',
+    re.IGNORECASE
+)
+
+# 7. Promotional pricing tiers / limit rows: e.g. "$2.47 lmt 4, $3.77 ea", "$1.97 ea or 2/$3.00"
+PROMO_TIER_REGEX = re.compile(
+    r'(?:'
+        r'[\$€£¥₩]?\d+(?:\.\d{2})?\s*(?:lmt|limit)\s*\d+[^0-9\$]*(?:[\$€£¥₩]?\d+(?:\.\d{2})?\s*(?:ea|each))?'
+        r'|'
+        r'[\$€£¥₩]?\d+(?:\.\d{2})?\s*(?:ea|each)\s+or\s+\d+/\s*[\$€£¥₩]?\d+(?:\.\d{2})?'
+    r')',
+    re.IGNORECASE
+)
+
+# 8. Multiplier with attached unit: "2 @ $2.47 ea", "3 @ $3.78", "Qty 2 @ $2.02 each"
+MULTIPLIER_RATE_REGEX = re.compile(
+    r'(?:\s|^)(?:qty\s*)?(\d+(?:\.\d+)?)\s*[@xX×*]\s*[\$€£¥₩]?\s*(\d+(?:[.,]\d{2})?)\s*(?:each|ea|pcs|units?|nos|/\s*[A-Za-z가-힣]+)?(?=\s|$)',
+    re.IGNORECASE
+)
+
+# 9. Negative promotional discount lines: "PRIMO SLICED OFFER -1.00"
+DISCOUNT_LINE_REGEX = re.compile(
+    r'\b(?:offer|discount|coupon|saving|savings|rebate|loyalty|markdown)\b.*?\-[\$€£¥₩]?\s*(\d+[.,]\d{2})',
+    re.IGNORECASE
+)
+
+# 10. Leading item count before barcode: "(3)05500055117" or "(2)4539"
+PREFIX_COUNT_BARCODE = re.compile(r'^\s*\((\d+)\)\s*(?=\d{4,14}\b)')
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -246,11 +278,15 @@ def is_noise_or_header_line(line: str) -> bool:
         return True
     if SEPARATOR_REGEX.match(s):
         return True
-    # If it's a known product name containing words like 'total', 'card', 'balance', protect it
+    if DEPT_HEADER_REGEX.match(s):
+        return True
     if PRODUCT_PROTECTION_REGEX.search(s):
         return False
     if NOISE_REGEX.search(s):
         return True
+    # If line is a valid promotional discount (e.g. "PRIMO SLICED OFFER -1.00"), do not reject
+    if DISCOUNT_LINE_REGEX.search(s):
+        return False
     # Filter out voided negative price lines (e.g. "$4.27-" or "$1.97-D")
     if re.search(r'\d+\.\d{2}\s*[\-]', s):
         return True
@@ -344,8 +380,37 @@ def parse_receipt_line_advanced(line: str) -> Optional[Dict[str, Any]]:
     if is_noise_or_header_line(norm_for_noise):
         return None
 
+    # Check for promotional discount line: e.g. "PRIMO SLICED OFFER -1.00"
+    m_disc = DISCOUNT_LINE_REGEX.search(original)
+    if m_disc:
+        disc_val = float(m_disc.group(1))
+        disc_name = original[:m_disc.start()].strip(' -')
+        return {
+            "item_name": disc_name if disc_name else "DISCOUNT OFFER",
+            "quantity": 1.0,
+            "unit": "pcs",
+            "unit_price": -disc_val,
+            "total_price": -disc_val,
+            "raw_line": original,
+            "is_discount": True
+        }
+
+    # Normalize leading count barcode: e.g. "(3)05500055117" -> quantity=3
+    leading_qty = None
+    cleaned_orig = original
+    m_lead_count = PREFIX_COUNT_BARCODE.match(cleaned_orig)
+    if m_lead_count:
+        leading_qty = float(m_lead_count.group(1))
+        cleaned_orig = cleaned_orig[m_lead_count.end():].strip()
+
+    # Strip promotional limit tiers: e.g. "$2.47 lmt 4, $3.77 ea"
+    cleaned_orig = PROMO_TIER_REGEX.sub(" ", cleaned_orig)
+
+    # Clean leading symbol flags: e.g. "^#Schweppes" -> "Schweppes"
+    cleaned_orig = re.sub(r'^[\\^#*~]+\s*', '', cleaned_orig)
+
     # Stage A: Conservative OCR Normalization
-    cleaned = normalize_ocr_conservative(original)
+    cleaned = normalize_ocr_conservative(cleaned_orig)
 
     # Strip alphanumeric barcodes, dates, times, phone numbers, masked cards, retail codes, and inventory tags
     cleaned = re.sub(r'\b[A-Za-z]{1,4}\d{5,}[A-Za-z]?\b|\b\d{5,}[A-Za-z]?\b', ' ', cleaned)
@@ -357,6 +422,7 @@ def parse_receipt_line_advanced(line: str) -> Optional[Dict[str, Any]]:
     cleaned = RETAIL_CODE_TAGS_REGEX.sub(" ", cleaned)
     cleaned = UPC_BARCODE_REGEX.sub(" ", cleaned)
     cleaned = INVENTORY_TAG_REGEX.sub(" ", cleaned)
+    cleaned = POS_TAX_AND_WEIGHT_REGEX.sub(" ", cleaned)
     cleaned = TAX_FLAG_REGEX.sub(" ", cleaned)
 
     unit_price = None
@@ -369,6 +435,15 @@ def parse_receipt_line_advanced(line: str) -> Optional[Dict[str, Any]]:
     if rate_m:
         unit_price = parse_float_price(rate_m.group(1))
         cleaned = cleaned[:rate_m.start()] + " " + cleaned[rate_m.end():]
+
+    # Step 2B: Extract Multiplier with attached unit: "2 @ $2.47 ea", "3 @ $3.78", "Qty 2 @ $2.02 each"
+    m_mult_rate = MULTIPLIER_RATE_REGEX.search(cleaned)
+    if m_mult_rate:
+        quantity = float(m_mult_rate.group(1))
+        mult_p = parse_float_price(m_mult_rate.group(2))
+        if mult_p is not None:
+            unit_price = mult_p
+        cleaned = cleaned[:m_mult_rate.start()] + " " + cleaned[m_mult_rate.end():]
 
     # Step 3: Extract Purchase Multiplier, Weighed Produce, or Leading Column Quantity
     # 3A. Explicit Qty modifier: "Qty 2 @ $3.15 each", "Qty 2 each", "Qty 4"
@@ -478,16 +553,19 @@ def parse_receipt_line_advanced(line: str) -> Optional[Dict[str, Any]]:
         for p in reversed(price_spans[-2:]):
             cleaned = cleaned[:p["start"]] + " " + cleaned[p["end"]:]
 
-    # Step 6: Column Qty Fallback (must be 1-99, not 0)
+    # Step 6: Column Qty Fallback (requires 2+ spaces or small digit 1-9 to avoid eating model numbers like PRO 45 or 57)
     if quantity is None:
-        qty_col = re.search(r'(?:\s|^)([1-9]\d?)\s*$', cleaned)
+        qty_col = re.search(r'(?:\s{2,})([1-9]\d?)\s*$', cleaned)
         if qty_col:
             quantity = float(qty_col.group(1))
             unit = "pcs"
             cleaned = cleaned[:qty_col.start()].strip()
 
     if quantity is None or quantity <= 0:
-        quantity = 1.0
+        if leading_qty is not None:
+            quantity = leading_qty
+        else:
+            quantity = 1.0
 
     if unit_price is None and total_price is not None and quantity > 0:
         unit_price = round(total_price / quantity, 2)
@@ -496,8 +574,9 @@ def parse_receipt_line_advanced(line: str) -> Optional[Dict[str, Any]]:
     name = cleaned
     name = UPC_BARCODE_REGEX.sub(" ", name)
     name = RETAIL_CODE_TAGS_REGEX.sub(" ", name)
-    name = TAX_FLAG_REGEX.sub(" ", name)
     name = POS_TAX_AND_WEIGHT_REGEX.sub(" ", name)
+    name = TAX_FLAG_REGEX.sub(" ", name)
+    name = re.sub(r'^[\\^#*~]+\s*', '', name)
     # Require whitespace/boundary before multiplier x/X/@ so brands like LaCroix are never mutilated!
     name = re.sub(r'(?:\s|^)[@*×xX]\s*\d+(?:\.\d+)?(?=\s|$)', ' ', name)
     name = re.sub(r'[₹$€£¥₩]|\b(?:usd|cad|eur|gbp|aud|nzd|inr|rs)\b', ' ', name, flags=re.IGNORECASE)
@@ -724,22 +803,28 @@ MODIFIER_ALLOWLIST_WORDS = {
     'lb', 'lbs', 'kg', 'kgs', 'g', 'gm', 'oz', 'gal', 'at', 'qty', 'count',
     'for', 'unit', 'units', 'item', 'items', 'nos', 'no', 'pk', 'pack',
     'tfa', 'tf', 'fa', 'fs', 'tax', 'f', 't', 'n', 'x', 'd', 'k', 'y', 'a', 'b', 'r',
-    '단가', '개', '팩', '병', '봉', '캔', '박스', '통', '줄'
+    '단가', '개', '팩', '병', '봉', '캔', '박스', '통', '줄',
+    'lmt', 'limit', 'max', 'min', 'or', 'save', 'saving', 'savings', 'off', 'reg', 'regular', 'promo',
+    'gpmrj', 'pmrj', 'gmrj', 'mrj', 'gpmr', 'pmr', 'gmr', 'rq', '8prq', 'prq', 'bunch', 'bunched'
 }
 
 
 def is_child_subrow_modifier(line: str) -> bool:
     """
     Returns True if a line represents a child POS transaction modifier/sub-row
-    (quantity, packaging count, weighed unit tare/net, @ unit-rate, or barcode)
+    (quantity, packaging count, weighed unit tare/net, @ unit-rate, promo limit, or barcode)
     rather than an independent product line.
     """
     s = line.strip()
     if not s or len(s) < 2:
         return False
-    if is_boundary_or_header_line(s):
+    if is_boundary_or_header_line(s) or DEPT_HEADER_REGEX.match(s):
         return False
     if BARCODE_ONLY_LINE_RE.match(s):
+        return True
+
+    # Standalone POS tax flag lines (e.g. "GPMRJ", "MRJ", "TFA")
+    if re.match(r'^\s*(?:GPMRJ|PMRJ|GMRJ|MRJ|GPMR|PMR|GMR|8PRQ|PRQ|RQ|TFA|FA|TF|FS|TAX)\s*$', s, re.IGNORECASE):
         return True
 
     # Strip numbers, prices, currency, units, punctuation
@@ -757,9 +842,9 @@ def is_child_subrow_modifier(line: str) -> bool:
 def pre_fuse_multiline_items(lines: List[str]) -> List[str]:
     """
     Generalized POS Parent-Child Fusing Algorithm:
-    Fuses multi-line receipt items across 2 or 3 lines:
+    Fuses multi-line receipt items across 2, 3, or 4 lines:
       - Parent Item Line: Product Name (can be priced or unpriced)
-      - Child Sub-Row Line: Modifiers (rates, weights, counts, barcodes)
+      - Child Sub-Row Line: Modifiers (rates, weights, counts, promo tiers, barcodes)
       - Child Price Line: Pure Price line (if parent line was unpriced)
     """
     if not lines:
@@ -775,8 +860,8 @@ def pre_fuse_multiline_items(lines: List[str]) -> List[str]:
             i += 1
             continue
 
-        # If curr is a boundary/noise line, a standalone child subrow, or lacks letters/Hangul, keep as is
-        if is_boundary_or_header_line(curr) or is_child_subrow_modifier(curr) or not re.search(r'[A-Za-z가-힣]', curr):
+        # If curr is a boundary/noise line, department header, a standalone child subrow, or lacks letters/Hangul, keep as is
+        if is_boundary_or_header_line(curr) or DEPT_HEADER_REGEX.match(curr) or is_child_subrow_modifier(curr) or not re.search(r'[A-Za-z가-힣]', curr):
             fused.append(curr)
             i += 1
             continue
@@ -785,16 +870,16 @@ def pre_fuse_multiline_items(lines: List[str]) -> List[str]:
         j = i + 1
         has_price = has_price_token(curr)
 
-        # Look ahead up to 3 lines for child modifier rows, barcodes, or pure prices
+        # Look ahead up to 3 lines for child modifier rows, barcodes, promo tiers, or pure prices
         while j < n and j <= i + 3:
             nxt = lines[j].strip()
             if not nxt:
                 j += 1
                 continue
-            if is_boundary_or_header_line(nxt):
+            if is_boundary_or_header_line(nxt) or DEPT_HEADER_REGEX.match(nxt):
                 break
 
-            # Case 1: nxt is a child sub-row modifier (e.g. "4EA @ 2.59/EA", "0.778kg NET @ $5.99/kg", barcode)
+            # Case 1: nxt is a child sub-row modifier (e.g. "4EA @ 2.59/EA", "0.778kg NET @ $5.99/kg", barcode, promo tier)
             if is_child_subrow_modifier(nxt):
                 merged += " " + nxt
                 has_price = has_price or has_price_token(nxt)

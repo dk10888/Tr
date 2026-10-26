@@ -28,6 +28,7 @@
   --cat-bakery: #f59e0b;
   --cat-alcohol: #ec4899;
   --cat-frozen: #14b8a6;
+  --cat-non_item: #64748b;
   
   --radius-lg: 16px;
   --radius-md: 10px;
@@ -695,6 +696,7 @@ textarea#receiptInput {
 .cat-bakery    { background: rgba(245, 158, 11, 0.14); color: #fbbf24; border-color: rgba(245, 158, 11, 0.3); }
 .cat-alcohol   { background: rgba(236, 72, 153, 0.14); color: #f472b6; border-color: rgba(236, 72, 153, 0.3); }
 .cat-frozen    { background: rgba(20, 184, 166, 0.14); color: #2dd4bf; border-color: rgba(20, 184, 166, 0.3); }
+.cat-non_item  { background: rgba(100, 116, 139, 0.14); color: #94a3b8; border-color: rgba(100, 116, 139, 0.3); }
 
 /* Right Panel: Metrics Row */
 .metrics-row {

@@ -34,8 +34,8 @@
         <span>MobileBERT INT8</span>
         <span class="chip-metric">26.5 MB</span>
       </div>
-      <div class="chip chip-classes">
-        <span>10 Categories</span>
+      <div class="chip chip-classes" id="chipClasses">
+        <span>11 Categories</span>
       </div>
       <div class="chip chip-engine">
         <span>ONNX Runtime (CPU)</span>
@@ -183,7 +183,7 @@
             <span class="radar-dot"></span>
             <span>Live Single Line Tester (Regex + MobileBERT)</span>
           </div>
-          <p class="sandbox-desc">Type any single line to test instant extraction & 10-class prediction:</p>
+          <p class="sandbox-desc">Type any single line to test instant extraction & 11-class prediction:</p>
           <div class="sandbox-input-wrapper">
             <input type="text" id="sandboxInput" placeholder="e.g. 2 x HEINEKEN BEER 6PK 9.99" value="2 x HEINEKEN LAGER BEER 6PK 9.99" />
           </div>
@@ -192,10 +192,10 @@
           </div>
         </div>
 
-        <!-- 10 Categories Reference -->
+        <!-- 11 Categories Reference -->
         <div class="categories-card">
           <div class="cat-card-header">
-            <span>Model Class Taxonomy (10 Classes)</span>
+            <span id="catCardTitle">Model Class Taxonomy (11 Classes)</span>
           </div>
           <div class="cat-pill-cloud" id="catPills">
             <span class="cat-badge cat-household">household</span>
@@ -208,6 +208,7 @@
             <span class="cat-badge cat-bakery">bakery</span>
             <span class="cat-badge cat-alcohol">alcohol</span>
             <span class="cat-badge cat-frozen">frozen</span>
+            <span class="cat-badge cat-non_item">non_item</span>
           </div>
         </div>
       </div>
@@ -242,7 +243,7 @@
         <div class="breakdown-card" id="breakdownSection">
           <div class="breakdown-header">
             <span>Category Spend Distribution</span>
-            <span class="breakdown-summary" id="breakdownCount">10 items</span>
+            <span class="breakdown-summary" id="breakdownCount">0 items</span>
           </div>
           <div class="spend-bar-container" id="spendBarContainer"></div>
           <div class="spend-tags-grid" id="spendTagsGrid"></div>

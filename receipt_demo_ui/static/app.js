@@ -66,6 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
     bakery: "#f59e0b",
     alcohol: "#ec4899",
     frozen: "#14b8a6",
+    non_item: "#64748b",
   };
 
   // ── 1. Mode Switching ───────────────────────────────────────────────────────
@@ -513,7 +514,31 @@ document.addEventListener("DOMContentLoaded", () => {
       .replace(/'/g, "&#039;");
   }
 
+  async function loadModelInfo() {
+    try {
+      const res = await fetch("/api/info");
+      const info = await res.json();
+      if (info && info.num_classes) {
+        const chipClasses = document.getElementById("chipClasses");
+        if (chipClasses) chipClasses.innerHTML = `<span>${info.num_classes} Categories</span>`;
+
+        const catCardTitle = document.getElementById("catCardTitle");
+        if (catCardTitle) catCardTitle.textContent = `Model Class Taxonomy (${info.num_classes} Classes)`;
+
+        const catPills = document.getElementById("catPills");
+        if (catPills && info.classes) {
+          catPills.innerHTML = info.classes
+            .map((c) => `<span class="cat-badge cat-${c}">${c}</span>`)
+            .join("");
+        }
+      }
+    } catch (e) {
+      console.warn("Could not load model info:", e);
+    }
+  }
+
   // Initialize
+  loadModelInfo();
   loadPresets();
   runSandboxClassification();
 
